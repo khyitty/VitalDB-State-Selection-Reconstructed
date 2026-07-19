@@ -37,10 +37,16 @@ python scripts/run_metadata_audit.py --help
 python scripts/download_candidate_signals.py --help
 ```
 
+The Phase 3 framework independently implements full-range metadata accounting,
+exact track inventory, schema-validated manifests, explicit failures, and
+checksum-based download resume. `download_candidate_signals.py` is production
+blocked until a human authorization file exists and drug-rate units are marked
+validated in the versioned alias configuration. Neither condition is satisfied in
+this phase.
+
 Dry-run output is engineering evidence only. It is not a scientific result and must
 not be used to set eligibility thresholds.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and
 [Eligibility Audit Plan](docs/eligibility_audit_plan.md).
-

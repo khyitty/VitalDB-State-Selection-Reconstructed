@@ -7,14 +7,25 @@
   "required": [
     "caseid", "source_query_timestamp", "source_version",
     "clinical_metadata_available", "track_inventory_available",
-    "legacy_98_case", "candidate_at_metadata_stage",
+    "age", "age_available", "sex", "sex_available",
+    "height", "height_available", "weight", "weight_available",
+    "bmi", "asa", "subjectid", "anesthesia_type", "operation_type",
+    "emergency_status", "anesthesia_start", "anesthesia_end",
+    "operation_start", "operation_end", "bis_track_available",
+    "bis_sqi_track_available", "propofol_rate_track_available",
+    "propofol_volume_track_available", "remifentanil_rate_track_available",
+    "remifentanil_volume_track_available", "device_propofol_cp_available",
+    "device_propofol_ce_available", "device_remifentanil_cp_available",
+    "device_remifentanil_ce_available", "volatile_agent_track_available",
+    "legacy_98_case", "adult_candidate", "tiva_candidate",
+    "volatile_exposure_possible", "candidate_at_metadata_stage",
     "metadata_exclusion_flags", "audit_status", "failure_type",
     "failure_message"
   ],
   "properties": {
     "caseid": {"type": "integer", "minimum": 1, "maximum": 6388},
-    "source_query_timestamp": {"type": "string"},
-    "source_version": {"type": "string"},
+    "source_query_timestamp": {"type": "string", "minLength": 1},
+    "source_version": {"type": "string", "minLength": 1},
     "clinical_metadata_available": {"type": "boolean"},
     "track_inventory_available": {"type": "boolean"},
     "age": {"type": ["number", "null"]},
@@ -35,28 +46,47 @@
     "anesthesia_end": {"type": ["number", "null"]},
     "operation_start": {"type": ["number", "null"]},
     "operation_end": {"type": ["number", "null"]},
-    "bis_track_available": {"type": "boolean"},
-    "bis_sqi_track_available": {"type": "boolean"},
-    "propofol_rate_track_available": {"type": "boolean"},
-    "propofol_volume_track_available": {"type": "boolean"},
-    "remifentanil_rate_track_available": {"type": "boolean"},
-    "remifentanil_volume_track_available": {"type": "boolean"},
-    "device_propofol_cp_available": {"type": "boolean"},
-    "device_propofol_ce_available": {"type": "boolean"},
-    "device_remifentanil_cp_available": {"type": "boolean"},
-    "device_remifentanil_ce_available": {"type": "boolean"},
-    "volatile_agent_track_available": {"type": "boolean"},
-    "legacy_98_case": {"type": "boolean"},
+    "bis_track_available": {"type": ["boolean", "null"]},
+    "bis_sqi_track_available": {"type": ["boolean", "null"]},
+    "propofol_rate_track_available": {"type": ["boolean", "null"]},
+    "propofol_volume_track_available": {"type": ["boolean", "null"]},
+    "remifentanil_rate_track_available": {"type": ["boolean", "null"]},
+    "remifentanil_volume_track_available": {"type": ["boolean", "null"]},
+    "device_propofol_cp_available": {"type": ["boolean", "null"]},
+    "device_propofol_ce_available": {"type": ["boolean", "null"]},
+    "device_remifentanil_cp_available": {"type": ["boolean", "null"]},
+    "device_remifentanil_ce_available": {"type": ["boolean", "null"]},
+    "volatile_agent_track_available": {"type": ["boolean", "null"]},
+    "legacy_98_case": {"type": ["boolean", "null"]},
     "adult_candidate": {"type": "boolean"},
-    "tiva_candidate": {"type": "boolean"},
-    "volatile_exposure_possible": {"type": "boolean"},
+    "tiva_candidate": {"type": ["boolean", "null"]},
+    "volatile_exposure_possible": {"type": ["boolean", "null"]},
     "candidate_at_metadata_stage": {"type": "boolean"},
     "metadata_exclusion_flags": {
-      "type": "array", "items": {"type": "string"}, "uniqueItems": true
+      "type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true
     },
     "audit_status": {"enum": ["complete", "failed"]},
     "failure_type": {"type": ["string", "null"]},
     "failure_message": {"type": ["string", "null"]}
-  }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"audit_status": {"const": "failed"}}},
+      "then": {
+        "properties": {
+          "failure_type": {"type": "string", "minLength": 1},
+          "failure_message": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"audit_status": {"const": "complete"}}},
+      "then": {
+        "properties": {
+          "failure_type": {"type": "null"},
+          "failure_message": {"type": "null"}
+        }
+      }
+    }
+  ]
 }
-

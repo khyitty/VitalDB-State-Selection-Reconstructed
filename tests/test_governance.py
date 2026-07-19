@@ -96,6 +96,9 @@ class GovernanceTests(unittest.TestCase):
         self.assertEqual(set(config["aliases"]), set(expected))
         for concept, names in expected.items():
             self.assertEqual(config["aliases"][concept]["status"], "protocol_validated")
+            self.assertEqual(
+                config["aliases"][concept]["unit_status"], "pending_human_review"
+            )
             self.assertEqual(config["aliases"][concept]["names"], names)
         self.assertFalse(set(expected) & set(config["pending_concepts"]))
 
@@ -115,19 +118,32 @@ class GovernanceTests(unittest.TestCase):
         )
         eligibility = schemas["eligibility_manifest.schema.json"]
         validator = Draft202012Validator(eligibility)
-        minimal = {
-            "caseid": 1,
-            "source_query_timestamp": "2026-07-19T00:00:00Z",
-            "source_version": "synthetic",
-            "clinical_metadata_available": False,
-            "track_inventory_available": False,
-            "legacy_98_case": False,
-            "candidate_at_metadata_stage": False,
-            "metadata_exclusion_flags": ["metadata_unavailable"],
-            "audit_status": "failed",
-            "failure_type": "synthetic",
-            "failure_message": "expected test record",
-        }
+        minimal = {}
+        for name, spec in eligibility["properties"].items():
+            value_types = spec.get("type", "string")
+            value_types = {value_types} if isinstance(value_types, str) else set(value_types)
+            if "null" in value_types:
+                minimal[name] = None
+            elif "boolean" in value_types:
+                minimal[name] = False
+            elif "integer" in value_types:
+                minimal[name] = 1
+            elif "number" in value_types:
+                minimal[name] = 1.0
+            elif "array" in value_types:
+                minimal[name] = []
+            elif "object" in value_types:
+                minimal[name] = {}
+            elif "enum" in spec:
+                minimal[name] = spec["enum"][0]
+            else:
+                minimal[name] = "synthetic"
+        minimal.update(
+            caseid=1,
+            audit_status="failed",
+            failure_type="synthetic",
+            failure_message="expected test record",
+        )
         validator.validate(minimal)
         self.assertTrue(list(validator.iter_errors({**minimal, "caseid": 0})))
         self.assertTrue(list(validator.iter_errors({**minimal, "unknown": True})))

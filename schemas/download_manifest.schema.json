@@ -5,24 +5,56 @@
   "type": "object",
   "additionalProperties": false,
   "required": [
-    "caseid", "status", "attempt_count", "tracks_requested",
-    "tracks_downloaded", "bytes_downloaded", "checksums",
+    "caseid", "status", "attempt_count", "started_at", "completed_at",
+    "tracks_requested", "tracks_downloaded", "bytes_downloaded", "checksums",
     "failure_type", "failure_message", "retryable", "source_version"
   ],
   "properties": {
     "caseid": {"type": "integer", "minimum": 1, "maximum": 6388},
     "status": {"enum": ["pending", "in_progress", "complete", "failed"]},
-    "attempt_count": {"type": "integer", "minimum": 0},
+    "attempt_count": {"type": "integer", "minimum": 0, "maximum": 3},
     "started_at": {"type": ["string", "null"]},
     "completed_at": {"type": ["string", "null"]},
-    "tracks_requested": {"type": "array", "items": {"type": "string"}},
-    "tracks_downloaded": {"type": "array", "items": {"type": "string"}},
+    "tracks_requested": {
+      "type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true
+    },
+    "tracks_downloaded": {
+      "type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true
+    },
     "bytes_downloaded": {"type": "integer", "minimum": 0},
-    "checksums": {"type": "object", "additionalProperties": {"type": "string"}},
+    "checksums": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+    },
     "failure_type": {"type": ["string", "null"]},
     "failure_message": {"type": ["string", "null"]},
     "retryable": {"type": "boolean"},
-    "source_version": {"type": "string"}
-  }
+    "source_version": {"type": "string", "minLength": 1}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "complete"}}},
+      "then": {
+        "properties": {
+          "completed_at": {"type": "string", "minLength": 1},
+          "tracks_downloaded": {"minItems": 3},
+          "bytes_downloaded": {"minimum": 1},
+          "checksums": {"minProperties": 1},
+          "failure_type": {"type": "null"},
+          "failure_message": {"type": "null"},
+          "retryable": {"const": false}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"const": "failed"}}},
+      "then": {
+        "properties": {
+          "completed_at": {"type": "string", "minLength": 1},
+          "failure_type": {"type": "string", "minLength": 1},
+          "failure_message": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ]
 }
-

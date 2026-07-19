@@ -3,14 +3,17 @@ review_policy: human_approval_required
 aliases:
   bis:
     status: protocol_validated
+    unit_status: pending_human_review
     names:
       - BIS/BIS
   propofol_rate:
     status: protocol_validated
+    unit_status: pending_human_review
     names:
       - Orchestra/PPF20_RATE
   remifentanil_rate:
     status: protocol_validated
+    unit_status: pending_human_review
     names:
       - Orchestra/RFTN20_RATE
 pending_concepts:
@@ -22,4 +25,3 @@ pending_concepts:
   - device_remifentanil_cp
   - device_remifentanil_ce
   - volatile_agent
-

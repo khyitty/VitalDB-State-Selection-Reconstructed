@@ -8,7 +8,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 |---|---|---|
 | 1 — Governance and skeleton | complete | 13 governance tests passed; remote `main` verified at `02ea9d3` |
 | 2 — Migration inventory | complete | 352/352 paths classified; 18 tests passed; remote `main` verified at `4a89b4d` |
-| 3 — Eligibility audit framework | pending | — |
+| 3 — Eligibility audit framework | ready for commit | 38 tests and production first-N guard passed; thresholds, units, TIVA, volatile aliases, and legacy overlap remain pending |
 | 4 — Random 25-case dry run | pending | — |
 | Full cohort and later research | blocked by protocol | Human review required |
 
