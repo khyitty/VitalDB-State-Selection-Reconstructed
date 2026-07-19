@@ -1,0 +1,11 @@
+{
+  "source_repository": "khyitty/VitalDB-Feature-Selection",
+  "source_local_path": "../VitalDB-Feature-Selection",
+  "source_commit_sha": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+  "source_tree_sha": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+  "tracked_file_count": 352,
+  "inventory_date": "2026-07-19",
+  "worktree_baseline_porcelain": ["?? debug.log"],
+  "read_only_policy": true,
+  "notes": "debug.log was untracked before inspection and was not modified or inventoried"
+}

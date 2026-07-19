@@ -246,9 +246,22 @@ class GovernanceTests(unittest.TestCase):
             if row["status"] != "pending":
                 paths = [item.strip() for item in row["implemented file"].split(";")]
                 self.assertTrue(all((ROOT / path).exists() for path in paths))
-                self.assertRegex(row["automated test"], r"^GovernanceTests\.test_")
-                method_name = row["automated test"].removeprefix("GovernanceTests.")
-                self.assertTrue(hasattr(GovernanceTests, method_name))
+                self.assertRegex(
+                    row["automated test"],
+                    r"^[A-Za-z][A-Za-z0-9_]*\.test_[A-Za-z0-9_]+$",
+                )
+                qualified_tests = set()
+                for test_path in (ROOT / "tests").glob("test_*.py"):
+                    tree = ast.parse(test_path.read_text(encoding="utf-8"))
+                    for node in tree.body:
+                        if isinstance(node, ast.ClassDef):
+                            qualified_tests.update(
+                                f"{node.name}.{item.name}"
+                                for item in node.body
+                                if isinstance(item, ast.FunctionDef)
+                                and item.name.startswith("test_")
+                            )
+                self.assertIn(row["automated test"], qualified_tests)
         pending = {row["requirement"] for row in rows if row["status"] == "pending"}
         self.assertIn("Final signal-quality thresholds are chosen by human review", pending)
         self.assertIn("All 6388 production cases receive exactly one manifest row", pending)
