@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vitaldb-state-selection"
+version = "0.1.0"
+description = "Outcome-blind VitalDB confirmatory cohort audit framework"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.18",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+]
+
+[project.scripts]
+vitaldb-metadata-audit = "vitaldb_state_selection.cohort.eligibility:main"
+vitaldb-download-audit = "vitaldb_state_selection.data.downloader:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

@@ -1,0 +1,36 @@
+audit_name: vitaldb_full_eligibility_v1
+expected_case_range:
+  start: 1
+  end: 6388
+production_mode: true
+allow_case_limit: false
+allow_first_n: false
+exclude_legacy_98: true
+
+required_demographics:
+  - age
+  - sex
+  - height
+  - weight
+
+required_primary_tracks:
+  - bis
+  - propofol_rate
+  - remifentanil_rate
+
+primary_population:
+  adult_only: true
+  general_anesthesia_only: true
+  tiva_only: true
+  exclude_volatile_agent_exposure: true
+
+quality_thresholds:
+  status: pending_human_review
+  minimum_usable_duration_seconds: null
+  minimum_bis_coverage: null
+  minimum_drug_rate_coverage: null
+  maximum_missing_gap_seconds: null
+  minimum_prediction_windows: null
+  maximum_forward_fill_seconds: null
+  cpce_burn_in_seconds: null
+

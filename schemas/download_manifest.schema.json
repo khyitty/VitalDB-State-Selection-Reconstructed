@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "download_manifest.schema.json",
+  "title": "Download manifest record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "caseid", "status", "attempt_count", "tracks_requested",
+    "tracks_downloaded", "bytes_downloaded", "checksums",
+    "failure_type", "failure_message", "retryable", "source_version"
+  ],
+  "properties": {
+    "caseid": {"type": "integer", "minimum": 1, "maximum": 6388},
+    "status": {"enum": ["pending", "in_progress", "complete", "failed"]},
+    "attempt_count": {"type": "integer", "minimum": 0},
+    "started_at": {"type": ["string", "null"]},
+    "completed_at": {"type": ["string", "null"]},
+    "tracks_requested": {"type": "array", "items": {"type": "string"}},
+    "tracks_downloaded": {"type": "array", "items": {"type": "string"}},
+    "bytes_downloaded": {"type": "integer", "minimum": 0},
+    "checksums": {"type": "object", "additionalProperties": {"type": "string"}},
+    "failure_type": {"type": ["string", "null"]},
+    "failure_message": {"type": ["string", "null"]},
+    "retryable": {"type": "boolean"},
+    "source_version": {"type": "string"}
+  }
+}
+

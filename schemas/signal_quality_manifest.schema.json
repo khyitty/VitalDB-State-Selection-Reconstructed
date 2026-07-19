@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "signal_quality_manifest.schema.json",
+  "title": "Signal-quality manifest record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "caseid", "download_complete", "rate_unit_valid",
+    "time_alignment_valid", "cpce_reconstructable",
+    "warning_flags", "exclusion_flags", "eligible_signal_stage"
+  ],
+  "properties": {
+    "caseid": {"type": "integer", "minimum": 1, "maximum": 6388},
+    "download_complete": {"type": "boolean"},
+    "bis_coverage": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "propofol_rate_coverage": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "remifentanil_rate_coverage": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "max_bis_gap_seconds": {"type": ["number", "null"], "minimum": 0},
+    "max_propofol_gap_seconds": {"type": ["number", "null"], "minimum": 0},
+    "max_remifentanil_gap_seconds": {"type": ["number", "null"], "minimum": 0},
+    "usable_seconds": {"type": ["number", "null"], "minimum": 0},
+    "potential_window_count": {"type": ["integer", "null"], "minimum": 0},
+    "rate_unit_valid": {"type": ["boolean", "null"]},
+    "time_alignment_valid": {"type": ["boolean", "null"]},
+    "cpce_reconstructable": {"type": ["boolean", "null"]},
+    "warning_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "exclusion_flags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "eligible_signal_stage": {"type": ["boolean", "null"]}
+  }
+}
+

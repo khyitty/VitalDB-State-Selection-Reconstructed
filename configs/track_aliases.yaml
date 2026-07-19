@@ -1,0 +1,25 @@
+schema_version: 1
+review_policy: human_approval_required
+aliases:
+  bis:
+    status: protocol_validated
+    names:
+      - BIS/BIS
+  propofol_rate:
+    status: protocol_validated
+    names:
+      - Orchestra/PPF20_RATE
+  remifentanil_rate:
+    status: protocol_validated
+    names:
+      - Orchestra/RFTN20_RATE
+pending_concepts:
+  - bis_sqi
+  - propofol_volume
+  - remifentanil_volume
+  - device_propofol_cp
+  - device_propofol_ce
+  - device_remifentanil_cp
+  - device_remifentanil_ce
+  - volatile_agent
+

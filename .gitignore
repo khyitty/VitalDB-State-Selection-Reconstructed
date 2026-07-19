@@ -1,0 +1,42 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Raw and derived research data must never be committed.
+data/raw/
+data/interim/
+data/processed/
+data/modeling/
+data/**/*.part
+data/**/*.tmp
+*.parquet
+*.npz
+*.npy
+
+# Model and experiment artifacts must never be committed.
+outputs/*
+!outputs/.gitkeep
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+tensorboard/
+wandb/
+
+# Local logs and secrets.
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
