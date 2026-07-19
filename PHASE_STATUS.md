@@ -14,7 +14,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 5B — Eligibility decision-support audit | complete | 67 tests passed; full 6,388-case descriptive accounting; 21 narrowly scoped research-relevant names; 3,289 exact-primary cases; no scenario selected; documentary units remain pending human review; remote phase commit verified at `4aaa585` |
 | 5C — Targeted volatile-signal characterization | complete | 80 tests and the 13-source production first-N guard passed; unfrozen 3,219-case universe and 22,533 case×track rows complete; 9,059 raw files checksum-verified, partial-free, and Git-ignored; no rule selected; remote phase commit verified at `af0764b` |
 | 5D — Volatile exposure rule sensitivity audit | complete | 94 tests and the 15-source production first-N guard passed; 3,219 cases and 9,059 Phase 5C raw checksums verified; 18,119-file raw tree unchanged; one inverted anesthesia window preserved as an explicit warning; no rule or candidate selected; remote phase commit independently verified at `34b7eb4` |
-| 6A - Protocol v1.1 freeze and primary signal acquisition | complete (publication pending) | 106 tests and the 17-source production first-N guard passed; 3,219 pre-quality rows with 2,470 acquisition inclusions; fixed-seed 25-case preflight passed; 9,880/9,880 exact-track requests complete and checksum-verified; raw data remains ignored; no quality threshold cohort freeze split model Cp/Ce dose or PPO execution |
+| 6A - Protocol v1.1 freeze and primary signal acquisition | complete | 106 tests and the 17-source production first-N guard passed; 3,219 pre-quality rows with 2,470 acquisition inclusions; fixed-seed 25-case preflight passed; 9,880/9,880 exact-track requests complete and checksum-verified; raw data remains ignored; no quality threshold cohort freeze split model Cp/Ce dose or PPO execution; remote phase commit verified at `15d35da` |
 | Full signal cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
@@ -55,6 +55,13 @@ The Phase 5D phase commit
 `34b7eb45360e7a0f183f4f845cd91f399a2eee59` was pushed with ordinary Git and
 independently verified on remote `main` by the user before this status follow-up
 was created.
+
+The Phase 6A phase commit
+`15d35dad656f931826255c8e1e0cf6deea69be83` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The legacy repository remained at
+commit `9501b16` and tree `60917f0`; its sole pre-existing untracked `debug.log`
+entry was unchanged.
 
 ## Failure record template
 
