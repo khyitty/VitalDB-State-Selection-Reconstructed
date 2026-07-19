@@ -1,0 +1,8 @@
+{
+  "data/manifests/eligibility_decision_support_failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/manifests/eligibility_decision_support_source_snapshot.json": "11ce2368f994ee98b615f9c8bd6f2f16a7b4bef8375bbf526b3d709d1b0eba96",
+  "data/manifests/eligibility_decision_support_summary.json": "6666afe5387b4c936d87fb67b0cd3e29f9385e5e3e459b64a54439a98b1df7e3",
+  "data/manifests/research_relevant_track_presence.csv": "d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+  "data/manifests/research_relevant_unapproved_tracks.csv": "959eec90d7b879eeaf2c8b1dee31541d9362e92be377f34c4a5a2efdb60177c5",
+  "docs/decision_support_report.md": "f3ef309fc4f4a0ed7098ee9a9bba89f898a4e033863a011cd1403e56c9065210"
+}

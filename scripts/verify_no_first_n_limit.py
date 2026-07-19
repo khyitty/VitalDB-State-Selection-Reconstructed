@@ -16,6 +16,7 @@ from vitaldb_state_selection.provenance.source_guard import (  # noqa: E402
 
 PRODUCTION_SOURCES = (
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "clinical_metadata.py",
+    ROOT / "src" / "vitaldb_state_selection" / "cohort" / "decision_support.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "eligibility.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "metadata_audit.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "track_inventory.py",
@@ -23,6 +24,7 @@ PRODUCTION_SOURCES = (
     ROOT / "src" / "vitaldb_state_selection" / "data" / "vitaldb_api.py",
     ROOT / "src" / "vitaldb_state_selection" / "provenance" / "manifests.py",
     ROOT / "scripts" / "run_metadata_audit.py",
+    ROOT / "scripts" / "run_eligibility_decision_support.py",
     ROOT / "scripts" / "download_candidate_signals.py",
 )
 

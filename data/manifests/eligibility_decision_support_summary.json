@@ -1,0 +1,642 @@
+{
+  "case_accounting": {
+    "caseid_max": 6388,
+    "caseid_min": 1,
+    "duplicate_case_count": 0,
+    "manifest_row_count": 6388,
+    "missing_case_count": 0,
+    "presence_row_count": 6388
+  },
+  "decision_support_only": true,
+  "eligibility_scenarios": [
+    {
+      "descriptive_expected_case_count": 3289,
+      "excluded_case_count": 3099,
+      "scenario": "exact_primary_tracks_only",
+      "sequential_exclusion_reason_counts": {
+        "missing_one_or_more_exact_primary_tracks": 3099
+      }
+    },
+    {
+      "descriptive_expected_case_count": 3219,
+      "excluded_case_count": 3169,
+      "scenario": "exact_primary_plus_adult_plus_exact_general",
+      "sequential_exclusion_reason_counts": {
+        "anesthesia_type_not_exact_general_after_primary_and_adult": 60,
+        "missing_one_or_more_exact_primary_tracks": 3099,
+        "not_adult_after_exact_primary": 10
+      }
+    },
+    {
+      "descriptive_expected_case_count": 8,
+      "excluded_case_count": 6380,
+      "scenario": "exact_primary_plus_adult_plus_exact_general_plus_no_volatile_candidate_track",
+      "sequential_exclusion_reason_counts": {
+        "anesthesia_type_not_exact_general_after_primary_and_adult": 60,
+        "missing_one_or_more_exact_primary_tracks": 3099,
+        "not_adult_after_exact_primary": 10,
+        "volatile_candidate_track_present_after_prior_criteria": 3211
+      }
+    }
+  ],
+  "exact_primary_subset": {
+    "adult_status_frequency": [
+      {
+        "case_count": 3279,
+        "value": "adult_age_ge_18"
+      },
+      {
+        "case_count": 10,
+        "value": "not_adult_age_lt_18"
+      }
+    ],
+    "anesthesia_type_frequency": [
+      {
+        "case_count": 3228,
+        "value": "General"
+      },
+      {
+        "case_count": 50,
+        "value": "Sedationalgesia"
+      },
+      {
+        "case_count": 11,
+        "value": "Spinal"
+      }
+    ],
+    "case_count": 3289,
+    "combination_counts": [
+      {
+        "combination": "anesthesia_type=General|adult_candidate=adult_age_ge_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 3211
+      },
+      {
+        "combination": "anesthesia_type=Sedationalgesia|adult_candidate=adult_age_ge_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 49
+      },
+      {
+        "combination": "anesthesia_type=Spinal|adult_candidate=adult_age_ge_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 11
+      },
+      {
+        "combination": "anesthesia_type=General|adult_candidate=adult_age_ge_18|volatile_candidate_track_present=0|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 8
+      },
+      {
+        "combination": "anesthesia_type=General|adult_candidate=not_adult_age_lt_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 8
+      },
+      {
+        "combination": "anesthesia_type=General|adult_candidate=not_adult_age_lt_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=0|ppf20_ce_present=0|rftn20_vol_present=1|rftn20_cp_present=0|rftn20_ce_present=0|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 1
+      },
+      {
+        "combination": "anesthesia_type=Sedationalgesia|adult_candidate=not_adult_age_lt_18|volatile_candidate_track_present=1|bis_sqi_present=1|ppf20_vol_present=1|ppf20_cp_present=1|ppf20_ce_present=1|rftn20_vol_present=1|rftn20_cp_present=1|rftn20_ce_present=1|rftn50_rate_present=0|rftn50_vol_present=0|rftn50_cp_present=0|rftn50_ce_present=0",
+        "descriptive_expected_case_count": 1
+      }
+    ],
+    "combination_field_order": [
+      "anesthesia_type",
+      "adult_candidate",
+      "volatile_candidate_track_present",
+      "bis_sqi_present",
+      "ppf20_vol_present",
+      "ppf20_cp_present",
+      "ppf20_ce_present",
+      "rftn20_vol_present",
+      "rftn20_cp_present",
+      "rftn20_ce_present",
+      "rftn50_rate_present",
+      "rftn50_vol_present",
+      "rftn50_cp_present",
+      "rftn50_ce_present"
+    ],
+    "track_presence": {
+      "bis_sqi_present": [
+        {
+          "case_count": 3289,
+          "value": "present"
+        }
+      ],
+      "ppf20_ce_present": [
+        {
+          "case_count": 3288,
+          "value": "present"
+        },
+        {
+          "case_count": 1,
+          "value": "absent"
+        }
+      ],
+      "ppf20_cp_present": [
+        {
+          "case_count": 3288,
+          "value": "present"
+        },
+        {
+          "case_count": 1,
+          "value": "absent"
+        }
+      ],
+      "ppf20_vol_present": [
+        {
+          "case_count": 3289,
+          "value": "present"
+        }
+      ],
+      "rftn20_ce_present": [
+        {
+          "case_count": 3288,
+          "value": "present"
+        },
+        {
+          "case_count": 1,
+          "value": "absent"
+        }
+      ],
+      "rftn20_cp_present": [
+        {
+          "case_count": 3288,
+          "value": "present"
+        },
+        {
+          "case_count": 1,
+          "value": "absent"
+        }
+      ],
+      "rftn20_vol_present": [
+        {
+          "case_count": 3289,
+          "value": "present"
+        }
+      ],
+      "rftn50_ce_present": [
+        {
+          "case_count": 3289,
+          "value": "absent"
+        }
+      ],
+      "rftn50_cp_present": [
+        {
+          "case_count": 3289,
+          "value": "absent"
+        }
+      ],
+      "rftn50_rate_present": [
+        {
+          "case_count": 3289,
+          "value": "absent"
+        }
+      ],
+      "rftn50_vol_present": [
+        {
+          "case_count": 3289,
+          "value": "absent"
+        }
+      ]
+    },
+    "volatile_candidate_track_presence": [
+      {
+        "case_count": 3281,
+        "value": "present"
+      },
+      {
+        "case_count": 8,
+        "value": "absent"
+      }
+    ]
+  },
+  "execution_flags": {
+    "alias_configuration_changed": false,
+    "cohort_frozen": false,
+    "cpce_reconstruction_run": false,
+    "feature_selection_run": false,
+    "legacy_98_ids_accessed": false,
+    "ppo_run": false,
+    "prediction_run": false,
+    "quality_thresholds_finalized": false,
+    "raw_signal_downloaded": false,
+    "split_created": false
+  },
+  "full_manifest_descriptive": {
+    "age": {
+      "adult_definition": "age >= 18 years (protocol-defined descriptive flag)",
+      "adult_status_frequency": [
+        {
+          "case_count": 6331,
+          "value": "adult_age_ge_18"
+        },
+        {
+          "case_count": 57,
+          "value": "not_adult_age_lt_18"
+        }
+      ],
+      "available_count": 6388,
+      "maximum": 94.0,
+      "minimum": 0.3,
+      "missing_count": 0
+    },
+    "anesthesia_type_frequency": [
+      {
+        "case_count": 6043,
+        "value": "General"
+      },
+      {
+        "case_count": 273,
+        "value": "Spinal"
+      },
+      {
+        "case_count": 72,
+        "value": "Sedationalgesia"
+      }
+    ],
+    "asa_missingness": {
+      "available_count": 6255,
+      "missing_count": 133
+    },
+    "emergency_status_frequency": [
+      {
+        "case_count": 5606,
+        "value": "0"
+      },
+      {
+        "case_count": 782,
+        "value": "1"
+      }
+    ],
+    "operation_type_frequency": [
+      {
+        "case_count": 1350,
+        "value": "Colorectal"
+      },
+      {
+        "case_count": 812,
+        "value": "Biliary/Pancreas"
+      },
+      {
+        "case_count": 799,
+        "value": "Others"
+      },
+      {
+        "case_count": 676,
+        "value": "Stomach"
+      },
+      {
+        "case_count": 584,
+        "value": "Major resection"
+      },
+      {
+        "case_count": 553,
+        "value": "Minor resection"
+      },
+      {
+        "case_count": 434,
+        "value": "Breast"
+      },
+      {
+        "case_count": 403,
+        "value": "Transplantation"
+      },
+      {
+        "case_count": 262,
+        "value": "Vascular"
+      },
+      {
+        "case_count": 258,
+        "value": "Hepatic"
+      },
+      {
+        "case_count": 257,
+        "value": "Thyroid"
+      }
+    ]
+  },
+  "pending_decisions": [
+    "tiva_classification",
+    "volatile_exposure_from_values",
+    "final_alias_approval",
+    "case_level_rate_unit_validation",
+    "legacy_98_overlap",
+    "final_eligibility",
+    "signal_quality_thresholds"
+  ],
+  "phase": "5B_eligibility_decision_support_audit",
+  "query_completed_at": "2026-07-19T16:36:50.817046+00:00",
+  "query_started_at": "2026-07-19T16:36:45.992196+00:00",
+  "rate_and_label_primary_source_review": {
+    "automatic_merge_performed": false,
+    "config_unit_status_changed": false,
+    "final_review_status": "pending_human_review",
+    "findings": [
+      {
+        "documented_meaning": "Infusion rate (propofol 20 mg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/PPF20_RATE"
+      },
+      {
+        "documented_meaning": "Infusion rate (remifentanil 20 mcg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/RFTN20_RATE"
+      },
+      {
+        "documented_meaning": "Infusion rate (remifentanil 50 mcg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/RFTN50_RATE"
+      }
+    ],
+    "rftn20_rftn50_meaning": "Official track descriptions distinguish remifentanil 20 mcg/mL from 50 mcg/mL.",
+    "source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5"
+  },
+  "relevant_track_review": {
+    "all_193_semantically_classified": false,
+    "auto_approved_count": 0,
+    "inventory": [
+      {
+        "auto_approved": false,
+        "case_count": 5867,
+        "distinct_tid_count": 5867,
+        "merged_with_other_track": false,
+        "official_description": "Signal quality index",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "%",
+        "requested_scope": "bis_sqi",
+        "review_status": "pending_human_review",
+        "row_count": 5867,
+        "track_name": "BIS/SQI"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3512,
+        "distinct_tid_count": 3512,
+        "merged_with_other_track": false,
+        "official_description": "Infused volume (propofol 20 mg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mL",
+        "requested_scope": "propofol_support",
+        "review_status": "pending_human_review",
+        "row_count": 3512,
+        "track_name": "Orchestra/PPF20_VOL"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3511,
+        "distinct_tid_count": 3511,
+        "merged_with_other_track": false,
+        "official_description": "Plasma concentration (propofol 20 mg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mcg/mL",
+        "requested_scope": "propofol_support",
+        "review_status": "pending_human_review",
+        "row_count": 3511,
+        "track_name": "Orchestra/PPF20_CP"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3511,
+        "distinct_tid_count": 3511,
+        "merged_with_other_track": false,
+        "official_description": "Effect-site concentration (propofol 20 mg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mcg/mL",
+        "requested_scope": "propofol_support",
+        "review_status": "pending_human_review",
+        "row_count": 3511,
+        "track_name": "Orchestra/PPF20_CE"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3511,
+        "distinct_tid_count": 3511,
+        "merged_with_other_track": false,
+        "official_description": "Target concentration (propofol 20 mg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mcg/mL",
+        "requested_scope": "propofol_support",
+        "review_status": "pending_human_review",
+        "row_count": 3511,
+        "track_name": "Orchestra/PPF20_CT"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 4773,
+        "distinct_tid_count": 4774,
+        "merged_with_other_track": false,
+        "official_description": "Infused volume (remifentanil 20 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mL",
+        "requested_scope": "remifentanil_20_support",
+        "review_status": "pending_human_review",
+        "row_count": 4774,
+        "track_name": "Orchestra/RFTN20_VOL"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 4770,
+        "distinct_tid_count": 4771,
+        "merged_with_other_track": false,
+        "official_description": "Plasma concentration (remifentanil 20 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_20_support",
+        "review_status": "pending_human_review",
+        "row_count": 4771,
+        "track_name": "Orchestra/RFTN20_CP"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 4770,
+        "distinct_tid_count": 4771,
+        "merged_with_other_track": false,
+        "official_description": "Effect-site concentration (remifentanil 20 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_20_support",
+        "review_status": "pending_human_review",
+        "row_count": 4771,
+        "track_name": "Orchestra/RFTN20_CE"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 4770,
+        "distinct_tid_count": 4771,
+        "merged_with_other_track": false,
+        "official_description": "Target concentration (remifentanil 20 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_20_support",
+        "review_status": "pending_human_review",
+        "row_count": 4771,
+        "track_name": "Orchestra/RFTN20_CT"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 68,
+        "distinct_tid_count": 69,
+        "merged_with_other_track": false,
+        "official_description": "Infusion rate (remifentanil 50 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mL/hr",
+        "requested_scope": "remifentanil_50_support",
+        "review_status": "pending_human_review",
+        "row_count": 69,
+        "track_name": "Orchestra/RFTN50_RATE"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 68,
+        "distinct_tid_count": 69,
+        "merged_with_other_track": false,
+        "official_description": "Infused volume (remifentanil 50 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "mL",
+        "requested_scope": "remifentanil_50_support",
+        "review_status": "pending_human_review",
+        "row_count": 69,
+        "track_name": "Orchestra/RFTN50_VOL"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 68,
+        "distinct_tid_count": 69,
+        "merged_with_other_track": false,
+        "official_description": "Plasma concentration (remifentanil 50 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_50_support",
+        "review_status": "pending_human_review",
+        "row_count": 69,
+        "track_name": "Orchestra/RFTN50_CP"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 68,
+        "distinct_tid_count": 69,
+        "merged_with_other_track": false,
+        "official_description": "Effect-site concentration (remifentanil 50 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_50_support",
+        "review_status": "pending_human_review",
+        "row_count": 69,
+        "track_name": "Orchestra/RFTN50_CE"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 68,
+        "distinct_tid_count": 69,
+        "merged_with_other_track": false,
+        "official_description": "Target concentration (remifentanil 50 mcg/mL)",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "ng/mL",
+        "requested_scope": "remifentanil_50_support",
+        "review_status": "pending_human_review",
+        "row_count": 69,
+        "track_name": "Orchestra/RFTN50_CT"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3687,
+        "distinct_tid_count": 3687,
+        "merged_with_other_track": false,
+        "official_description": "Expiratory sevoflurane pressure",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 3687,
+        "track_name": "Primus/EXP_SEVO"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3687,
+        "distinct_tid_count": 3687,
+        "merged_with_other_track": false,
+        "official_description": "Inspiratory sevoflurane pressure",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 3687,
+        "track_name": "Primus/INSP_SEVO"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 2046,
+        "distinct_tid_count": 2046,
+        "merged_with_other_track": false,
+        "official_description": "Expiratory desflurane pressure",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 2046,
+        "track_name": "Primus/EXP_DES"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 2046,
+        "distinct_tid_count": 2046,
+        "merged_with_other_track": false,
+        "official_description": "Inspiratory desflurane pressure",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 2046,
+        "track_name": "Primus/INSP_DES"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3097,
+        "distinct_tid_count": 3097,
+        "merged_with_other_track": false,
+        "official_description": "Expiratory volatile concentration",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 3097,
+        "track_name": "Solar8000/GAS2_EXPIRED"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 3097,
+        "distinct_tid_count": 3097,
+        "merged_with_other_track": false,
+        "official_description": "Inspiratory volatile concentration",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 3097,
+        "track_name": "Solar8000/GAS2_INSPIRED"
+      },
+      {
+        "auto_approved": false,
+        "case_count": 6338,
+        "distinct_tid_count": 6338,
+        "merged_with_other_track": false,
+        "official_description": "Minimum alveolar concentration of volatile",
+        "official_source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+        "official_unit": "",
+        "requested_scope": "volatile_candidate",
+        "review_status": "pending_human_review",
+        "row_count": 6338,
+        "track_name": "Primus/MAC"
+      }
+    ],
+    "phase5a_unapproved_name_total": 193,
+    "requested_track_name_count": 21,
+    "review_status": "pending_human_review",
+    "rftn20_rftn50_merged": false
+  },
+  "scientific_result": false,
+  "selected_scenario": null,
+  "source_failure_count": 0,
+  "source_track_row_count": 486449,
+  "source_unique_track_name_count": 196,
+  "source_version": "vitaldb_open_api_client=0.1.0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0"
+}

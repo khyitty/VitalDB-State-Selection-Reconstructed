@@ -12,7 +12,8 @@ The authorized work stops after:
 2. read-only legacy migration inventory;
 3. full-case eligibility/download audit infrastructure;
 4. synthetic and fixed-seed random 25-case engineering dry runs;
-5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit.
+5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit;
+6. Phase 5B outcome-blind eligibility decision-support audit.
 
 The following are deliberately not authorized: full signal download, final quality
 thresholds, final cohort freeze, train/validation/test splitting, Cp/Ce reconstruction,
@@ -69,6 +70,19 @@ It queried metadata endpoints only and produced the full manifest, source snapsh
 failure log, checksums, and unapproved-name report. New track names were not mapped
 to concepts. Legacy 98-case IDs were not accessed, and all scientific eligibility
 decisions remain pending.
+
+Phase 5B was executed with:
+
+```powershell
+python scripts/run_eligibility_decision_support.py
+```
+
+It rechecked the complete `/trks` metadata snapshot, reviewed only the explicitly
+requested research-relevant names, and generated descriptive crosstabs and
+unselected eligibility scenarios. Track presence is not treated as exposure, the
+official documentary unit findings do not approve the versioned unit status, and
+RFTN20/RFTN50 remain separate. The machine-readable summary is paired with
+`docs/decision_support_report.md`.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

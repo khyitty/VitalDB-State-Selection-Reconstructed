@@ -67,6 +67,7 @@ class GovernanceTests(unittest.TestCase):
             "repository governance and provenance",
             "fixed-seed random 25-case engineering dry runs",
             "Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit",
+            "Phase 5B outcome-blind eligibility decision-support audit",
             "full signal download",
             "final quality thresholds",
             "PPO training",

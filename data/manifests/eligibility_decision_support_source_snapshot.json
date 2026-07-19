@@ -1,0 +1,97 @@
+{
+  "active_exact_aliases": {
+    "bis": [
+      "BIS/BIS"
+    ],
+    "propofol_rate": [
+      "Orchestra/PPF20_RATE"
+    ],
+    "remifentanil_rate": [
+      "Orchestra/RFTN20_RATE"
+    ]
+  },
+  "audit_code_base_commit": "1c886afa184aabb28a85dd3a6da95ae7233551eb",
+  "client": {
+    "api_base": "https://api.vitaldb.net",
+    "api_documentation": "https://vitaldb.net/docs/?documentId=API%2FWeb_API_OpenDataset.md",
+    "implementation": "vitaldb_state_selection.data.vitaldb_api.VitalDBOpenAPI",
+    "version": "0.1.0"
+  },
+  "configuration_checksums": {
+    "eligibility_audit_yaml_sha256": "eaa52eb5857dd1973a1871dada1f6f9e45996f4f27b3c6f7582bcc9a6c3b32f5",
+    "eligibility_manifest_schema_sha256": "b95c66283d60efabe40da657687f8ca7db204c1469b451c185b4362167dab4cc",
+    "track_aliases_yaml_sha256": "05887a068c0a99336f38549eb9f2a980e1bb9cd3e66a9c35cf29e9a19387b9e9"
+  },
+  "endpoint": {
+    "byte_count": 30565770,
+    "elapsed_seconds": 0.6432733999681659,
+    "fetched_at": "2026-07-19T16:36:49.648606+00:00",
+    "matches_phase5a_snapshot": true,
+    "path": "/trks",
+    "row_count": 486449,
+    "sha256": "82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0",
+    "status": "complete",
+    "url": "https://api.vitaldb.net/trks"
+  },
+  "inputs": {
+    "phase5a_manifest": "data/manifests/all_case_eligibility_manifest.csv",
+    "phase5a_manifest_sha256": "637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5",
+    "phase5a_source_snapshot": "data/manifests/metadata_audit_source_snapshot.json",
+    "phase5a_source_snapshot_sha256": "97b42c8cd8c3f155d1e64f0de61fef2bc3b1243cbce443123740f4ca776b157f",
+    "phase5a_tracks_sha256": "82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0"
+  },
+  "phase": "5B_eligibility_decision_support_audit",
+  "primary_source_review": {
+    "accessed_at": "2026-07-19T16:36:50.817046+00:00",
+    "final_review_status": "pending_human_review",
+    "official_vitaldb_dataset_overview": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5",
+    "official_vitaldb_open_dataset_api": "https://vitaldb.net/docs/?documentId=API%2FWeb_API_OpenDataset.md",
+    "rate_findings": [
+      {
+        "documented_meaning": "Infusion rate (propofol 20 mg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/PPF20_RATE"
+      },
+      {
+        "documented_meaning": "Infusion rate (remifentanil 20 mcg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/RFTN20_RATE"
+      },
+      {
+        "documented_meaning": "Infusion rate (remifentanil 50 mcg/mL)",
+        "documented_unit": "mL/hr",
+        "review_status": "source_documented_pending_human_review",
+        "track_name": "Orchestra/RFTN50_RATE"
+      }
+    ]
+  },
+  "prohibited_execution": {
+    "cohort_freeze": false,
+    "cpce_reconstruction": false,
+    "feature_selection": false,
+    "final_alias_approval": false,
+    "ppo": false,
+    "prediction": false,
+    "raw_signal_download": false,
+    "split_creation": false,
+    "threshold_finalization": false,
+    "unit_status_change": false
+  },
+  "query_completed_at": "2026-07-19T16:36:50.817046+00:00",
+  "query_started_at": "2026-07-19T16:36:45.992196+00:00",
+  "schema_version": 1,
+  "scope": {
+    "all_unapproved_names_semantically_classified": false,
+    "legacy_98_ids_accessed": false,
+    "legacy_overlap_evaluated": false,
+    "phase5a_unapproved_name_total": 193,
+    "queried_endpoints": [
+      "/trks"
+    ],
+    "raw_time_series_requests": 0,
+    "research_relevant_names_reviewed": 21
+  },
+  "source_version": "vitaldb_open_api_client=0.1.0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0"
+}
