@@ -102,6 +102,12 @@ class EligibilityAuditTests(unittest.TestCase):
         self.assertEqual(first["audit_status"], "failed")
         self.assertEqual(first["failure_type"], "duplicate_clinical_rows")
 
+    def test_missing_case_track_inventory_is_an_explicit_failure(self) -> None:
+        first = self.build([clinical(1)], [])[0]
+        self.assertEqual(first["audit_status"], "failed")
+        self.assertEqual(first["failure_type"], "track_inventory_missing")
+        self.assertIn("track_inventory_missing", first["metadata_exclusion_flags"])
+
     def test_out_of_range_source_case_is_rejected(self) -> None:
         with self.assertRaises(CohortGuardError):
             self.build([clinical(6389)], [])

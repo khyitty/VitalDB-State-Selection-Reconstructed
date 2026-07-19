@@ -8,6 +8,7 @@ import hashlib
 import io
 import time
 from dataclasses import dataclass
+from datetime import UTC, datetime
 from typing import Any
 
 import requests
@@ -24,6 +25,7 @@ class CsvSnapshot:
     byte_count: int
     elapsed_seconds: float
     url: str
+    fetched_at: str
 
 
 class VitalDBOpenAPI:
@@ -68,6 +70,7 @@ class VitalDBOpenAPI:
             byte_count=len(payload),
             elapsed_seconds=elapsed,
             url=url,
+            fetched_at=datetime.now(UTC).isoformat(),
         )
 
     def fetch_cases(self) -> CsvSnapshot:

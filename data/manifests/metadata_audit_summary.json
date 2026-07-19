@@ -1,0 +1,89 @@
+{
+  "active_exact_aliases": {
+    "bis": [
+      "BIS/BIS"
+    ],
+    "propofol_rate": [
+      "Orchestra/PPF20_RATE"
+    ],
+    "remifentanil_rate": [
+      "Orchestra/RFTN20_RATE"
+    ]
+  },
+  "api_failure_type_counts": {},
+  "audit_complete_count": 6388,
+  "audit_failed_count": 0,
+  "audit_failure_type_counts": {},
+  "audit_name": "vitaldb_full_eligibility_v1",
+  "caseid_fingerprint_sha256": "63d1b35ce16a7bca5334a8bbfbc5a9c45e2a4077f6d9adb42b9d423bfe073395",
+  "caseid_max": 6388,
+  "caseid_min": 1,
+  "clinical_metadata_available_count": 6388,
+  "clinical_metadata_missing_count": 0,
+  "cohort_frozen": false,
+  "cpce_reconstruction_run": false,
+  "duplicate_manifest_case_count": 0,
+  "exact_track_available_counts": {
+    "bis": 5867,
+    "propofol_rate": 3512,
+    "remifentanil_rate": 4773
+  },
+  "exact_track_combination_counts": {
+    "bis=0|propofol_rate=0|remifentanil_rate=0": 249,
+    "bis=0|propofol_rate=0|remifentanil_rate=1": 103,
+    "bis=0|propofol_rate=1|remifentanil_rate=0": 2,
+    "bis=0|propofol_rate=1|remifentanil_rate=1": 167,
+    "bis=1|propofol_rate=0|remifentanil_rate=0": 1310,
+    "bis=1|propofol_rate=0|remifentanil_rate=1": 1214,
+    "bis=1|propofol_rate=1|remifentanil_rate=0": 54,
+    "bis=1|propofol_rate=1|remifentanil_rate=1": 3289
+  },
+  "failure_log_row_count": 0,
+  "feature_selection_run": false,
+  "legacy_overlap_evaluated": false,
+  "metadata_candidate_count": 0,
+  "metadata_missing_counts": {
+    "age": 0,
+    "anesthesia_end": 0,
+    "anesthesia_start": 0,
+    "anesthesia_type": 0,
+    "asa": 133,
+    "bmi": 0,
+    "emergency_status": 0,
+    "height": 0,
+    "operation_end": 0,
+    "operation_start": 0,
+    "operation_type": 0,
+    "sex": 0,
+    "subjectid": 0,
+    "weight": 0
+  },
+  "missing_manifest_case_count": 0,
+  "pending_decisions": [
+    "tiva_classification",
+    "volatile_exposure",
+    "propofol_rate_unit",
+    "remifentanil_rate_unit",
+    "legacy_98_overlap",
+    "final_eligibility",
+    "signal_quality_thresholds"
+  ],
+  "phase": "5A_full_metadata_and_track_inventory",
+  "ppo_run": false,
+  "prediction_run": false,
+  "quality_thresholds_finalized": false,
+  "query_completed_at": "2026-07-19T15:28:17.223786+00:00",
+  "query_started_at": "2026-07-19T15:28:10.338767+00:00",
+  "raw_signal_downloaded": false,
+  "record_count": 6388,
+  "scientific_result": false,
+  "source_row_failure_type_counts": {},
+  "source_track_row_count": 486449,
+  "source_unique_track_name_count": 196,
+  "source_version": "vitaldb_open_api_client=0.1.0;cases_sha256=d74684b4794b5095c32ca607ab5d6b1f8d04f888a607f4fd48470c8ffe885a0b;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0",
+  "split_created": false,
+  "track_inventory_available_count": 6388,
+  "track_inventory_missing_count": 0,
+  "unapproved_track_name_count": 193,
+  "unapproved_track_row_count": 472297
+}

@@ -111,6 +111,7 @@ def build_eligibility_records(
     clinical_query_available: bool = True,
     track_query_available: bool = True,
     source_failures: Sequence[str] = (),
+    case_failures: Mapping[int, Sequence[str]] | None = None,
     legacy_caseids: set[int] | None = None,
 ) -> list[dict[str, object]]:
     case_range = config["expected_case_range"]
@@ -131,16 +132,25 @@ def build_eligibility_records(
     for row in clinical_materialized:
         clinical_by_case[normalize_caseid(row.get("caseid"))].append(row)
     tracks_by_case = index_track_rows(track_materialized, registry)
+    track_caseids = {
+        normalize_caseid(row.get("caseid")) for row in track_materialized
+    }
+    failures_by_case = case_failures or {}
     timestamp = query_timestamp or datetime.now(UTC).isoformat()
     records: list[dict[str, object]] = []
 
     for caseid in expected_caseids(start, end):
         record = _empty_record(caseid, timestamp=timestamp, source_version=source_version)
         flags: list[str] = []
-        failures: list[str] = list(source_failures)
+        failures: list[str] = [
+            *source_failures,
+            *(str(item) for item in failures_by_case.get(caseid, ())),
+        ]
         rows = clinical_by_case.get(caseid, [])
         record["clinical_metadata_available"] = len(rows) == 1
-        record["track_inventory_available"] = bool(track_query_available)
+        record["track_inventory_available"] = bool(
+            track_query_available and caseid in track_caseids
+        )
 
         if not clinical_query_available:
             failures.append("clinical_query_unavailable")
@@ -186,14 +196,21 @@ def build_eligibility_records(
                 if not record["adult_candidate"]:
                     flags.append("adult_criterion_not_met")
                 if not time_range_is_valid(parsed):
-                    flags.append("time_range_invalid_or_missing")
+                    flags.append("time_range_order_invalid_or_missing")
 
         if not track_query_available:
             failures.append("track_inventory_query_unavailable")
         case_tracks = tracks_by_case.get(caseid, {}) if track_query_available else {}
-        track_availability = availability(case_tracks, registry)
+        track_availability = (
+            availability(case_tracks, registry)
+            if track_query_available
+            else {concept: None for concept in (*registry.active, *registry.pending)}
+        )
         for concept, column in TRACK_COLUMNS.items():
             record[column] = track_availability.get(concept)
+        if track_query_available and not record["track_inventory_available"]:
+            flags.append("track_inventory_missing")
+            failures.append("track_inventory_missing")
         for concept in PRIMARY_CONCEPTS:
             if record[TRACK_COLUMNS[concept]] is not True:
                 flags.append(f"{concept}_track_missing")

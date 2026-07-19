@@ -1,0 +1,8 @@
+{
+  "data/manifests/all_case_eligibility_manifest.csv": "637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5",
+  "data/manifests/metadata_audit_failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/manifests/metadata_audit_source_snapshot.json": "97b42c8cd8c3f155d1e64f0de61fef2bc3b1243cbce443123740f4ca776b157f",
+  "data/manifests/metadata_audit_summary.json": "32061178a17e07350f1d9325b9e203be2b38833e89d32259dc19998445aa6d2e",
+  "data/manifests/unapproved_alias_candidates.csv": "a8e5022372fdb34fc0bf29b2d8a0c6c3c5a78a5440aa66436c8bce0198e7f937",
+  "docs/full_metadata_track_inventory_audit_report.md": "157ca425b1c506f33437a32e65b3228474b3e56ebee300df42e5f56dc12810ab"
+}

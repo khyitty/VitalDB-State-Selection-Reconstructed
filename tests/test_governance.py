@@ -66,6 +66,7 @@ class GovernanceTests(unittest.TestCase):
         for required in (
             "repository governance and provenance",
             "fixed-seed random 25-case engineering dry runs",
+            "Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit",
             "full signal download",
             "final quality thresholds",
             "PPO training",
@@ -281,7 +282,7 @@ class GovernanceTests(unittest.TestCase):
                 self.assertIn(row["automated test"], qualified_tests)
         pending = {row["requirement"] for row in rows if row["status"] == "pending"}
         self.assertIn("Final signal-quality thresholds are chosen by human review", pending)
-        self.assertIn("All 6388 production cases receive exactly one manifest row", pending)
+        self.assertNotIn("All 6388 production cases receive exactly one manifest row", pending)
         self.assertNotIn("Random 25-case signal dry run completes with checksums", pending)
 
     def test_phase_status_has_gate_and_failure_record_contract(self) -> None:

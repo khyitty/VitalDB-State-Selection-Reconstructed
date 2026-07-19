@@ -11,7 +11,8 @@ The authorized work stops after:
 1. repository governance and provenance;
 2. read-only legacy migration inventory;
 3. full-case eligibility/download audit infrastructure;
-4. synthetic and fixed-seed random 25-case engineering dry runs.
+4. synthetic and fixed-seed random 25-case engineering dry runs;
+5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit.
 
 The following are deliberately not authorized: full signal download, final quality
 thresholds, final cohort freeze, train/validation/test splitting, Cp/Ce reconstruction,
@@ -57,6 +58,17 @@ PPO step is performed.
 
 Dry-run output is engineering evidence only. It is not a scientific result and must
 not be used to set eligibility thresholds.
+
+Phase 5A was executed with:
+
+```powershell
+python scripts/run_metadata_audit.py
+```
+
+It queried metadata endpoints only and produced the full manifest, source snapshot,
+failure log, checksums, and unapproved-name report. New track names were not mapped
+to concepts. Legacy 98-case IDs were not accessed, and all scientific eligibility
+decisions remain pending.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

@@ -99,6 +99,8 @@ def time_range_is_valid(parsed: Mapping[str, object | None]) -> bool:
     for start, end in starts_ends:
         if start is None or end is None:
             return False
-        if float(start) < 0 or float(end) <= float(start):
+        # VitalDB case-event times may be relative and therefore negative.
+        # Phase 5A checks only presence and ordering, not an assumed zero origin.
+        if float(end) <= float(start):
             return False
     return True
