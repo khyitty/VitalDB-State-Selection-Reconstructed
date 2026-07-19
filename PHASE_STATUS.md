@@ -12,7 +12,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 4 — Random 25-case dry run | complete | Fixed seed `20260719`; all 25 metadata rows and signal outcomes preserved; 12 checksum-complete and 13 explicit non-retryable failures; 44 tests passed; raw data remains ignored; remote phase commit verified at `2f0b0c8` |
 | 5A — Full metadata and track inventory audit | complete | 56 tests passed; actual `/cases` and `/trks` snapshots; 6,388/6,388 manifest rows; zero API/parsing failures; 193 unapproved names remain pending; no legacy IDs or signals accessed; remote phase commit verified at `9456fe4` |
 | 5B — Eligibility decision-support audit | complete | 67 tests passed; full 6,388-case descriptive accounting; 21 narrowly scoped research-relevant names; 3,289 exact-primary cases; no scenario selected; documentary units remain pending human review; remote phase commit verified at `4aaa585` |
-| 5C — Targeted volatile-signal characterization | validated; publication pending | 80 tests and the 13-source production first-N guard passed; unfrozen 3,219-case universe and 22,533 case×track rows complete; 9,059 raw files checksum-verified, partial-free, and Git-ignored; no rule selected |
+| 5C — Targeted volatile-signal characterization | complete | 80 tests and the 13-source production first-N guard passed; unfrozen 3,219-case universe and 22,533 case×track rows complete; 9,059 raw files checksum-verified, partial-free, and Git-ignored; no rule selected; remote phase commit verified at `af0764b` |
 | Full signal cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
@@ -39,6 +39,12 @@ follow-up was created.
 
 The Phase 5B phase commit
 `4aaa585ce23493bc39f2d0c1c8647f1e40a87078` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this status
+follow-up was created. The legacy repository remained at commit `9501b16` and tree
+`60917f0`; its sole pre-existing untracked `debug.log` entry was unchanged.
+
+The Phase 5C phase commit
+`af0764baa189ef9f26d306de488cca450f903eeb` was pushed with ordinary Git, and
 `refs/heads/main` was independently observed at that exact SHA before this status
 follow-up was created. The legacy repository remained at commit `9501b16` and tree
 `60917f0`; its sole pre-existing untracked `debug.log` entry was unchanged.
