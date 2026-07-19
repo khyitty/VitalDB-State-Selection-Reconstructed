@@ -168,7 +168,9 @@ class DownloadOrchestrator:
             "failure_type": type(error).__name__,
             "failure_message": str(error),
             "retryable": retryable,
-            "traceback": "".join(traceback.format_exception(error)),
+            "exception_summary": "".join(
+                traceback.format_exception_only(error)
+            ).strip(),
         }
         with self.failure_log.open("a", encoding="utf-8") as stream:
             stream.write(json.dumps(payload, ensure_ascii=False, sort_keys=True) + "\n")
@@ -230,6 +232,8 @@ class DownloadOrchestrator:
         for request in ordered:
             row = self.manifest.rows[request.caseid]
             if self._complete_and_verified(row):
+                continue
+            if row.get("status") == "failed" and row.get("retryable") is False:
                 continue
             if row["status"] == "complete":
                 row.update(

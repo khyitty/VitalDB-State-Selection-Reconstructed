@@ -76,6 +76,25 @@ class DownloaderTests(unittest.TestCase):
             for line in (self.root / "failures.jsonl").read_text(encoding="utf-8").splitlines()
         ]
         self.assertEqual(failures[0]["caseid"], 2)
+        self.assertNotIn("traceback", failures[0])
+        self.assertEqual(
+            failures[0]["exception_summary"],
+            "vitaldb_state_selection.data.downloader.NonRetryableDownloadError: "
+            "required tracks missing: ['remifentanil_rate']",
+        )
+        self.assertNotIn(str(self.root), failures[0]["exception_summary"])
+
+    def test_nonretryable_failure_is_not_retried_on_resume(self) -> None:
+        client = FakeClient()
+        first = self.orchestrator(client).run(
+            [request(1, missing="remifentanil_rate")]
+        )[0]
+        self.assertEqual(first["attempt_count"], 1)
+        second = self.orchestrator(client).run(
+            [request(1, missing="remifentanil_rate")]
+        )[0]
+        self.assertEqual(second["status"], "failed")
+        self.assertEqual(second["attempt_count"], 1)
 
     def test_retryable_failure_uses_at_most_three_attempts(self) -> None:
         client = FakeClient({"bis-1": 2})

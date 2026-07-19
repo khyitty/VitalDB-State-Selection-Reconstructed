@@ -1,0 +1,2 @@
+# Manifest checksums describe exact committed bytes; never rewrite line endings.
+data/manifests/** -text whitespace=cr-at-eol

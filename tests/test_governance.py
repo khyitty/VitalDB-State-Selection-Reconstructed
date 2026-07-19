@@ -112,6 +112,7 @@ class GovernanceTests(unittest.TestCase):
             set(schemas),
             {
                 "download_manifest.schema.json",
+                "engineering_dry_run.schema.json",
                 "eligibility_manifest.schema.json",
                 "signal_quality_manifest.schema.json",
             },
@@ -281,7 +282,7 @@ class GovernanceTests(unittest.TestCase):
         pending = {row["requirement"] for row in rows if row["status"] == "pending"}
         self.assertIn("Final signal-quality thresholds are chosen by human review", pending)
         self.assertIn("All 6388 production cases receive exactly one manifest row", pending)
-        self.assertIn("Random 25-case signal dry run completes with checksums", pending)
+        self.assertNotIn("Random 25-case signal dry run completes with checksums", pending)
 
     def test_phase_status_has_gate_and_failure_record_contract(self) -> None:
         text = (ROOT / "PHASE_STATUS.md").read_text(encoding="utf-8")

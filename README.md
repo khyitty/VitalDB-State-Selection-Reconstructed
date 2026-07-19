@@ -44,6 +44,17 @@ blocked until a human authorization file exists and drug-rate units are marked
 validated in the versioned alias configuration. Neither condition is satisfied in
 this phase.
 
+The authorized Phase 4 run is fixed at seed `20260719` and 25 random cases:
+
+```powershell
+python scripts/run_engineering_dry_run.py
+python scripts/run_engineering_dry_run.py --with-signals
+```
+
+Its committed report and manifests are engineering evidence only. Raw signals stay
+Git-ignored; no threshold, cohort, split, prediction, feature-selection, Cp/Ce, or
+PPO step is performed.
+
 Dry-run output is engineering evidence only. It is not a scientific result and must
 not be used to set eligibility thresholds.
 

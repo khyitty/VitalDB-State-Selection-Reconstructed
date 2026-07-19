@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "engineering_dry_run.schema.json",
+  "title": "Random 25-case engineering dry-run record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "caseid", "sample_seed", "sample_size", "sampling_method",
+    "scientific_result", "source_version", "metadata_status",
+    "clinical_metadata_available", "required_demographics_available",
+    "exact_track_counts", "drug_rate_unit_status", "metadata_failure_type",
+    "metadata_failure_message", "signal_status", "signal_attempt_count",
+    "signal_bytes", "signal_checksums", "signal_failure_type",
+    "signal_failure_message"
+  ],
+  "properties": {
+    "caseid": {"type": "integer", "minimum": 1, "maximum": 6388},
+    "sample_seed": {"const": 20260719},
+    "sample_size": {"const": 25},
+    "sampling_method": {"const": "fixed_seed_random_without_replacement"},
+    "scientific_result": {"const": false},
+    "source_version": {"type": "string", "minLength": 1},
+    "metadata_status": {"enum": ["complete", "failed"]},
+    "clinical_metadata_available": {"type": "boolean"},
+    "required_demographics_available": {"type": "boolean"},
+    "exact_track_counts": {
+      "type": "object",
+      "required": ["bis", "propofol_rate", "remifentanil_rate"],
+      "additionalProperties": false,
+      "properties": {
+        "bis": {"type": "integer", "minimum": 0},
+        "propofol_rate": {"type": "integer", "minimum": 0},
+        "remifentanil_rate": {"type": "integer", "minimum": 0}
+      }
+    },
+    "drug_rate_unit_status": {
+      "type": "object",
+      "required": ["propofol_rate", "remifentanil_rate"],
+      "additionalProperties": false,
+      "properties": {
+        "propofol_rate": {"const": "pending_human_review"},
+        "remifentanil_rate": {"const": "pending_human_review"}
+      }
+    },
+    "metadata_failure_type": {"type": ["string", "null"]},
+    "metadata_failure_message": {"type": ["string", "null"]},
+    "signal_status": {"enum": ["not_requested", "complete", "failed"]},
+    "signal_attempt_count": {"type": "integer", "minimum": 0, "maximum": 3},
+    "signal_bytes": {"type": "integer", "minimum": 0},
+    "signal_checksums": {
+      "type": "object",
+      "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+    },
+    "signal_failure_type": {"type": ["string", "null"]},
+    "signal_failure_message": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"metadata_status": {"const": "failed"}}},
+      "then": {
+        "properties": {
+          "metadata_failure_type": {"type": "string", "minLength": 1},
+          "metadata_failure_message": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"signal_status": {"const": "complete"}}},
+      "then": {
+        "properties": {
+          "signal_bytes": {"minimum": 1},
+          "signal_checksums": {"minProperties": 1},
+          "signal_failure_type": {"type": "null"},
+          "signal_failure_message": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"signal_status": {"const": "failed"}}},
+      "then": {
+        "properties": {
+          "signal_failure_type": {"type": "string", "minLength": 1},
+          "signal_failure_message": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  ]
+}

@@ -9,7 +9,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 1 — Governance and skeleton | complete | 13 governance tests passed; remote `main` verified at `02ea9d3` |
 | 2 — Migration inventory | complete | 352/352 paths classified; 18 tests passed; remote `main` verified at `4a89b4d` |
 | 3 — Eligibility audit framework | complete | 38 tests passed; remote `main` verified at `0246e77`; thresholds, units, TIVA, volatile aliases, and legacy overlap remain pending |
-| 4 — Random 25-case dry run | pending | — |
+| 4 — Random 25-case dry run | validated; publication pending | Fixed seed `20260719`; all 25 metadata rows and signal outcomes preserved; 12 checksum-complete and 13 explicit non-retryable failures; 44 tests passed; raw data remains ignored |
 | Full cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
