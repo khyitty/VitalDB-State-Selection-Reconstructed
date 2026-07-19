@@ -1,0 +1,88 @@
+{
+  "bis_sqi_ppo_state_allowed": false,
+  "bis_sqi_prediction_feature_allowed": false,
+  "case_track_row_count": 9880,
+  "checksum_verified_raw_bytes": 2658264378,
+  "checksum_verified_raw_file_count": 9880,
+  "failure_row_count": 0,
+  "final_cohort_frozen": false,
+  "generated_at": "2026-07-19T23:09:55.656568+00:00",
+  "included_case_count": 2470,
+  "invalid_window_count": 1,
+  "legacy_overlap_count": 94,
+  "phase": "6A_protocol_v1_1_primary_signal_acquisition",
+  "pre_quality_only": true,
+  "preflight": {
+    "disk_free_bytes": 199476969472,
+    "disk_gate_passed": true,
+    "elapsed_seconds": 9.97749889997067,
+    "estimated_full_bytes": 3544700755,
+    "estimated_full_elapsed_seconds_at_same_effective_throughput": 985.7768913171021,
+    "full_download_authorized_by_gate": true,
+    "full_present_request_count": 9880,
+    "mean_bytes_per_present_track": 358775.38,
+    "operational_gate_passed": true,
+    "parsing_or_empty_problem_count": 0,
+    "phase": "6A_primary_signal_acquisition_preflight",
+    "quality_threshold_selected": false,
+    "request_or_structure_problem_count": 0,
+    "required_two_x_estimated_bytes": 7089401510,
+    "sample_case_track_row_count": 100,
+    "sample_present_request_count": 100,
+    "sample_status_counts": {
+      "complete": 100
+    },
+    "sample_total_bytes": 35877538,
+    "scientific_result": false,
+    "seed": 20260720,
+    "selected_case_count": 25,
+    "selected_caseids": [
+      240,
+      363,
+      708,
+      962,
+      1076,
+      1193,
+      1655,
+      1713,
+      1805,
+      2403,
+      2839,
+      3013,
+      3256,
+      3267,
+      3366,
+      3480,
+      3634,
+      3759,
+      3834,
+      4042,
+      4143,
+      4255,
+      5069,
+      5934,
+      6284
+    ],
+    "selection_method": "fixed_seed_simple_random_sample_without_replacement",
+    "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5d_summary_sha256=e27cdf87984d1ab9d5d11a551c86a94bf47b312065d89c672c860a98e038e627;legacy_caseid_sha256=c261416472d3a8f11d708b7485068094a3528c423141c3f1d17b05f56fd0fe7d"
+  },
+  "primary_volatile_definition": "D_longest_positive_run_ge_10s",
+  "quality_threshold_selected": false,
+  "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5d_summary_sha256=e27cdf87984d1ab9d5d11a551c86a94bf47b312065d89c672c860a98e038e627;legacy_caseid_sha256=c261416472d3a8f11d708b7485068094a3528c423141c3f1d17b05f56fd0fe7d",
+  "track_status_counts": {
+    "BIS/BIS": {
+      "complete": 2470
+    },
+    "BIS/SQI": {
+      "complete": 2470
+    },
+    "Orchestra/PPF20_RATE": {
+      "complete": 2470
+    },
+    "Orchestra/RFTN20_RATE": {
+      "complete": 2470
+    }
+  },
+  "universe_case_count": 3219,
+  "volatile_excluded_count": 674
+}

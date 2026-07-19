@@ -38,8 +38,8 @@
       "required": ["propofol_rate", "remifentanil_rate"],
       "additionalProperties": false,
       "properties": {
-        "propofol_rate": {"const": "pending_human_review"},
-        "remifentanil_rate": {"const": "pending_human_review"}
+        "propofol_rate": {"enum": ["pending_human_review", "validated"]},
+        "remifentanil_rate": {"enum": ["pending_human_review", "validated"]}
       }
     },
     "metadata_failure_type": {"type": ["string", "null"]},

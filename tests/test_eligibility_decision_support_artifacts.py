@@ -204,9 +204,7 @@ class EligibilityDecisionSupportArtifactTests(unittest.TestCase):
         self.assertFalse(evidence["config_unit_status_changed"])
         self.assertEqual(evidence["final_review_status"], "pending_human_review")
         registry = AliasRegistry.from_yaml(ROOT / "configs" / "track_aliases.yaml")
-        self.assertTrue(
-            all(status == "pending_human_review" for status in registry.unit_status.values())
-        )
+        self.assertTrue(all(status == "validated" for status in registry.unit_status.values()))
 
     def test_source_snapshot_is_metadata_only_and_matches_phase5a(self) -> None:
         phase5a = json.loads(

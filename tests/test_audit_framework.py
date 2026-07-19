@@ -150,8 +150,8 @@ class EligibilityAuditTests(unittest.TestCase):
         self.assertEqual(thresholds.pop("status"), "pending_human_review")
         self.assertTrue(all(value is None for value in thresholds.values()))
 
-    def test_track_units_remain_pending_human_review(self) -> None:
-        self.assertFalse(
+    def test_protocol_v1_1_track_units_are_human_validated(self) -> None:
+        self.assertTrue(
             self.registry.units_validated(("propofol_rate", "remifentanil_rate"))
         )
 

@@ -1,23 +1,49 @@
-schema_version: 1
+schema_version: 2
 review_policy: human_approval_required
 aliases:
   bis:
     status: protocol_validated
-    unit_status: pending_human_review
+    unit_status: validated
+    role: primary_bis
+    numeric_unit_conversion: false
     names:
       - BIS/BIS
   propofol_rate:
     status: protocol_validated
-    unit_status: pending_human_review
+    unit_status: validated
+    unit: mL/hr
+    concentration: propofol 20 mg/mL
     names:
       - Orchestra/PPF20_RATE
   remifentanil_rate:
     status: protocol_validated
-    unit_status: pending_human_review
+    unit_status: validated
+    unit: mL/hr
+    concentration: remifentanil 20 mcg/mL
     names:
       - Orchestra/RFTN20_RATE
+qc_only_exact_tracks:
+  bis_sqi:
+    status: protocol_validated
+    unit_status: validated
+    unit: "%"
+    role: qc_only
+    prediction_feature_allowed: false
+    ppo_state_allowed: false
+    names:
+      - BIS/SQI
+unused_exact_tracks:
+  remifentanil_50_rate:
+    names:
+      - Orchestra/RFTN50_RATE
+    merged_with_rftn20: false
+    used_in_phase6a: false
+official_source:
+  url: https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5
+  document_name: "Dataset : VitalDB"
+  review_date: "2026-07-20"
+  sha256: 06c1779012389cd80d2a621abf38ad564b1446315ff79264bb1470fbf82db394
 pending_concepts:
-  - bis_sqi
   - propofol_volume
   - remifentanil_volume
   - device_propofol_cp

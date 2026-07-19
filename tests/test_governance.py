@@ -99,11 +99,16 @@ class GovernanceTests(unittest.TestCase):
         self.assertEqual(set(config["aliases"]), set(expected))
         for concept, names in expected.items():
             self.assertEqual(config["aliases"][concept]["status"], "protocol_validated")
-            self.assertEqual(
-                config["aliases"][concept]["unit_status"], "pending_human_review"
-            )
+            self.assertEqual(config["aliases"][concept]["unit_status"], "validated")
             self.assertEqual(config["aliases"][concept]["names"], names)
         self.assertFalse(set(expected) & set(config["pending_concepts"]))
+        sqi = config["qc_only_exact_tracks"]["bis_sqi"]
+        self.assertEqual(sqi["names"], ["BIS/SQI"])
+        self.assertFalse(sqi["prediction_feature_allowed"])
+        self.assertFalse(sqi["ppo_state_allowed"])
+        rftn50 = config["unused_exact_tracks"]["remifentanil_50_rate"]
+        self.assertFalse(rftn50["merged_with_rftn20"])
+        self.assertFalse(rftn50["used_in_phase6a"])
 
     def test_json_schemas_are_valid_and_reject_invalid_identity(self) -> None:
         schemas = {}

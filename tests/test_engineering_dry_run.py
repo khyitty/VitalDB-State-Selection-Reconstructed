@@ -61,7 +61,7 @@ class EngineeringDryRunTests(unittest.TestCase):
         self.assertTrue(
             all(
                 record["drug_rate_unit_status"]["propofol_rate"]
-                == "pending_human_review"
+                == "validated"
                 for record in records
             )
         )

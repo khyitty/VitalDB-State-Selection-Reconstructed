@@ -1,0 +1,152 @@
+{
+  "allowed_exact_tracks": [
+    "BIS/BIS",
+    "BIS/SQI",
+    "Orchestra/PPF20_RATE",
+    "Orchestra/RFTN20_RATE"
+  ],
+  "bis_sqi_role": "qc_only_prohibited_prediction_feature_and_ppo_state",
+  "client": {
+    "api_base": "https://api.vitaldb.net",
+    "api_documentation": "https://vitaldb.net/docs/?documentId=API%2FWeb_API_OpenDataset.md",
+    "implementation": "VitalDBOpenAPI",
+    "version": "0.1.0"
+  },
+  "legacy_overlap_provenance": {
+    "accessed_columns": [
+      "caseid"
+    ],
+    "combined_sorted_caseid_sha256": "c261416472d3a8f11d708b7485068094a3528c423141c3f1d17b05f56fd0fe7d",
+    "first_100_recomputed": false,
+    "results_or_metrics_accessed": false,
+    "source_commit": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "source_paths": [
+      {
+        "row_count": 68,
+        "sha256": "fca6584b8531b9c6072949825991614e0c2ee1cbb91b657d7d65820160952382",
+        "source_path": "data/modeling/full/splits/train_cases.csv"
+      },
+      {
+        "row_count": 15,
+        "sha256": "57281c704005be8b042144614344b1e1a42215e285faf0c4ec32ca2db6799dd7",
+        "source_path": "data/modeling/full/splits/val_cases.csv"
+      },
+      {
+        "row_count": 15,
+        "sha256": "4dc6b40bc577bc1804fd8a591bc53284d2417961472c0ff43372f4a0440a0d6c",
+        "source_path": "data/modeling/full/splits/test_cases.csv"
+      }
+    ],
+    "source_repository": "../VitalDB-Feature-Selection",
+    "source_tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "split_labels_copied_to_new_cohort": false,
+    "total_rows": 98,
+    "unique_caseids": 98
+  },
+  "legacy_read_only_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_read_only_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_read_only_unchanged": true,
+  "official_unit_source": {
+    "document_name": "Dataset : VitalDB",
+    "review_date": "2026-07-20",
+    "sha256": "06c1779012389cd80d2a621abf38ad564b1446315ff79264bb1470fbf82db394",
+    "url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5"
+  },
+  "phase": "6A_protocol_v1_1_primary_signal_acquisition",
+  "preflight_gate": {
+    "disk_free_bytes": 199476969472,
+    "disk_gate_passed": true,
+    "elapsed_seconds": 9.97749889997067,
+    "estimated_full_bytes": 3544700755,
+    "estimated_full_elapsed_seconds_at_same_effective_throughput": 985.7768913171021,
+    "full_download_authorized_by_gate": true,
+    "full_present_request_count": 9880,
+    "mean_bytes_per_present_track": 358775.38,
+    "operational_gate_passed": true,
+    "parsing_or_empty_problem_count": 0,
+    "phase": "6A_primary_signal_acquisition_preflight",
+    "quality_threshold_selected": false,
+    "request_or_structure_problem_count": 0,
+    "required_two_x_estimated_bytes": 7089401510,
+    "sample_case_track_row_count": 100,
+    "sample_present_request_count": 100,
+    "sample_status_counts": {
+      "complete": 100
+    },
+    "sample_total_bytes": 35877538,
+    "scientific_result": false,
+    "seed": 20260720,
+    "selected_case_count": 25,
+    "selected_caseids": [
+      240,
+      363,
+      708,
+      962,
+      1076,
+      1193,
+      1655,
+      1713,
+      1805,
+      2403,
+      2839,
+      3013,
+      3256,
+      3267,
+      3366,
+      3480,
+      3634,
+      3759,
+      3834,
+      4042,
+      4143,
+      4255,
+      5069,
+      5934,
+      6284
+    ],
+    "selection_method": "fixed_seed_simple_random_sample_without_replacement",
+    "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5d_summary_sha256=e27cdf87984d1ab9d5d11a551c86a94bf47b312065d89c672c860a98e038e627;legacy_caseid_sha256=c261416472d3a8f11d708b7485068094a3528c423141c3f1d17b05f56fd0fe7d"
+  },
+  "prohibited_execution": {
+    "clipping": false,
+    "coverage_or_gap_cutoff": false,
+    "cpce_reconstruction": false,
+    "dose_calculation": false,
+    "feature_selection": false,
+    "final_cohort_freeze": false,
+    "interpolation": false,
+    "ppo": false,
+    "prediction": false,
+    "quality_threshold_selection": false,
+    "resampling": false,
+    "smoothing": false,
+    "split_creation": false
+  },
+  "recorded_at": "2026-07-19T23:09:56.467951+00:00",
+  "removed_stale_partials": [],
+  "rftn20_rftn50_merged": false,
+  "rftn50_used": false,
+  "schema_version": 1,
+  "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5d_summary_sha256=e27cdf87984d1ab9d5d11a551c86a94bf47b312065d89c672c860a98e038e627;legacy_caseid_sha256=c261416472d3a8f11d708b7485068094a3528c423141c3f1d17b05f56fd0fe7d",
+  "stage": "full",
+  "track_list_endpoint": {
+    "byte_count": 30565770,
+    "elapsed_seconds": 0.916657900030259,
+    "fetched_at": "2026-07-19T23:09:01.912246+00:00",
+    "row_count": 486449,
+    "sha256": "82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0",
+    "url": "https://api.vitaldb.net/trks"
+  }
+}

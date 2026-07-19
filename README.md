@@ -15,12 +15,16 @@ The authorized work stops after:
 5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit;
 6. Phase 5B outcome-blind eligibility decision-support audit;
 7. Phase 5C outcome-blind characterization of seven exact volatile tracks in the
-   unfrozen 3,219-case decision-support universe.
+   unfrozen 3,219-case decision-support universe;
+8. Phase 5D outcome-blind volatile-rule sensitivity audit; and
+9. Phase 6A Protocol v1.1 pre-quality cohort accounting and checksum-resumable
+   acquisition of exactly `BIS/BIS`, `BIS/SQI`, `Orchestra/PPF20_RATE`, and
+   `Orchestra/RFTN20_RATE` after a fixed-seed 25-case preflight.
 
 The following are deliberately not authorized: full signal download outside the seven
-Phase 5C volatile tracks, BIS or drug signal download, final quality thresholds, final
-cohort freeze, train/validation/test splitting, Cp/Ce reconstruction, prediction or
-feature selection, full model training, and PPO training.
+Phase 5C volatile tracks and four Phase 6A exact tracks, final quality thresholds,
+final cohort freeze, train/validation/test splitting, Cp/Ce reconstruction, dose
+calculation, prediction or feature selection, full model training, and PPO training.
 
 ## Non-negotiable safeguards
 
@@ -30,8 +34,9 @@ feature selection, full model training, and PPO training.
 - Track aliases are accepted only from versioned, human-reviewed configuration.
 - Quality thresholds remain unset until an outcome-blind human review of metadata
   and missingness distributions.
-- Legacy 98-case IDs, splits, scalers, checkpoints, metrics, figures, and model
-  artifacts are prohibited inputs.
+- The exact legacy actual-use 98 case IDs may be read only for Phase 6A overlap
+  exclusion. Split assignments, scalers, checkpoints, metrics, figures, and model
+  artifacts remain prohibited inputs.
 
 ## Quick checks
 
@@ -100,6 +105,19 @@ The analysis universe remains unfrozen, track presence and positive values are n
 treated as exposure or TIVA decisions, and every alias, unit, cutoff, and eligibility
 decision remains pending human review. Raw signals are Git-ignored; only manifests,
 machine-readable summaries, provenance, and decision-support reports are published.
+
+Protocol v1.1 then fixed the 10-second Phase 5D duration scenario as the primary
+volatile exclusion and approved the exact Phase 6A units and roles. Phase 6A uses:
+
+```powershell
+python scripts/run_primary_signal_acquisition.py --stage preflight
+python scripts/run_primary_signal_acquisition.py --stage full
+```
+
+The 3,219-case manifest is explicitly pre-quality and unfrozen. Case 4476 retains
+its invalid anesthesia window and is excluded without repair. `BIS/SQI` remains
+QC-only and is prohibited as a prediction feature or PPO state. No acquired value
+creates a new exclusion, and no signal-quality threshold is selected.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

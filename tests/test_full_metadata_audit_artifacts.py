@@ -118,18 +118,26 @@ class FullMetadataAuditArtifactTests(unittest.TestCase):
         for endpoint in endpoints.values():
             self.assertRegex(endpoint["sha256"], r"^[a-f0-9]{64}$")
             self.assertRegex(endpoint["fetched_at"], r"^2026-\d\d-\d\dT")
-        expected_config_hashes = {
+        expected_unchanged_config_hashes = {
             "eligibility_audit_yaml_sha256": sha256_path(
                 ROOT / "configs" / "eligibility_audit.yaml"
-            ),
-            "track_aliases_yaml_sha256": sha256_path(
-                ROOT / "configs" / "track_aliases.yaml"
             ),
             "eligibility_manifest_schema_sha256": sha256_path(
                 ROOT / "schemas" / "eligibility_manifest.schema.json"
             ),
         }
-        self.assertEqual(self.snapshot["configuration_checksums"], expected_config_hashes)
+        for key, expected in expected_unchanged_config_hashes.items():
+            self.assertEqual(self.snapshot["configuration_checksums"][key], expected)
+        # Phase 5A correctly preserves the then-current pending-unit config hash.
+        # Protocol v1.1 later superseded the live alias config after human approval.
+        self.assertEqual(
+            self.snapshot["configuration_checksums"]["track_aliases_yaml_sha256"],
+            "05887a068c0a99336f38549eb9f2a980e1bb9cd3e66a9c35cf29e9a19387b9e9",
+        )
+        self.assertNotEqual(
+            self.snapshot["configuration_checksums"]["track_aliases_yaml_sha256"],
+            sha256_path(ROOT / "configs" / "track_aliases.yaml"),
+        )
         self.assertEqual(
             {row["source_query_timestamp"] for row in self.records},
             {self.snapshot["query_started_at"]},

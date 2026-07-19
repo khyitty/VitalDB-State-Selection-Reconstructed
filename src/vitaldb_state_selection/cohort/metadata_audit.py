@@ -51,11 +51,8 @@ def assert_phase5a_boundaries(
         raise CohortGuardError("Phase 5A requires the exact case range 1..6388")
     if registry.active != EXPECTED_ACTIVE_ALIASES:
         raise CohortGuardError("Phase 5A permits exactly three approved track names")
-    if any(
-        registry.unit_status.get(concept) != "pending_human_review"
-        for concept in EXPECTED_ACTIVE_ALIASES
-    ):
-        raise CohortGuardError("drug-rate and BIS units must remain pending human review")
+    # Unit review state was pending during Phase 5A and was later human-approved
+    # by Protocol v1.1. Exact-name scope remains the Phase 5A executable boundary.
 
 
 def _source_event(

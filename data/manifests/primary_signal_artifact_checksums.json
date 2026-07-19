@@ -1,0 +1,11 @@
+{
+  "data/manifests/pre_quality_acquisition_cohort.csv": "7168c9ea75ff5d45824a27b2c5cafec4b7f186bc56a1779f575e13e31dd81790",
+  "data/manifests/primary_signal_acquisition_summary.json": "a5bf3fac02fa8b008610ebc22a2d125b3baafc1dd69dc1fcad8d5718933a1935",
+  "data/manifests/primary_signal_checksum_manifest.csv": "50504d55796a22b8806770a11bacaa0d02b97e594e13f5820e4d471edfada3c0",
+  "data/manifests/primary_signal_download_manifest.csv": "f70560188c6a26666645d35132d3233ec0386044aa4689aaf26ded9133dfda5b",
+  "data/manifests/primary_signal_failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/manifests/primary_signal_preflight_summary.json": "a58256e91f0d098869245e460ffca083f3b0d57f5f534468e77f1f554dfd31fc",
+  "data/manifests/primary_signal_source_snapshot.json": "db3f1aa1d33804db26eacf66043d88106427767e43687438f71313b92d050bb5",
+  "docs/primary_signal_acquisition_report.md": "632af91f319a2551707a396077fd25a1747ef6c5a955d90909e5dbbb61aef903",
+  "docs/primary_signal_preflight_report.md": "9b1e2d48adcc4acfa18b089d27dfa562edf87caabb3c1657ce2c9fba8501094a"
+}

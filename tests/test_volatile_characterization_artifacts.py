@@ -207,7 +207,7 @@ class VolatileCharacterizationArtifactTests(unittest.TestCase):
         )
         self.assertTrue(self.snapshot["track_list_endpoint"]["matches_phase5b_snapshot"])
         registry = AliasRegistry.from_yaml(ROOT / "configs" / "track_aliases.yaml")
-        self.assertTrue(all(value == "pending_human_review" for value in registry.unit_status.values()))
+        self.assertTrue(all(value == "validated" for value in registry.unit_status.values()))
 
     def test_report_and_all_tracked_artifact_checksums_match(self) -> None:
         report = REPORT_PATH.read_text(encoding="utf-8")

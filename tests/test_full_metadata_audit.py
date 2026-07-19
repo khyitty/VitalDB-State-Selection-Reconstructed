@@ -72,7 +72,7 @@ class FullMetadataAuditTests(unittest.TestCase):
         cls.config = load_audit_config(ROOT / "configs" / "eligibility_audit.yaml")
         cls.registry = AliasRegistry.from_yaml(ROOT / "configs" / "track_aliases.yaml")
 
-    def test_phase5a_boundary_allows_exactly_three_names_and_pending_units(self) -> None:
+    def test_phase5a_boundary_allows_exactly_three_names_after_unit_review(self) -> None:
         assert_phase5a_boundaries(self.config, self.registry)
         self.assertEqual(self.registry.active, EXPECTED_ACTIVE_ALIASES)
         expanded = AliasRegistry(
