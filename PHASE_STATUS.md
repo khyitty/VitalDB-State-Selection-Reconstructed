@@ -7,7 +7,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | Phase | Status | Evidence |
 |---|---|---|
 | 1 — Governance and skeleton | complete | 13 governance tests passed; remote `main` verified at `02ea9d3` |
-| 2 — Migration inventory | blocked before commit | 352/352 paths classified and 18 tests passed, but Git index write approval was unavailable |
+| 2 — Migration inventory | complete | 352/352 paths classified; 18 tests passed; remote `main` verified at `4a89b4d` |
 | 3 — Eligibility audit framework | pending | — |
 | 4 — Random 25-case dry run | pending | — |
 | Full cohort and later research | blocked by protocol | Human review required |
@@ -47,3 +47,4 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `remaining_work`: Stage the seven Phase 2 files, review the cached diff, commit as `Inventory legacy migration candidates`, push `origin main`, verify the remote SHA, and only then begin Phase 3.
 - `local_commit_sha`: `02ea9d39a785e8cbb24918555771937e3dda416d` (Phase 1 tip; Phase 2 remains uncommitted)
 - `push_error`: Not attempted because the commit gate failed; Phase 3 was not started.
+- `resolution`: Approval capacity was restored. Commit `4a89b4da88003beced9dce082358b4ef5a634a66` was pushed and independently verified on `origin/main` before Phase 3 began.
