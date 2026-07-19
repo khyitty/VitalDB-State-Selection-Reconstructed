@@ -1,0 +1,10 @@
+{
+  "data/manifests/volatile_signal_case_manifest.csv": "66c65af9fa72467c29544e6d9c84550449370e61781b703461f83508964f30a8",
+  "data/manifests/volatile_signal_characterization_summary.json": "42005b5e98fb723f50950a5ba0d86a66a97d74b4d4c87c52e6ed9722c0aa1c00",
+  "data/manifests/volatile_signal_failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/manifests/volatile_signal_preflight_summary.json": "66ad46a7501eb29e0013113b87a650cb81e9aab4de89e204b5514ef1941031dd",
+  "data/manifests/volatile_signal_source_snapshot.json": "1221f115f05efb426137d5dd78ab744c7d5bd3f991c781ecb6569d25c9524b85",
+  "data/manifests/volatile_signal_track_manifest.csv": "24603256bcab3e184e695d4cdef08e52c20f7d644c4b2daf9adf3cbee7cff517",
+  "docs/volatile_signal_decision_support_report.md": "5784185956f1e3a949e9fad4cde5d4babc323f8d1c61600ab4dd822476372b0d",
+  "docs/volatile_signal_preflight_report.md": "3552e791583583f1e8e2e10561f0ca5cb0b281fd1b7dba08a27f1936ba9e4cbe"
+}

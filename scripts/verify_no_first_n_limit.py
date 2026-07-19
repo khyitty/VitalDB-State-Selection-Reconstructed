@@ -20,11 +20,13 @@ PRODUCTION_SOURCES = (
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "eligibility.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "metadata_audit.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "track_inventory.py",
+    ROOT / "src" / "vitaldb_state_selection" / "cohort" / "volatile_characterization.py",
     ROOT / "src" / "vitaldb_state_selection" / "data" / "downloader.py",
     ROOT / "src" / "vitaldb_state_selection" / "data" / "vitaldb_api.py",
     ROOT / "src" / "vitaldb_state_selection" / "provenance" / "manifests.py",
     ROOT / "scripts" / "run_metadata_audit.py",
     ROOT / "scripts" / "run_eligibility_decision_support.py",
+    ROOT / "scripts" / "run_volatile_characterization.py",
     ROOT / "scripts" / "download_candidate_signals.py",
 )
 

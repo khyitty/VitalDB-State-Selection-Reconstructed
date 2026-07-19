@@ -13,11 +13,14 @@ The authorized work stops after:
 3. full-case eligibility/download audit infrastructure;
 4. synthetic and fixed-seed random 25-case engineering dry runs;
 5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit;
-6. Phase 5B outcome-blind eligibility decision-support audit.
+6. Phase 5B outcome-blind eligibility decision-support audit;
+7. Phase 5C outcome-blind characterization of seven exact volatile tracks in the
+   unfrozen 3,219-case decision-support universe.
 
-The following are deliberately not authorized: full signal download, final quality
-thresholds, final cohort freeze, train/validation/test splitting, Cp/Ce reconstruction,
-prediction or feature selection, full model training, and PPO training.
+The following are deliberately not authorized: full signal download outside the seven
+Phase 5C volatile tracks, BIS or drug signal download, final quality thresholds, final
+cohort freeze, train/validation/test splitting, Cp/Ce reconstruction, prediction or
+feature selection, full model training, and PPO training.
 
 ## Non-negotiable safeguards
 
@@ -83,6 +86,20 @@ unselected eligibility scenarios. Track presence is not treated as exposure, the
 official documentary unit findings do not approve the versioned unit status, and
 RFTN20/RFTN50 remain separate. The machine-readable summary is paired with
 `docs/decision_support_report.md`.
+
+Phase 5C used a fixed-seed, presence-stratified 20-case engineering preflight before
+the bounded full-universe characterization:
+
+```powershell
+python scripts/run_volatile_characterization.py --stage preflight
+python scripts/run_volatile_characterization.py --stage full
+```
+
+Only the seven exact volatile tracks named in the Phase 5C protocol were requested.
+The analysis universe remains unfrozen, track presence and positive values are not
+treated as exposure or TIVA decisions, and every alias, unit, cutoff, and eligibility
+decision remains pending human review. Raw signals are Git-ignored; only manifests,
+machine-readable summaries, provenance, and decision-support reports are published.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

@@ -68,6 +68,7 @@ class GovernanceTests(unittest.TestCase):
             "fixed-seed random 25-case engineering dry runs",
             "Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit",
             "Phase 5B outcome-blind eligibility decision-support audit",
+            "Phase 5C outcome-blind characterization of seven exact volatile tracks",
             "full signal download",
             "final quality thresholds",
             "PPO training",

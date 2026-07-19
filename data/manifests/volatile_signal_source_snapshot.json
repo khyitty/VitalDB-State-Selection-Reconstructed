@@ -1,0 +1,222 @@
+{
+  "audit_code_base_commit": "a3e9d081ef9f835c3e01d797ed9f4dedbf80d885",
+  "client": {
+    "api_base": "https://api.vitaldb.net",
+    "api_documentation": "https://vitaldb.net/docs/?documentId=API%2FWeb_API_OpenDataset.md",
+    "implementation": "vitaldb_state_selection.data.vitaldb_api.VitalDBOpenAPI",
+    "version": "0.1.0"
+  },
+  "inputs": {
+    "phase5a_manifest_sha256": "637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5",
+    "phase5b_presence_sha256": "d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+    "phase5b_summary_sha256": "6666afe5387b4c936d87fb67b0cd3e29f9385e5e3e459b64a54439a98b1df7e3"
+  },
+  "official_track_documentation": {
+    "approval_status": "pending_human_review",
+    "source_url": "https://vitaldb.net/dataset/?documentId=13qqajnNZzkN7NZ9aXnaQ-47NWy7kx-a6gbrcEsi-gak&query=overview&sectionId=h.vcpgs1yemdb5"
+  },
+  "phase": "5C_targeted_volatile_signal_characterization",
+  "preflight_gate": {
+    "cases_per_stratum": 2,
+    "disk_free_bytes": 199557656576,
+    "disk_gate_passed": true,
+    "disk_gate_policy": "available_free_space_at_least_2x_estimated_full_required_bytes",
+    "disk_gate_required_free_bytes": 476277260,
+    "engineering_only": true,
+    "estimate_overhead_policy": "20_percent_plus_50_MiB",
+    "estimated_full_raw_bytes": 154758192,
+    "estimated_full_required_bytes": 238138630,
+    "estimated_full_wall_seconds": 195.43953173865884,
+    "failure_type_counts": {},
+    "full_download_authorized_by_gate": true,
+    "observed_total_raw_bytes": 972769,
+    "observed_total_request_seconds": 16.935697699838784,
+    "operational_gate_passed": true,
+    "phase": "5C_targeted_volatile_signal_characterization_preflight",
+    "presence_stratum_count": 10,
+    "raw_root": "data/raw/phase5c_volatile_signals",
+    "raw_signals_git_ignored": true,
+    "request_status_counts": {
+      "complete": 68
+    },
+    "requested_present_track_count": 68,
+    "sample_case_count": 20,
+    "sample_caseids": [
+      118,
+      531,
+      667,
+      723,
+      995,
+      1145,
+      1684,
+      2121,
+      2245,
+      2407,
+      2690,
+      2777,
+      3023,
+      3723,
+      4194,
+      5017,
+      5311,
+      5607,
+      5696,
+      5971
+    ],
+    "sampling_method": "fixed_seed_stratified_by_exact_track_presence_combination",
+    "scientific_result": false,
+    "seed": 20260720,
+    "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;phase5b_presence_sha256=d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+    "strata_estimates": [
+      {
+        "mean_download_bytes_per_sample_case": 0,
+        "mean_request_seconds_per_sample_case": 0,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=false",
+        "sample_caseids": [
+          1684,
+          5696
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 16816,
+        "mean_request_seconds_per_sample_case": 0.08498899999540299,
+        "population_case_count": 976,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2121,
+          2407
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 9142.5,
+        "mean_request_seconds_per_sample_case": 1.5648752499837428,
+        "population_case_count": 2,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=false",
+        "sample_caseids": [
+          531,
+          3723
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 30802.5,
+        "mean_request_seconds_per_sample_case": 0.24386035001953132,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          723,
+          5311
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 43421.5,
+        "mean_request_seconds_per_sample_case": 0.2678870499948971,
+        "population_case_count": 631,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2245,
+          5017
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 130520.5,
+        "mean_request_seconds_per_sample_case": 1.1279523499542847,
+        "population_case_count": 204,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          667,
+          1145
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 59079.5,
+        "mean_request_seconds_per_sample_case": 0.2602546999696642,
+        "population_case_count": 1052,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          995,
+          4194
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 83748,
+        "mean_request_seconds_per_sample_case": 3.936479150026571,
+        "population_case_count": 182,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          118,
+          2690
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 71716,
+        "mean_request_seconds_per_sample_case": 0.42249534995062277,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2777,
+          5607
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 41138,
+        "mean_request_seconds_per_sample_case": 0.5590556500246748,
+        "population_case_count": 148,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          3023,
+          5971
+        ]
+      }
+    ],
+    "universe_case_count": 3219,
+    "workers_for_estimate": 8
+  },
+  "prohibited_execution": {
+    "bis_signal_download": false,
+    "cohort_freeze": false,
+    "cpce_reconstruction": false,
+    "drug_signal_download": false,
+    "feature_selection": false,
+    "final_alias_approval": false,
+    "final_tiva_decision": false,
+    "final_unit_approval": false,
+    "final_volatile_exposure_decision": false,
+    "ppo": false,
+    "prediction": false,
+    "prediction_preprocessing": false,
+    "split_creation": false,
+    "threshold_finalization": false
+  },
+  "recorded_at": "2026-07-19T21:01:06.751130+00:00",
+  "schema_version": 1,
+  "scope": {
+    "allowed_exact_track_names": [
+      "Primus/EXP_SEVO",
+      "Primus/INSP_SEVO",
+      "Primus/EXP_DES",
+      "Primus/INSP_DES",
+      "Solar8000/GAS2_EXPIRED",
+      "Solar8000/GAS2_INSPIRED",
+      "Primus/MAC"
+    ],
+    "analysis_universe_case_count": 3219,
+    "legacy_98_ids_accessed": false,
+    "legacy_overlap_evaluated": false,
+    "other_raw_track_requests": 0,
+    "raw_track_request_count": 9059,
+    "stale_partial_files_removed": []
+  },
+  "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;phase5b_presence_sha256=d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+  "stage": "full",
+  "track_list_endpoint": {
+    "byte_count": 30565770,
+    "elapsed_seconds": 0.6724610999808647,
+    "fetched_at": "2026-07-19T21:00:57.394977+00:00",
+    "matches_phase5b_snapshot": true,
+    "path": "/trks",
+    "row_count": 486449,
+    "sha256": "82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0",
+    "url": "https://api.vitaldb.net/trks"
+  }
+}

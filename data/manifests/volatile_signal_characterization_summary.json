@@ -1,0 +1,1283 @@
+{
+  "allowed_exact_tracks": [
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Expiratory sevoflurane pressure",
+      "official_unit": "kPa",
+      "track_name": "Primus/EXP_SEVO"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Inspiratory sevoflurane pressure",
+      "official_unit": "kPa",
+      "track_name": "Primus/INSP_SEVO"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Expiratory desflurane pressure",
+      "official_unit": "kPa",
+      "track_name": "Primus/EXP_DES"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Inspiratory desflurane pressure",
+      "official_unit": "kPa",
+      "track_name": "Primus/INSP_DES"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Expiratory volatile concentration",
+      "official_unit": "%",
+      "track_name": "Solar8000/GAS2_EXPIRED"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Inspiratory volatile concentration",
+      "official_unit": "%",
+      "track_name": "Solar8000/GAS2_INSPIRED"
+    },
+    {
+      "approval_status": "pending_human_review",
+      "official_description": "Minimum alveolar concentration of volatile",
+      "official_unit": "unitless",
+      "track_name": "Primus/MAC"
+    }
+  ],
+  "analysis_universe": {
+    "case_count": 3219,
+    "caseid_fingerprint_sha256": "dce646d7b7fb2c68908a19b0107212c6616ad47d11b1013d7e45406e64d8c447",
+    "cohort_frozen": false,
+    "definition": "exact primary tracks + age >= 18 + anesthesia_type exact General",
+    "duplicate_case_count": 0,
+    "missing_case_count": 0
+  },
+  "decision_support_only": true,
+  "execution_flags": {
+    "alias_configuration_changed": false,
+    "bis_signal_downloaded": false,
+    "cohort_frozen": false,
+    "cpce_reconstruction_run": false,
+    "feature_selection_run": false,
+    "legacy_98_ids_accessed": false,
+    "ppo_run": false,
+    "prediction_dataset_preprocessed": false,
+    "prediction_run": false,
+    "propofol_signal_downloaded": false,
+    "quality_thresholds_finalized": false,
+    "remifentanil_signal_downloaded": false,
+    "split_created": false
+  },
+  "failure_type_counts": {},
+  "manual_review_boundary_samples": {
+    "agent_specific_vs_gas2_or_mac_discordant": [
+      2118,
+      2953,
+      3431,
+      3956,
+      4173
+    ],
+    "download_parse_or_value_warning": [
+      2317,
+      3369,
+      4805,
+      4859,
+      4899
+    ],
+    "positive_only_outside_anesthesia_window": [
+      3414,
+      4006,
+      4476,
+      5311,
+      5502
+    ],
+    "present_track_all_zero": [
+      831,
+      2925,
+      3538,
+      6123,
+      6338
+    ]
+  },
+  "manual_review_fixed_seed": 20260720,
+  "pending_decisions": [
+    "volatile_exposure_definition",
+    "tiva_classification",
+    "final_alias_approval",
+    "final_unit_approval",
+    "signal_quality_thresholds",
+    "legacy_98_overlap",
+    "final_eligibility"
+  ],
+  "phase": "5C_targeted_volatile_signal_characterization",
+  "possible_exposure_definition_counts": [
+    {
+      "definition": "any_allowed_track_positive_anywhere",
+      "descriptive_case_count": 727
+    },
+    {
+      "definition": "any_allowed_track_positive_in_anesthesia_window",
+      "descriptive_case_count": 717
+    },
+    {
+      "definition": "primus_agent_specific_positive_in_anesthesia_window",
+      "descriptive_case_count": 700
+    },
+    {
+      "definition": "solar_gas2_positive_in_anesthesia_window",
+      "descriptive_case_count": 538
+    },
+    {
+      "definition": "primus_mac_positive_in_anesthesia_window",
+      "descriptive_case_count": 659
+    },
+    {
+      "definition": "agent_specific_and_gas2_or_mac_positive_in_anesthesia_window",
+      "descriptive_case_count": 672
+    }
+  ],
+  "preflight_summary": {
+    "cases_per_stratum": 2,
+    "disk_free_bytes": 199557656576,
+    "disk_gate_passed": true,
+    "disk_gate_policy": "available_free_space_at_least_2x_estimated_full_required_bytes",
+    "disk_gate_required_free_bytes": 476277260,
+    "engineering_only": true,
+    "estimate_overhead_policy": "20_percent_plus_50_MiB",
+    "estimated_full_raw_bytes": 154758192,
+    "estimated_full_required_bytes": 238138630,
+    "estimated_full_wall_seconds": 195.43953173865884,
+    "failure_type_counts": {},
+    "full_download_authorized_by_gate": true,
+    "observed_total_raw_bytes": 972769,
+    "observed_total_request_seconds": 16.935697699838784,
+    "operational_gate_passed": true,
+    "phase": "5C_targeted_volatile_signal_characterization_preflight",
+    "presence_stratum_count": 10,
+    "raw_root": "data/raw/phase5c_volatile_signals",
+    "raw_signals_git_ignored": true,
+    "request_status_counts": {
+      "complete": 68
+    },
+    "requested_present_track_count": 68,
+    "sample_case_count": 20,
+    "sample_caseids": [
+      118,
+      531,
+      667,
+      723,
+      995,
+      1145,
+      1684,
+      2121,
+      2245,
+      2407,
+      2690,
+      2777,
+      3023,
+      3723,
+      4194,
+      5017,
+      5311,
+      5607,
+      5696,
+      5971
+    ],
+    "sampling_method": "fixed_seed_stratified_by_exact_track_presence_combination",
+    "scientific_result": false,
+    "seed": 20260720,
+    "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;phase5b_presence_sha256=d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+    "strata_estimates": [
+      {
+        "mean_download_bytes_per_sample_case": 0,
+        "mean_request_seconds_per_sample_case": 0,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=false",
+        "sample_caseids": [
+          1684,
+          5696
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 16816,
+        "mean_request_seconds_per_sample_case": 0.08498899999540299,
+        "population_case_count": 976,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2121,
+          2407
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 9142.5,
+        "mean_request_seconds_per_sample_case": 1.5648752499837428,
+        "population_case_count": 2,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=false",
+        "sample_caseids": [
+          531,
+          3723
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 30802.5,
+        "mean_request_seconds_per_sample_case": 0.24386035001953132,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          723,
+          5311
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 43421.5,
+        "mean_request_seconds_per_sample_case": 0.2678870499948971,
+        "population_case_count": 631,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2245,
+          5017
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 130520.5,
+        "mean_request_seconds_per_sample_case": 1.1279523499542847,
+        "population_case_count": 204,
+        "presence_combination": "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          667,
+          1145
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 59079.5,
+        "mean_request_seconds_per_sample_case": 0.2602546999696642,
+        "population_case_count": 1052,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          995,
+          4194
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 83748,
+        "mean_request_seconds_per_sample_case": 3.936479150026571,
+        "population_case_count": 182,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          118,
+          2690
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 71716,
+        "mean_request_seconds_per_sample_case": 0.42249534995062277,
+        "population_case_count": 8,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true",
+        "sample_caseids": [
+          2777,
+          5607
+        ]
+      },
+      {
+        "mean_download_bytes_per_sample_case": 41138,
+        "mean_request_seconds_per_sample_case": 0.5590556500246748,
+        "population_case_count": 148,
+        "presence_combination": "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true",
+        "sample_caseids": [
+          3023,
+          5971
+        ]
+      }
+    ],
+    "universe_case_count": 3219,
+    "workers_for_estimate": 8
+  },
+  "primus_agent_specific_gas2_mac_positive_combination_counts": {
+    "agent_specific_positive=false|gas2_positive=false|mac_positive=false": 2502,
+    "agent_specific_positive=false|gas2_positive=false|mac_positive=true": 7,
+    "agent_specific_positive=false|gas2_positive=true|mac_positive=false": 2,
+    "agent_specific_positive=false|gas2_positive=true|mac_positive=true": 8,
+    "agent_specific_positive=true|gas2_positive=false|mac_positive=false": 28,
+    "agent_specific_positive=true|gas2_positive=false|mac_positive=true": 144,
+    "agent_specific_positive=true|gas2_positive=true|mac_positive=false": 28,
+    "agent_specific_positive=true|gas2_positive=true|mac_positive=true": 500
+  },
+  "processing": {
+    "abnormal_values_deleted": false,
+    "clipping": false,
+    "interpolation": false,
+    "original_timestamps_used": true,
+    "resampling": false,
+    "smoothing": false
+  },
+  "query_completed_at": "2026-07-19T21:01:05.612404+00:00",
+  "raw_signal_commit_policy": "git_ignored_not_committed",
+  "scientific_result": false,
+  "selected_exposure_definition": null,
+  "source_version": "vitaldb_open_api_client=0.1.0;tracks_sha256=82b31333be20ca912ded93f46bf3ae42db281da40515a9945acc57749da9ffd0;phase5a_manifest_sha256=637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5;phase5b_presence_sha256=d5f87587c179cb6d81d0af7496ef1590339e5c603205c2f986cce55dd6cc07d3",
+  "track_presence_combination_counts": {
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=false": 8,
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true": 976,
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=false": 2,
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true": 8,
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true": 631,
+    "primus_exp_sevo_present=false|primus_insp_sevo_present=false|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true": 204,
+    "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true": 1052,
+    "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=false|primus_insp_des_present=false|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true": 182,
+    "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=false|solar8000_gas2_inspired_present=false|primus_mac_present=true": 8,
+    "primus_exp_sevo_present=true|primus_insp_sevo_present=true|primus_exp_des_present=true|primus_insp_des_present=true|solar8000_gas2_expired_present=true|solar8000_gas2_inspired_present=true|primus_mac_present=true": 148
+  },
+  "track_summaries": {
+    "Primus/EXP_DES": {
+      "absent_case_count": 2228,
+      "anesthesia_window_positive_case_count": 375,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 991,
+          "maximum": 27754.916,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 505.1999999999971,
+          "q95": 1977.2200000000003
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 991,
+          "maximum": 27754.916,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 510.25,
+          "q95": 2040.199999999997
+        },
+        "maximum": {
+          "available_count": 991,
+          "maximum": 13.2,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 2.4,
+          "q95": 6.0
+        },
+        "minimum": {
+          "available_count": 991,
+          "maximum": 0.7,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q05": {
+          "available_count": 991,
+          "maximum": 2.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q25": {
+          "available_count": 991,
+          "maximum": 4.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.2
+        },
+        "q50": {
+          "available_count": 991,
+          "maximum": 6.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1.0
+        },
+        "q75": {
+          "available_count": 991,
+          "maximum": 9.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 3.4
+        },
+        "q95": {
+          "available_count": 991,
+          "maximum": 9.9,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.6,
+          "q95": 4.8
+        },
+        "value_positive_fraction": {
+          "available_count": 991,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.10399656209712076,
+          "q95": 0.7790055248618785
+        }
+      },
+      "download_status_counts": {
+        "complete": 991,
+        "track_absent": 2228
+      },
+      "official_description": "Expiratory desflurane pressure",
+      "official_unit": "kPa",
+      "present_all_observed_values_zero_case_count": 610,
+      "present_case_count": 991,
+      "unit_review_status": "pending_human_review"
+    },
+    "Primus/EXP_SEVO": {
+      "absent_case_count": 1829,
+      "anesthesia_window_positive_case_count": 369,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 1390,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 7.086999999999989,
+          "q95": 1459.7000000000007
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 1390,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 7.4220000000000255,
+          "q95": 1459.7000000000007
+        },
+        "maximum": {
+          "available_count": 1390,
+          "maximum": 7.4,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.3,
+          "q95": 3.6
+        },
+        "minimum": {
+          "available_count": 1390,
+          "maximum": 1.7,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q05": {
+          "available_count": 1390,
+          "maximum": 2.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q25": {
+          "available_count": 1390,
+          "maximum": 2.9,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q50": {
+          "available_count": 1390,
+          "maximum": 3.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q75": {
+          "available_count": 1390,
+          "maximum": 3.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.2
+        },
+        "q95": {
+          "available_count": 1390,
+          "maximum": 4.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1.0
+        },
+        "value_positive_fraction": {
+          "available_count": 1390,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0016685205784204673,
+          "q95": 0.3291139240506329
+        }
+      },
+      "download_status_counts": {
+        "complete": 1390,
+        "track_absent": 1829
+      },
+      "official_description": "Expiratory sevoflurane pressure",
+      "official_unit": "kPa",
+      "present_all_observed_values_zero_case_count": 1017,
+      "present_case_count": 1390,
+      "unit_review_status": "pending_human_review"
+    },
+    "Primus/INSP_DES": {
+      "absent_case_count": 2228,
+      "anesthesia_window_positive_case_count": 363,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 991,
+          "maximum": 9477.29,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 327.84999999999854,
+          "q95": 1395.0
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 991,
+          "maximum": 9477.29,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 339.6999999999998,
+          "q95": 1395.0
+        },
+        "maximum": {
+          "available_count": 991,
+          "maximum": 17.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 3.4,
+          "q95": 7.8
+        },
+        "minimum": {
+          "available_count": 991,
+          "maximum": 0.5,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q05": {
+          "available_count": 991,
+          "maximum": 2.9,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q25": {
+          "available_count": 991,
+          "maximum": 5.9,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q50": {
+          "available_count": 991,
+          "maximum": 6.4,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.6
+        },
+        "q75": {
+          "available_count": 991,
+          "maximum": 12.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 4.3
+        },
+        "q95": {
+          "available_count": 991,
+          "maximum": 12.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.5,
+          "q95": 6.0
+        },
+        "value_positive_fraction": {
+          "available_count": 991,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.06743002544529263,
+          "q95": 0.5809128630705395
+        }
+      },
+      "download_status_counts": {
+        "complete": 991,
+        "track_absent": 2228
+      },
+      "official_description": "Inspiratory desflurane pressure",
+      "official_unit": "kPa",
+      "present_all_observed_values_zero_case_count": 622,
+      "present_case_count": 991,
+      "unit_review_status": "pending_human_review"
+    },
+    "Primus/INSP_SEVO": {
+      "absent_case_count": 1829,
+      "anesthesia_window_positive_case_count": 356,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 1390,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1085.5999999999985
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 1390,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 6.317999999999984,
+          "q95": 1085.5999999999985
+        },
+        "maximum": {
+          "available_count": 1390,
+          "maximum": 7.4,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.2,
+          "q95": 5.9
+        },
+        "minimum": {
+          "available_count": 1390,
+          "maximum": 2.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q05": {
+          "available_count": 1390,
+          "maximum": 3.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q25": {
+          "available_count": 1390,
+          "maximum": 3.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q50": {
+          "available_count": 1390,
+          "maximum": 3.7,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q75": {
+          "available_count": 1390,
+          "maximum": 3.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q95": {
+          "available_count": 1390,
+          "maximum": 6.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1.4
+        },
+        "value_positive_fraction": {
+          "available_count": 1390,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0011547344110854503,
+          "q95": 0.22758620689655173
+        }
+      },
+      "download_status_counts": {
+        "complete": 1390,
+        "track_absent": 1829
+      },
+      "official_description": "Inspiratory sevoflurane pressure",
+      "official_unit": "kPa",
+      "present_all_observed_values_zero_case_count": 1030,
+      "present_case_count": 1390,
+      "unit_review_status": "pending_human_review"
+    },
+    "Primus/MAC": {
+      "absent_case_count": 10,
+      "anesthesia_window_positive_case_count": 659,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 3209,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1112.17
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 3209,
+          "maximum": 24810.600000000002,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1115.3999999999996
+        },
+        "maximum": {
+          "available_count": 3209,
+          "maximum": 13.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 1.2
+        },
+        "minimum": {
+          "available_count": 3209,
+          "maximum": 0.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q05": {
+          "available_count": 3209,
+          "maximum": 0.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q25": {
+          "available_count": 3209,
+          "maximum": 1.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q50": {
+          "available_count": 3209,
+          "maximum": 1.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q75": {
+          "available_count": 3209,
+          "maximum": 1.5,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.0
+        },
+        "q95": {
+          "available_count": 3209,
+          "maximum": 3.5,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.4
+        },
+        "value_positive_fraction": {
+          "available_count": 3209,
+          "maximum": 0.9791403286978508,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.11267134737545971
+        }
+      },
+      "download_status_counts": {
+        "complete": 3209,
+        "track_absent": 10
+      },
+      "official_description": "Minimum alveolar concentration of volatile",
+      "official_unit": "unitless",
+      "present_all_observed_values_zero_case_count": 2540,
+      "present_case_count": 3209,
+      "unit_review_status": "pending_human_review"
+    },
+    "Solar8000/GAS2_EXPIRED": {
+      "absent_case_count": 2675,
+      "anesthesia_window_positive_case_count": 538,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 544,
+          "maximum": 27757.554,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 239.98999999999978,
+          "q25": 524.1000000000004,
+          "q50": 998.047,
+          "q75": 2386.0999999999985,
+          "q95": 13179.475
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 544,
+          "maximum": 27757.554,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 169.9910000000001,
+          "missing_count": 0,
+          "q05": 248.10000000000036,
+          "q25": 532.0400000000009,
+          "q50": 1005.75,
+          "q75": 2386.0999999999985,
+          "q95": 13379.475
+        },
+        "maximum": {
+          "available_count": 544,
+          "maximum": 13.2,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.2,
+          "missing_count": 0,
+          "q05": 0.6,
+          "q25": 1.7,
+          "q50": 3.1,
+          "q75": 4.6,
+          "q95": 7.0
+        },
+        "minimum": {
+          "available_count": 544,
+          "maximum": 1.7,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.1,
+          "q50": 0.2,
+          "q75": 0.2,
+          "q95": 0.3
+        },
+        "q05": {
+          "available_count": 544,
+          "maximum": 2.8,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.1,
+          "q25": 0.2,
+          "q50": 0.2,
+          "q75": 0.3,
+          "q95": 0.6
+        },
+        "q25": {
+          "available_count": 544,
+          "maximum": 5.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.1,
+          "missing_count": 0,
+          "q05": 0.2,
+          "q25": 0.3,
+          "q50": 0.4,
+          "q75": 0.7,
+          "q95": 2.0
+        },
+        "q50": {
+          "available_count": 544,
+          "maximum": 8.3,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.1,
+          "missing_count": 0,
+          "q05": 0.3,
+          "q25": 0.5,
+          "q50": 0.9,
+          "q75": 1.8,
+          "q95": 3.7
+        },
+        "q75": {
+          "available_count": 544,
+          "maximum": 9.39,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.2,
+          "missing_count": 0,
+          "q05": 0.4,
+          "q25": 0.8,
+          "q50": 1.6,
+          "q75": 3.0,
+          "q95": 5.0
+        },
+        "q95": {
+          "available_count": 544,
+          "maximum": 11.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.2,
+          "missing_count": 0,
+          "q05": 0.6,
+          "q25": 1.5,
+          "q50": 2.6,
+          "q75": 4.1,
+          "q95": 6.2
+        },
+        "value_positive_fraction": {
+          "available_count": 544,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.7692307692307693,
+          "missing_count": 0,
+          "q05": 0.9913180741910024,
+          "q25": 1.0,
+          "q50": 1.0,
+          "q75": 1.0,
+          "q95": 1.0
+        }
+      },
+      "download_status_counts": {
+        "complete": 544,
+        "track_absent": 2675
+      },
+      "official_description": "Expiratory volatile concentration",
+      "official_unit": "%",
+      "present_all_observed_values_zero_case_count": 0,
+      "present_case_count": 544,
+      "unit_review_status": "pending_human_review"
+    },
+    "Solar8000/GAS2_INSPIRED": {
+      "absent_case_count": 2675,
+      "anesthesia_window_positive_case_count": 517,
+      "case_count": 3219,
+      "case_level_metric_distributions": {
+        "anesthesia_window_longest_positive_run_seconds": {
+          "available_count": 544,
+          "maximum": 24813.700000000004,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 96.01999999999862,
+          "q25": 362.0199999999986,
+          "q50": 742.032,
+          "q75": 1562.199999999999,
+          "q95": 11059.045399999999
+        },
+        "longest_positive_run_seconds": {
+          "available_count": 544,
+          "maximum": 24813.700000000004,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 142.01000000000022,
+          "q25": 368.07899999999995,
+          "q50": 748.066,
+          "q75": 1562.199999999999,
+          "q95": 11059.045399999999
+        },
+        "maximum": {
+          "available_count": 544,
+          "maximum": 17.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.7,
+          "q25": 2.5,
+          "q50": 4.5,
+          "q75": 6.3,
+          "q95": 9.8
+        },
+        "minimum": {
+          "available_count": 544,
+          "maximum": 3.5,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.0,
+          "q95": 0.2
+        },
+        "q05": {
+          "available_count": 544,
+          "maximum": 3.5,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.0,
+          "q75": 0.1,
+          "q95": 0.4
+        },
+        "q25": {
+          "available_count": 544,
+          "maximum": 6.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.0,
+          "q50": 0.2,
+          "q75": 0.6,
+          "q95": 2.4
+        },
+        "q50": {
+          "available_count": 544,
+          "maximum": 11.1,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.0,
+          "q25": 0.4,
+          "q50": 1.0,
+          "q75": 2.09,
+          "q95": 4.6
+        },
+        "q75": {
+          "available_count": 544,
+          "maximum": 12.2,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.3,
+          "q25": 1.1,
+          "q50": 2.09,
+          "q75": 4.0,
+          "q95": 6.2
+        },
+        "q95": {
+          "available_count": 544,
+          "maximum": 12.7,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.5,
+          "q25": 2.09,
+          "q50": 3.8,
+          "q75": 5.6,
+          "q95": 7.7
+        },
+        "value_positive_fraction": {
+          "available_count": 544,
+          "maximum": 1.0,
+          "method": "nearest_rank_across_case_level_metrics",
+          "minimum": 0.0,
+          "missing_count": 0,
+          "q05": 0.4219409282700422,
+          "q25": 0.7494456762749445,
+          "q50": 0.8942383583267561,
+          "q75": 0.9881889763779528,
+          "q95": 1.0
+        }
+      },
+      "download_status_counts": {
+        "complete": 544,
+        "track_absent": 2675
+      },
+      "official_description": "Inspiratory volatile concentration",
+      "official_unit": "%",
+      "present_all_observed_values_zero_case_count": 21,
+      "present_case_count": 544,
+      "unit_review_status": "pending_human_review"
+    }
+  }
+}
