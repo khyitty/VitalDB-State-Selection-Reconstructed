@@ -10,7 +10,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 2 — Migration inventory | complete | 352/352 paths classified; 18 tests passed; remote `main` verified at `4a89b4d` |
 | 3 — Eligibility audit framework | complete | 38 tests passed; remote `main` verified at `0246e77`; thresholds, units, TIVA, volatile aliases, and legacy overlap remain pending |
 | 4 — Random 25-case dry run | complete | Fixed seed `20260719`; all 25 metadata rows and signal outcomes preserved; 12 checksum-complete and 13 explicit non-retryable failures; 44 tests passed; raw data remains ignored; remote phase commit verified at `2f0b0c8` |
-| 5A — Full metadata and track inventory audit | validated; publication pending | 56 tests passed; actual `/cases` and `/trks` snapshots; 6,388/6,388 manifest rows; zero API/parsing failures; 193 unapproved names remain pending; no legacy IDs or signals accessed |
+| 5A — Full metadata and track inventory audit | complete | 56 tests passed; actual `/cases` and `/trks` snapshots; 6,388/6,388 manifest rows; zero API/parsing failures; 193 unapproved names remain pending; no legacy IDs or signals accessed; remote phase commit verified at `9456fe4` |
 | Full signal cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
@@ -27,6 +27,11 @@ push.
 
 The Phase 4 phase commit
 `2f0b0c8f0124ed053dedb75656502953123448d1` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this status
+follow-up was created.
+
+The Phase 5A phase commit
+`9456fe4c286ccca85f8a9b29cdc0f3389d84cac9` was pushed with ordinary Git, and
 `refs/heads/main` was independently observed at that exact SHA before this status
 follow-up was created.
 
