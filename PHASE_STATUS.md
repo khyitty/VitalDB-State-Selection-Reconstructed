@@ -21,7 +21,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7A - Subject linkage and patient-level split feasibility audit | complete | 167 tests and the 26-source production first-N guard passed; 2,460 cases map without ambiguity to 2,415 nonmissing subjects; subjectid missing 0 and case-to-subject ambiguity 0; cluster sizes are 1×2,378, 2×35, 3×1, and 9×1; 82 cases belong to repeated subjects; sex inconsistency warnings 0; linkage checksum `102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7`; count-only nearest case and subject targets are arithmetically feasible; no allocation selected and no split/test seal/outcome/raw/API/modeling/preprocessing fit; remote Phase 7A commit verified at `11cfa98` |
 | 7B - Protocol v1.3 control-focused 2×2 study design | complete | 189 tests and the 28-source production first-N guard passed; frozen cohort remains 2,460 cases and 2,415 subjects; P0 `sqi_not_required__bis30s__drug120s` and P1 `sqi_ge_50__bis20s__drug60s`; conceptual S0/S1 and four future policy IDs; planned 1,932/483 subject counts and seeds 42 plus 7/42/84; simulator observation-quality layer requires new implementation and missing encoding architecture budget reward action bounds and allocation method remain human decisions; no split seal modeling array raw outcome dose Cp/Ce prediction feature selection PPO control metric or statistics execution; remote Phase 7B commit verified at `3e8faa86919cda47cadf59844987ebaf81ff435b` |
 | 7C - PPO/Simulator reuse audit and minimal implementation plan | complete | 195 audit-scope tests passed (the three excluded scaffold tests were not run after scope correction); the audit utility passed its direct first-N scan; legacy PK/PD synthetic reset plus one 10-second step passed; environment and PPO imports explicitly failed on missing runtime dependencies; only reuse audit documents and a bounded read-only probe were committed; missing encoding remains pending human approval; drug-rate semantics classified retrospective-only; no split raw access real array committed simulator/PPO implementation checkpoint training or evaluation; remote phase commit verified at `03e8ec9f4d3eec640552146d7511867f6db39136` |
-| 7D - Protocol v1.3.1 online observation amendment and workspace resolution | validated; publication pending | 214 tests and the 29-source production first-N guard passed; the 14 excluded paths were backed up with exact copies and a binary patch then selectively removed; Protocol v1.3.1 removes online drug staleness, selects BIS Option B-minimal, freezes S0/S1 at 34/42 conceptual fields, and approves Path A; the numeric BIS age cap remains pending before implementation; no implementation, split, raw access, package change, or PPO execution |
+| 7D - Protocol v1.3.1 online observation amendment and workspace resolution | complete | 214 tests and the 29-source production first-N guard passed; the 14 excluded paths were backed up with exact copies and a binary patch then selectively removed; Protocol v1.3.1 removes online drug staleness, selects BIS Option B-minimal, freezes S0/S1 at 34/42 conceptual fields, and approves Path A; the numeric BIS age cap remains pending before implementation; no implementation, split, raw access, package change, or PPO execution; remote phase commit independently verified at `2290f559f2790938916a4eef35d316fc81d165c1` |
 | 7E and later research execution | blocked by protocol | Human approval is still required for the numeric BIS age cap, sex tensor encoding, authoritative laboratory code intake, dependency lock, scientific constants, subject allocation, split/test seal, template extraction, and any PPO execution |
 
 ## Publication constraint
@@ -124,6 +124,14 @@ publication-status follow-up was created. The commit contains only audit and
 planning artifacts plus a bounded read-only probe. It contains none of the local
 full-scaffold changes excluded after the scope correction, and it creates no split,
 raw access, real modeling array, checkpoint, PPO training, or evaluation result.
+
+The Phase 7D online-observation-amendment commit
+`2290f559f2790938916a4eef35d316fc81d165c1` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The excluded scaffold remains preserved
+in the verified external backup and is absent from the committed workspace. The
+commit contains no split, raw access, template extraction, simulator/environment
+implementation, dependency change, checkpoint, PPO training, or evaluation result.
 
 ## Failure record template
 
