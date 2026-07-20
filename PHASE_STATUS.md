@@ -25,7 +25,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7E - Paper-Grounded Reconstruction Specification | complete | 233 tests and the unchanged 29-source production first-N guard passed; Protocol v1.3.2 retires laboratory-code Path A; 90 evidence rows and 34 missing-constant decisions remain documentary or pending as classified; the frozen 2,460-case/2,415-subject cohort and 2x2 design are unchanged; no simulator, environment, dependency, split, raw access, modeling array, training, evaluation, prediction, Cp/Ce reconstruction, feature selection, or PPO execution; remote phase commit independently verified at `dc05d46f4a0d34f2909d73c42a3b86a1f188cd65` |
 | 7F - Stage I paper-grounded deterministic PK/PD reconstruction | complete | MC-001 through MC-009 approved for Stage I and MC-010 through MC-034 remain pending; 262 tests and the unchanged 29-source production first-N guard passed; three fixed synthetic profiles; maximum semigroup error `4.440892098500626e-16`, maximum exact-ZOH versus solve_ivp error `3.3306690738754696e-16`, BIS monotonic-grid violations 0, and remifentanil unit-regression ratio `999.9999999999999`; frozen 2,460-case/2,415-subject cohort and P0/P1 by S0/S1 design unchanged; no dependency change, raw or subject-metadata access, split, test seal, environment, observation adapter, reward, action adapter, PPO, model, checkpoint, training, or evaluation; remote phase commit independently verified at `12268fa086b7ff1926a27479eb114f6cf408a876` |
 | 7G - Stage II dependency-free anesthesia environment core | complete | MC-010 through MC-018 and MC-031/MC-032 approved only for the synthetic Stage II core; P0/P1 causal BIS processing, exact-ZOH event partitioning, physical propofol actions, synthetic remifentanil schedules, latent-BIS reward, S0=34/S1=42, and four executable conditions implemented; five fixed synthetic scenarios, all 285 repository tests, and the unchanged 29-source first-N guard passed with latent/reward invariance; no dependency change, raw or subject access, actual template, split, test seal, PPO, model, checkpoint, training, evaluation, or statistics; remote Phase 7G commit independently verified at `a4968c0c66ba503e93bec85c04db6b8bda3c227b` |
-| 7H - Stage III Gymnasium and Stable-Baselines3 PPO integration | validation complete; publication pending | Isolated SB3 2.8.0/Gymnasium 1.2.3 CPU runtime; MC-019 through MC-029 and MC-034 approved only as scoped; all four adapters/checkers/VecEnv/model initializations passed; four official 128-timestep smoke updates and two P0S0 determinism repetitions passed; 302/302 tests passed in the isolated RL venv, base discovery passed 302 with 9 optional-RL skips, and the unchanged 29-source first-N guard passed; no reward/BIS comparison, ranking, checkpoint, split, raw or subject access, actual template, real patient, final training, evaluation, or statistics |
+| 7H - Stage III Gymnasium and Stable-Baselines3 PPO integration | complete | Isolated SB3 2.8.0/Gymnasium 1.2.3 CPU runtime; MC-019 through MC-029 and MC-034 approved only as scoped; all four adapters/checkers/VecEnv/model initializations passed; four official 128-timestep smoke updates and two P0S0 determinism repetitions passed; 302/302 tests passed in the isolated RL venv, base discovery passed 302 with 9 optional-RL skips, and the unchanged 29-source first-N guard passed; no reward/BIS comparison, ranking, checkpoint, split, raw or subject access, actual template, real patient, final training, evaluation, or statistics; remote Phase 7H commit independently verified at `404379f64d5bdce66822c38528f25e0aab91d881` |
 | Phase 7I and later execution | blocked by protocol | MC-030 total training budget and MC-033 final seed execution remain pending; subject allocation, split/test-seal, actual template extraction, final PPO training, evaluation, and statistics require later explicit approval |
 
 ## Publication constraint
@@ -164,6 +164,16 @@ environment core, contracts, tests, and validation artifacts. It contains no
 dependency change, VitalDB raw or subject-data derivative, actual observation
 template, split, test seal, PPO, model, checkpoint, training, evaluation, or
 statistical result. MC-019 through MC-030, MC-033, and MC-034 remain pending.
+
+The Phase 7H Stage III integration commit
+`404379f64d5bdce66822c38528f25e0aab91d881` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. It contains the optional isolated RL
+dependency contracts, Gymnasium adapter, SB3 configuration and bounded synthetic
+smoke evidence only. The ignored `.venv-phase7h` and all in-memory models remain
+untracked. No raw or subject-data derivative, actual observation template, split,
+test seal, persistent checkpoint, full training, evaluation comparison, or
+statistical result is included. MC-030 and MC-033 remain pending.
 
 ## Failure record template
 
