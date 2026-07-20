@@ -16,7 +16,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 5D — Volatile exposure rule sensitivity audit | complete | 94 tests and the 15-source production first-N guard passed; 3,219 cases and 9,059 Phase 5C raw checksums verified; 18,119-file raw tree unchanged; one inverted anesthesia window preserved as an explicit warning; no rule or candidate selected; remote phase commit independently verified at `34b7eb4` |
 | 6A - Protocol v1.1 freeze and primary signal acquisition | complete | 106 tests and the 17-source production first-N guard passed; 3,219 pre-quality rows with 2,470 acquisition inclusions; fixed-seed 25-case preflight passed; 9,880/9,880 exact-track requests complete and checksum-verified; raw data remains ignored; no quality threshold cohort freeze split model Cp/Ce dose or PPO execution; remote phase commit verified at `15d35da` |
 | 6B - Outcome-blind primary signal quality characterization | complete | 121 tests and the 19-source production first-N guard passed; 2,470 case rows and 9,880 case-track rows complete; all Phase 6A raw checksums and raw-tree state match before/after; permissive moderate and strict pass counts are 2,464 2,333 and 1,723 with no scenario selected; no API raw rewrite quality-rule selection cohort freeze split prediction Cp/Ce dose feature selection or PPO execution; remote phase commit verified at `d3bc24f` |
-| 6C - Causal grid and prediction-window feasibility audit | complete locally; publication blocked | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; 9,880 raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; usable-case counts range from 2,465 to 2,468 without selecting a rule; Git staging was denied by the environment approval reviewer before commit; no API raw creation modeling array threshold cohort freeze split outcome/model Cp/Ce dose feature selection or PPO execution |
+| 6C - Causal grid and prediction-window feasibility audit | complete | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; usable-case counts range from 2,465 to 2,468 with no rule selected; all 9,880 source raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; no cohort freeze split model Cp/Ce feature selection or PPO execution; remote Phase 6C commit verified at `b8f010d` |
 | Full signal cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
@@ -82,6 +82,12 @@ fixed and its RSS result tested, the complete production run passed both raw
 checksum passes and every phase gate. This recovered engineering failure did not
 change a scientific rule or case decision.
 
+The Phase 6C phase commit
+`b8f010dcc67497f77e26cee53094819f2f5d6cd9` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The committed change contains no raw
+file or modeling array and leaves the legacy repository state unchanged.
+
 ## Failure record template
 
 Fill this section for any failed phase gate or push. Do not delete a failed record.
@@ -127,3 +133,4 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `remaining_work`: After Git-index write approval is restored, stage only the enumerated Phase 6C files, review the cached diff, commit, push ordinary Git to `origin/main`, independently verify the remote SHA, update this status record, commit and push the publication follow-up, then stop.
 - `local_commit_sha`: `30064de6ee4eeea44b5a220be1e5f6ba7c53b4e4` (unchanged Phase 6B publication tip; all Phase 6C changes remain unstaged)
 - `push_error`: Not attempted because the independent commit gate failed before commit; this is not a Git authentication error.
+- `resolution`: Git-index write approval was restored. Exactly the 20 reviewed Phase 6C paths were staged, cached-diff reviewed, committed as `b8f010dcc67497f77e26cee53094819f2f5d6cd9`, pushed with ordinary Git, and independently verified on `refs/heads/main`. The failure record is retained for provenance.
