@@ -1,0 +1,21 @@
+{
+  "contract_id": "phase7g-transition-order-v1",
+  "ordered_steps": [
+    "validate_raw_action",
+    "clip_once",
+    "convert_dose_to_rate",
+    "query_current_remifentanil_schedule",
+    "partition_interval_at_events",
+    "exact_zoh_advance_each_subinterval",
+    "sample_latent_bis_at_bis_events",
+    "finalize_endpoint_latent_state",
+    "update_completed_drug_histories_and_doses",
+    "update_elapsed_time",
+    "query_causal_bis_history",
+    "build_next_state",
+    "compute_reward_from_latent_endpoint_bis",
+    "determine_terminated_and_truncated",
+    "return_diagnostics"
+  ],
+  "future_event_access": false
+}

@@ -1,0 +1,77 @@
+{
+  "phase": "7G_stage_ii_dependency_free_environment_core",
+  "approved_decisions": [
+    {
+      "id": "MC-010",
+      "status": "approved_for_stage_ii",
+      "decision": "No LOWESS; raw causal BIS only."
+    },
+    {
+      "id": "MC-011",
+      "status": "approved_for_stage_ii",
+      "decision": "Recent dose is completed intervals in (t-60,t]."
+    },
+    {
+      "id": "MC-012",
+      "status": "approved_for_stage_ii",
+      "decision": "Reward alpha is 1.0 and uses latent endpoint BIS only."
+    },
+    {
+      "id": "MC-013",
+      "status": "approved_for_stage_ii",
+      "decision": "Zero-drug reset, zero drug histories, unavailable BIS prehistory."
+    },
+    {
+      "id": "MC-014",
+      "status": "approved_for_stage_ii",
+      "decision": "Scientific invalidity terminates; configured horizon truncates."
+    },
+    {
+      "id": "MC-015",
+      "status": "approved_for_stage_ii",
+      "decision": "Synthetic default horizon is configurable 3600 seconds."
+    },
+    {
+      "id": "MC-016",
+      "status": "approved_for_stage_ii",
+      "decision": "Action is propofol mg per next 10 seconds, [0,27.7], rate=dose*6."
+    },
+    {
+      "id": "MC-017",
+      "status": "approved_for_stage_ii",
+      "decision": "Finite action is clipped once with raw/applied diagnostics."
+    },
+    {
+      "id": "MC-018",
+      "status": "approved_for_stage_ii",
+      "decision": "Synthetic deterministic right-continuous remifentanil schedules only."
+    },
+    {
+      "id": "MC-031",
+      "status": "approved_for_stage_ii",
+      "decision": "Observation age cap 30 seconds; P0 <=30, P1 <=20."
+    },
+    {
+      "id": "MC-032",
+      "status": "approved_for_stage_ii",
+      "decision": "Female=0, male=1; unsupported sex errors; S0=34, S1=42."
+    }
+  ],
+  "still_pending_ids": [
+    "MC-019",
+    "MC-020",
+    "MC-021",
+    "MC-022",
+    "MC-023",
+    "MC-024",
+    "MC-025",
+    "MC-026",
+    "MC-027",
+    "MC-028",
+    "MC-029",
+    "MC-030",
+    "MC-033",
+    "MC-034"
+  ],
+  "scope_note": "Approvals apply only to the synthetic Stage II core, not final PPO training or evaluation."
+}

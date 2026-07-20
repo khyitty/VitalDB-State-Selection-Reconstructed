@@ -1,0 +1,30 @@
+{
+  "conditions": [
+    {
+      "condition_id": "P0S0",
+      "preprocessing_id": "P0_online_bis_permissive_v1",
+      "state_id": "S0",
+      "dimension": 34
+    },
+    {
+      "condition_id": "P1S0",
+      "preprocessing_id": "P1_online_bis_quality_v1",
+      "state_id": "S0",
+      "dimension": 34
+    },
+    {
+      "condition_id": "P0S1",
+      "preprocessing_id": "P0_online_bis_permissive_v1",
+      "state_id": "S1",
+      "dimension": 42
+    },
+    {
+      "condition_id": "P1S1",
+      "preprocessing_id": "P1_online_bis_quality_v1",
+      "state_id": "S1",
+      "dimension": 42
+    }
+  ],
+  "shared_latent_trajectory_required": true,
+  "condition_specific_episode_deletion": false
+}

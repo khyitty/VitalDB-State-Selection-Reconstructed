@@ -1,0 +1,125 @@
+{
+  "artifacts": [
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/__init__.py",
+      "bytes": 1098,
+      "sha256": "a369ce3a7110e3687bfac49561b3cf2cafcc531edccfd969675813a308a564a9"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/action.py",
+      "bytes": 942,
+      "sha256": "1489f8664034b1e635958307448e0f95b34145a80b537e6d92aa576228e8e481"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/config.py",
+      "bytes": 2567,
+      "sha256": "b102c9a6c60a2ac629008df703a51f891da8ff75ddbb49155ebe513671bf3400"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/core.py",
+      "bytes": 9338,
+      "sha256": "2631af4558443b3dd704bdaaceb11fed78a67459b14c6628448e87f706799ac7"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/observation.py",
+      "bytes": 5493,
+      "sha256": "584057db780c1b442677e0ef3e61f000a9acbaa1b7c01a8c3b0bd361685465bb"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/schedule.py",
+      "bytes": 2271,
+      "sha256": "754dcde3630560446c11e28acbaae0180ba70c7adad453e5eee38f14e80a91cf"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/anesthesia/state.py",
+      "bytes": 3885,
+      "sha256": "75bcbe83f6be6f4ebd9c46938f1b2899a918b289abf912da5a035ac4ed659b3d"
+    },
+    {
+      "relative_path": "tests/test_anesthesia_environment.py",
+      "bytes": 11228,
+      "sha256": "7883da959d8a67ecc2d46633d7ea7763c3a5bd30d039ac2ac695124aa2e8a3b5"
+    },
+    {
+      "relative_path": "tests/test_phase7g_artifacts.py",
+      "bytes": 3142,
+      "sha256": "393470f8084afdc1d796b4622c88656eb42b85ecc48892138c4b0001177d5cbf"
+    },
+    {
+      "relative_path": "scripts/build_phase7g_artifacts.py",
+      "bytes": 11986,
+      "sha256": "20fab42ffa63f3b00bec2c1dd9b82929c04fcad1612d60aeeab2891708d1c650"
+    },
+    {
+      "relative_path": "docs/phase7g_stage_ii_validation_report.md",
+      "bytes": 2323,
+      "sha256": "c7fc4e48163fa8582e198c6cdfca5ddfb5d82fda4c84cdf7f88174c8627b1be5"
+    },
+    {
+      "relative_path": "docs/phase7g_report.md",
+      "bytes": 1268,
+      "sha256": "4b207e7fd6022d3d2db53c4ec06515bf2cce8c5bcb79aad6943e76e710b74a46"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_action_contract.json",
+      "bytes": 335,
+      "sha256": "c23f0357e3b854e1d7fb50086b747ca74146b5ad82d490855e7ddef9bc069ace"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_environment_constants.json",
+      "bytes": 591,
+      "sha256": "3d62f8e1eaa618c7298678f42012ce998e7b63fc59280e0515105306a1ba584e"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_four_condition_configs.json",
+      "bytes": 726,
+      "sha256": "7fa0a552688ac2ab7362d4b7de8f82ef9e0e9e75d0fba3939f98bda921a25673"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_observation_template_schema.json",
+      "bytes": 1478,
+      "sha256": "53066274865290201b5ebc035793a6c96a2f99c8171d970c44b70787e2b04f7e"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_remifentanil_schedule_contract.json",
+      "bytes": 362,
+      "sha256": "459466c6cf96f0e82856d67aea9af5b11f4d284eb72155f39963fcf901024381"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_s0_state_schema.json",
+      "bytes": 1264,
+      "sha256": "c4c6546e987f210bde6aa31e52466251765bfe310988dc5b64922f9161e4e08b"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_s1_state_schema.json",
+      "bytes": 1567,
+      "sha256": "032949e27edae509cf94ad03afe2ac54a2a6ca740e794875a82d8fa35329b8ee"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_source_snapshot.json",
+      "bytes": 1982,
+      "sha256": "69b5c5fc1e591a7ce2343d9bb47f6db7240c9df3efb77983bec98a73367c7db4"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_stage_ii_human_decisions.json",
+      "bytes": 2183,
+      "sha256": "b0aedfecf14ff386eb8918e9c03747c2ab657c5f35c563dc2aac6b2da229a2b5"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_synthetic_validation_scenarios.json",
+      "bytes": 795,
+      "sha256": "8064e762ffc9568d72bccfe4ffc5f7cbf955f0fc3b88d344bad24c3a6fad1eda"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_transition_order_contract.json",
+      "bytes": 646,
+      "sha256": "6f7e409880f5828de8dfc2fbbe6bab2756d01f286e1356df9478ffaee5aea5d0"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_validation_summary.json",
+      "bytes": 464,
+      "sha256": "0de28a0a6c79e4e151a1e385e2f3ffc8f2940ca0e6186effefd367de61470b41"
+    }
+  ],
+  "self_excluded": true
+}

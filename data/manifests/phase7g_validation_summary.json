@@ -1,0 +1,19 @@
+{
+  "phase": "7G_stage_ii_dependency_free_environment_core",
+  "status": "passed",
+  "scenario_count": 5,
+  "condition_count": 4,
+  "conditions": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "s0_dimension": 34,
+  "s1_dimension": 42,
+  "latent_invariance_tolerance": 1e-12,
+  "all_synthetic_scenarios_passed": true,
+  "no_patient_data_used": true,
+  "no_control_performance_evaluation": true,
+  "no_ppo_training_or_evaluation": true
+}

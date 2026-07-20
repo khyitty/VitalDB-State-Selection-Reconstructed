@@ -1,0 +1,25 @@
+{
+  "registry_id": "phase7g-environment-v1",
+  "control_interval_seconds": 10.0,
+  "history_offsets_seconds": [
+    -50,
+    -40,
+    -30,
+    -20,
+    -10,
+    0
+  ],
+  "target_bis": 50.0,
+  "synthetic_default_horizon_seconds": 3600.0,
+  "synthetic_default_max_steps": 360,
+  "bis_age_clip_seconds": 30.0,
+  "p0_staleness_seconds_inclusive": 30.0,
+  "p1_staleness_seconds_inclusive": 20.0,
+  "p1_sqi_threshold_inclusive": 50.0,
+  "action_bounds_mg_per_10s": [
+    0.0,
+    27.7
+  ],
+  "reward_alpha": 1.0,
+  "final_training_or_evaluation_horizon_approved": false
+}

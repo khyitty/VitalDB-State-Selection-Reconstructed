@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SyntheticObservationTemplate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "template_id",
+    "source_type",
+    "episode_horizon_seconds",
+    "bis_events",
+    "sqi_events"
+  ],
+  "properties": {
+    "template_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "const": "synthetic"
+    },
+    "episode_horizon_seconds": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "bis_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "timestamp_seconds",
+          "available"
+        ],
+        "properties": {
+          "timestamp_seconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "available": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "sqi_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "timestamp_seconds",
+          "value"
+        ],
+        "properties": {
+          "timestamp_seconds": {
+            "type": "number",
+            "minimum": 0
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "raw_bis_values_permitted": false
+}

@@ -1,0 +1,9 @@
+{
+  "public_field": "propofol_dose_mg_per_10s",
+  "minimum": 0.0,
+  "maximum": 27.7,
+  "simulator_conversion": "propofol_rate_mg_per_min = propofol_dose_mg_per_10s * 6",
+  "nonfinite_behavior": "raise_input_exception",
+  "finite_out_of_bounds_behavior": "clip_exactly_once",
+  "normalized_action_wrapper_implemented": false
+}

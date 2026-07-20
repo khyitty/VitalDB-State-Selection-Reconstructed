@@ -1,0 +1,11 @@
+{
+  "source_type": "synthetic_only",
+  "unit": "microgram_per_min",
+  "continuity": "right_continuous",
+  "implementations": [
+    "ConstantRemifentanilSchedule",
+    "PiecewiseConstantRemifentanilSchedule"
+  ],
+  "within_interval_change": "split_at_exact_timestamp_and_apply_exact_ZOH_per_subinterval",
+  "controller_future_schedule_access": false
+}

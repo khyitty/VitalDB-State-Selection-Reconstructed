@@ -1,0 +1,36 @@
+{
+  "fixed_seed": 20260720,
+  "scenarios": [
+    {
+      "scenario_id": "perfect_observation",
+      "source_type": "synthetic",
+      "steps": 3,
+      "passed": true
+    },
+    {
+      "scenario_id": "low_sqi_episode",
+      "source_type": "synthetic",
+      "steps": 3,
+      "passed": true
+    },
+    {
+      "scenario_id": "missing_observation_episode",
+      "source_type": "synthetic",
+      "steps": 3,
+      "passed": true
+    },
+    {
+      "scenario_id": "irregular_intra_interval_events",
+      "source_type": "synthetic",
+      "steps": 3,
+      "passed": true
+    },
+    {
+      "scenario_id": "piecewise_remifentanil",
+      "source_type": "synthetic",
+      "steps": 3,
+      "passed": true
+    }
+  ],
+  "control_performance_claimed": false
+}

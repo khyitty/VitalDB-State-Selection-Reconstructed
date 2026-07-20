@@ -1,0 +1,47 @@
+{
+  "phase": "7G_stage_ii_dependency_free_environment_core",
+  "source_remote_main_at_start": "31fd5ae515255e564800266455dfbd3055c62786",
+  "frozen_case_count": 2460,
+  "frozen_subject_count": 2415,
+  "input_artifact_sha256": {
+    "pyproject.toml": "0e403ab599452d41b32938e2a558a69af326e398229f8657d2a6fa24efbc9ff8",
+    "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "data/manifests/subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+    "data/manifests/protocol_v1_3_1_source_snapshot.json": "5fce3e8635023e71277b042012caefc5a39f0a4e633820462945859fe0574ab0",
+    "data/manifests/protocol_v1_3_2_missing_constants.csv": "124bdc2331342dc0418af2c29ebebb11900065b6eb9bf93fa5dec4b219beb88a",
+    "data/manifests/phase7f_artifact_checksums.json": "e1dce7badaf15b4386f834872b394a6899cfa30bfcec61e9b86eaa2872482865"
+  },
+  "dependency_installed_or_modified": false,
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status": [
+      "?? debug.log"
+    ]
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status": [
+      "?? debug.log"
+    ]
+  },
+  "legacy_source_imported_or_copied": false,
+  "legacy_artifacts_accessed": [],
+  "execution_flags": {
+    "synthetic_environment_implemented": true,
+    "raw_vitaldb_access": false,
+    "subject_metadata_access": false,
+    "split_created": false,
+    "test_seal_created": false,
+    "modeling_array_created": false,
+    "gymnasium_imported": false,
+    "stable_baselines3_imported": false,
+    "torch_imported": false,
+    "ppo_implemented": false,
+    "checkpoint_created": false,
+    "training_run": false,
+    "evaluation_run": false,
+    "prediction_run": false
+  }
+}
