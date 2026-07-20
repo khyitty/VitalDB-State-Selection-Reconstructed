@@ -25,12 +25,14 @@ The authorized work stops after:
 11. Phase 6C outcome-blind causal 10-second grid and future-window feasibility
     comparisons across all 60 unselected SQI, BIS-staleness, and drug-hold candidates; and
 12. Phase 6D human-approved Protocol v1.2 preprocessing decision and deterministic
-    freeze of one 2,460-case final eligible cohort from the 2,470 Phase 6A cases.
+    freeze of one 2,460-case final eligible cohort from the 2,470 Phase 6A cases; and
+13. Phase 7A metadata-only subject linkage and count-only patient-level split
+    feasibility audit, without any split membership or test seal.
 
 The following remain deliberately unauthorized: full signal download outside the seven
 Phase 5C volatile tracks and four Phase 6A exact tracks, train/validation/test splitting,
 Cp/Ce reconstruction, dose calculation, prediction or feature selection, model training,
-and PPO training.
+PPO training, and Phase 7B patient-level allocation.
 
 ## Non-negotiable safeguards
 
@@ -167,6 +169,19 @@ are not described as 20 continuous minutes. Alternative SQI, staleness, hold, an
 minimum-window counts remain sensitivity references only. No raw signal, outcome,
 split, modeling array, normalization, dose, Cp/Ce, prediction, feature selection,
 or PPO step is used in the freeze.
+
+Phase 7A consumes only the frozen cohort and versioned clinical metadata:
+
+```powershell
+python scripts/run_subject_linkage_audit.py --verify-only
+```
+
+It preserves all 2,460 case-to-`subjectid` links, describes 2,415 subject
+clusters, audits within-subject metadata consistency, and evaluates only
+cluster-size arithmetic feasibility. Every `assigned_split` is blank and
+`split_created` is false. Phase 7A creates no train/validation/test membership,
+split ID list, test seal, raw read, outcome access, modeling array, or
+preprocessing fit.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

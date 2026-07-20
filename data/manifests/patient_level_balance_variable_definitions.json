@@ -1,0 +1,69 @@
+{
+  "created_timestamp": "2026-07-20T06:00:47.774998+00:00",
+  "purpose": "future_patient_level_marginal_balance_inventory_not_allocation",
+  "schema_version": 1,
+  "subject_allocation_rule": "Every subject must move with the sum of all case-level marginal contribution vectors; do not collapse a subject to one operation type or mean ASA.",
+  "variables": {
+    "age_group": {
+      "groups": [
+        "18_to_lt_40",
+        "40_to_lt_60",
+        "60_to_lt_75",
+        "ge_75",
+        "missing_or_invalid"
+      ],
+      "source_field": "age"
+    },
+    "asa_group": {
+      "groups": [
+        "ASA_1",
+        "ASA_2",
+        "ASA_3",
+        "ASA_4_or_higher",
+        "missing_or_other"
+      ],
+      "source_field": "asa"
+    },
+    "bmi_group": {
+      "eligibility_role": false,
+      "formula": "weight_kg / (height_cm / 100) ** 2",
+      "groups": [
+        "lt_18_5",
+        "18_5_to_lt_25",
+        "25_to_lt_30",
+        "ge_30",
+        "missing_or_invalid"
+      ],
+      "model_feature_role": false,
+      "source_fields": [
+        "height",
+        "weight"
+      ]
+    },
+    "emergency_group": {
+      "groups": [
+        "non_emergency",
+        "emergency",
+        "missing_or_other"
+      ],
+      "source_field": "emergency_status"
+    },
+    "operation_type_group": {
+      "rule": "exact source category; blank only becomes missing_or_other; no semantic regrouping",
+      "source_field": "operation_type"
+    },
+    "sex": {
+      "groups": [
+        "male",
+        "female",
+        "missing_or_other"
+      ],
+      "mapping": {
+        "F": "female",
+        "M": "male",
+        "other_or_missing": "missing_or_other"
+      },
+      "source_field": "sex"
+    }
+  }
+}

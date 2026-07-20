@@ -70,6 +70,8 @@ class GovernanceTests(unittest.TestCase):
             "Phase 5B outcome-blind eligibility decision-support audit",
             "Phase 5C outcome-blind characterization of seven exact volatile tracks",
             "Phase 6D human-approved Protocol v1.2 preprocessing decision",
+            "Phase 7A metadata-only subject linkage",
+            "Phase 7B patient-level allocation",
             "full signal download",
             "train/validation/test splitting",
             "PPO training",

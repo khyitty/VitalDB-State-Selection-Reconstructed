@@ -1,0 +1,58 @@
+{
+  "allocation_executed": false,
+  "alternative_selected": false,
+  "analysis_type": "cluster_size_histogram_only_no_subject_membership_allocation",
+  "assigned_split_count": 0,
+  "case_count_targets": {
+    "test": {
+      "ideal_fractional": 369.0,
+      "nearest_integer": 369
+    },
+    "train": {
+      "ideal_fractional": 1722.0,
+      "nearest_integer": 1722
+    },
+    "validation": {
+      "ideal_fractional": 369.0,
+      "nearest_integer": 369
+    }
+  },
+  "created_timestamp": "2026-07-20T06:00:47.774998+00:00",
+  "exact_case_targets_arithmetically_feasible": true,
+  "exact_joint_nearest_case_and_subject_targets_arithmetically_feasible": true,
+  "indivisible_subject_cluster_present": true,
+  "largest_cluster_case_count": 9,
+  "largest_cluster_share_of_targets": {
+    "test": 0.024390243902439025,
+    "train": 0.005226480836236934,
+    "validation": 0.024390243902439025
+  },
+  "metadata_balance_used": false,
+  "minimum_total_absolute_case_count_deviation_under_nearest_subject_targets": 0,
+  "outcome_used": false,
+  "phase": "7A_subject_linkage_and_patient_level_split_feasibility_audit",
+  "raw_signal_used": false,
+  "schema_version": 1,
+  "source_case_count": 2460,
+  "source_subject_count": 2415,
+  "split_created": false,
+  "subject_count_targets": {
+    "test": {
+      "ideal_fractional": 362.25,
+      "nearest_integer": 362
+    },
+    "train": {
+      "ideal_fractional": 1690.5,
+      "nearest_integer": 1691
+    },
+    "validation": {
+      "ideal_fractional": 362.25,
+      "nearest_integer": 362
+    }
+  },
+  "target_proportions": {
+    "test": 0.15,
+    "train": 0.7,
+    "validation": 0.15
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "data/manifests/alternative_split_objective_comparison.csv": "9287481c9cf896abdd63de29aeca5cfc078f7cf0c959b6768a995543cda2af8a",
+  "data/manifests/patient_level_balance_variable_definitions.json": "4004bef6414fafe8723d8ce586d0ffca9b04a993ee4f479c9a787b7d97130506",
+  "data/manifests/patient_level_split_feasibility_summary.json": "c0b805e7d795e1801dc293468acd4724b43b03a928580ae538e82835c08c54db",
+  "data/manifests/repeated_subject_distribution.csv": "81ebb9f33249255c37296b98d9d6146717f953c578cc46f3b65c758935e9be63",
+  "data/manifests/subject_level_cluster_summary.csv": "2ec6feb98020b33042bcfe5c156731f9169b420cb69280d8887f78504785c5ef",
+  "data/manifests/subject_linkage_case_manifest.csv": "cd42aa0caa9dd5151585e779af07110f4025688fbae00a81a29db527cf1ba2ad",
+  "data/manifests/subject_linkage_source_snapshot.json": "85915b2bb6ff4a41b1bff243710f8c3df45b69fe3b88a6328386f1d9196713a5",
+  "data/manifests/subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+  "data/manifests/within_subject_metadata_consistency.csv": "92709de45fabf04a9e34542328497f82c9e0577c979bccfdec8036a314c1d6a0",
+  "docs/phase7a_subject_linkage_audit_report.md": "67e6682a52642d3a98145a1406efcc60f831139991197a020f3cdead1d7c6443"
+}

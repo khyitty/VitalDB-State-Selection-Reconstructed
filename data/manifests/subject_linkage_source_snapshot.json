@@ -1,0 +1,66 @@
+{
+  "api_request_count": 0,
+  "cohort_frozen": true,
+  "created_timestamp": "2026-07-20T06:00:47.774998+00:00",
+  "first_n_sampling": false,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "modeling_arrays_created": false,
+  "new_raw_file_count": 0,
+  "outcome_access_count": 0,
+  "phase": "7A_subject_linkage_and_patient_level_split_feasibility_audit",
+  "phase6d_remote_sha_verified_before_phase7a": true,
+  "preprocessing_statistics_fitted": false,
+  "protocol_version": "1.2",
+  "provisional_split_created": false,
+  "raw_git_tracking_count": 0,
+  "raw_signal_file_open_count": 0,
+  "raw_tree_after": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_before": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_unchanged": true,
+  "schema_version": 1,
+  "source_artifact_sha256": {
+    "data/manifests/all_case_eligibility_manifest.csv": "637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5",
+    "data/manifests/eligibility_decision_support_source_snapshot.json": "11ce2368f994ee98b615f9c8bd6f2f16a7b4bef8375bbf526b3d709d1b0eba96",
+    "data/manifests/final_eligible_caseids.csv": "f0cd5f514fddd5a7b2c18f6ef895f647e3abe65314a880fc57a285547eb3c52e",
+    "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "data/manifests/final_ineligible_caseids.csv": "51b736aa852960d98a6000a4dd55371a0edabe39f044e9b5b22ca077eeb6e66e",
+    "data/manifests/metadata_audit_artifact_checksums.json": "1f97bcff57abec21aec9d9609fbb07e1914f6003ea1b64a0b24919caac587fac",
+    "data/manifests/metadata_audit_source_snapshot.json": "97b42c8cd8c3f155d1e64f0de61fef2bc3b1243cbce443123740f4ca776b157f",
+    "data/manifests/protocol_v1_2_artifact_checksums.json": "4a96f1607de1d9d46994caa60e409cc866bb65356b1b4df3f609b3a26658fdc6",
+    "data/manifests/protocol_v1_2_cohort_freeze.json": "3720d02b8c9caf01f41d7a075cf2e48bc54fc4188f6f4ac8a9bb55eca1a1ebc6",
+    "data/manifests/protocol_v1_2_source_snapshot.json": "73e92ed3dd08a30f6cf18ba4b945aa1c24ba75535fccb94611c72c45fa628f20",
+    "docs/protocol_v1_2_decision_record.md": "a66dd5d080ae9179b37ebb8922c8decf39b6a81358e9ae10d301cbffa1d5268e"
+  },
+  "source_eligible_count": 2460,
+  "source_eligible_ids_sha256": "f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd",
+  "source_phase6d_followup": "449ea6db82697327746919388d5e04597834a230",
+  "split_created": false,
+  "split_id_list_created": false,
+  "subjectid_documented_meaning": "Subject ID; Deidentified hospital ID of patient",
+  "subjectid_source_field": "subjectid",
+  "test_seal_created": false
+}

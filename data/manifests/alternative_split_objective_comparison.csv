@@ -1,0 +1,4 @@
+alternative,subject_groups_indivisible,primary_objective,secondary_reporting,metadata_marginal_balance_future_objective,advantage,limitation,selected,allocation_executed
+A_case_count_prioritized,true,minimize deviation from 70/15/15 case counts,subject-count ratios,false,closest control of case counts,subject-count ratios and metadata marginals may deviate,false,false
+B_subject_count_prioritized,true,minimize deviation from 70/15/15 subject counts,case-count ratios,false,closest control of subject counts,case counts may deviate because clusters are indivisible,false,false
+C_joint_case_subject_balance,true,joint case-count and subject-count deviation,both ratios and future case-level marginal contributions,true,can trade off both count scales and metadata marginals,requires predeclared weights and tie-breaking before allocation,false,false
