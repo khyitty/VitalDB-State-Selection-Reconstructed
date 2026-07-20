@@ -1,0 +1,71 @@
+{
+  "alternate_seed_search_performed": false,
+  "api_request_count": 0,
+  "assigned_split_count_before_phase8a": 0,
+  "case_count": 2460,
+  "checkpoint_created": false,
+  "created_timestamp_utc": "2026-07-20T15:13:57.122469+00:00",
+  "dependency_change": false,
+  "existing_test_seal_before_phase8a": false,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "normalization_fitted": false,
+  "observation_template_created": false,
+  "outcome_access_count": 0,
+  "phase": "Phase 8A",
+  "phase7a_subject_linkage_verified": true,
+  "phase7f_checksum_inventory_verified": true,
+  "phase7g_checksum_inventory_verified": true,
+  "phase7h_checksum_inventory_verified": true,
+  "ppo_evaluation_run": false,
+  "ppo_training_run": false,
+  "preprocessing_array_created": false,
+  "previous_phase_artifacts_unchanged": true,
+  "protocol_v1_2_cohort_freeze_verified": true,
+  "protocol_v1_3_planned_split_verified": true,
+  "raw_model_checkpoint_git_tracking_count": 0,
+  "raw_signal_file_open_count": 0,
+  "simulator_real_subject_run": false,
+  "source_artifact_sha256": {
+    "data/manifests/phase7f_artifact_checksums.json": "e1dce7badaf15b4386f834872b394a6899cfa30bfcec61e9b86eaa2872482865",
+    "data/manifests/phase7g_artifact_checksums.json": "e9984e55e698e7a4e6b3b5a9f803526925325468bd990cf83c92d423518743d6",
+    "data/manifests/phase7h_artifact_checksums.json": "3fad288b329ecd157254e3a95e2c3195378e66b6c7201221ef371985871b841f",
+    "data/manifests/protocol_v1_2_artifact_checksums.json": "4a96f1607de1d9d46994caa60e409cc866bb65356b1b4df3f609b3a26658fdc6",
+    "data/manifests/protocol_v1_2_cohort_freeze.json": "3720d02b8c9caf01f41d7a075cf2e48bc54fc4188f6f4ac8a9bb55eca1a1ebc6",
+    "data/manifests/protocol_v1_3_planned_subject_split.json": "4caa9858f8dd1fee0e8fe42cede740db8c7d7d43a4d84358f7c06ba6ed3ee14a",
+    "data/manifests/subject_level_cluster_summary.csv": "2ec6feb98020b33042bcfe5c156731f9169b420cb69280d8887f78504785c5ef",
+    "data/manifests/subject_linkage_artifact_checksums.json": "68811edf42bd57b400dc90ecf41f07894243a0ef5f120756cc085b27f4c8512e",
+    "data/manifests/subject_linkage_case_manifest.csv": "cd42aa0caa9dd5151585e779af07110f4025688fbae00a81a29db527cf1ba2ad",
+    "data/manifests/subject_linkage_source_snapshot.json": "85915b2bb6ff4a41b1bff243710f8c3df45b69fe3b88a6328386f1d9196713a5",
+    "data/manifests/subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+    "data/manifests/within_subject_metadata_consistency.csv": "92709de45fabf04a9e34542328497f82c9e0577c979bccfdec8036a314c1d6a0"
+  },
+  "source_commit_verified": true,
+  "source_index_clean": true,
+  "source_inventory_entry_counts": {
+    "phase7f_artifact_checksums.json": 26,
+    "phase7g_artifact_checksums.json": 24,
+    "phase7h_artifact_checksums.json": 25,
+    "protocol_v1_2_artifact_checksums.json": 9,
+    "subject_linkage_artifact_checksums.json": 10
+  },
+  "source_worktree_clean": true,
+  "starting_local_head": "22448d447d7e07941a3dc2139cb2eae0d76bd511",
+  "starting_remote_tracking_main": "22448d447d7e07941a3dc2139cb2eae0d76bd511",
+  "subject_count": 2415,
+  "test_subject_target": 483,
+  "train_subject_target": 1932
+}

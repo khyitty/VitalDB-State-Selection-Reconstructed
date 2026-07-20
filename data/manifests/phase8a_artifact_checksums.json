@@ -1,0 +1,115 @@
+{
+  "artifacts": [
+    {
+      "bytes": 409745,
+      "relative_path": "data/manifests/phase8a_case_split_manifest.csv",
+      "sha256": "8686aad17f079b9d0105f2090f6aa47d97d828865df2547e0952b4cd8cf974ce"
+    },
+    {
+      "bytes": 667,
+      "relative_path": "data/manifests/phase8a_metadata_balance_summary.json",
+      "sha256": "4a1a4eebbc32fc34bd43205f38ea66a269961e181dc51afc5ae923568a1e02e6"
+    },
+    {
+      "bytes": 9020,
+      "relative_path": "data/manifests/phase8a_metadata_balance_table.csv",
+      "sha256": "01fc21e37064f800d9402a6c45774975b649955bd88f56c45552459751baff4d"
+    },
+    {
+      "bytes": 3540,
+      "relative_path": "data/manifests/phase8a_source_snapshot.json",
+      "sha256": "a7649245a6933bf6e36611e9f4ffcd8419742d6781d9ca50bb99869991fea5d9"
+    },
+    {
+      "bytes": 983,
+      "relative_path": "data/manifests/phase8a_split_human_decisions.json",
+      "sha256": "7a0100aaa7413ce81f8fe4fd0f6129bcfd5d46748fb5ef73e369ec4ef6a070d9"
+    },
+    {
+      "bytes": 1446,
+      "relative_path": "data/manifests/phase8a_stratum_allocation.csv",
+      "sha256": "3426eb2ceeb93821b61b04633c7888669a79d9118a024efdcbdb08d5559960e1"
+    },
+    {
+      "bytes": 664793,
+      "relative_path": "data/manifests/phase8a_subject_split_manifest.csv",
+      "sha256": "c1cf8b60681757efdfa1fe0b5a2084f52d238f5fcbaba83cbff963962bb025e2"
+    },
+    {
+      "bytes": 2387,
+      "relative_path": "data/manifests/phase8a_test_case_ids.csv",
+      "sha256": "9ce24541b0b8ae7785881aadd5878c2cbec8a67fe0f7f2d5a6b27d9bf2d12897"
+    },
+    {
+      "bytes": 2115,
+      "relative_path": "data/manifests/phase8a_test_seal.json",
+      "sha256": "218c1864aaa43ebd028ee8ca26c918c7d16ada43de7b8f221b2ca41ccfb26479"
+    },
+    {
+      "bytes": 2336,
+      "relative_path": "data/manifests/phase8a_test_subject_ids.csv",
+      "sha256": "d5dfeb97f17293d1f503b6500ccff963538eef984b7858d932788b5272616f3a"
+    },
+    {
+      "bytes": 9617,
+      "relative_path": "data/manifests/phase8a_train_case_ids.csv",
+      "sha256": "b238c88406eaca9b0686571f32e5ffa76169f3fff0a260248304dc6a32c3eb01"
+    },
+    {
+      "bytes": 9322,
+      "relative_path": "data/manifests/phase8a_train_subject_ids.csv",
+      "sha256": "216725a0ef4451faceff24cb527d1210a25bc7b82dea01b5894ddbf708232936"
+    },
+    {
+      "bytes": 891,
+      "relative_path": "docs/phase8a_report.md",
+      "sha256": "6bed75415efd905f44a3e2cc20249090799bfb88fd8e6db0250d8fc69e5cf1ee"
+    },
+    {
+      "bytes": 1031,
+      "relative_path": "docs/phase8a_split_decision_record.md",
+      "sha256": "310b1cdf45b8eaf4d3dd00665f5e38543a6254790acda2d20e3ce6c62a2bceaa"
+    },
+    {
+      "bytes": 3655,
+      "relative_path": "scripts/build_phase8a_artifact_checksums.py",
+      "sha256": "daa6d7901ba9831794cccfdcbe5378f78db524fac5dc65a8fc4a770caf50a931"
+    },
+    {
+      "bytes": 23443,
+      "relative_path": "scripts/run_phase8a_subject_split.py",
+      "sha256": "7f4244352b2c6313c1df90832c0956ed3536a5511ca48f099ee227f225fc6b7a"
+    },
+    {
+      "bytes": 929,
+      "relative_path": "scripts/verify_phase8a_no_first_n_limit.py",
+      "sha256": "e856d74df6f17ab67f1f59ddfcfef588b8f626ee18fa658b4c4ffa9740cc6b19"
+    },
+    {
+      "bytes": 13770,
+      "relative_path": "src/vitaldb_state_selection/cohort/split_guard.py",
+      "sha256": "e1fe373c6701686b0d59daddccc8c9dfbbc60a5fff67d53df549e83ad2f0b6c8"
+    },
+    {
+      "bytes": 25040,
+      "relative_path": "src/vitaldb_state_selection/cohort/subject_split.py",
+      "sha256": "5166d8e6dd91126305b83a170a8ce2313fbdf3bff0a72f63e2aa5592970d9c0a"
+    },
+    {
+      "bytes": 11940,
+      "relative_path": "tests/test_phase8a_artifacts.py",
+      "sha256": "4a0fc2d8cea61309e8a33072528aa7dc6934ca3604f51981fcf653004be1cdca"
+    },
+    {
+      "bytes": 6738,
+      "relative_path": "tests/test_phase8a_subject_split.py",
+      "sha256": "7e53f5539d99934fba3f8eeb3e5a61a7055c6a91d63a5e0d068740da712a1925"
+    },
+    {
+      "bytes": 6108,
+      "relative_path": "tests/test_split_guard.py",
+      "sha256": "b58ad43442ea732a47a44535f6776e969386c02742320a5d14ce0d5ad08310f6"
+    }
+  ],
+  "self_excluded": true
+}

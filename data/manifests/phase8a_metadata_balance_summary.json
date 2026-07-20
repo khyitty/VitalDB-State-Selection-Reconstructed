@@ -1,0 +1,18 @@
+{
+  "alternate_seed_search_performed": false,
+  "balance_optimized_seed_selection": false,
+  "balance_warning_count_total": 0,
+  "maximum_absolute_primary_continuous_smd": 0.029963981155984278,
+  "membership_fixed_before_balance": true,
+  "outcome_variable_count": 0,
+  "phase": "Phase 8A",
+  "primary_categorical_warning_count": 0,
+  "primary_continuous_hard_failure_count": 0,
+  "primary_continuous_warning_count": 0,
+  "publication_gate_passed": true,
+  "quantile_method": "linear_interpolation_position_n_minus_1",
+  "sample_sd_ddof": 1,
+  "secondary_categorical_warning_count": 0,
+  "signal_derived_variable_count": 0,
+  "split_manifest_version": "phase8a-v1"
+}
