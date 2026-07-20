@@ -18,7 +18,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 6B - Outcome-blind primary signal quality characterization | complete | 121 tests and the 19-source production first-N guard passed; 2,470 case rows and 9,880 case-track rows complete; all Phase 6A raw checksums and raw-tree state match before/after; permissive moderate and strict pass counts are 2,464 2,333 and 1,723 with no scenario selected; no API raw rewrite quality-rule selection cohort freeze split prediction Cp/Ce dose feature selection or PPO execution; remote phase commit verified at `d3bc24f` |
 | 6C - Causal grid and prediction-window feasibility audit | complete | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; usable-case counts range from 2,465 to 2,468 with no rule selected; all 9,880 source raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; no cohort freeze split model Cp/Ce feature selection or PPO execution; remote Phase 6C commit verified at `b8f010d` |
 | 6D - Protocol v1.2 final preprocessing decision and cohort freeze | complete | 153 tests and the 23-source production first-N guard passed; selected `sqi_ge_50__bis20s__drug60s` with at least 120 usable endpoints; all 2,470 source cases yield 2,460 eligible and 10 excluded; eligible-ID checksum `f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd`; source raw 9,880 checksums verified and raw tree unchanged; no raw/API split modeling array prediction Cp/Ce feature selection or PPO execution; remote Phase 6D commit verified at `3421e84` |
-| 7A - Subject linkage and patient-level split feasibility audit | complete locally; publication pending | 167 tests and the 26-source production first-N guard passed; 2,460 cases map without ambiguity to 2,415 nonmissing subjects; cluster sizes are 1×2,378, 2×35, 3×1, and 9×1; 82 cases belong to repeated subjects; sex inconsistency warnings 0; linkage checksum `102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7`; count-only nearest case and subject targets are arithmetically feasible; no allocation selected and no split/test seal/outcome/raw/API/modeling/preprocessing fit |
+| 7A - Subject linkage and patient-level split feasibility audit | complete | 167 tests and the 26-source production first-N guard passed; 2,460 cases map without ambiguity to 2,415 nonmissing subjects; subjectid missing 0 and case-to-subject ambiguity 0; cluster sizes are 1×2,378, 2×35, 3×1, and 9×1; 82 cases belong to repeated subjects; sex inconsistency warnings 0; linkage checksum `102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7`; count-only nearest case and subject targets are arithmetically feasible; no allocation selected and no split/test seal/outcome/raw/API/modeling/preprocessing fit; remote Phase 7A commit verified at `11cfa98` |
 | Phase 7B patient-level split and later research | blocked by protocol | Separate human selection of the patient-level split objective and authorization required |
 
 ## Publication constraint
@@ -97,6 +97,13 @@ publication-status follow-up was created. The committed change contains the
 approved final cohort manifest and case-ID artifacts, contains no raw file or
 modeling array, and leaves the legacy repository state unchanged.
 
+The Phase 7A phase commit
+`11cfa98b75b8215efb2334c0c310709f136e0ced` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The committed change contains the
+approved public VitalDB deidentified subject linkage artifacts, no split or test
+seal, no raw file or modeling array, and leaves the legacy repository unchanged.
+
 ## Failure record template
 
 Fill this section for any failed phase gate or push. Do not delete a failed record.
@@ -154,3 +161,14 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `3421e84c59ce23b14a30ffc415b5199b641be9fa`
 - `push_error`: Managed approval rejection before network publication; no remote authentication attempt occurred.
 - `resolution`: The user explicitly approved publication to `https://github.com/khyitty/VitalDB-State-Selection-Reconstructed.git`. Ordinary Git push succeeded and `refs/heads/main` was independently verified at `3421e84c59ce23b14a30ffc415b5199b641be9fa` before this follow-up commit.
+
+### 2026-07-20 - Phase 7A publication approval gate
+
+- `failed_gate`: Push the independently committed Phase 7A subject-linkage audit to `origin/main`
+- `failure_reason`: The managed execution environment required renewed explicit approval because the commit publishes exact case-to-deidentified-subject linkage and metadata-derived subject grouping. This was not a Git authentication failure.
+- `commands`: `git push origin main`
+- `generated_files`: None; commit `11cfa98b75b8215efb2334c0c310709f136e0ced` was already complete and the worktree remained clean.
+- `remaining_work`: Obtain explicit approval for the named public origin, commit SHA, and deidentified linkage artifacts; re-review prohibited information; push; independently verify the remote SHA; then publish this status follow-up.
+- `local_commit_sha`: `11cfa98b75b8215efb2334c0c310709f136e0ced`
+- `push_error`: Managed approval rejection before network publication; no remote authentication attempt occurred.
+- `resolution`: The user explicitly approved public publication of the named deidentified subject-linkage artifacts and prohibited direct identifiers, raw signals, credentials, secrets, and local paths. Scope review passed, ordinary Git push succeeded, and `refs/heads/main` was independently verified at `11cfa98b75b8215efb2334c0c310709f136e0ced` before this follow-up commit.
