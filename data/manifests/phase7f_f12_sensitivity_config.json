@@ -1,0 +1,17 @@
+{
+  "configuration_id": "phase7f-f12-sensitivity-v1",
+  "primary": {
+    "variant_id": "primary_minto_0.0301",
+    "f12": 0.0301,
+    "default": true,
+    "paper_faithful_primary_label": true
+  },
+  "sensitivity_only": {
+    "variant_id": "sensitivity_yun_0.030",
+    "f12": 0.030,
+    "default": false,
+    "paper_faithful_primary_label": false,
+    "permitted_use": "numerical_difference_report_only"
+  },
+  "other_variants_allowed": false
+}

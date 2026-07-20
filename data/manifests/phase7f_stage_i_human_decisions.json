@@ -1,0 +1,69 @@
+{
+  "phase": "7F_stage_i_paper_grounded_deterministic_pkpd",
+  "protocol_version": "1.3.2",
+  "scope": "stage_i_deterministic_pkpd_only",
+  "approved_decisions": [
+    {
+      "constant_id": "MC-001",
+      "decision": "Use the squared James term (weight_kg / height_cm)^2.",
+      "status": "approved_for_stage_i",
+      "provenance": "primary_source_informed_typography_correction"
+    },
+    {
+      "constant_id": "MC-002",
+      "decision": "Use f18=55 as the Minto Cl1 lean-body-mass center; never use undefined h18.",
+      "status": "approved_for_stage_i",
+      "provenance": "minto_parameterization_and_yun_parameter_table_correction"
+    },
+    {
+      "constant_id": "MC-003",
+      "decision": "Use f12=0.0301 as primary and expose f12=0.030 only as a named sensitivity variant.",
+      "status": "approved_for_stage_i",
+      "provenance": "minto_primary_with_yun_print_sensitivity"
+    },
+    {
+      "constant_id": "MC-004",
+      "decision": "Propofol uses mg, mg/min, mg/L; remifentanil uses microgram, microgram/min, microgram/L.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_unit_correction"
+    },
+    {
+      "constant_id": "MC-005",
+      "decision": "Use an exact zero-order-hold augmented matrix exponential for each constant-infusion transition.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_numerical_method"
+    },
+    {
+      "constant_id": "MC-006",
+      "decision": "Support arbitrary positive exact transitions, 10-second future controller transitions, and 1-second diagnostic snapshots without mandatory substeps.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_time_contract"
+    },
+    {
+      "constant_id": "MC-007",
+      "decision": "Use zero A1/A2/A3/Ce only for induction-oriented synthetic Stage I validation; do not implement maintenance initialization.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_synthetic_reset"
+    },
+    {
+      "constant_id": "MC-008",
+      "decision": "Disable Gaussian BIS noise and do not create a noise interface in Stage I.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_deterministic_boundary"
+    },
+    {
+      "constant_id": "MC-009",
+      "decision": "Disable random effect-site concentration drop and do not implement its sensitivity path in Stage I.",
+      "status": "approved_for_stage_i",
+      "provenance": "human_approved_deterministic_boundary"
+    }
+  ],
+  "still_pending_ids": [
+    "MC-010", "MC-011", "MC-012", "MC-013", "MC-014",
+    "MC-015", "MC-016", "MC-017", "MC-018", "MC-019",
+    "MC-020", "MC-021", "MC-022", "MC-023", "MC-024",
+    "MC-025", "MC-026", "MC-027", "MC-028", "MC-029",
+    "MC-030", "MC-031", "MC-032", "MC-033", "MC-034"
+  ],
+  "approval_does_not_extend_to_environment_or_ppo": true
+}

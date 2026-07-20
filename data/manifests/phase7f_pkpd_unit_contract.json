@@ -1,0 +1,23 @@
+{
+  "registry_id": "phase7f-pkpd-v1",
+  "parameter_time_basis": "minute",
+  "transition_duration_input": "second",
+  "duration_conversion": "duration_minutes = duration_seconds / 60",
+  "volume": "L",
+  "clearance": "L/min",
+  "rate_constant": "1/min",
+  "propofol": {
+    "amount": "mg",
+    "infusion_rate": "mg/min",
+    "plasma_concentration": "mg/L",
+    "effect_site_concentration": "mg/L"
+  },
+  "remifentanil": {
+    "amount": "microgram",
+    "infusion_rate": "microgram/min",
+    "plasma_concentration": "microgram/L",
+    "effect_site_concentration": "microgram/L"
+  },
+  "public_advance_signature": "advance(duration_seconds, propofol_rate_mg_per_min, remifentanil_rate_microgram_per_min)",
+  "implicit_cross_drug_mass_conversion": false
+}

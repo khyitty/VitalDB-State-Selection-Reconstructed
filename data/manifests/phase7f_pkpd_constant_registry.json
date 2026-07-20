@@ -1,0 +1,36 @@
+{
+  "registry_id": "phase7f-pkpd-v1",
+  "protocol_version": "1.3.2",
+  "propofol_schnider_h": {
+    "h1": 4.27, "h2": 18.9, "h3": 0.391, "h4": 53.0,
+    "h5": 238.0, "h6": 1.89, "h7": 0.0456, "h8": 77.0,
+    "h9": 0.0681, "h10": 59.0, "h11": 0.0264, "h12": 177.0,
+    "h13": 1.29, "h14": 0.024, "h15": 53.0, "h16": 0.836,
+    "h17": 0.456
+  },
+  "remifentanil_minto_f_primary": {
+    "f1": 5.1, "f2": 0.0201, "f3": 0.072, "f4": 9.82,
+    "f5": 0.0811, "f6": 0.108, "f7": 5.42, "f8": 2.6,
+    "f9": 0.0162, "f10": 0.0191, "f11": 2.05, "f12": 0.0301,
+    "f13": 0.076, "f14": 0.00113, "f15": 0.595, "f16": 0.007,
+    "f17": 40.0, "f18": 55.0
+  },
+  "named_sensitivity_variants": {
+    "sensitivity_yun_0.030": {"f12": 0.030, "default": false, "primary": false}
+  },
+  "bis_response": {
+    "baseline": 98.0,
+    "propofol_ce50_mg_per_l": 4.47,
+    "remifentanil_ce50_microgram_per_l": 19.3,
+    "hill_exponent": 1.43,
+    "noise_enabled": false,
+    "random_effect_site_drop_enabled": false,
+    "output_clipping_enabled": false
+  },
+  "approved_corrections": {
+    "james_lbm_exponent": 2,
+    "minto_cl1_center": "f18",
+    "minto_cl1_center_value": 55.0,
+    "primary_f12": 0.0301
+  }
+}

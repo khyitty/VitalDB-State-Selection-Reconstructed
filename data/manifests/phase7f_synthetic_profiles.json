@@ -1,0 +1,30 @@
+{
+  "registry_id": "phase7f-synthetic-profiles-v1",
+  "claim_boundary": "engineering reference profiles only; not patients or clinical standards",
+  "profiles": [
+    {
+      "profile_id": "synthetic_adult_male_reference",
+      "age_years": 40.0,
+      "sex": "male",
+      "height_cm": 170.0,
+      "weight_kg": 70.0,
+      "synthetic": true
+    },
+    {
+      "profile_id": "synthetic_adult_female_reference",
+      "age_years": 40.0,
+      "sex": "female",
+      "height_cm": 160.0,
+      "weight_kg": 60.0,
+      "synthetic": true
+    },
+    {
+      "profile_id": "synthetic_older_adult_reference",
+      "age_years": 75.0,
+      "sex": "male",
+      "height_cm": 175.0,
+      "weight_kg": 72.0,
+      "synthetic": true
+    }
+  ]
+}

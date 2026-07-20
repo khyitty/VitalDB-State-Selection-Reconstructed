@@ -1,0 +1,213 @@
+{
+  "claim_boundary": "paper-grounded deterministic PK/PD reconstruction; research-only synthetic validation",
+  "execution_flags": {
+    "checkpoint": false,
+    "environment": false,
+    "evaluation": false,
+    "gymnasium": false,
+    "ppo": false,
+    "raw_vitaldb_access": false,
+    "stable_baselines3": false,
+    "subject_metadata_access": false,
+    "training": false
+  },
+  "f12_sensitivity": {
+    "bis_absolute_difference": 0.0012995399309190248,
+    "ce_absolute_difference": 0.0006309891773370602,
+    "decision_use": "numerical_difference_report_only",
+    "duration_seconds": 600.0,
+    "primary_bis": 46.68564811060758,
+    "primary_f12": 0.0301,
+    "primary_remifentanil_ce_microgram_per_l": 2.0928507042206266,
+    "profile_id": "synthetic_older_adult_reference",
+    "propofol_rate_mg_per_min": 8.0,
+    "remifentanil_rate_microgram_per_min": 6.0,
+    "sensitivity_bis": 46.6869476505385,
+    "sensitivity_f12": 0.03,
+    "sensitivity_remifentanil_ce_microgram_per_l": 2.0922197150432895
+  },
+  "phase": "7F_stage_i_paper_grounded_deterministic_pkpd",
+  "profile_count": 3,
+  "profiles": [
+    {
+      "profile_contract": {
+        "age_years": 40.0,
+        "height_cm": 170.0,
+        "sex": "male",
+        "weight_kg": 70.0
+      },
+      "profile_hash_id": "profile-4c66affaffb4e6a6",
+      "propofol_parameters": {
+        "amount_unit": "mg",
+        "cl1_l_per_min": 1.6381349480968854,
+        "cl2_l_per_min": 1.602,
+        "cl3_l_per_min": 0.836,
+        "concentration_unit": "mg/L",
+        "drug": "propofol",
+        "infusion_rate_unit": "mg/min",
+        "ke0_per_min": 0.456,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 4.27,
+        "v2_l": 23.982999999999997,
+        "v3_l": 238.0,
+        "variant_id": "schnider_primary"
+      },
+      "remifentanil_parameters": {
+        "amount_unit": "microgram",
+        "cl1_l_per_min": 2.6056837370242216,
+        "cl2_l_per_min": 2.05,
+        "cl3_l_per_min": 0.076,
+        "concentration_unit": "microgram/L",
+        "drug": "remifentanil",
+        "infusion_rate_unit": "microgram/min",
+        "ke0_per_min": 0.595,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 5.121425605536332,
+        "v2_l": 9.852138408304498,
+        "v3_l": 5.42,
+        "variant_id": "primary_minto_0.0301"
+      },
+      "semigroup_max_abs_error": 2.220446049250313e-16,
+      "solve_ivp_max_abs_error": 2.220446049250313e-16,
+      "synthetic_profile_id": "synthetic_adult_male_reference",
+      "ten_second_snapshot": {
+        "deterministic_bis_index": 97.59262108140194,
+        "propofol_a1_mg": 1.2328215796695166,
+        "propofol_a2_mg": 0.039414641429538516,
+        "propofol_a3_mg": 0.02064176027305675,
+        "propofol_ce_mg_per_l": 0.010977796011777303,
+        "propofol_cp_mg_per_l": 0.2887169975806831,
+        "remifentanil_a1_microgram": 0.9271676481154535,
+        "remifentanil_a2_microgram": 0.03134641227817765,
+        "remifentanil_a3_microgram": 0.0011748276141313018,
+        "remifentanil_ce_microgram_per_l": 0.008904351864963545,
+        "remifentanil_cp_microgram_per_l": 0.1810370235805383
+      }
+    },
+    {
+      "profile_contract": {
+        "age_years": 40.0,
+        "height_cm": 160.0,
+        "sex": "female",
+        "weight_kg": 60.0
+      },
+      "profile_hash_id": "profile-7468502ffdd9dff8",
+      "propofol_parameters": {
+        "amount_unit": "mg",
+        "cl1_l_per_min": 1.7292112499999996,
+        "cl2_l_per_min": 1.602,
+        "cl3_l_per_min": 0.836,
+        "concentration_unit": "mg/L",
+        "drug": "propofol",
+        "infusion_rate_unit": "mg/min",
+        "ke0_per_min": 0.456,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 4.27,
+        "v2_l": 23.982999999999997,
+        "v3_l": 238.0,
+        "variant_id": "schnider_primary"
+      },
+      "remifentanil_parameters": {
+        "amount_unit": "microgram",
+        "cl1_l_per_min": 2.37820125,
+        "cl2_l_per_min": 2.05,
+        "cl3_l_per_min": 0.076,
+        "concentration_unit": "microgram/L",
+        "drug": "remifentanil",
+        "infusion_rate_unit": "microgram/min",
+        "ke0_per_min": 0.595,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 4.2639,
+        "v2_l": 8.565850000000001,
+        "v3_l": 5.42,
+        "variant_id": "primary_minto_0.0301"
+      },
+      "semigroup_max_abs_error": 3.3306690738754696e-16,
+      "solve_ivp_max_abs_error": 3.3306690738754696e-16,
+      "synthetic_profile_id": "synthetic_adult_female_reference",
+      "ten_second_snapshot": {
+        "deterministic_bis_index": 97.58065641379041,
+        "propofol_a1_mg": 1.2306908760585842,
+        "propofol_a2_mg": 0.03936915854265408,
+        "propofol_a3_mg": 0.020617961512953586,
+        "propofol_ce_mg_per_l": 0.010965059777801595,
+        "propofol_cp_mg_per_l": 0.2882180037607926,
+        "remifentanil_a1_microgram": 0.9174011921401869,
+        "remifentanil_a2_microgram": 0.0373185725740192,
+        "remifentanil_a3_microgram": 0.0014011337517788275,
+        "remifentanil_ce_microgram_per_l": 0.010618988019587959,
+        "remifentanil_cp_microgram_per_l": 0.21515541925002626
+      }
+    },
+    {
+      "profile_contract": {
+        "age_years": 75.0,
+        "height_cm": 175.0,
+        "sex": "male",
+        "weight_kg": 72.0
+      },
+      "profile_hash_id": "profile-0b79aaefbba60d4e",
+      "propofol_parameters": {
+        "amount_unit": "mg",
+        "cl1_l_per_min": 1.7091029779591835,
+        "cl2_l_per_min": 0.762,
+        "cl3_l_per_min": 0.836,
+        "concentration_unit": "mg/L",
+        "drug": "propofol",
+        "infusion_rate_unit": "mg/min",
+        "ke0_per_min": 0.456,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 4.27,
+        "v2_l": 10.297999999999998,
+        "v3_l": 238.0,
+        "variant_id": "schnider_primary"
+      },
+      "remifentanil_parameters": {
+        "amount_unit": "microgram",
+        "cl1_l_per_min": 2.0813802220408166,
+        "cl2_l_per_min": 0.9964999999999999,
+        "cl3_l_per_min": 0.03645,
+        "concentration_unit": "microgram/L",
+        "drug": "remifentanil",
+        "infusion_rate_unit": "microgram/min",
+        "ke0_per_min": 0.35,
+        "parameter_registry_id": "phase7f-pkpd-v1",
+        "v1_l": 4.5788757061224485,
+        "v2_l": 7.255063559183674,
+        "v3_l": 5.42,
+        "variant_id": "primary_minto_0.0301"
+      },
+      "semigroup_max_abs_error": 4.440892098500626e-16,
+      "solve_ivp_max_abs_error": 3.3306690738754696e-16,
+      "synthetic_profile_id": "synthetic_older_adult_reference",
+      "ten_second_snapshot": {
+        "deterministic_bis_index": 97.6100711243349,
+        "propofol_a1_mg": 1.2509445643032069,
+        "propofol_a2_mg": 0.018923833249189146,
+        "propofol_a3_mg": 0.020843816733623604,
+        "propofol_ce_mg_per_l": 0.011085931537228354,
+        "propofol_cp_mg_per_l": 0.2929612562770977,
+        "remifentanil_a1_microgram": 0.9455333322110293,
+        "remifentanil_a2_microgram": 0.01733693241880541,
+        "remifentanil_a3_microgram": 0.0006388035224584948,
+        "remifentanil_ce_microgram_per_l": 0.0060175440729644605,
+        "remifentanil_cp_microgram_per_l": 0.2064990169850537
+      }
+    }
+  ],
+  "results": {
+    "all_values_finite": true,
+    "bis_monotonic_grid_violations": 0,
+    "maximum_semigroup_absolute_error": 4.440892098500626e-16,
+    "maximum_solve_ivp_absolute_error": 3.3306690738754696e-16,
+    "remifentanil_unit_regression_observed_ratio": 999.9999999999999
+  },
+  "tolerances": {
+    "semigroup_max_abs": 1e-11,
+    "solve_ivp_atol": 1e-14,
+    "solve_ivp_max_abs": 1e-09,
+    "solve_ivp_method": "DOP853",
+    "solve_ivp_rtol": 1e-12
+  },
+  "validation_scope": "synthetic_numerical_validation_only"
+}

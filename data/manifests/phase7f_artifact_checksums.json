@@ -1,0 +1,135 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2861,
+      "relative_path": "data/manifests/phase7f_stage_i_human_decisions.json",
+      "sha256": "c691bf8ad9063f94374c736033594ef718b37b556dab8e5105173a133693fc33"
+    },
+    {
+      "bytes": 1188,
+      "relative_path": "data/manifests/phase7f_pkpd_constant_registry.json",
+      "sha256": "0d7f4c50736ea423cdca5fe9eb94e0f1cff3c9bbb853aabf5be1998cdf02d584"
+    },
+    {
+      "bytes": 752,
+      "relative_path": "data/manifests/phase7f_pkpd_unit_contract.json",
+      "sha256": "e175d4f8a0c79d5b2766c3b0fe63cb36591219eb6022e0a1e52bf03362e238a1"
+    },
+    {
+      "bytes": 2571,
+      "relative_path": "data/manifests/phase7f_pkpd_equation_provenance.csv",
+      "sha256": "987bfbe0dd536932651ed271332e8d282cf7b9131eb1b9b543b70cc736241cb3"
+    },
+    {
+      "bytes": 737,
+      "relative_path": "data/manifests/phase7f_synthetic_profiles.json",
+      "sha256": "da05f7790bc5c51e8a24d5b15c80bfee102c60b8dc046ad512e099478b90368e"
+    },
+    {
+      "bytes": 444,
+      "relative_path": "data/manifests/phase7f_f12_sensitivity_config.json",
+      "sha256": "902c6002fbec6cb655f410762e92f2c5318c3af3c6d485736ff4d26ee410f3af"
+    },
+    {
+      "bytes": 2277,
+      "relative_path": "data/manifests/phase7f_source_snapshot.json",
+      "sha256": "2143e2b95b53b3440289a004c84c579aab7a7108ced2a49b93da747e94e4c382"
+    },
+    {
+      "bytes": 7993,
+      "relative_path": "data/manifests/phase7f_pkpd_validation_summary.json",
+      "sha256": "1aab66c07a4474d45a58f39fca4dc3172bc8b4db7444599d2030ac126f010c78"
+    },
+    {
+      "bytes": 2156,
+      "relative_path": "docs/phase7f_stage_i_decision_record.md",
+      "sha256": "aabac719131a5f7e922dd418b16a4704793d41b506608a3fd3531a311f8ca146"
+    },
+    {
+      "bytes": 2901,
+      "relative_path": "docs/phase7f_pkpd_scientific_validation_report.md",
+      "sha256": "0aae20050b881be26eb8eeeb7271ffbcf80f9b79b3d5c13c0da3e3f6f377e833"
+    },
+    {
+      "bytes": 1564,
+      "relative_path": "docs/phase7f_report.md",
+      "sha256": "f3f3df14ac43a9289f3802b571290148db0655fcd0601d7adeb388b64a57591a"
+    },
+    {
+      "bytes": 9572,
+      "relative_path": "scripts/run_phase7f_pkpd_validation.py",
+      "sha256": "8bcb6f650fc0b6ecdc166ce26d64bdfb56b7be10605562915297fde4cc6f6acf"
+    },
+    {
+      "bytes": 2487,
+      "relative_path": "scripts/build_phase7f_artifact_checksums.py",
+      "sha256": "dcca0efd14453e70af989981589a5228fb9ef2c875adb1deefc4076567ddd020"
+    },
+    {
+      "bytes": 937,
+      "relative_path": "src/vitaldb_state_selection/pkpd/__init__.py",
+      "sha256": "1e1e8f1e3ae712d403867ba15772cc65a8ca74c1a9fe5cd43a414c419f394ea9"
+    },
+    {
+      "bytes": 1009,
+      "relative_path": "src/vitaldb_state_selection/pkpd/bis.py",
+      "sha256": "7e77e960ddf060260d45d8afb7cbd79091a391349b1f96030526f4fed23f8cd0"
+    },
+    {
+      "bytes": 5656,
+      "relative_path": "src/vitaldb_state_selection/pkpd/core.py",
+      "sha256": "7ae0c78b5d9b9241dc80b579686b27d1f3bb4d294f53b69f29462813559f8448"
+    },
+    {
+      "bytes": 3494,
+      "relative_path": "src/vitaldb_state_selection/pkpd/dynamics.py",
+      "sha256": "529fca83f689a81ff361f1c6aede699eaccee60936bb744d1509deea86a6d7a4"
+    },
+    {
+      "bytes": 187,
+      "relative_path": "src/vitaldb_state_selection/pkpd/errors.py",
+      "sha256": "b8c87bb2ed83dcf09060654bce38450b90e609d673a231ec9381a76d6628fc53"
+    },
+    {
+      "bytes": 4115,
+      "relative_path": "src/vitaldb_state_selection/pkpd/parameters.py",
+      "sha256": "25ec58e66ae8b51dcc9ea5ba26aed29fcf90eb0bd4fcae870683e39937c9ee76"
+    },
+    {
+      "bytes": 2801,
+      "relative_path": "src/vitaldb_state_selection/pkpd/profiles.py",
+      "sha256": "819d1905941fdf1f098e815a80bfdb8608e132e01cbc17fe48610f75a79dfdfc"
+    },
+    {
+      "bytes": 2326,
+      "relative_path": "src/vitaldb_state_selection/pkpd/registry.py",
+      "sha256": "8d4e9d7cf70276c833c987ee0557541e0186cdf1b5f79e8cb9a3e91384a5d392"
+    },
+    {
+      "bytes": 14420,
+      "relative_path": "tests/test_governance.py",
+      "sha256": "005a0f255b5e47d544ca049f794b6e006c047cde87efd8c056474d8cf606acfe"
+    },
+    {
+      "bytes": 5481,
+      "relative_path": "tests/test_pkpd_parameters.py",
+      "sha256": "748f3456cd62504124bff89f915ffc4b310a9530dc7171f7c49a2bb63a14f664"
+    },
+    {
+      "bytes": 4855,
+      "relative_path": "tests/test_pkpd_dynamics.py",
+      "sha256": "7c9e1c181496f6ebf66d7a1c0a24c522c31a191d63c0770135c3333efcf4356f"
+    },
+    {
+      "bytes": 7455,
+      "relative_path": "tests/test_pkpd_core.py",
+      "sha256": "64f8b5d82298bcb2e90ff4b7de817728e112afb18a1918be6fe33222ad9d4311"
+    },
+    {
+      "bytes": 9334,
+      "relative_path": "tests/test_phase7f_artifacts.py",
+      "sha256": "d35869a91cf9fd6632cf214f245902dca61a78d6b96831bb1711452caf36b700"
+    }
+  ],
+  "self_excluded": true
+}

@@ -214,7 +214,7 @@ class GovernanceTests(unittest.TestCase):
         self.assertEqual(forbidden, set())
 
     def test_blocked_research_packages_have_no_executable_implementation(self) -> None:
-        blocked = ("pkpd", "prediction", "selection", "rl")
+        blocked = ("prediction", "selection", "rl")
         for package in blocked:
             files = list((ROOT / "src" / "vitaldb_state_selection" / package).glob("*.py"))
             self.assertEqual([path.name for path in files], ["__init__.py"])
@@ -229,6 +229,22 @@ class GovernanceTests(unittest.TestCase):
                 )
             ]
             self.assertEqual(executable, [])
+        pkpd_files = {
+            path.name for path in (ROOT / "src" / "vitaldb_state_selection" / "pkpd").glob("*.py")
+        }
+        self.assertEqual(
+            pkpd_files,
+            {
+                "__init__.py",
+                "bis.py",
+                "core.py",
+                "dynamics.py",
+                "errors.py",
+                "parameters.py",
+                "profiles.py",
+                "registry.py",
+            },
+        )
 
     def test_migration_provenance_contract_is_exact(self) -> None:
         with (ROOT / "docs/migration_provenance.csv").open(
