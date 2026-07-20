@@ -16,6 +16,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 5D — Volatile exposure rule sensitivity audit | complete | 94 tests and the 15-source production first-N guard passed; 3,219 cases and 9,059 Phase 5C raw checksums verified; 18,119-file raw tree unchanged; one inverted anesthesia window preserved as an explicit warning; no rule or candidate selected; remote phase commit independently verified at `34b7eb4` |
 | 6A - Protocol v1.1 freeze and primary signal acquisition | complete | 106 tests and the 17-source production first-N guard passed; 3,219 pre-quality rows with 2,470 acquisition inclusions; fixed-seed 25-case preflight passed; 9,880/9,880 exact-track requests complete and checksum-verified; raw data remains ignored; no quality threshold cohort freeze split model Cp/Ce dose or PPO execution; remote phase commit verified at `15d35da` |
 | 6B - Outcome-blind primary signal quality characterization | complete | 121 tests and the 19-source production first-N guard passed; 2,470 case rows and 9,880 case-track rows complete; all Phase 6A raw checksums and raw-tree state match before/after; permissive moderate and strict pass counts are 2,464 2,333 and 1,723 with no scenario selected; no API raw rewrite quality-rule selection cohort freeze split prediction Cp/Ce dose feature selection or PPO execution; remote phase commit verified at `d3bc24f` |
+| 6C - Causal grid and prediction-window feasibility audit | complete locally; publication blocked | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; 9,880 raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; usable-case counts range from 2,465 to 2,468 without selecting a rule; Git staging was denied by the environment approval reviewer before commit; no API raw creation modeling array threshold cohort freeze split outcome/model Cp/Ce dose feature selection or PPO execution |
 | Full signal cohort and later research | blocked by protocol | Human review required |
 
 ## Publication constraint
@@ -72,6 +73,15 @@ publication-status follow-up was created. The Phase 6A raw tree remained at
 repository remained at commit `9501b16`, tree `60917f0`, and its sole
 pre-existing untracked `debug.log` entry.
 
+Phase 6C execution note: the first production invocation completed the 9,880-file
+pre-analysis checksum pass and then stopped before case analysis because the
+Windows peak-RSS probe lacked an explicit process-handle type. It made no API
+request, raw write, or official artifact. The single 299-byte hidden atomic
+temporary file was identified and removed. After the Windows API signature was
+fixed and its RSS result tested, the complete production run passed both raw
+checksum passes and every phase gate. This recovered engineering failure did not
+change a scientific rule or case decision.
+
 ## Failure record template
 
 Fill this section for any failed phase gate or push. Do not delete a failed record.
@@ -107,3 +117,13 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `2f0b0c8f0124ed053dedb75656502953123448d1`
 - `push_error`: Not attempted for the invalid follow-up state; the Phase 4 phase commit itself had already pushed successfully.
 - `resolution`: The external-state row was returned to `pending` while retaining the manually verified SHA as evidence; all 44 tests then passed.
+
+### 2026-07-20 — Phase 6C independent commit gate
+
+- `failed_gate`: Stage the validated Phase 6C-only change set for its independent commit
+- `failure_reason`: The managed execution environment rejected the required Git-index write because its automatic approval reviewer was out of credits. The workspace `.git` directory is read-only without that approval. This was not a Git remote authentication failure.
+- `commands`: `git add -- PHASE_STATUS.md README.md docs/compliance_matrix.csv scripts/verify_no_first_n_limit.py data/manifests/causal_grid_*.csv data/manifests/causal_grid_*.csv.gz data/manifests/causal_grid_*.json docs/causal_grid_window_feasibility_report.md scripts/run_causal_grid_feasibility_audit.py src/vitaldb_state_selection/cohort/causal_grid_feasibility.py tests/test_causal_grid_feasibility.py tests/test_causal_grid_feasibility_artifacts.py` (the actual rejected command enumerated every path explicitly and used no glob)
+- `generated_files`: Phase 6C code and tests; eleven checksummed report/manifest/summary/source artifacts plus the checksum inventory; modified README, compliance matrix, production first-N guard, and this status file
+- `remaining_work`: After Git-index write approval is restored, stage only the enumerated Phase 6C files, review the cached diff, commit, push ordinary Git to `origin/main`, independently verify the remote SHA, update this status record, commit and push the publication follow-up, then stop.
+- `local_commit_sha`: `30064de6ee4eeea44b5a220be1e5f6ba7c53b4e4` (unchanged Phase 6B publication tip; all Phase 6C changes remain unstaged)
+- `push_error`: Not attempted because the independent commit gate failed before commit; this is not a Git authentication error.

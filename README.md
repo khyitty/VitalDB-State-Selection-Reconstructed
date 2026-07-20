@@ -21,7 +21,9 @@ The authorized work stops after:
    acquisition of exactly `BIS/BIS`, `BIS/SQI`, `Orchestra/PPF20_RATE`, and
    `Orchestra/RFTN20_RATE` after a fixed-seed 25-case preflight; and
 10. Phase 6B outcome-blind, bounded-memory characterization and unselected
-    quality-rule sensitivity comparisons for those 2,470 cases and four tracks.
+    quality-rule sensitivity comparisons for those 2,470 cases and four tracks; and
+11. Phase 6C outcome-blind causal 10-second grid and future-window feasibility
+    comparisons across all 60 unselected SQI, BIS-staleness, and drug-hold candidates.
 
 The following are deliberately not authorized: full signal download outside the seven
 Phase 5C volatile tracks and four Phase 6A exact tracks, final quality thresholds,
@@ -134,6 +136,21 @@ marginal thresholds, and three unselected combined scenarios. Common observed
 span is explicitly not continuous coverage. No Protocol v1.2 rule, final eligible
 cohort, freeze, split, prediction, Cp/Ce, dose calculation, feature selection, or
 PPO step is performed.
+
+Phase 6C uses only those same checksum-verified raw files and creates count-only
+feasibility artifacts:
+
+```powershell
+python scripts/run_causal_grid_feasibility_audit.py
+```
+
+The fixed structure is a 10-second anesthesia-start-anchored grid, six history
+times from `t-50` through `t`, and a BIS target at `t+30`. Every lookup is causal
+and case-local. BIS 0–10 remains numerically admissible, SQI is exact-timestamp
+QC-only, and no modeling or target array is saved. The 60 candidates, five
+minimum-window counts, Phase 6B disagreements, demographics/PK-input feasibility,
+and fixed-seed boundaries are descriptive only. Phase 6C does not select a
+preprocessing rule, quality threshold, final cohort, split, or model.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

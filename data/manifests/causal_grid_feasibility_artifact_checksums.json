@@ -1,0 +1,13 @@
+{
+  "data/manifests/causal_grid_boundary_review.csv": "3015b7398baa8d5840d2179b59e4be6170375f142ef52a3a6953d4058222b6af",
+  "data/manifests/causal_grid_candidate_disagreement.csv": "f0d7227628b6cce448aeca884a0cceb5ac1966372ad38d20e577aa7ecd3401bc",
+  "data/manifests/causal_grid_candidate_summary.csv": "e0f071d8949b30847490c1ab181eaaf4069aa1918ac19ca666151832ae2ddd5c",
+  "data/manifests/causal_grid_demographics_pk_input_feasibility.csv": "4cdcba184c1860f29547491b1f7b59495508a737fdd10ff0f2877c2b99dc86cd",
+  "data/manifests/causal_grid_drug_alignment_summary.csv": "fb694ce3cdc45116a85978daba1fbb140f9870a3139996b5940e8963c407dbe0",
+  "data/manifests/causal_grid_feasibility_case_candidate_manifest.csv.gz": "92bf85657747ad5a37dd92567139ad4c0bf35d69daba24f639878c1335a1e6db",
+  "data/manifests/causal_grid_feasibility_source_snapshot.json": "53770109c0fd78a2ef249b6869bab5eee02d7949a0c9269e25c7c87aadeddb65",
+  "data/manifests/causal_grid_feasibility_summary.json": "39c1c2c326eb41ea2c9d7d259499a89d106bb98a9dfc2458050480e76dead146",
+  "data/manifests/causal_grid_minimum_window_sensitivity.csv": "4bc2e61e1bce5e3e4645a0525b12c8b7a17ef1873e33b40fe86afbbf6a7b28da",
+  "data/manifests/causal_grid_phase6b_scenario_disagreement.csv": "e89d550404165ef9045296bb2addd01b1452a1672519c7ad4fdb97449b709a41",
+  "docs/causal_grid_window_feasibility_report.md": "fa370f960c2744ed39ca12af69ff6a8359abfb0d0597f792c151cdafcbea6ee5"
+}

@@ -1,0 +1,110 @@
+{
+  "allowed_exact_tracks": [
+    "BIS/BIS",
+    "BIS/SQI",
+    "Orchestra/PPF20_RATE",
+    "Orchestra/RFTN20_RATE"
+  ],
+  "api_request_count": 0,
+  "bis_0_10_automatically_invalid": false,
+  "bounded_memory_method": "sequential case-level parsing; four case indexes and 60 count-only rows released before next case; atomic gzip manifest",
+  "causality_checks": {
+    "cross_case_connection_count": 0,
+    "future_timestamp_use_count": 0
+  },
+  "final_cohort_frozen": false,
+  "input_artifact_sha256": {
+    "all_case_eligibility_manifest.csv": "637ec3c6d09c7c42d5e8d57935e2e9e7868c8be1783582944d40f52f88320bd5",
+    "pre_quality_acquisition_cohort.csv": "7168c9ea75ff5d45824a27b2c5cafec4b7f186bc56a1779f575e13e31dd81790",
+    "primary_signal_checksum_manifest.csv": "50504d55796a22b8806770a11bacaa0d02b97e594e13f5820e4d471edfada3c0",
+    "primary_signal_download_manifest.csv": "f70560188c6a26666645d35132d3233ec0386044aa4689aaf26ded9133dfda5b",
+    "primary_signal_quality_case_manifest.csv": "911e4b44e626cc9f7d4944c825011c8e6b7b5b2be486dd8d7a29af9586913d5d",
+    "primary_signal_quality_source_snapshot.json": "60e1d18943e46dbf24a40fbb5e46497cdd52115efabb5e0f96eef6c9cb5e6f32",
+    "primary_signal_quality_summary.json": "d3308a06266ef6ed714d07e6f4b48d1cf52332d0bd0d60fa02256ea66832fff3",
+    "primary_signal_quality_track_manifest.csv": "99725ed3cbb406d0dce3807ba7b29df4c45ed7f940e3487ccdda795e6656c0d2",
+    "primary_signal_source_snapshot.json": "db3f1aa1d33804db26eacf66043d88106427767e43687438f71313b92d050bb5"
+  },
+  "legacy_artifact_accessed": false,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "memory_abort_guard_bytes": 2147483648,
+  "memory_abort_guard_is_engineering_only": true,
+  "new_raw_file_count": 0,
+  "peak_rss_bytes": 221642752,
+  "phase": "6C_causal_grid_and_prediction_window_feasibility_audit",
+  "phase6b_artifact_inventory_verified": true,
+  "phase6b_phase_commit": "d3bc24f975484e173da237b756c22dca8d897d54",
+  "phase6b_verified_remote_main": "30064de6ee4eeea44b5a220be1e5f6ba7c53b4e4",
+  "prohibited_execution": {
+    "api_requests": 0,
+    "attention_gru": false,
+    "cpce": false,
+    "cumulative_dose": false,
+    "elastic_net": false,
+    "feature_selection": false,
+    "gru": false,
+    "modeling_arrays": false,
+    "new_raw_files": 0,
+    "normalization": false,
+    "persistence": false,
+    "ppo": false,
+    "prediction": false,
+    "recent_dose": false,
+    "split": false,
+    "test_target_inspection": false,
+    "train_only_statistics": false
+  },
+  "raw_checksum_after": {
+    "manifest_order_fingerprint_sha256": "974490155c5ba764e2802b20512c5cd12dced9cec74b68124d80098fcf6fb72a",
+    "verified_file_count": 9880,
+    "verified_total_bytes": 2658264378
+  },
+  "raw_checksum_before": {
+    "manifest_order_fingerprint_sha256": "974490155c5ba764e2802b20512c5cd12dced9cec74b68124d80098fcf6fb72a",
+    "verified_file_count": 9880,
+    "verified_total_bytes": 2658264378
+  },
+  "raw_row_handling": {
+    "backward_fill": false,
+    "clipping": false,
+    "derived_event_time_lookup_index": true,
+    "duplicate_averaging": false,
+    "duplicate_candidate": "last_finite_in_original_row_order",
+    "duplicate_deletion": false,
+    "interpolation": false,
+    "original_row_order_preserved": true,
+    "raw_timestamp_sorting": false,
+    "resampling": false,
+    "smoothing": false,
+    "unlimited_forward_fill": false
+  },
+  "raw_tree_after": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_before": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_unchanged": true,
+  "recorded_at": "2026-07-20T03:50:28.989986+00:00",
+  "schema_version": 1,
+  "sqi_in_prediction_feature_universe": false
+}
