@@ -19,7 +19,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 6C - Causal grid and prediction-window feasibility audit | complete | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; usable-case counts range from 2,465 to 2,468 with no rule selected; all 9,880 source raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; no cohort freeze split model Cp/Ce feature selection or PPO execution; remote Phase 6C commit verified at `b8f010d` |
 | 6D - Protocol v1.2 final preprocessing decision and cohort freeze | complete | 153 tests and the 23-source production first-N guard passed; selected `sqi_ge_50__bis20s__drug60s` with at least 120 usable endpoints; all 2,470 source cases yield 2,460 eligible and 10 excluded; eligible-ID checksum `f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd`; source raw 9,880 checksums verified and raw tree unchanged; no raw/API split modeling array prediction Cp/Ce feature selection or PPO execution; remote Phase 6D commit verified at `3421e84` |
 | 7A - Subject linkage and patient-level split feasibility audit | complete | 167 tests and the 26-source production first-N guard passed; 2,460 cases map without ambiguity to 2,415 nonmissing subjects; subjectid missing 0 and case-to-subject ambiguity 0; cluster sizes are 1×2,378, 2×35, 3×1, and 9×1; 82 cases belong to repeated subjects; sex inconsistency warnings 0; linkage checksum `102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7`; count-only nearest case and subject targets are arithmetically feasible; no allocation selected and no split/test seal/outcome/raw/API/modeling/preprocessing fit; remote Phase 7A commit verified at `11cfa98` |
-| 7B - Protocol v1.3 control-focused 2×2 study design | validated locally; publication pending | 189 tests and the 28-source production first-N guard passed; frozen cohort remains 2,460 cases and 2,415 subjects; P0 `sqi_not_required__bis30s__drug120s` and P1 `sqi_ge_50__bis20s__drug60s`; conceptual S0/S1 and four future policy IDs; planned 1,932/483 subject counts and seeds 42 plus 7/42/84; simulator observation-quality layer requires new implementation and missing encoding architecture budget reward action bounds and allocation method remain human decisions; no split seal modeling array raw outcome dose Cp/Ce prediction feature selection PPO control metric or statistics execution |
+| 7B - Protocol v1.3 control-focused 2×2 study design | complete | 189 tests and the 28-source production first-N guard passed; frozen cohort remains 2,460 cases and 2,415 subjects; P0 `sqi_not_required__bis30s__drug120s` and P1 `sqi_ge_50__bis20s__drug60s`; conceptual S0/S1 and four future policy IDs; planned 1,932/483 subject counts and seeds 42 plus 7/42/84; simulator observation-quality layer requires new implementation and missing encoding architecture budget reward action bounds and allocation method remain human decisions; no split seal modeling array raw outcome dose Cp/Ce prediction feature selection PPO control metric or statistics execution; remote Phase 7B commit verified at `3e8faa86919cda47cadf59844987ebaf81ff435b` |
 | Phase 7C patient-level split and later research | blocked by protocol | Separate human selection of the patient-level allocation method missing encoding simulator observation-quality implementation PPO constants and authorization required |
 
 ## Publication constraint
@@ -104,6 +104,16 @@ The Phase 7A phase commit
 publication-status follow-up was created. The committed change contains the
 approved public VitalDB deidentified subject linkage artifacts, no split or test
 seal, no raw file or modeling array, and leaves the legacy repository unchanged.
+
+The Phase 7B phase commit
+`3e8faa86919cda47cadf59844987ebaf81ff435b` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. Protocol v1.3 freezes the control-focused
+2×2 design while recording that its observation-quality layer requires new
+implementation and its missing-data encoding remains unresolved. The committed
+change contains no split, test seal, raw file, modeling array, prediction, dose,
+Cp/Ce value, PPO execution, checkpoint, control result, or statistical result and
+leaves the legacy repository unchanged.
 
 ## Failure record template
 
