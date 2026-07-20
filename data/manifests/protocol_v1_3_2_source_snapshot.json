@@ -1,0 +1,67 @@
+{
+  "phase": "7E_paper_grounded_reconstruction_specification",
+  "protocol_version": "1.3.2",
+  "amends_protocol_version": "1.3.1",
+  "generated_date": "2026-07-20",
+  "source_remote_main_at_start": "99e32a8a74472ebb07620d280b215f89b21cfe12",
+  "implementation_path_before": "laboratory_code_reuse_path_A",
+  "implementation_path_after": "paper_grounded_independent_reconstruction",
+  "laboratory_code_available": false,
+  "frozen_case_count": 2460,
+  "frozen_subject_count": 2415,
+  "expected_final_cohort_sha256": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+  "expected_subject_linkage_artifact_sha256": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+  "input_artifact_sha256": {
+    "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "data/manifests/subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+    "data/manifests/protocol_v1_3_1_artifact_checksums.json": "f25a8ccce22f22475d968a755d4fdd5543af5e935e5abaa4237efa005621170a",
+    "pyproject.toml": "0e403ab599452d41b32938e2a558a69af326e398229f8657d2a6fa24efbc9ff8"
+  },
+  "external_public_source_pdf_sha256": {
+    "yun_2023": "7ae784a7bfa0a1da1312a7442e1edea23037b580a40943a9ff617bcd76164cc1",
+    "yun_2024_auxiliary": "41e9ff71a54643e4c6d66eef7dae19f58c5e9f34309c2d052f9cba381d345847"
+  },
+  "source_pdf_copies_committed": 0,
+  "old_protocol_v1_3_1_artifacts_modified": false,
+  "dependency_files_changed": false,
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status_short": [
+      "?? debug.log"
+    ]
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status_short": [
+      "?? debug.log"
+    ]
+  },
+  "legacy_state_unchanged": true,
+  "legacy_artifacts_reused": [],
+  "raw_git_tracked_count": 0,
+  "execution_flags": {
+    "simulator_implementation": false,
+    "environment_implementation": false,
+    "ppo_implementation": false,
+    "dependency_installation": false,
+    "dependency_lock_creation": false,
+    "subject_split": false,
+    "subject_allocation": false,
+    "test_seal": false,
+    "observation_template_extraction": false,
+    "raw_signal_read": false,
+    "raw_signal_download": false,
+    "modeling_array": false,
+    "normalization_fit": false,
+    "real_dose_or_cpce": false,
+    "ppo_training": false,
+    "ppo_evaluation": false,
+    "checkpoint": false,
+    "prediction": false,
+    "feature_selection": false,
+    "statistical_analysis": false,
+    "phase7f_work": false
+  }
+}

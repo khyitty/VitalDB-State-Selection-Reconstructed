@@ -1,0 +1,73 @@
+{
+  "retrieval_date": "2026-07-20",
+  "sources": [
+    {
+      "source_id": "yun_2023",
+      "priority": 1,
+      "citation": "Yun WJ et al. Deep reinforcement learning-based propofol infusion control for anesthesia: A feasibility study with a 3000-subject dataset. Computers in Biology and Medicine 156 (2023) 106739.",
+      "doi": "10.1016/j.compbiomed.2023.106739",
+      "url": "https://doi.org/10.1016/j.compbiomed.2023.106739",
+      "local_public_pdf_sha256": "7ae784a7bfa0a1da1312a7442e1edea23037b580a40943a9ff617bcd76164cc1",
+      "committed_pdf": false
+    },
+    {
+      "source_id": "schnider_1998",
+      "priority": 2,
+      "citation": "Schnider TW et al. The influence of method of administration and covariates on the pharmacokinetics of propofol in adult volunteers. Anesthesiology 88(5):1170-1182.",
+      "doi": "10.1097/00000542-199805000-00006",
+      "url": "https://doi.org/10.1097/00000542-199805000-00006"
+    },
+    {
+      "source_id": "minto_1997",
+      "priority": 2,
+      "citation": "Minto CF et al. Influence of age and gender on the pharmacokinetics and pharmacodynamics of remifentanil. I. Model development. Anesthesiology 86(1):10-23.",
+      "doi": "10.1097/00000542-199701000-00004",
+      "url": "https://doi.org/10.1097/00000542-199701000-00004"
+    },
+    {
+      "source_id": "bouillon_2004",
+      "priority": 2,
+      "citation": "Bouillon TW et al. Pharmacodynamic interaction between propofol and remifentanil regarding hypnosis, tolerance of laryngoscopy, bispectral index, and electroencephalographic approximate entropy. Anesthesiology 100(6):1353-1372.",
+      "doi": "10.1097/00000542-200406000-00006",
+      "url": "https://doi.org/10.1097/00000542-200406000-00006"
+    },
+    {
+      "source_id": "ppo_2017",
+      "priority": 2,
+      "citation": "Schulman J et al. Proximal Policy Optimization Algorithms. arXiv:1707.06347.",
+      "url": "https://arxiv.org/abs/1707.06347"
+    },
+    {
+      "source_id": "gae_2015",
+      "priority": 2,
+      "citation": "Schulman J et al. High-Dimensional Continuous Control Using Generalized Advantage Estimation. arXiv:1506.02438.",
+      "url": "https://arxiv.org/abs/1506.02438"
+    },
+    {
+      "source_id": "yun_2024",
+      "priority": 3,
+      "citation": "Yun WJ et al. Hierarchical Deep Reinforcement Learning-Based Propofol Infusion Assistant Framework in Anesthesia. IEEE TNNLS 35(2):2510-2521.",
+      "doi": "10.1109/TNNLS.2022.3190379",
+      "url": "https://doi.org/10.1109/TNNLS.2022.3190379",
+      "local_public_pdf_sha256": "41e9ff71a54643e4c6d66eef7dae19f58c5e9f34309c2d052f9cba381d345847",
+      "committed_pdf": false
+    },
+    {
+      "source_id": "sb3_2_7_1_docs",
+      "priority": 5,
+      "citation": "Stable-Baselines3 2.7.1 PPO documentation; default registry reference only.",
+      "url": "https://stable-baselines3.readthedocs.io/en/v2.7.1/modules/ppo.html",
+      "dependency_locked": false
+    },
+    {
+      "source_id": "gymnasium_env_api",
+      "priority": 5,
+      "citation": "Gymnasium Env API documentation; interface reference only.",
+      "url": "https://gymnasium.farama.org/api/env/",
+      "dependency_locked": false
+    }
+  ],
+  "legacy_repository_role": "read_only_reference_only",
+  "laboratory_code_available": false,
+  "source_pdf_copies_added_to_repository": 0
+}

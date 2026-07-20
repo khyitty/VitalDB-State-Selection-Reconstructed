@@ -1,0 +1,79 @@
+{
+  "protocol_version": "1.3.2",
+  "status": "planned_not_executed",
+  "validation_scope": "synthetic_and_analytical_only",
+  "claim_boundary": [
+    "not clinical validation",
+    "not exact paper-figure reproduction",
+    "not laboratory-code reproduction",
+    "not patient dosing guidance"
+  ],
+  "validation_groups": [
+    {
+      "group": "parameter_and_unit_registry",
+      "checks": [
+        "all h1-h17 and f1-f18 are present exactly once",
+        "volume and clearance dimensions are explicit",
+        "propofol and remifentanil amount scales cannot be interchanged",
+        "LBM h18/f18 and f12 conflicts are selectable only through an approved versioned configuration"
+      ]
+    },
+    {
+      "group": "three_compartment_dynamics",
+      "checks": [
+        "zero infusion from zero state remains zero",
+        "nonnegative state invariance for nonnegative infusion",
+        "mass-balance residual is within numeric tolerance",
+        "zero-input decay is monotone in total drug amount",
+        "constant-input steady-state behavior matches an independent analytical calculation",
+        "exact zero-order-hold and a high-accuracy independent ODE solution agree"
+      ]
+    },
+    {
+      "group": "effect_site_and_bis",
+      "checks": [
+        "effect-site concentration lags an input transient",
+        "constant Cp converges to Ce=Cp",
+        "BIS is 98 at zero concentrations before optional noise",
+        "deterministic BIS is monotone nonincreasing in each nonnegative Ce",
+        "BIS remains finite over an approved synthetic demographic/action grid",
+        "agent-specific and combined concentration response calculations match hand-worked reference cases"
+      ]
+    },
+    {
+      "group": "conflict_sensitivity",
+      "checks": [
+        "Minto f12 0.030 versus 0.0301 trajectory difference",
+        "approved integration-step sensitivity",
+        "approved noise/no-noise variants",
+        "approved initialization variants",
+        "all results labeled by configuration without selecting a winner from outcomes"
+      ]
+    },
+    {
+      "group": "environment_contract",
+      "checks": [
+        "reset and step satisfy the locked Gymnasium API",
+        "one action is held for exactly the approved interval",
+        "transition order and reward next-state timing are invariant",
+        "remifentanil remains exogenous",
+        "P0/P1 share latent trajectory disturbances and drug histories",
+        "S1 is a strict state superset of S0",
+        "no future timestamp enters an observation",
+        "terminated and truncated semantics are tested separately"
+      ]
+    },
+    {
+      "group": "ppo_integration",
+      "checks": [
+        "library PPO is not reimplemented when Stable-Baselines3 is selected",
+        "action transformation is bijective inside bounds and saturation is logged",
+        "observation space contains generated observations",
+        "fixed-seed bounded synthetic rollout is reproducible within the declared tolerance",
+        "no full training occurs during integration validation"
+      ]
+    }
+  ],
+  "acceptance_rule": "Every applicable deterministic check passes; sensitivity outputs remain descriptive; unresolved constants remain blocked.",
+  "executed_in_phase7e": false
+}

@@ -22,7 +22,8 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7B - Protocol v1.3 control-focused 2×2 study design | complete | 189 tests and the 28-source production first-N guard passed; frozen cohort remains 2,460 cases and 2,415 subjects; P0 `sqi_not_required__bis30s__drug120s` and P1 `sqi_ge_50__bis20s__drug60s`; conceptual S0/S1 and four future policy IDs; planned 1,932/483 subject counts and seeds 42 plus 7/42/84; simulator observation-quality layer requires new implementation and missing encoding architecture budget reward action bounds and allocation method remain human decisions; no split seal modeling array raw outcome dose Cp/Ce prediction feature selection PPO control metric or statistics execution; remote Phase 7B commit verified at `3e8faa86919cda47cadf59844987ebaf81ff435b` |
 | 7C - PPO/Simulator reuse audit and minimal implementation plan | complete | 195 audit-scope tests passed (the three excluded scaffold tests were not run after scope correction); the audit utility passed its direct first-N scan; legacy PK/PD synthetic reset plus one 10-second step passed; environment and PPO imports explicitly failed on missing runtime dependencies; only reuse audit documents and a bounded read-only probe were committed; missing encoding remains pending human approval; drug-rate semantics classified retrospective-only; no split raw access real array committed simulator/PPO implementation checkpoint training or evaluation; remote phase commit verified at `03e8ec9f4d3eec640552146d7511867f6db39136` |
 | 7D - Protocol v1.3.1 online observation amendment and workspace resolution | complete | 214 tests and the 29-source production first-N guard passed; the 14 excluded paths were backed up with exact copies and a binary patch then selectively removed; Protocol v1.3.1 removes online drug staleness, selects BIS Option B-minimal, freezes S0/S1 at 34/42 conceptual fields, and approves Path A; the numeric BIS age cap remains pending before implementation; no implementation, split, raw access, package change, or PPO execution; remote phase commit independently verified at `2290f559f2790938916a4eef35d316fc81d165c1` |
-| 7E and later research execution | blocked by protocol | Human approval is still required for the numeric BIS age cap, sex tensor encoding, authoritative laboratory code intake, dependency lock, scientific constants, subject allocation, split/test seal, template extraction, and any PPO execution |
+| 7E - Paper-Grounded Reconstruction Specification | validated; publication pending | 233-test full-suite rerun and the unchanged 29-source production first-N guard pass before publication; Protocol v1.3.2 retires laboratory-code Path A; 90 evidence rows and 34 missing-constant decisions remain documentary or pending as classified; the frozen 2,460-case/2,415-subject cohort and 2x2 design are unchanged; no simulator, environment, dependency, split, raw access, modeling array, training, evaluation, prediction, Cp/Ce reconstruction, feature selection, or PPO execution |
+| Stage I and later reconstruction execution | blocked by protocol | Human approval is required for every register entry marked `recommended_pending_human_approval`, including unresolved paper conflicts, scientific constants, numerical methods, tensor encoding, action semantics, reward and episode settings, dependency lock, subject allocation, split/test seal, template extraction, and any training or evaluation |
 
 ## Publication constraint
 
@@ -146,6 +147,28 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `push_error`:
 
 ## Failure records
+
+### 2026-07-20 - Phase 7E initial test invocation path
+
+- `failed_gate`: Initial targeted Protocol v1.3.2 test invocation
+- `failure_reason`: The first direct module invocation omitted the repository's `src` import path, so test discovery could not import the new package module. This was an invocation error, not a scientific or artifact failure.
+- `commands`: `python -m unittest tests.test_protocol_v1_3_2 -v`
+- `generated_files`: None.
+- `remaining_work`: Run the project-standard discovery command with `PYTHONPATH=src`, then run the complete repository suite.
+- `local_commit_sha`: `99e32a8a74472ebb07620d280b215f89b21cfe12`
+- `push_error`: Not applicable; no Phase 7E commit or push existed.
+- `resolution`: The targeted Protocol v1.3.2 suite passed 19/19 under the project-standard source path.
+
+### 2026-07-20 - Phase 7E governance and immutable-guard regression
+
+- `failed_gate`: First complete repository test run for Phase 7E
+- `failure_reason`: Two of 233 tests failed. New compliance rows incorrectly placed multiple test IDs in one field even though governance requires one resolvable test ID per implemented row. The Phase 7E source had also been added to the existing first-N guard script, changing a file checksum-sealed by Protocol v1.3.1.
+- `commands`: `python -m unittest discover -s tests`
+- `generated_files`: None; the test was read-only and did not regenerate research artifacts.
+- `remaining_work`: Split combined compliance claims into independently tested rows, restore the immutable 29-source guard, keep Protocol v1.3.2 coverage in its dedicated specification tests, and rerun targeted plus complete tests.
+- `local_commit_sha`: `99e32a8a74472ebb07620d280b215f89b21cfe12`
+- `push_error`: Not applicable; no Phase 7E commit or push existed.
+- `resolution`: Compliance rows now name one automated test each; the original guard checksum is restored; 44 targeted governance, Protocol v1.3.1, and Protocol v1.3.2 tests passed, followed by all 233 repository tests and the 29-source guard.
 
 ### 2026-07-20 - Phase 7D excluded-scaffold backup verification
 

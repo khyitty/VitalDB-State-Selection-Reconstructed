@@ -1,0 +1,65 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3909,
+      "relative_path": "data/manifests/protocol_v1_3_2_implementation_sequence.json",
+      "sha256": "e2a46c037ef138a395e47477d9c0eee5b3a1f1029ca3a84937cd57b4c2a9ef9d"
+    },
+    {
+      "bytes": 12180,
+      "relative_path": "data/manifests/protocol_v1_3_2_missing_constants.csv",
+      "sha256": "124bdc2331342dc0418af2c29ebebb11900065b6eb9bf93fa5dec4b219beb88a"
+    },
+    {
+      "bytes": 22245,
+      "relative_path": "data/manifests/protocol_v1_3_2_reconstruction_evidence.csv",
+      "sha256": "a166a56737e75edca27c28335cdb07adfeaba872c16bbf3023a8abfbefe6d4c5"
+    },
+    {
+      "bytes": 3275,
+      "relative_path": "data/manifests/protocol_v1_3_2_scientific_validation_plan.json",
+      "sha256": "e518b90d6b30ea86989444379c301bd3f7796543c05c49d3abab79e576b30dd5"
+    },
+    {
+      "bytes": 3319,
+      "relative_path": "data/manifests/protocol_v1_3_2_source_registry.json",
+      "sha256": "e7b5adb9426d17b74694065bb8042ebc9493f7195eb98f269600c18653c5c8f1"
+    },
+    {
+      "bytes": 2730,
+      "relative_path": "data/manifests/protocol_v1_3_2_source_snapshot.json",
+      "sha256": "aa01ecd713eab635d1e8f044ad326d2f145de1f409d91fcae6768e69dde129c2"
+    },
+    {
+      "bytes": 2756,
+      "relative_path": "docs/phase7e_paper_grounded_reconstruction_specification.md",
+      "sha256": "ef1afad691af166906366acb31f26807d95e89f68b9b662348ebbf335391bb2a"
+    },
+    {
+      "bytes": 2643,
+      "relative_path": "docs/protocol_v1_3_2_amendment_decision_record.md",
+      "sha256": "59ece3cc591c39b84db098f9d9309d5ea86f12a654be136f55632667d5c82f3a"
+    },
+    {
+      "bytes": 2893,
+      "relative_path": "scripts/verify_no_first_n_limit.py",
+      "sha256": "f41a8882d1f328d67dd7c2d79bf6ee953f51534a4c6558533be1cebef40daf09"
+    },
+    {
+      "bytes": 3633,
+      "relative_path": "src/vitaldb_state_selection/cohort/protocol_v1_3_2.py",
+      "sha256": "df6bdbdeb3dd7858685d9b9758b4ac0ef4a446dd379032e43d9a9d3ef5fa7159"
+    },
+    {
+      "bytes": 2764,
+      "relative_path": "tests/test_protocol_v1_3_2.py",
+      "sha256": "56a45d9f3924fe84e212bf593f3effc83ab201bfdec0568ccadd4a31fba7efb2"
+    },
+    {
+      "bytes": 11274,
+      "relative_path": "tests/test_protocol_v1_3_2_artifacts.py",
+      "sha256": "fb2165da40a9f943941a447e35958dfedf9ad52be1d1c15f5d1b5bb9f6fc8eca"
+    }
+  ],
+  "self_excluded": true
+}
