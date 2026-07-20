@@ -1,0 +1,11 @@
+{
+  "data/manifests/final_cohort_accounting_summary.json": "b35c18aeba2169bb91a6aa8f66536afeb2d787b962bb9500e77c69de1a0b4f62",
+  "data/manifests/final_eligible_caseids.csv": "f0cd5f514fddd5a7b2c18f6ef895f647e3abe65314a880fc57a285547eb3c52e",
+  "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+  "data/manifests/final_ineligible_caseids.csv": "51b736aa852960d98a6000a4dd55371a0edabe39f044e9b5b22ca077eeb6e66e",
+  "data/manifests/protocol_v1_2_cohort_freeze.json": "3720d02b8c9caf01f41d7a075cf2e48bc54fc4188f6f4ac8a9bb55eca1a1ebc6",
+  "data/manifests/protocol_v1_2_sensitivity_reference.csv": "6455c7bc65593412a51a3034624676cd47d5cd21cfdd4cae7f15fcff8011d89d",
+  "data/manifests/protocol_v1_2_source_snapshot.json": "73e92ed3dd08a30f6cf18ba4b945aa1c24ba75535fccb94611c72c45fa628f20",
+  "docs/final_cohort_freeze_report.md": "fc9a414d306c2a2440f6a092a4107b3979c8782f3667f6558af54bbbb2c9b487",
+  "docs/protocol_v1_2_decision_record.md": "a66dd5d080ae9179b37ebb8922c8decf39b6a81358e9ae10d301cbffa1d5268e"
+}

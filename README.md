@@ -23,12 +23,14 @@ The authorized work stops after:
 10. Phase 6B outcome-blind, bounded-memory characterization and unselected
     quality-rule sensitivity comparisons for those 2,470 cases and four tracks; and
 11. Phase 6C outcome-blind causal 10-second grid and future-window feasibility
-    comparisons across all 60 unselected SQI, BIS-staleness, and drug-hold candidates.
+    comparisons across all 60 unselected SQI, BIS-staleness, and drug-hold candidates; and
+12. Phase 6D human-approved Protocol v1.2 preprocessing decision and deterministic
+    freeze of one 2,460-case final eligible cohort from the 2,470 Phase 6A cases.
 
-The following are deliberately not authorized: full signal download outside the seven
-Phase 5C volatile tracks and four Phase 6A exact tracks, final quality thresholds,
-final cohort freeze, train/validation/test splitting, Cp/Ce reconstruction, dose
-calculation, prediction or feature selection, full model training, and PPO training.
+The following remain deliberately unauthorized: full signal download outside the seven
+Phase 5C volatile tracks and four Phase 6A exact tracks, train/validation/test splitting,
+Cp/Ce reconstruction, dose calculation, prediction or feature selection, model training,
+and PPO training.
 
 ## Non-negotiable safeguards
 
@@ -36,8 +38,8 @@ calculation, prediction or feature selection, full model training, and PPO train
 - Production code rejects case limits, first-N slicing, duplicates, and missing rows.
 - Failed downloads remain explicit manifest rows and are never silently excluded.
 - Track aliases are accepted only from versioned, human-reviewed configuration.
-- Quality thresholds remain unset until an outcome-blind human review of metadata
-  and missingness distributions.
+- Protocol v1.2 preprocessing thresholds are fixed by the outcome-blind human
+  decision record and must not be changed in response to model results.
 - The exact legacy actual-use 98 case IDs may be read only for Phase 6A overlap
   exclusion. Split assignments, scalers, checkpoints, metrics, figures, and model
   artifacts remain prohibited inputs.
@@ -151,6 +153,20 @@ QC-only, and no modeling or target array is saved. The 60 candidates, five
 minimum-window counts, Phase 6B disagreements, demographics/PK-input feasibility,
 and fixed-seed boundaries are descriptive only. Phase 6C does not select a
 preprocessing rule, quality threshold, final cohort, split, or model.
+
+Phase 6D consumes only versioned Phase 6A/6B/6C artifacts:
+
+```powershell
+python scripts/freeze_protocol_v1_2_cohort.py --verify-only
+```
+
+Protocol v1.2 selects `sqi_ge_50__bis20s__drug60s` and requires at least
+120 usable prediction endpoints. It freezes one final cohort of 2,460 eligible
+cases and retains 10 excluded cases with all contributing flags. The 120 endpoints
+are not described as 20 continuous minutes. Alternative SQI, staleness, hold, and
+minimum-window counts remain sensitivity references only. No raw signal, outcome,
+split, modeling array, normalization, dose, Cp/Ce, prediction, feature selection,
+or PPO step is used in the freeze.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

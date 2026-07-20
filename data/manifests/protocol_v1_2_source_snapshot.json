@@ -1,0 +1,89 @@
+{
+  "api_request_count": 0,
+  "bis_0_10_admissible": true,
+  "cohort_frozen": true,
+  "cohort_regeneration_from_model_result": false,
+  "first_n_sampling": false,
+  "input_artifact_sha256": {
+    "data/manifests/causal_grid_candidate_summary.csv": "e0f071d8949b30847490c1ab181eaaf4069aa1918ac19ca666151832ae2ddd5c",
+    "data/manifests/causal_grid_demographics_pk_input_feasibility.csv": "4cdcba184c1860f29547491b1f7b59495508a737fdd10ff0f2877c2b99dc86cd",
+    "data/manifests/causal_grid_feasibility_artifact_checksums.json": "51119ea0dccacf11500a93c643f000208fb4c83de6f70ab79b95371085370cab",
+    "data/manifests/causal_grid_feasibility_case_candidate_manifest.csv.gz": "92bf85657747ad5a37dd92567139ad4c0bf35d69daba24f639878c1335a1e6db",
+    "data/manifests/causal_grid_feasibility_source_snapshot.json": "53770109c0fd78a2ef249b6869bab5eee02d7949a0c9269e25c7c87aadeddb65",
+    "data/manifests/causal_grid_minimum_window_sensitivity.csv": "4bc2e61e1bce5e3e4645a0525b12c8b7a17ef1873e33b40fe86afbbf6a7b28da",
+    "data/manifests/pre_quality_acquisition_cohort.csv": "7168c9ea75ff5d45824a27b2c5cafec4b7f186bc56a1779f575e13e31dd81790",
+    "data/manifests/primary_signal_checksum_manifest.csv": "50504d55796a22b8806770a11bacaa0d02b97e594e13f5820e4d471edfada3c0",
+    "data/manifests/primary_signal_download_manifest.csv": "f70560188c6a26666645d35132d3233ec0386044aa4689aaf26ded9133dfda5b",
+    "data/manifests/primary_signal_quality_case_manifest.csv": "911e4b44e626cc9f7d4944c825011c8e6b7b5b2be486dd8d7a29af9586913d5d",
+    "data/manifests/primary_signal_quality_summary.json": "d3308a06266ef6ed714d07e6f4b48d1cf52332d0bd0d60fa02256ea66832fff3",
+    "data/manifests/primary_signal_quality_track_manifest.csv": "99725ed3cbb406d0dce3807ba7b29df4c45ed7f940e3487ccdda795e6656c0d2",
+    "docs/protocol_v1_1_decision_record.md": "dd3f06fa437f114bcbac9a0e9adc958bec88f4acc560eb3fc672a407b35fc53e"
+  },
+  "legacy_case_ids_accessed": false,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "new_raw_file_count": 0,
+  "phase": "6D_protocol_v1_2_final_preprocessing_decision_and_cohort_freeze",
+  "phase6c_checksum_inventory_verified": true,
+  "phase6c_publication_followup": "624e5eaf9f5919ae94fa4d344478af85563ee622",
+  "phase6c_remote_sha_verified_before_phase6d": true,
+  "phase6c_source_commit": "b8f010dcc67497f77e26cee53094819f2f5d6cd9",
+  "prohibited_execution": {
+    "api_requests": 0,
+    "attention_gru": false,
+    "cpce": false,
+    "cumulative_dose": false,
+    "dose": false,
+    "elastic_net": false,
+    "feature_selection": false,
+    "gru": false,
+    "imputation_fit": false,
+    "modeling_arrays": false,
+    "new_raw_files": 0,
+    "normalization": false,
+    "persistence": false,
+    "ppo": false,
+    "prediction": false,
+    "prediction_metrics": false,
+    "raw_signal_reads": 0,
+    "recent_dose": false,
+    "schnider_minto_parameters": false,
+    "split": false,
+    "stratification": false,
+    "target_distribution_inspection": false,
+    "test_sealing": false,
+    "unit_conversion": false
+  },
+  "raw_signal_file_open_count": 0,
+  "raw_tree_after": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_before": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_unchanged": true,
+  "recorded_at": "2026-07-20T04:51:08.784171+00:00",
+  "schema_version": 1,
+  "selected_candidate_id": "sqi_ge_50__bis20s__drug60s",
+  "source_case_count": 2470,
+  "sqi_in_prediction_feature_universe": false
+}

@@ -1,0 +1,11 @@
+caseid,selected_candidate_usable_window_count,exclusion_reason,contributing_bis_sqi_history_unavailable,contributing_no_candidate_grid_points,contributing_no_usable_bis_sqi_history,contributing_bis_target_unavailable,contributing_no_usable_bis_target,contributing_propofol_unavailable,contributing_remifentanil_unavailable,contributing_zero_usable_windows,contributing_fewer_than_120_windows
+103,0,ineligible_fewer_than_120_usable_windows,true,false,true,true,true,false,false,true,true
+335,0,ineligible_fewer_than_120_usable_windows,false,true,false,false,false,false,false,true,true
+2602,0,ineligible_fewer_than_120_usable_windows,false,true,false,false,false,false,false,true,true
+2791,48,ineligible_fewer_than_120_usable_windows,false,false,false,false,false,false,false,false,true
+2857,0,ineligible_fewer_than_120_usable_windows,true,false,true,true,true,false,false,true,true
+3733,118,ineligible_fewer_than_120_usable_windows,false,false,false,false,false,false,false,false,true
+4201,15,ineligible_fewer_than_120_usable_windows,false,false,false,false,false,false,false,false,true
+4694,47,ineligible_fewer_than_120_usable_windows,true,false,false,true,false,false,false,false,true
+5979,100,ineligible_fewer_than_120_usable_windows,true,false,false,false,false,false,false,false,true
+6221,18,ineligible_fewer_than_120_usable_windows,true,false,false,true,false,false,false,false,true

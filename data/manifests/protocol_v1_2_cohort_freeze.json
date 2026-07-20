@@ -1,0 +1,41 @@
+{
+  "cohort_frozen": true,
+  "created_timestamp": "2026-07-20T04:51:08.784171+00:00",
+  "eligible_case_count": 2460,
+  "excluded_case_count": 10,
+  "full_cohort_manifest_sha256": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+  "minimum_usable_window_count": 120,
+  "modeling_arrays_created": false,
+  "outcome_or_model_used": false,
+  "protocol_version": "1.2",
+  "selected_candidate_id": "sqi_ge_50__bis20s__drug60s",
+  "selected_preprocessing_parameters": {
+    "bis_0_10_admissible": true,
+    "bis_admissible_range_inclusive": [
+      0,
+      100
+    ],
+    "bis_staleness_cap_seconds": 20,
+    "drug_rate_hold_cap_seconds": 60,
+    "drug_rate_require_finite_nonnegative": true,
+    "grid_anchor": "each_case_anesthesia_start",
+    "grid_interval_seconds": 10,
+    "history_relative_seconds": [
+      -50,
+      -40,
+      -30,
+      -20,
+      -10,
+      0
+    ],
+    "minimum_usable_prediction_windows": 120,
+    "sqi_exact_timestamp_threshold": 50,
+    "sqi_role": "qc_only_not_prediction_feature_not_ppo_state",
+    "target_relative_seconds": 30
+  },
+  "sorted_eligible_case_ids_sha256": "f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd",
+  "sorted_ineligible_case_ids_sha256": "6d2f5186c4fed0234dd8bde3f8756f978140de62d91eb880532eeab3432c5907",
+  "source_case_count": 2470,
+  "source_commit_sha": "b8f010dcc67497f77e26cee53094819f2f5d6cd9",
+  "split_created": false
+}
