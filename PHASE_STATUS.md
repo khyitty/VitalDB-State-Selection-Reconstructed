@@ -17,7 +17,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 6A - Protocol v1.1 freeze and primary signal acquisition | complete | 106 tests and the 17-source production first-N guard passed; 3,219 pre-quality rows with 2,470 acquisition inclusions; fixed-seed 25-case preflight passed; 9,880/9,880 exact-track requests complete and checksum-verified; raw data remains ignored; no quality threshold cohort freeze split model Cp/Ce dose or PPO execution; remote phase commit verified at `15d35da` |
 | 6B - Outcome-blind primary signal quality characterization | complete | 121 tests and the 19-source production first-N guard passed; 2,470 case rows and 9,880 case-track rows complete; all Phase 6A raw checksums and raw-tree state match before/after; permissive moderate and strict pass counts are 2,464 2,333 and 1,723 with no scenario selected; no API raw rewrite quality-rule selection cohort freeze split prediction Cp/Ce dose feature selection or PPO execution; remote phase commit verified at `d3bc24f` |
 | 6C - Causal grid and prediction-window feasibility audit | complete | 138 tests and the 21-source production first-N guard passed; 2,470 cases by all 60 candidates yield 148,200 complete rows; usable-case counts range from 2,465 to 2,468 with no rule selected; all 9,880 source raw checksums and the 19,761-file raw tree match before/after; peak RSS was 221,642,752 bytes; no cohort freeze split model Cp/Ce feature selection or PPO execution; remote Phase 6C commit verified at `b8f010d` |
-| 6D - Protocol v1.2 final preprocessing decision and cohort freeze | complete locally; publication pending | 153 tests and the 23-source production first-N guard passed; selected `sqi_ge_50__bis20s__drug60s` with at least 120 usable endpoints; all 2,470 source cases yield 2,460 eligible and 10 excluded; eligible-ID checksum `f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd`; no raw/API split modeling array prediction Cp/Ce feature selection or PPO execution |
+| 6D - Protocol v1.2 final preprocessing decision and cohort freeze | complete | 153 tests and the 23-source production first-N guard passed; selected `sqi_ge_50__bis20s__drug60s` with at least 120 usable endpoints; all 2,470 source cases yield 2,460 eligible and 10 excluded; eligible-ID checksum `f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd`; source raw 9,880 checksums verified and raw tree unchanged; no raw/API split modeling array prediction Cp/Ce feature selection or PPO execution; remote Phase 6D commit verified at `3421e84` |
 | Phase 7 patient split and later research | blocked by protocol | Separate authorization and protocol required |
 
 ## Publication constraint
@@ -89,6 +89,13 @@ The Phase 6C phase commit
 publication-status follow-up was created. The committed change contains no raw
 file or modeling array and leaves the legacy repository state unchanged.
 
+The Phase 6D phase commit
+`3421e84c59ce23b14a30ffc415b5199b641be9fa` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The committed change contains the
+approved final cohort manifest and case-ID artifacts, contains no raw file or
+modeling array, and leaves the legacy repository state unchanged.
+
 ## Failure record template
 
 Fill this section for any failed phase gate or push. Do not delete a failed record.
@@ -135,3 +142,14 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `30064de6ee4eeea44b5a220be1e5f6ba7c53b4e4` (unchanged Phase 6B publication tip; all Phase 6C changes remain unstaged)
 - `push_error`: Not attempted because the independent commit gate failed before commit; this is not a Git authentication error.
 - `resolution`: Git-index write approval was restored. Exactly the 20 reviewed Phase 6C paths were staged, cached-diff reviewed, committed as `b8f010dcc67497f77e26cee53094819f2f5d6cd9`, pushed with ordinary Git, and independently verified on `refs/heads/main`. The failure record is retained for provenance.
+
+### 2026-07-20 - Phase 6D publication approval gate
+
+- `failed_gate`: Push the independently committed Phase 6D change to `origin/main`
+- `failure_reason`: The managed execution environment required renewed explicit approval because the commit publishes a final cohort manifest and case-ID artifacts. This was not a Git authentication failure.
+- `commands`: `git push origin main`
+- `generated_files`: None; commit `3421e84c59ce23b14a30ffc415b5199b641be9fa` was already complete and the worktree remained clean.
+- `remaining_work`: Obtain explicit approval for the named origin, commit SHA, cohort manifest, and case-ID artifacts; push with ordinary Git; independently verify the remote SHA; then publish this status follow-up only.
+- `local_commit_sha`: `3421e84c59ce23b14a30ffc415b5199b641be9fa`
+- `push_error`: Managed approval rejection before network publication; no remote authentication attempt occurred.
+- `resolution`: The user explicitly approved publication to `https://github.com/khyitty/VitalDB-State-Selection-Reconstructed.git`. Ordinary Git push succeeded and `refs/heads/main` was independently verified at `3421e84c59ce23b14a30ffc415b5199b641be9fa` before this follow-up commit.
