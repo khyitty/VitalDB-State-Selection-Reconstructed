@@ -26,7 +26,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7F - Stage I paper-grounded deterministic PK/PD reconstruction | complete | MC-001 through MC-009 approved for Stage I and MC-010 through MC-034 remain pending; 262 tests and the unchanged 29-source production first-N guard passed; three fixed synthetic profiles; maximum semigroup error `4.440892098500626e-16`, maximum exact-ZOH versus solve_ivp error `3.3306690738754696e-16`, BIS monotonic-grid violations 0, and remifentanil unit-regression ratio `999.9999999999999`; frozen 2,460-case/2,415-subject cohort and P0/P1 by S0/S1 design unchanged; no dependency change, raw or subject-metadata access, split, test seal, environment, observation adapter, reward, action adapter, PPO, model, checkpoint, training, or evaluation; remote phase commit independently verified at `12268fa086b7ff1926a27479eb114f6cf408a876` |
 | 7G - Stage II dependency-free anesthesia environment core | complete | MC-010 through MC-018 and MC-031/MC-032 approved only for the synthetic Stage II core; P0/P1 causal BIS processing, exact-ZOH event partitioning, physical propofol actions, synthetic remifentanil schedules, latent-BIS reward, S0=34/S1=42, and four executable conditions implemented; five fixed synthetic scenarios, all 285 repository tests, and the unchanged 29-source first-N guard passed with latent/reward invariance; no dependency change, raw or subject access, actual template, split, test seal, PPO, model, checkpoint, training, evaluation, or statistics; remote Phase 7G commit independently verified at `a4968c0c66ba503e93bec85c04db6b8bda3c227b` |
 | 7H - Stage III Gymnasium and Stable-Baselines3 PPO integration | complete | Isolated SB3 2.8.0/Gymnasium 1.2.3 CPU runtime; MC-019 through MC-029 and MC-034 approved only as scoped; all four adapters/checkers/VecEnv/model initializations passed; four official 128-timestep smoke updates and two P0S0 determinism repetitions passed; 302/302 tests passed in the isolated RL venv, base discovery passed 302 with 9 optional-RL skips, and the unchanged 29-source first-N guard passed; no reward/BIS comparison, ranking, checkpoint, split, raw or subject access, actual template, real patient, final training, evaluation, or statistics; remote Phase 7H commit independently verified at `404379f64d5bdce66822c38528f25e0aab91d881` |
-| 8A - Outcome-blind subject-level split and test integrity seal | validation complete; publication pending | Source commit `22448d447d7e07941a3dc2139cb2eae0d76bd511`; 2,415 subjects allocated as 1,932 train and 483 test, yielding 1,970 train and 490 test cases; subject overlap 0 and case-to-parent split errors 0; `hamilton_stratified_sha256_rank_v1` with seed `20260720`; maximum absolute primary continuous SMD `0.029963981155984278` and balance warnings 0; public integrity-seal payload `6083be99567d5d7d4989ef3c9e35fc51255f614098697f289daac756d643f9af`; 329 base tests discovered with 320 passed and 9 expected optional-RL skips, existing 29-source and Phase 8A 3-source first-N guards passed, and 9 isolated RL tests passed; no raw signal, observation template, preprocessing array, normalization, real-subject simulator, outcome, PPO, model, or checkpoint access or creation |
+| 8A - Outcome-blind subject-level split and test integrity seal | complete | Source commit `22448d447d7e07941a3dc2139cb2eae0d76bd511`; 2,415 subjects allocated as 1,932 train and 483 test, yielding 1,970 train and 490 test cases; subject overlap 0 and case-to-parent split errors 0; `hamilton_stratified_sha256_rank_v1` with seed `20260720`; maximum absolute primary continuous SMD `0.029963981155984278` and balance warnings 0; public integrity-seal payload `6083be99567d5d7d4989ef3c9e35fc51255f614098697f289daac756d643f9af`; 329 base tests discovered with 320 passed and 9 expected optional-RL skips, existing 29-source and Phase 8A 3-source first-N guards passed, and 9 isolated RL tests passed; no raw signal, observation template, preprocessing array, normalization, real-subject simulator, outcome, PPO, model, or checkpoint access or creation; remote implementation commit independently verified at `6e32a1e563bae3df22f5870ce94d802d4d01802f` |
 | Phase 8B and later execution | blocked by protocol | MC-030 total training budget and MC-033 final seed execution remain pending; actual observation-template extraction, preprocessing fit, final PPO training, evaluation, and statistics require later explicit approval |
 
 ## Publication constraint
@@ -175,6 +175,15 @@ smoke evidence only. The ignored `.venv-phase7h` and all in-memory models remain
 untracked. No raw or subject-data derivative, actual observation template, split,
 test seal, persistent checkpoint, full training, evaluation comparison, or
 statistical result is included. MC-030 and MC-033 remain pending.
+
+The Phase 8A outcome-blind subject-split implementation commit
+`6e32a1e563bae3df22f5870ce94d802d4d01802f` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. The public artifacts contain official
+VitalDB deidentified subject/case membership and integrity metadata only. They
+contain no direct identifier, raw physiological signal, BIS/SQI/drug-rate
+time-series value, observation template, preprocessing array, model, checkpoint,
+credential, local absolute path, legacy artifact, or unrelated file.
 
 ## Failure record template
 
@@ -343,3 +352,14 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `22448d447d7e07941a3dc2139cb2eae0d76bd511`
 - `push_error`: Not applicable; no Phase 8A commit or push existed.
 - `resolution`: The classifier now distinguishes `vitaldb_state_selection` from external `vitaldb`. All 27 Phase 8A tests and the complete 329-test base discovery passed with only the 9 expected optional-RL skips.
+
+### 2026-07-21 - Phase 8A publication risk approval gate
+
+- `failed_gate`: First Phase 8A implementation push attempt
+- `failure_reason`: The managed safety reviewer stopped execution before Git authentication because the commit publishes public deidentified subjectid/caseid split membership and required explicit approval after that disclosure risk was stated.
+- `commands`: `git push origin main`
+- `generated_files`: None; local implementation commit `6e32a1e563bae3df22f5870ce94d802d4d01802f` and its clean worktree were preserved.
+- `remaining_work`: Obtain informed explicit approval for the exact public origin, commit, and allowed artifact scope; then push, independently verify the remote SHA, and create only the publication-status follow-up.
+- `local_commit_sha`: `6e32a1e563bae3df22f5870ce94d802d4d01802f`
+- `push_error`: Managed safety-review rejection before Git authentication; not a remote authentication failure.
+- `resolution`: The user explicitly approved publication after acknowledging that official VitalDB deidentified subjectid/caseid split membership would be public and enumerated prohibited content. A renewed scope review passed, ordinary Git push succeeded, and `refs/heads/main` was independently verified at the implementation SHA before this follow-up.
