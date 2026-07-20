@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "conditions": [
+    {
+      "condition_id": "P0S0",
+      "observation_shape": [
+        34
+      ],
+      "observation_dtype": "float32",
+      "action_shape": [
+        1
+      ],
+      "action_low": 0.0,
+      "action_high_declared": 27.7,
+      "full_episode_control_steps": 3,
+      "gymnasium_checker_passed": true,
+      "sb3_checker_passed": true,
+      "dummy_vec_env_passed": true,
+      "ppo_initialization_without_learning_passed": true,
+      "direct_adapter_transition_equal": true,
+      "normal_path_core_clip_count": 0
+    },
+    {
+      "condition_id": "P1S0",
+      "observation_shape": [
+        34
+      ],
+      "observation_dtype": "float32",
+      "action_shape": [
+        1
+      ],
+      "action_low": 0.0,
+      "action_high_declared": 27.7,
+      "full_episode_control_steps": 3,
+      "gymnasium_checker_passed": true,
+      "sb3_checker_passed": true,
+      "dummy_vec_env_passed": true,
+      "ppo_initialization_without_learning_passed": true,
+      "direct_adapter_transition_equal": true,
+      "normal_path_core_clip_count": 0
+    },
+    {
+      "condition_id": "P0S1",
+      "observation_shape": [
+        42
+      ],
+      "observation_dtype": "float32",
+      "action_shape": [
+        1
+      ],
+      "action_low": 0.0,
+      "action_high_declared": 27.7,
+      "full_episode_control_steps": 3,
+      "gymnasium_checker_passed": true,
+      "sb3_checker_passed": true,
+      "dummy_vec_env_passed": true,
+      "ppo_initialization_without_learning_passed": true,
+      "direct_adapter_transition_equal": true,
+      "normal_path_core_clip_count": 0
+    },
+    {
+      "condition_id": "P1S1",
+      "observation_shape": [
+        42
+      ],
+      "observation_dtype": "float32",
+      "action_shape": [
+        1
+      ],
+      "action_low": 0.0,
+      "action_high_declared": 27.7,
+      "full_episode_control_steps": 3,
+      "gymnasium_checker_passed": true,
+      "sb3_checker_passed": true,
+      "dummy_vec_env_passed": true,
+      "ppo_initialization_without_learning_passed": true,
+      "direct_adapter_transition_equal": true,
+      "normal_path_core_clip_count": 0
+    }
+  ],
+  "checker_warnings": [
+    {
+      "condition_id": "P0S0",
+      "classification": "expected_and_harmless",
+      "message": "WARN: For Box action spaces, we recommend using a symmetric and normalized space (range=[-1, 1] or [0, 1]). See https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html for more information."
+    },
+    {
+      "condition_id": "P0S0",
+      "classification": "expected_and_harmless",
+      "message": "We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html"
+    },
+    {
+      "condition_id": "P1S0",
+      "classification": "expected_and_harmless",
+      "message": "WARN: For Box action spaces, we recommend using a symmetric and normalized space (range=[-1, 1] or [0, 1]). See https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html for more information."
+    },
+    {
+      "condition_id": "P1S0",
+      "classification": "expected_and_harmless",
+      "message": "We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html"
+    },
+    {
+      "condition_id": "P0S1",
+      "classification": "expected_and_harmless",
+      "message": "WARN: For Box action spaces, we recommend using a symmetric and normalized space (range=[-1, 1] or [0, 1]). See https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html for more information."
+    },
+    {
+      "condition_id": "P0S1",
+      "classification": "expected_and_harmless",
+      "message": "We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html"
+    },
+    {
+      "condition_id": "P1S1",
+      "classification": "expected_and_harmless",
+      "message": "WARN: For Box action spaces, we recommend using a symmetric and normalized space (range=[-1, 1] or [0, 1]). See https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html for more information."
+    },
+    {
+      "condition_id": "P1S1",
+      "classification": "expected_and_harmless",
+      "message": "We recommend you to use a symmetric and normalized Box action space (range=[-1, 1]) cf. https://stable-baselines3.readthedocs.io/en/master/guide/rl_tips.html"
+    }
+  ],
+  "warning_policy": "The physical action contract is intentionally not normalized in Phase 7H."
+}

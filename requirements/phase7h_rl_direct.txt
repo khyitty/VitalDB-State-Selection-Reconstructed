@@ -1,0 +1,3 @@
+# Direct, human-approved Phase 7H optional RL integration dependencies only.
+stable-baselines3==2.8.0
+gymnasium==1.2.3

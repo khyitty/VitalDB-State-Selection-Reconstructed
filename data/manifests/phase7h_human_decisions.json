@@ -1,0 +1,25 @@
+{
+  "phase": "7H_stage_iii_gymnasium_sb3_integration",
+  "approved_scoped_ids": [
+    "MC-019",
+    "MC-020",
+    "MC-021",
+    "MC-022",
+    "MC-023",
+    "MC-024",
+    "MC-025",
+    "MC-026",
+    "MC-027",
+    "MC-028",
+    "MC-029",
+    "MC-034"
+  ],
+  "still_pending_ids": [
+    "MC-030",
+    "MC-033"
+  ],
+  "scope": "configuration_and_bounded_synthetic_integration_only_not_final_training",
+  "not_yun_dependency_versions": true,
+  "not_exact_unpublished_architecture_reproduction": true,
+  "weight_decay_interpretation": "study approximation of reported L2 coefficient through the PyTorch Adam optimizer contract"
+}

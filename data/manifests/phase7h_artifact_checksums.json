@@ -1,0 +1,130 @@
+{
+  "artifacts": [
+    {
+      "relative_path": ".gitignore",
+      "bytes": 511,
+      "sha256": "4bc6c12561544ff44e2cff27e2f54f9957b2e53749a56bbd71645b0b9ce5e1d7"
+    },
+    {
+      "relative_path": "requirements/phase7h_rl_direct.txt",
+      "bytes": 119,
+      "sha256": "38ac1e364257aac9e5a50a2c380db7ea5b061aeca29ce78795b6521791d271fa"
+    },
+    {
+      "relative_path": "requirements/phase7h_rl_lock.txt",
+      "bytes": 709,
+      "sha256": "3a7f3a0e48d824bb5d0765fb9f78148f1bd4a8d81203d1da424a9141dea0ca53"
+    },
+    {
+      "relative_path": "scripts/run_phase7h_validation.py",
+      "bytes": 12387,
+      "sha256": "b7c8a7d1ec1a3043f324157b7f9ac8d53ffefa684fe2e7df885fbdd9244429fc"
+    },
+    {
+      "relative_path": "scripts/build_phase7h_artifact_checksums.py",
+      "bytes": 1412,
+      "sha256": "df17b2efa696cabf9320c3ecebf327413be3af121ae729766217abc3501eba4b"
+    },
+    {
+      "relative_path": "tests/test_phase7h_rl_integration.py",
+      "bytes": 7902,
+      "sha256": "350b4ab00a32ae8bf10e6dd0bed049c34185c1c25002eb6ccdcdef9cb13641ac"
+    },
+    {
+      "relative_path": "tests/test_phase7h_smoke.py",
+      "bytes": 1781,
+      "sha256": "6f95107c7d73b6d332fe1bf5c60e06ffb36f139dffa1468fd8989948b5f4c25e"
+    },
+    {
+      "relative_path": "tests/test_phase7h_artifacts.py",
+      "bytes": 6078,
+      "sha256": "b2552b272cc534f55e2e958b4ed1f493f13bcaecdf20f7e3e89ad7999fbb5485"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/rl_integration/__init__.py",
+      "bytes": 520,
+      "sha256": "9d39824d30a35db4ef6436c1c6e4fcf55a595624f7bd840d0f7184047ccf1161"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/rl_integration/adapter.py",
+      "bytes": 3209,
+      "sha256": "a06b80c15426a9e68dd71632e852ebc7046fe4f44bc65478eb2ec71d0044b073"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/rl_integration/config.py",
+      "bytes": 3955,
+      "sha256": "bed748b763d6bdb3da4fac93a96b64941cf67f7cdfc9f1419a6f894af90a0887"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/rl_integration/factory.py",
+      "bytes": 1523,
+      "sha256": "a842ee4227d39738ffb0f82cb9ba04ef6d956db4c2cf1b7b76fafbc7abff017b"
+    },
+    {
+      "relative_path": "src/vitaldb_state_selection/rl_integration/smoke.py",
+      "bytes": 4996,
+      "sha256": "d1e9ab2850282732040e1439c41baadd6f03bdb127bfc3f29fb4fc405613193c"
+    },
+    {
+      "relative_path": "docs/phase7h_adapter_validation_report.md",
+      "bytes": 1460,
+      "sha256": "d2eeb7826e52c7ff7a5df48600c69bc00c556d0ac189041aee4bbe37995f1755"
+    },
+    {
+      "relative_path": "docs/phase7h_determinism_report.md",
+      "bytes": 605,
+      "sha256": "90952ba68c4fd38cec7d78463915b5cf56f4012a7bfca640f7f8ba85d3c01d99"
+    },
+    {
+      "relative_path": "docs/phase7h_ppo_integration_smoke_report.md",
+      "bytes": 1258,
+      "sha256": "00faa5b40ea996d0455710514a16e629ac5c8e295a8d77f70bed39711089de59"
+    },
+    {
+      "relative_path": "docs/phase7h_report.md",
+      "bytes": 1621,
+      "sha256": "d35557579136ad470a23538e953fb320ef5b44c72eb66bd7fbf0d74c95e740f2"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_adapter_validation_summary.json",
+      "bytes": 4740,
+      "sha256": "d07a6805e60c80958c5f5b34de7e0bbb02a0d7de32145dbf88bbd2457fbb8590"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_determinism_summary.json",
+      "bytes": 925,
+      "sha256": "5a00c282b0a201f626557d6b2e9e326d0eb397006f0a4b212e3d4b5f7531e1a2"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_human_decisions.json",
+      "bytes": 648,
+      "sha256": "97b5ebea941ae766a32dab6880be3121bc843722aecf6160fd75d3d3500cc507"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_runtime_environment.json",
+      "bytes": 1272,
+      "sha256": "b511d260472c12fdcdf284d1f563989867b6f845a9bb9dc7195bf170203e8d5d"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_scientific_ppo_candidate.json",
+      "bytes": 699,
+      "sha256": "c10f40ee983d93ebaf9837cef5ae30d02f5d0e676856ea122bec8764705826eb"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_smoke_ppo_configuration.json",
+      "bytes": 688,
+      "sha256": "3371cc6e4bca76d5848a30002671f0d67cb947d00e0776eb407cb02cf465ec52"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_smoke_summary.json",
+      "bytes": 3022,
+      "sha256": "2e53f74a517f37e155025e2087d3d9e5dbfa4d583a928496fe3476ea5965dfd7"
+    },
+    {
+      "relative_path": "data/manifests/phase7h_source_snapshot.json",
+      "bytes": 1750,
+      "sha256": "20ee08d4461205e052cd18ae4d831ff8b822b7e28e05fd7482a9d0fd6a3ec313"
+    }
+  ],
+  "self_excluded": true
+}

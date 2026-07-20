@@ -1,0 +1,27 @@
+{
+  "condition_id": "P0S0",
+  "seed": 42,
+  "repeat_count": 2,
+  "initial_observation_sha256": [
+    "04a6037204e483d9f44a307912594d9c75bf825e63e279e5b8a50bd64011fafb",
+    "04a6037204e483d9f44a307912594d9c75bf825e63e279e5b8a50bd64011fafb"
+  ],
+  "initial_observation_equal": true,
+  "first_deterministic_prediction_sha256": [
+    "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+    "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+  ],
+  "first_deterministic_prediction_equal": true,
+  "rollout_transition_counts": [
+    128,
+    128
+  ],
+  "model_parameter_sha256": [
+    "f9a7680ba13a1eea31d107628f5754c9ff1779d497fd8f81a4b7b2a29985b776",
+    "f9a7680ba13a1eea31d107628f5754c9ff1779d497fd8f81a4b7b2a29985b776"
+  ],
+  "model_parameter_checksum_equal": true,
+  "exceptions": [],
+  "best_run_selected": false,
+  "status": "passed_bitwise_parameter_checksum"
+}

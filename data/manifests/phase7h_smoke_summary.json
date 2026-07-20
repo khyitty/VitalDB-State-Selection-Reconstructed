@@ -1,0 +1,104 @@
+{
+  "configuration_id": "ppo_integration_smoke_v1",
+  "official_smoke_run_count": 4,
+  "runs": [
+    {
+      "condition_id": "P0S0",
+      "status": "passed",
+      "seed": 42,
+      "device": "cpu",
+      "total_timesteps": 128,
+      "runtime_seconds": 0.495585199969355,
+      "peak_traced_python_memory_bytes": 277337,
+      "observation_shape": [
+        34
+      ],
+      "action_shape": [
+        1
+      ],
+      "first_deterministic_action_finite": true,
+      "parameters_finite": true,
+      "gradients_finite_where_present": true,
+      "finite_logged_loss_count": 4,
+      "logged_losses_finite": true,
+      "environment_core_clip_count": 0,
+      "checkpoint_created": false,
+      "performance_metrics_recorded": false
+    },
+    {
+      "condition_id": "P1S0",
+      "status": "passed",
+      "seed": 42,
+      "device": "cpu",
+      "total_timesteps": 128,
+      "runtime_seconds": 0.3508293000049889,
+      "peak_traced_python_memory_bytes": 129236,
+      "observation_shape": [
+        34
+      ],
+      "action_shape": [
+        1
+      ],
+      "first_deterministic_action_finite": true,
+      "parameters_finite": true,
+      "gradients_finite_where_present": true,
+      "finite_logged_loss_count": 4,
+      "logged_losses_finite": true,
+      "environment_core_clip_count": 0,
+      "checkpoint_created": false,
+      "performance_metrics_recorded": false
+    },
+    {
+      "condition_id": "P0S1",
+      "status": "passed",
+      "seed": 42,
+      "device": "cpu",
+      "total_timesteps": 128,
+      "runtime_seconds": 0.4793517999933101,
+      "peak_traced_python_memory_bytes": 145344,
+      "observation_shape": [
+        42
+      ],
+      "action_shape": [
+        1
+      ],
+      "first_deterministic_action_finite": true,
+      "parameters_finite": true,
+      "gradients_finite_where_present": true,
+      "finite_logged_loss_count": 4,
+      "logged_losses_finite": true,
+      "environment_core_clip_count": 0,
+      "checkpoint_created": false,
+      "performance_metrics_recorded": false
+    },
+    {
+      "condition_id": "P1S1",
+      "status": "passed",
+      "seed": 42,
+      "device": "cpu",
+      "total_timesteps": 128,
+      "runtime_seconds": 0.5028159000212327,
+      "peak_traced_python_memory_bytes": 140033,
+      "observation_shape": [
+        42
+      ],
+      "action_shape": [
+        1
+      ],
+      "first_deterministic_action_finite": true,
+      "parameters_finite": true,
+      "gradients_finite_where_present": true,
+      "finite_logged_loss_count": 4,
+      "logged_losses_finite": true,
+      "environment_core_clip_count": 0,
+      "checkpoint_created": false,
+      "performance_metrics_recorded": false
+    }
+  ],
+  "all_correctness_checks_passed": true,
+  "condition_ranking_created": false,
+  "reward_or_bis_comparison_created": false,
+  "best_condition_selected": false,
+  "best_seed_selected": false,
+  "persistent_checkpoint_created": false
+}

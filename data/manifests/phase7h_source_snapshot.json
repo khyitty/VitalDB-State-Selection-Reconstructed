@@ -1,0 +1,45 @@
+{
+  "phase": "7H_stage_iii_gymnasium_sb3_integration",
+  "source_remote_main_at_start": "66c603c4e80fecb1a5efd01b1669df147ee5380d",
+  "frozen_case_count": 2460,
+  "frozen_subject_count": 2415,
+  "input_artifact_sha256": {
+    "data/manifests/phase7f_artifact_checksums.json": "e1dce7badaf15b4386f834872b394a6899cfa30bfcec61e9b86eaa2872482865",
+    "data/manifests/phase7g_artifact_checksums.json": "e9984e55e698e7a4e6b3b5a9f803526925325468bd990cf83c92d423518743d6",
+    "data/manifests/phase7g_source_snapshot.json": "69b5c5fc1e591a7ce2343d9bb47f6db7240c9df3efb77983bec98a73367c7db4",
+    "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "pyproject.toml": "0e403ab599452d41b32938e2a558a69af326e398229f8657d2a6fa24efbc9ff8"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status": [
+      "?? debug.log"
+    ]
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1",
+    "status": [
+      "?? debug.log"
+    ]
+  },
+  "execution_flags": {
+    "raw_vitaldb_access": false,
+    "subject_metadata_access": false,
+    "actual_template_extracted": false,
+    "real_patient_used": false,
+    "split_created": false,
+    "test_seal_created": false,
+    "final_training_run": false,
+    "final_evaluation_run": false,
+    "statistical_analysis": false,
+    "checkpoint_persisted": false,
+    "tensorboard_output": false,
+    "monitor_output": false,
+    "prediction": false,
+    "elastic_net": false,
+    "gru": false,
+    "attention_gru": false
+  }
+}

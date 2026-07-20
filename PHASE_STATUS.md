@@ -25,7 +25,8 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7E - Paper-Grounded Reconstruction Specification | complete | 233 tests and the unchanged 29-source production first-N guard passed; Protocol v1.3.2 retires laboratory-code Path A; 90 evidence rows and 34 missing-constant decisions remain documentary or pending as classified; the frozen 2,460-case/2,415-subject cohort and 2x2 design are unchanged; no simulator, environment, dependency, split, raw access, modeling array, training, evaluation, prediction, Cp/Ce reconstruction, feature selection, or PPO execution; remote phase commit independently verified at `dc05d46f4a0d34f2909d73c42a3b86a1f188cd65` |
 | 7F - Stage I paper-grounded deterministic PK/PD reconstruction | complete | MC-001 through MC-009 approved for Stage I and MC-010 through MC-034 remain pending; 262 tests and the unchanged 29-source production first-N guard passed; three fixed synthetic profiles; maximum semigroup error `4.440892098500626e-16`, maximum exact-ZOH versus solve_ivp error `3.3306690738754696e-16`, BIS monotonic-grid violations 0, and remifentanil unit-regression ratio `999.9999999999999`; frozen 2,460-case/2,415-subject cohort and P0/P1 by S0/S1 design unchanged; no dependency change, raw or subject-metadata access, split, test seal, environment, observation adapter, reward, action adapter, PPO, model, checkpoint, training, or evaluation; remote phase commit independently verified at `12268fa086b7ff1926a27479eb114f6cf408a876` |
 | 7G - Stage II dependency-free anesthesia environment core | complete | MC-010 through MC-018 and MC-031/MC-032 approved only for the synthetic Stage II core; P0/P1 causal BIS processing, exact-ZOH event partitioning, physical propofol actions, synthetic remifentanil schedules, latent-BIS reward, S0=34/S1=42, and four executable conditions implemented; five fixed synthetic scenarios, all 285 repository tests, and the unchanged 29-source first-N guard passed with latent/reward invariance; no dependency change, raw or subject access, actual template, split, test seal, PPO, model, checkpoint, training, evaluation, or statistics; remote Phase 7G commit independently verified at `a4968c0c66ba503e93bec85c04db6b8bda3c227b` |
-| Stage III and later reconstruction execution | blocked by protocol | MC-019 through MC-030, MC-033, and MC-034 remain `recommended_pending_human_approval`; Gymnasium/SB3 adapter, dependency lock, subject allocation, split/test-seal, actual template extraction, PPO, training, and evaluation require later versioned approval |
+| 7H - Stage III Gymnasium and Stable-Baselines3 PPO integration | validation complete; publication pending | Isolated SB3 2.8.0/Gymnasium 1.2.3 CPU runtime; MC-019 through MC-029 and MC-034 approved only as scoped; all four adapters/checkers/VecEnv/model initializations passed; four official 128-timestep smoke updates and two P0S0 determinism repetitions passed; 302/302 tests passed in the isolated RL venv, base discovery passed 302 with 9 optional-RL skips, and the unchanged 29-source first-N guard passed; no reward/BIS comparison, ranking, checkpoint, split, raw or subject access, actual template, real patient, final training, evaluation, or statistics |
+| Phase 7I and later execution | blocked by protocol | MC-030 total training budget and MC-033 final seed execution remain pending; subject allocation, split/test-seal, actual template extraction, final PPO training, evaluation, and statistics require later explicit approval |
 
 ## Publication constraint
 
@@ -177,6 +178,28 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `push_error`:
 
 ## Failure records
+
+### 2026-07-20 - Phase 7H checker-warning classification
+
+- `failed_gate`: First aggregate Phase 7H adapter validation run
+- `failure_reason`: Gymnasium and SB3 emitted two semantically equivalent recommendations for a normalized continuous action space. The first classifier recognized only one exact wording and conservatively stopped on the second warning. All adapter transitions and checkers themselves had passed.
+- `commands`: Isolated-venv execution of `scripts/run_phase7h_validation.py`
+- `generated_files`: Partial decision and configuration JSON files only; no smoke summary, model, checkpoint, trajectory, or performance artifact was accepted from the stopped run.
+- `remaining_work`: Classify both normalized-action recommendation wordings as expected and harmless under the explicitly physical action contract, then rerun the complete bounded validation.
+- `local_commit_sha`: `66c603c4e80fecb1a5efd01b1669df147ee5380d`
+- `push_error`: Not applicable; no Phase 7H commit or push existed.
+- `resolution`: The classifier now uses the shared semantic phrase, all warning rows are explicit `expected_and_harmless`, and the complete adapter plus smoke validation passed.
+
+### 2026-07-20 - Phase 7H correctness-only artifact assertion
+
+- `failed_gate`: First combined RL integration and artifact test run
+- `failure_reason`: One artifact test rejected the word `reward` anywhere in the smoke summary, including the required negative boundary flag `reward_or_bis_comparison_created: false`. The run rows themselves contained no reward or BIS value.
+- `commands`: Isolated-venv targeted Phase 7H unittest command
+- `generated_files`: None from the failed assertion; existing bounded smoke artifacts were unchanged.
+- `remaining_work`: Restrict the absence assertion to condition run payloads while retaining the explicit false comparison flag, rebuild checksums, and rerun targeted and full suites.
+- `local_commit_sha`: `66c603c4e80fecb1a5efd01b1669df147ee5380d`
+- `push_error`: Not applicable; no Phase 7H commit or push existed.
+- `resolution`: All targeted Phase 7H tests then passed; after the exact lock-reproduction test was added, 302/302 tests passed in the isolated RL venv and base discovery passed with 9 optional-RL skips.
 
 ### 2026-07-20 - Phase 7E initial test invocation path
 

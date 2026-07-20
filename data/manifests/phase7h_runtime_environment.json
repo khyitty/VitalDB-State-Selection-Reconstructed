@@ -1,0 +1,36 @@
+{
+  "environment_type": "repository_local_ignored_virtual_environment",
+  "environment_path_token": ".venv-phase7h",
+  "python_version": "3.11.9",
+  "python_implementation": "CPython",
+  "os": "Windows",
+  "os_release": "10",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "pip_version": "24.0",
+  "stable_baselines3_version": "2.8.0",
+  "gymnasium_version": "1.2.3",
+  "torch_version": "2.13.0+cpu",
+  "numpy_version": "2.4.6",
+  "scipy_version": "1.17.1",
+  "execution_device": "cpu",
+  "cuda_required": false,
+  "cuda_used": false,
+  "torch_cpu_threads": 1,
+  "adam_defaults_locked": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "amsgrad": false
+  },
+  "phase7h_optimizer_override": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.001
+  },
+  "direct_dependency_file_sha256": "38ac1e364257aac9e5a50a2c380db7ea5b061aeca29ce78795b6521791d271fa",
+  "resolved_lock_file_sha256": "3a7f3a0e48d824bb5d0765fb9f78148f1bd4a8d81203d1da424a9141dea0ca53",
+  "global_environment_mutated": false,
+  "base_runtime_note": "Declared base test dependencies and resolver-selected SciPy were installed only inside the isolated venv because Stage I imports SciPy while pyproject does not declare it."
+}
