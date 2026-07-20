@@ -1,0 +1,11 @@
+component,location,classification,notes
+Phase 6C exact candidate schemas and causal alignment audit,current cohort/causal_grid_feasibility.py and versioned artifacts,already implemented and reusable,schema and feasibility evidence only; not a PPO observation layer
+current PPO actor critic and trainer,current rl package placeholder,requires new implementation,no executable current implementation
+current anesthesia environment and simulator,current rl/pkpd package placeholders,requires new implementation,no executable current implementation
+legacy simulator equations and interface,legacy src/pkpd allowlist,reusable after refactor,primary-source and unit revalidation required
+legacy environment reward and action interfaces,legacy src/rl_env allowlist,reusable after refactor,common contract only; no result reuse
+legacy state adapter schema,legacy src/rl_env/state_adapters.py,reusable after refactor,does not implement P0/P1 quality views
+observation-quality replay/corruption layer,absent,requires new implementation,required before PPO
+missing-observation fixed-shape encoding,undefined,undefined and requires human decision,mask/age/sentinel choice not approved
+PPO architecture budget reward and action bound values,Protocol v1.3 invariance constraints,undefined and requires human decision,must be frozen before implementation
+legacy PPO configs checkpoints splits scalers selected features metrics results,legacy rejected artifacts,prohibited legacy artifact,not read or migrated

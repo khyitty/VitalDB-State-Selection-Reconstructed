@@ -1,0 +1,49 @@
+{
+  "claim_boundary": "preprocessing effect is not implemented and Protocol v1.3 is not implementation-ready",
+  "implementation_ready": false,
+  "overall_status": "requires_new_implementation",
+  "ppo_execution_authorized": false,
+  "questions": [
+    {
+      "finding": "yes; observed BIS is generated each advance",
+      "id": 1,
+      "question": "perfect BIS at every simulator time"
+    },
+    {
+      "finding": "no",
+      "id": 2,
+      "question": "simulator generates SQI"
+    },
+    {
+      "finding": "no",
+      "id": 3,
+      "question": "simulator generates BIS missingness"
+    },
+    {
+      "finding": "no",
+      "id": 4,
+      "question": "simulator generates delayed observations"
+    },
+    {
+      "finding": "no",
+      "id": 5,
+      "question": "simulator generates drug-rate observation staleness"
+    },
+    {
+      "finding": "no",
+      "id": 6,
+      "question": "VitalDB timestamp/SQI/missingness replay layer exists"
+    },
+    {
+      "finding": "not by a quality layer; refactor required",
+      "id": 7,
+      "question": "controller observation and latent reward state separable"
+    },
+    {
+      "finding": "not currently; new replay/corruption layer required",
+      "id": 8,
+      "question": "P0 and P1 can share one latent trajectory with distinct observation views"
+    }
+  ],
+  "required_component": "observation_corruption_or_replay_layer"
+}

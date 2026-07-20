@@ -1,0 +1,38 @@
+{
+  "component_ablation_defined": false,
+  "conditions": [
+    {
+      "condition_id": "P0S0",
+      "policy_id": "PPO_P0S0",
+      "preprocessing": "P0",
+      "state": "S0"
+    },
+    {
+      "condition_id": "P1S0",
+      "policy_id": "PPO_P1S0",
+      "preprocessing": "P1",
+      "state": "S0"
+    },
+    {
+      "condition_id": "P0S1",
+      "policy_id": "PPO_P0S1",
+      "preprocessing": "P0",
+      "state": "S1"
+    },
+    {
+      "condition_id": "P1S1",
+      "policy_id": "PPO_P1S1",
+      "preprocessing": "P1",
+      "state": "S1"
+    }
+  ],
+  "every_test_subject_evaluated_under_all_four": true,
+  "only_allowed_difference": "preprocessing pipeline and state representation; first input size may follow state dimension",
+  "pipeline_specific_episode_deletion_allowed": false,
+  "pretrained_checkpoint_reuse": false,
+  "same_evaluation_horizon": true,
+  "same_test_subjects": true,
+  "same_train_subjects": true,
+  "same_underlying_latent_trajectory_for_p0_p1": true,
+  "trained_separately_from_scratch": true
+}

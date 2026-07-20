@@ -1,0 +1,30 @@
+{
+  "additional_features": [
+    "propofol_recent_dose_60s",
+    "remifentanil_recent_dose_60s",
+    "propofol_cumulative_dose_since_anesthesia_start",
+    "remifentanil_cumulative_dose_since_anesthesia_start",
+    "propofol_cp",
+    "propofol_ce",
+    "remifentanil_cp",
+    "remifentanil_ce"
+  ],
+  "common_missingness_channels": "pending_human_review_and_must_match_S0",
+  "implementation_status": "reusable_after_refactor_with_primary_source_revalidation",
+  "inherited_dynamic_features": [
+    "bis_history_6x10s",
+    "propofol_infusion_rate_history_6x10s",
+    "remifentanil_infusion_rate_history_6x10s"
+  ],
+  "inherited_static_features": [
+    "age",
+    "sex",
+    "height",
+    "weight"
+  ],
+  "name": "pharmacology_enriched_state",
+  "sqi_numeric_value_included": false,
+  "state_id": "S1",
+  "strict_superset_of": "S0",
+  "values_calculated_in_phase7b": false
+}

@@ -1,0 +1,15 @@
+{
+  "binary_availability_mask_candidate": "pending_human_review",
+  "bis_zero_is_valid_not_missing": true,
+  "current_legacy_history_mask_role": "reset_padding_only_not_observation_missingness",
+  "different_evaluation_horizons_allowed": false,
+  "drug_rate_zero_is_valid_not_missing": true,
+  "implementation_authorized": false,
+  "observation_age_channel_candidate": "pending_human_review",
+  "pipeline_specific_episode_deletion_allowed": false,
+  "reward_bis_source": "latent_true_simulator_bis_preferred_pending_environment_contract",
+  "same_encoding_required_for_p0_and_p1": true,
+  "sentinel_or_placeholder": "undefined",
+  "stale_beyond_cap_usable": false,
+  "status": "undefined_and_requires_human_decision"
+}

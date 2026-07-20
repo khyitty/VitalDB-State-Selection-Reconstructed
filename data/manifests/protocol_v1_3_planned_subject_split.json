@@ -1,0 +1,17 @@
+{
+  "all_four_policies_per_test_subject": true,
+  "allocation_algorithm_and_balance_objective": "pending_human_review",
+  "same_membership_for_all_conditions": true,
+  "split_created": false,
+  "subject_cluster_integrity_required": true,
+  "target_test_fraction": 0.2,
+  "target_test_subject_count": 483,
+  "target_train_fraction": 0.8,
+  "target_train_subject_count": 1932,
+  "test_seal_created": false,
+  "test_subject_ids_created": false,
+  "train_subject_ids_created": false,
+  "unique_subject_count": 2415,
+  "unit": "subjectid",
+  "validation_split": false
+}

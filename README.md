@@ -27,12 +27,14 @@ The authorized work stops after:
 12. Phase 6D human-approved Protocol v1.2 preprocessing decision and deterministic
     freeze of one 2,460-case final eligible cohort from the 2,470 Phase 6A cases; and
 13. Phase 7A metadata-only subject linkage and count-only patient-level split
-    feasibility audit, without any split membership or test seal.
+    feasibility audit, without any split membership or test seal; and
+14. Phase 7B Protocol v1.3 control-focused 2×2 study-design freeze, with two
+    preprocessing bundles and two conceptual PPO states but no implementation or run.
 
 The following remain deliberately unauthorized: full signal download outside the seven
 Phase 5C volatile tracks and four Phase 6A exact tracks, train/validation/test splitting,
 Cp/Ce reconstruction, dose calculation, prediction or feature selection, model training,
-PPO training, and Phase 7B patient-level allocation.
+PPO training, actual Phase 7B patient-level allocation, and Phase 7C or later work.
 
 ## Non-negotiable safeguards
 
@@ -182,6 +184,21 @@ cluster-size arithmetic feasibility. Every `assigned_split` is blank and
 `split_created` is false. Phase 7A creates no train/validation/test membership,
 split ID list, test seal, raw read, outcome access, modeling array, or
 preprocessing fit.
+
+Phase 7B consumes only versioned Phase 6C/6D/7A artifacts and read-only legacy
+source interfaces:
+
+```powershell
+python scripts/freeze_protocol_v1_3_design.py
+```
+
+Protocol v1.3 defines P0/P1 preprocessing and S0/S1 state representation as a
+future 2×2 PPO comparison. The audit found no simulator observation-quality
+layer for SQI, missingness, delay, or staleness, and the fixed-shape missing-data
+encoding remains a human decision. The design is therefore not implementation-
+ready. No split membership, test seal, modeling array, dose, Cp/Ce value,
+prediction, PPO policy, checkpoint, control metric, or statistical result is
+created in Phase 7B.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

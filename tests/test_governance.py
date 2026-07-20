@@ -71,6 +71,7 @@ class GovernanceTests(unittest.TestCase):
             "Phase 5C outcome-blind characterization of seven exact volatile tracks",
             "Phase 6D human-approved Protocol v1.2 preprocessing decision",
             "Phase 7A metadata-only subject linkage",
+            "Phase 7B Protocol v1.3 control-focused 2×2 study-design freeze",
             "Phase 7B patient-level allocation",
             "full signal download",
             "train/validation/test splitting",

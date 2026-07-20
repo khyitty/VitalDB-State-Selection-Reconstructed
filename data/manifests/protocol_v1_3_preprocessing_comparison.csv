@@ -1,0 +1,9 @@
+component,P0,P1,relationship
+frozen cohort,same 2460 cases,same 2460 cases,common
+anesthesia window and grid,10s; anesthesia start,10s; anesthesia start,common
+history,"-50,-40,-30,-20,-10,0s","-50,-40,-30,-20,-10,0s",common
+causal alignment,no future/interpolation/bfill,no future/interpolation/bfill,common
+missing-data representation framework,must be identical; unresolved,must be identical; unresolved,common_pending_human_review
+SQI quality gating,none,exact timestamp SQI >= 50,bundle_difference
+BIS staleness cap,30 seconds,20 seconds,bundle_difference
+drug-rate hold cap,120 seconds,60 seconds,bundle_difference

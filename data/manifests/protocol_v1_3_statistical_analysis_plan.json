@@ -1,0 +1,25 @@
+{
+  "component_effect_claims_allowed": false,
+  "confidence_interval_percent": 95,
+  "design": "repeated_measures_all_four_conditions_per_test_subject",
+  "effect_sizes": true,
+  "episode_level_pseudoreplication": false,
+  "fixed_effects": [
+    "preprocessing",
+    "state",
+    "preprocessing_by_state_interaction"
+  ],
+  "paired_bootstrap_unit": "subjectid",
+  "paired_comparisons": true,
+  "random_or_blocking_effects": [
+    "subjectid",
+    "PPO_seed"
+  ],
+  "secondary_outcome_multiplicity": "Holm",
+  "statistical_test_run_in_phase7b": false,
+  "subject_level_aggregation": true,
+  "summaries": [
+    "mean_SD",
+    "median_IQR"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "artifacts": [
+    {
+      "bytes": 537,
+      "relative_path": "data/manifests/protocol_v1_3_control_outcomes.json",
+      "sha256": "488f91d5593e7a705f9a359e5f90849cf0c6a83f85934895f67058f46da66104"
+    },
+    {
+      "bytes": 1025,
+      "relative_path": "data/manifests/protocol_v1_3_four_policy_spec.json",
+      "sha256": "97a634997862527e034290b698133d6d72cc4ff2e8ddd023eb92e605651ff052"
+    },
+    {
+      "bytes": 1494,
+      "relative_path": "data/manifests/protocol_v1_3_implementation_audit.csv",
+      "sha256": "68e10d28826b0035e00842ba69f4b26b202845056efdc22b84ddf52953a59698"
+    },
+    {
+      "bytes": 719,
+      "relative_path": "data/manifests/protocol_v1_3_missing_observation_audit.json",
+      "sha256": "ccb70ec028b7b7f9ebd74251827b6cc3a02bf921957b89418cc6c8dc82279465"
+    },
+    {
+      "bytes": 1030,
+      "relative_path": "data/manifests/protocol_v1_3_p0_preprocessing.json",
+      "sha256": "4df8ec2cddc579b9eff2b9687f3fd705e3b679fb20dc1d1eea55f5d6b7865106"
+    },
+    {
+      "bytes": 1110,
+      "relative_path": "data/manifests/protocol_v1_3_p1_preprocessing.json",
+      "sha256": "acb309ce0eff809d411bc1140859f2e4705de3a36e65c359c5a9d97973f4662b"
+    },
+    {
+      "bytes": 565,
+      "relative_path": "data/manifests/protocol_v1_3_planned_subject_split.json",
+      "sha256": "4caa9858f8dd1fee0e8fe42cede740db8c7d7d43a4d84358f7c06ba6ed3ee14a"
+    },
+    {
+      "bytes": 950,
+      "relative_path": "data/manifests/protocol_v1_3_ppo_invariance_spec.json",
+      "sha256": "d14215f4ccf073c156a86046959993eeff8015bc6d84f4d8fa9607dfeccf4e5d"
+    },
+    {
+      "bytes": 1053,
+      "relative_path": "data/manifests/protocol_v1_3_prediction_scope_deprecation.csv",
+      "sha256": "5fb432c57493a8457e414d8ecebebdf07dfb3e2511866cdde63898332811cf33"
+    },
+    {
+      "bytes": 621,
+      "relative_path": "data/manifests/protocol_v1_3_preprocessing_comparison.csv",
+      "sha256": "d09a8d1cae4e2409d908b790034e0963f2cc7845bcb4fd84c69e74ac8885709b"
+    },
+    {
+      "bytes": 568,
+      "relative_path": "data/manifests/protocol_v1_3_s0_state_schema.json",
+      "sha256": "53a56395ca0abae0e82b2407b6892a0d40ccc8bdb76c17bf7797c6e44899cce0"
+    },
+    {
+      "bytes": 2598,
+      "relative_path": "data/manifests/protocol_v1_3_s1_feature_feasibility.csv",
+      "sha256": "17bb03a8c1d3af11feae08e652cbd347eccd386208bfe2ecbde380cea1e25dfb"
+    },
+    {
+      "bytes": 875,
+      "relative_path": "data/manifests/protocol_v1_3_s1_state_schema.json",
+      "sha256": "a5673b9b72c06c51705a72f55389511cee049216c376dc85690c77026be108f0"
+    },
+    {
+      "bytes": 210,
+      "relative_path": "data/manifests/protocol_v1_3_seed_protocol.json",
+      "sha256": "8780dac8fe20e35888d1efffff2821c21ea937f1935cea16abda71121dfffacd"
+    },
+    {
+      "bytes": 1391,
+      "relative_path": "data/manifests/protocol_v1_3_simulator_observation_feasibility.json",
+      "sha256": "144f9cbc34f98a02435dae0aaa6d5556bda51844c8b9cee8f24ecaa02c3696fe"
+    },
+    {
+      "bytes": 4777,
+      "relative_path": "data/manifests/protocol_v1_3_source_snapshot.json",
+      "sha256": "907399dbe738946884e16ac5129d5d36a49e380f911d54c21c4ce13ccc6ee61f"
+    },
+    {
+      "bytes": 643,
+      "relative_path": "data/manifests/protocol_v1_3_statistical_analysis_plan.json",
+      "sha256": "d4065abd9d70ecb4dd88fa997054dca016954baf4e1c550c7a9b545dcc8536fa"
+    },
+    {
+      "bytes": 883,
+      "relative_path": "docs/control_focused_2x2_factorial_design.md",
+      "sha256": "5b2e23fb87094b26571916b3bbd04447458dfc5bc77e523f1deabd85e077f58c"
+    },
+    {
+      "bytes": 388,
+      "relative_path": "docs/control_focused_research_question.md",
+      "sha256": "51213f99d55bb820f6356dfc7423567dbdba5e3400122570500a013796f413ab"
+    },
+    {
+      "bytes": 2133,
+      "relative_path": "docs/phase7b_control_design_report.md",
+      "sha256": "1b27fcbcf26bd5e82e350397a921a1921426c6884f7f8e0d403fd1e7fc8b7cd0"
+    },
+    {
+      "bytes": 968,
+      "relative_path": "docs/protocol_v1_3_scope_revision_decision_record.md",
+      "sha256": "21d11b16546b86c409583facf4c4047b067f06845b6be37c874050090d53e557"
+    }
+  ],
+  "self_excluded": true
+}

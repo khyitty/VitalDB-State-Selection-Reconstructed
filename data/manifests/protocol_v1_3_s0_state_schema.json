@@ -1,0 +1,27 @@
+{
+  "bmi_included": false,
+  "common_missingness_channels": "pending_human_review_and_must_match_S1",
+  "dynamic_features": [
+    "bis_history_6x10s",
+    "propofol_infusion_rate_history_6x10s",
+    "remifentanil_infusion_rate_history_6x10s"
+  ],
+  "history_relative_seconds": [
+    -50,
+    -40,
+    -30,
+    -20,
+    -10,
+    0
+  ],
+  "implementation_status": "requires_new_implementation",
+  "name": "observable_history_state",
+  "sqi_numeric_value_included": false,
+  "state_id": "S0",
+  "static_features": [
+    "age",
+    "sex",
+    "height",
+    "weight"
+  ]
+}

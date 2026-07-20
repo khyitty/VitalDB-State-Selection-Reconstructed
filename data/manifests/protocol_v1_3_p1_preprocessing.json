@@ -1,0 +1,38 @@
+{
+  "backward_fill_allowed": false,
+  "bis_0_10_admissible": true,
+  "bis_range_inclusive": [
+    0,
+    100
+  ],
+  "bis_staleness_cap_seconds": 20,
+  "candidate_id": "sqi_ge_50__bis20s__drug60s",
+  "causal_lookup_only": true,
+  "drug_rate_requires_finite_nonnegative": true,
+  "duplicate_timestamp_rule": "phase6c_last_finite_in_original_row_order",
+  "future_observation_allowed": false,
+  "grid_anchor": "each_case_anesthesia_start",
+  "grid_interval_seconds": 10,
+  "history_relative_seconds": [
+    -50,
+    -40,
+    -30,
+    -20,
+    -10,
+    0
+  ],
+  "interpolation_allowed": false,
+  "name": "quality_aware_causal_preprocessing",
+  "pipeline_id": "P1",
+  "pre_observation_zero_assumption_allowed": false,
+  "propofol_rate_hold_cap_seconds": 60,
+  "remifentanil_rate_hold_cap_seconds": 60,
+  "source_timestamp_must_be_lte_requested_time": true,
+  "sqi_exact_timestamp_threshold": 50,
+  "sqi_in_ppo_state": false,
+  "sqi_interpolation_allowed": false,
+  "sqi_nearest_matching_allowed": false,
+  "sqi_rule": "exact_timestamp_gte_50",
+  "zero_bis_is_missing": false,
+  "zero_drug_rate_is_missing": false
+}

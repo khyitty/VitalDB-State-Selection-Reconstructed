@@ -1,0 +1,17 @@
+{
+  "calculated_in_phase7b": false,
+  "preferred_bis_source": "latent_true_simulator_BIS",
+  "primary": "subject_level_mean_absolute_BIS_target_error_mean_abs_BIS_minus_50",
+  "reward_is_scientific_outcome": false,
+  "secondary": [
+    "percentage_time_BIS_40_60",
+    "percentage_time_BIS_below_40",
+    "percentage_time_BIS_above_60",
+    "time_to_first_BIS_40_60",
+    "cumulative_propofol_dose",
+    "mean_absolute_action_change",
+    "maximum_absolute_action_change",
+    "safety_termination_rate",
+    "episode_failure_rate"
+  ]
+}

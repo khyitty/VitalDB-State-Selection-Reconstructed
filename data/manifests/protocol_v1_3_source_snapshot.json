@@ -1,0 +1,107 @@
+{
+  "execution_flags": {
+    "actual_split": false,
+    "api_requests": 0,
+    "attention_gru": false,
+    "control_metric_calculation": false,
+    "elastic_net": false,
+    "feature_ranking": false,
+    "future_bis_prediction": false,
+    "gru": false,
+    "imputation_fit": false,
+    "modeling_arrays": false,
+    "new_raw_files": 0,
+    "normalization_fit": false,
+    "ppo_checkpoint": false,
+    "ppo_evaluation": false,
+    "ppo_training": false,
+    "preprocessing_component_ablation": false,
+    "raw_signal_read": false,
+    "real_case_cpce": false,
+    "real_case_recent_or_cumulative_dose": false,
+    "stability_selection": false,
+    "statistical_test": false,
+    "test_seal": false,
+    "train_test_id_lists": false
+  },
+  "expected_eligible_ids_sha256": "f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd",
+  "expected_final_cohort_sha256": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+  "expected_subject_linkage_sha256": "102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7",
+  "input_artifact_sha256": {
+    "causal_grid_candidate_summary.csv": "e0f071d8949b30847490c1ab181eaaf4069aa1918ac19ca666151832ae2ddd5c",
+    "causal_grid_feasibility_case_candidate_manifest.csv.gz": "92bf85657747ad5a37dd92567139ad4c0bf35d69daba24f639878c1335a1e6db",
+    "final_eligible_caseids.csv": "f0cd5f514fddd5a7b2c18f6ef895f647e3abe65314a880fc57a285547eb3c52e",
+    "final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "subject_linkage_case_manifest.csv": "cd42aa0caa9dd5151585e779af07110f4025688fbae00a81a29db527cf1ba2ad",
+    "subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2"
+  },
+  "legacy_interface_audit": {
+    "allowlisted_source_blob_ids": {
+      "src/pkpd/bis_response.py": "9a8ba574d1d8e9dce4f26b20a7a68aeb460990a1",
+      "src/pkpd/compartment.py": "90b9054a3bdbf513b0faf28e1ccd14f90b22f47c",
+      "src/pkpd/demographics.py": "93e7721813f0120979bf48c5fa135463e12cb63a",
+      "src/pkpd/parameters.py": "6468dff30e5ce0f593b1f782b309690741264743",
+      "src/pkpd/reconstruction.py": "cffe254abdef406a2fb4cbcb90f6cb73856de6c0",
+      "src/pkpd/schedules.py": "93a43e1fb60e8b9bdbc6fdddf2283622cd517e34",
+      "src/pkpd/simulator.py": "514a446850a398591c4cec006fd976a2c01431b7",
+      "src/pkpd/units.py": "53aefcd568dc861c53650fde6fe77d9ec59e06e5",
+      "src/rl_env/config.py": "634deabd1ceffa277f340f5d226485d9b9b86cae",
+      "src/rl_env/environment.py": "6d3858c3c354a6456729b3b71934a26bf57ba9fd",
+      "src/rl_env/history.py": "0ab336d3c694d17a6df41cc9360971118aa56fc0",
+      "src/rl_env/observation.py": "a8080ddb8341cf4d4f38114c72306dad699876c8",
+      "src/rl_env/reward.py": "f9647489a90b0ad19e0d37f9e9fc87b48f701b3e",
+      "src/rl_env/state_adapters.py": "02260ba422a6f952aaa87576e52ec361d4984636",
+      "src/rl_env/state_manifests.py": "54271f461a9181240b9274608dfc318b3b37e706",
+      "src/rl_training/config.py": "711df0e822ef064440bff7622e07026bae63a9af",
+      "src/rl_training/environment_factory.py": "c5668cf6527ffb17979cbb34a19015bf161a2215",
+      "src/rl_training/feature_extractors.py": "a16c8e866d0ad31a6430d392d1c3a1053f544574"
+    },
+    "checkpoint_read_count": 0,
+    "rejected_config_read_count": 0,
+    "result_read_count": 0
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "outcome_access_count": 0,
+  "phase": "7B_protocol_v1_3_control_focused_design",
+  "phase6c_connection": {
+    "p0_case_candidate_rows": 2470,
+    "p0_frozen_case_link_count": 2460,
+    "p1_case_candidate_rows": 2470,
+    "p1_frozen_case_link_count": 2460,
+    "source_excluded_case_count": 10,
+    "source_excluded_cases_authorized_for_protocol_v1_3": 0
+  },
+  "protocol_version": "1.3",
+  "raw_git_tracked_count": 0,
+  "raw_signal_file_open_count": 0,
+  "source_baseline_commit": "f18794da91d622b22db07b25c63bc6826e5c75a4",
+  "upstream_validation": {
+    "cohort_changed": false,
+    "excluded_cases_reintroduced": 0,
+    "frozen_case_count": 2460,
+    "frozen_excluded_case_count": 10,
+    "frozen_subject_count": 2415,
+    "p0_candidate_exists": true,
+    "p0_source_case_count": 2470,
+    "p0_usable_source_case_count": 2468,
+    "p1_candidate_exists": true,
+    "p1_source_case_count": 2470,
+    "p1_usable_source_case_count": 2466,
+    "phase6c_source_case_count": 2470,
+    "subject_linkage_changed": false
+  }
+}
