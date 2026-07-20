@@ -23,7 +23,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 7C - PPO/Simulator reuse audit and minimal implementation plan | complete | 195 audit-scope tests passed (the three excluded scaffold tests were not run after scope correction); the audit utility passed its direct first-N scan; legacy PK/PD synthetic reset plus one 10-second step passed; environment and PPO imports explicitly failed on missing runtime dependencies; only reuse audit documents and a bounded read-only probe were committed; missing encoding remains pending human approval; drug-rate semantics classified retrospective-only; no split raw access real array committed simulator/PPO implementation checkpoint training or evaluation; remote phase commit verified at `03e8ec9f4d3eec640552146d7511867f6db39136` |
 | 7D - Protocol v1.3.1 online observation amendment and workspace resolution | complete | 214 tests and the 29-source production first-N guard passed; the 14 excluded paths were backed up with exact copies and a binary patch then selectively removed; Protocol v1.3.1 removes online drug staleness, selects BIS Option B-minimal, freezes S0/S1 at 34/42 conceptual fields, and approves Path A; the numeric BIS age cap remains pending before implementation; no implementation, split, raw access, package change, or PPO execution; remote phase commit independently verified at `2290f559f2790938916a4eef35d316fc81d165c1` |
 | 7E - Paper-Grounded Reconstruction Specification | complete | 233 tests and the unchanged 29-source production first-N guard passed; Protocol v1.3.2 retires laboratory-code Path A; 90 evidence rows and 34 missing-constant decisions remain documentary or pending as classified; the frozen 2,460-case/2,415-subject cohort and 2x2 design are unchanged; no simulator, environment, dependency, split, raw access, modeling array, training, evaluation, prediction, Cp/Ce reconstruction, feature selection, or PPO execution; remote phase commit independently verified at `dc05d46f4a0d34f2909d73c42a3b86a1f188cd65` |
-| 7F - Stage I paper-grounded deterministic PK/PD reconstruction | validated; publication pending | MC-001 through MC-009 approved for Stage I and MC-010 through MC-034 remain pending; 262 tests and the unchanged 29-source production first-N guard passed; three fixed synthetic profiles; maximum semigroup error `4.440892098500626e-16`, maximum exact-ZOH versus solve_ivp error `3.3306690738754696e-16`, BIS monotonic-grid violations 0, and remifentanil unit-regression ratio `999.9999999999999`; frozen 2,460-case/2,415-subject cohort and P0/P1 by S0/S1 design unchanged; no dependency change, raw or subject-metadata access, split, test seal, environment, observation adapter, reward, action adapter, PPO, model, checkpoint, training, or evaluation |
+| 7F - Stage I paper-grounded deterministic PK/PD reconstruction | complete | MC-001 through MC-009 approved for Stage I and MC-010 through MC-034 remain pending; 262 tests and the unchanged 29-source production first-N guard passed; three fixed synthetic profiles; maximum semigroup error `4.440892098500626e-16`, maximum exact-ZOH versus solve_ivp error `3.3306690738754696e-16`, BIS monotonic-grid violations 0, and remifentanil unit-regression ratio `999.9999999999999`; frozen 2,460-case/2,415-subject cohort and P0/P1 by S0/S1 design unchanged; no dependency change, raw or subject-metadata access, split, test seal, environment, observation adapter, reward, action adapter, PPO, model, checkpoint, training, or evaluation; remote phase commit independently verified at `12268fa086b7ff1926a27479eb114f6cf408a876` |
 | Stage II and later reconstruction execution | blocked by protocol | MC-010 through MC-034 remain `recommended_pending_human_approval`; environment, observation-layer, reward, action, dependency-lock, subject allocation, split/test-seal, template extraction, training, and evaluation require later versioned approval |
 
 ## Publication constraint
@@ -143,6 +143,16 @@ through the versioned Protocol v1.3.2 amendment; it does not modify Protocol
 v1.3.1 or create a simulator, environment, dependency lock, split, modeling array,
 checkpoint, training run, or evaluation result. All undisclosed or conflicting
 implementation decisions remain pending human approval.
+
+The Phase 7F Stage I deterministic-PK/PD commit
+`12268fa086b7ff1926a27479eb114f6cf408a876` was pushed with ordinary Git, and
+`refs/heads/main` was independently observed at that exact SHA before this
+publication-status follow-up was created. It contains the paper-grounded
+scientific core, synthetic numerical-validation artifacts, and MC-001 through
+MC-009 Stage I decisions only. MC-010 through MC-034 remain pending, and the
+commit contains no dependency change, VitalDB raw or subject-data derivative,
+split, test seal, environment, observation adapter, reward, action adapter, PPO,
+checkpoint, training run, or evaluation result.
 
 ## Failure record template
 
