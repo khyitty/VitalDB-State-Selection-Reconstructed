@@ -1,0 +1,100 @@
+{
+  "artifacts": [
+    {
+      "bytes": 2342,
+      "relative_path": "data/manifests/protocol_v1_3_1_lab_handoff_checklist.csv",
+      "sha256": "b35dd2aedc566751ef5bc69fb38aefd0933070e9caf3b167bb0127cab64de268"
+    },
+    {
+      "bytes": 954,
+      "relative_path": "data/manifests/protocol_v1_3_1_missing_encoding_decision.json",
+      "sha256": "106ea91aeb63a112bda8ef916d60c9fbe1d7c9df3cfc85c7d754375d56a86882"
+    },
+    {
+      "bytes": 865,
+      "relative_path": "data/manifests/protocol_v1_3_1_observation_template_contract.json",
+      "sha256": "da8afd89b7ccc3ba41ec729a12da0469c6ed7b4646107871e63799f09425abe3"
+    },
+    {
+      "bytes": 940,
+      "relative_path": "data/manifests/protocol_v1_3_1_p0_online_schema.json",
+      "sha256": "2b73e31fb9098fe23e0bd669ad2b0bb02e7554322ae9cf473988b12bc578cc07"
+    },
+    {
+      "bytes": 1016,
+      "relative_path": "data/manifests/protocol_v1_3_1_p1_online_schema.json",
+      "sha256": "93a5d0faa4e99ac9cb0d696d685e591120be675692c209bd917436586b4cc08b"
+    },
+    {
+      "bytes": 860,
+      "relative_path": "data/manifests/protocol_v1_3_1_preprocessing_distinction.csv",
+      "sha256": "333dcfb5ca71a2b6417d845cb235bade151dc62ca0a87c8eca982ead965bc81c"
+    },
+    {
+      "bytes": 759,
+      "relative_path": "data/manifests/protocol_v1_3_1_s0_state_schema.json",
+      "sha256": "f84ce3b4d33775bdfe8ff22b5e9e53acdf746cc3bbbf92a52d928b677df4cdf0"
+    },
+    {
+      "bytes": 631,
+      "relative_path": "data/manifests/protocol_v1_3_1_s1_state_schema.json",
+      "sha256": "e4c64a26e56c23b1ab275f70ad067b47f555e3a5d4362883ef98f4f6fc119e94"
+    },
+    {
+      "bytes": 3118,
+      "relative_path": "data/manifests/protocol_v1_3_1_source_snapshot.json",
+      "sha256": "5fce3e8635023e71277b042012caefc5a39f0a4e633820462945859fe0574ab0"
+    },
+    {
+      "bytes": 1782,
+      "relative_path": "docs/phase7d_excluded_scaffold_backup_verification.md",
+      "sha256": "452be18147206c9dc79065ce0bdbc44546782e9cf0d162922c2b5245c036379b"
+    },
+    {
+      "bytes": 1907,
+      "relative_path": "docs/phase7d_lab_code_handoff.md",
+      "sha256": "9ad8073197d238e2331033c312316c62828c7428254fb21351de5da1a9fb381f"
+    },
+    {
+      "bytes": 1104,
+      "relative_path": "docs/phase7d_lab_request_ko.md",
+      "sha256": "0cc00035dbc286c4870f909f46c36455e85c8f56751cba789aa06b2291a3d08c"
+    },
+    {
+      "bytes": 1945,
+      "relative_path": "docs/phase7d_online_observation_contract_report.md",
+      "sha256": "ca7c6ba06690bd08f3c9e34e3c5dda8830687e7022a94fb89dde73b712a5554b"
+    },
+    {
+      "bytes": 4025,
+      "relative_path": "docs/protocol_v1_3_1_amendment_decision_record.md",
+      "sha256": "ae172d469c52d2160aa4c8f985fa776c43e37e3b089cf722c922fd56e7fccf25"
+    },
+    {
+      "bytes": 1016,
+      "relative_path": "docs/protocol_v1_3_1_retrospective_vs_online.md",
+      "sha256": "73ab8dbc728837232a2110332121cfe8c175a8507325eac9d2309a60ff4729c4"
+    },
+    {
+      "bytes": 2893,
+      "relative_path": "scripts/verify_no_first_n_limit.py",
+      "sha256": "f41a8882d1f328d67dd7c2d79bf6ee953f51534a4c6558533be1cebef40daf09"
+    },
+    {
+      "bytes": 7121,
+      "relative_path": "src/vitaldb_state_selection/cohort/protocol_v1_3_1.py",
+      "sha256": "668314c20d87388f1fc86b868c51291bc9bf6d7f50cc64ee78ea8d77bc320746"
+    },
+    {
+      "bytes": 4176,
+      "relative_path": "tests/test_protocol_v1_3_1.py",
+      "sha256": "2df366047ad99bd4b4a0f0b1977a03360874cf25e321fb51a708624ac54f83ab"
+    },
+    {
+      "bytes": 9503,
+      "relative_path": "tests/test_protocol_v1_3_1_artifacts.py",
+      "sha256": "7a800726b94d0ff14cfa3f3ea629c2afd01d5b2c42c6b20ada58babafdc3bbf9"
+    }
+  ],
+  "self_excluded": true
+}

@@ -1,0 +1,22 @@
+{
+  "bis_history": {
+    "channels": ["value", "availability_mask", "observation_age_seconds"],
+    "conceptual_dimension": 18,
+    "history_relative_seconds": [-50, -40, -30, -20, -10, 0],
+    "points": 6
+  },
+  "conceptual_dimension": 34,
+  "drug_histories": {
+    "conceptual_dimension": 12,
+    "mask_or_age_channels": false,
+    "propofol": "6_applied_internal_commanded_rate_values",
+    "remifentanil": "6_applied_internal_exogenous_schedule_rate_values"
+  },
+  "implemented_in_phase7d": false,
+  "physical_tensor_dimension": "pending_sex_encoding_contract",
+  "protocol_version": "1.3.1",
+  "sqi_numeric_value_included": false,
+  "state_id": "S0",
+  "static_conceptual_fields": ["age", "sex", "height", "weight"],
+  "static_conceptual_dimension": 4
+}

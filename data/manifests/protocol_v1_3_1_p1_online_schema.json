@@ -1,0 +1,28 @@
+{
+  "amends_protocol": "1.3",
+  "bis_0_10_admissible": true,
+  "bis_range_inclusive": [0, 100],
+  "bis_staleness_cap_seconds": 20,
+  "causal_lookup_only": true,
+  "drug_artificial_missingness": false,
+  "drug_availability_mask_in_state": false,
+  "drug_histories": {
+    "propofol": "applied_internal_commanded_action",
+    "remifentanil": "applied_internal_exogenous_schedule"
+  },
+  "drug_observation_age_in_state": false,
+  "drug_staleness_contrast": false,
+  "future_observation_allowed": false,
+  "grid_interval_seconds": 10,
+  "history_relative_seconds": [-50, -40, -30, -20, -10, 0],
+  "interpolation_allowed": false,
+  "backward_fill_allowed": false,
+  "pipeline_id": "P1_online_bis_quality_v1",
+  "protocol_version": "1.3.1",
+  "retrospective_source_candidate": "sqi_ge_50__bis20s__drug60s",
+  "retrospective_source_candidate_is_online_id": false,
+  "sqi_exact_timestamp_threshold": 50,
+  "sqi_interpolation_allowed": false,
+  "sqi_nearest_matching_allowed": false,
+  "sqi_rule": "exact_timestamp_gte_50"
+}

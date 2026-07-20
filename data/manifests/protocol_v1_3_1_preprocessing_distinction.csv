@@ -1,0 +1,8 @@
+component,retrospective_phase6c,online_protocol_v1_3_1,relationship,status
+P0 identifier,sqi_not_required__bis30s__drug120s,P0_online_bis_permissive_v1,renamed_to_prevent_semantic_conflation,frozen
+P1 identifier,sqi_ge_50__bis20s__drug60s,P1_online_bis_quality_v1,renamed_to_prevent_semantic_conflation,frozen
+SQI gating,not required vs exact timestamp >=50,not required vs exact timestamp >=50,preserved_bundle_difference,frozen
+BIS staleness,30 seconds vs 20 seconds,30 seconds vs 20 seconds,preserved_bundle_difference,frozen
+Drug-rate hold,120 seconds vs 60 seconds,none vs none,retrospective_component_removed_from_online_protocol,human_approved
+Drug-rate source,logged track aligned causally,internal applied propofol command and remifentanil schedule,semantic_boundary,human_approved
+Component ablation,not defined,not defined,bundle_effect_only,frozen

@@ -1,0 +1,68 @@
+{
+  "amends_protocol_version": "1.3",
+  "backup_verification": {
+    "backup_committed_to_git": false,
+    "backup_directory_id": "VitalDB-State-Selection-Reconstructed-excluded-scaffold-backup-989dc90",
+    "binary_patch_apply_check": true,
+    "exact_copy_sha256_verified_count": 14,
+    "excluded_path_count": 14,
+    "manifest_sha256": "2fc1b8e8a0b7b8add946667d39c43c8c62fa6abbe1c77606a29901cee06f603a",
+    "source_head_sha": "989dc909e7e2380d27c5fb1b3ab8601018ef68f7",
+    "tracked_patch_sha256": "2077ca78496b9e4889a8f96a7e310a50e743d66a0a50b727a6a44a81aa752e45",
+    "tracked_reconstruction_verified_count": 5,
+    "unrelated_change_count": 0
+  },
+  "dependency_files_changed": false,
+  "expected_eligible_ids_sha256": "f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd",
+  "expected_final_cohort_sha256": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+  "expected_subject_linkage_sha256": "102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7",
+  "frozen_case_count": 2460,
+  "frozen_subject_count": 2415,
+  "generated_date": "2026-07-20",
+  "input_artifact_sha256": {
+    "data/manifests/final_eligible_cohort_manifest.csv": "517683c574b642584ecaf6e0c7c8a2c1ec461e4eb2252277f0427c4c55065468",
+    "data/manifests/protocol_v1_2_artifact_checksums.json": "4a96f1607de1d9d46994caa60e409cc866bb65356b1b4df3f609b3a26658fdc6",
+    "data/manifests/protocol_v1_3_artifact_checksums.json": "e2605cc36a77a0449b862d93d63c0342ebd6635fedd88381978cb1598f505891",
+    "data/manifests/subject_linkage_summary.json": "370518edf393a51725fda4d3bc002c9e1fe7fb7b64dcc69b6c12a43e9a5635e2",
+    "pyproject.toml": "0e403ab599452d41b32938e2a558a69af326e398229f8657d2a6fa24efbc9ff8"
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": ["?? debug.log"],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": ["?? debug.log"],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "old_protocol_v1_3_artifacts_modified": false,
+  "phase": "7D_online_observation_contract_amendment_and_workspace_resolution",
+  "protocol_version": "1.3.1",
+  "raw_git_tracked_count": 0,
+  "source_remote_main_at_start": "989dc909e7e2380d27c5fb1b3ab8601018ef68f7",
+  "upstream_artifact_checksum_tests_passed": 34,
+  "workspace_clean_after_excluded_cleanup": true,
+  "execution_flags": {
+    "actual_split": false,
+    "subject_id_allocation": false,
+    "test_seal": false,
+    "raw_vitaldb_read": false,
+    "raw_bis_value_use": false,
+    "observation_template_extraction": false,
+    "modeling_array": false,
+    "normalization_fit": false,
+    "real_dose_or_cpce": false,
+    "simulator_implementation": false,
+    "environment_implementation": false,
+    "ppo_implementation": false,
+    "dependency_installation": false,
+    "ppo_execution": false,
+    "checkpoint": false,
+    "control_metric": false,
+    "statistical_analysis": false,
+    "prediction": false,
+    "phase7e_work": false
+  }
+}

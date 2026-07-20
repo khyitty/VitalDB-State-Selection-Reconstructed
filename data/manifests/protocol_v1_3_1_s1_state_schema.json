@@ -1,0 +1,22 @@
+{
+  "additional_conceptual_dimension": 8,
+  "additional_features": [
+    "propofol_recent_dose_60s",
+    "remifentanil_recent_dose_60s",
+    "cumulative_propofol_dose",
+    "cumulative_remifentanil_dose",
+    "propofol_cp",
+    "propofol_ce",
+    "remifentanil_cp",
+    "remifentanil_ce"
+  ],
+  "conceptual_dimension": 42,
+  "implemented_in_phase7d": false,
+  "inherits_s0_conceptual_dimension": 34,
+  "physical_tensor_dimension": "pending_sex_encoding_contract",
+  "protocol_version": "1.3.1",
+  "real_values_calculated_in_phase7d": false,
+  "sqi_numeric_value_included": false,
+  "state_id": "S1",
+  "strict_superset_of": "S0"
+}

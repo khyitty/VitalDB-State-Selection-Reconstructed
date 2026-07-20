@@ -24,6 +24,7 @@ PRODUCTION_SOURCES = (
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "primary_signal_quality.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "protocol_v1_2.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "protocol_v1_3.py",
+    ROOT / "src" / "vitaldb_state_selection" / "cohort" / "protocol_v1_3_1.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "subject_linkage.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "track_inventory.py",
     ROOT / "src" / "vitaldb_state_selection" / "cohort" / "volatile_characterization.py",
