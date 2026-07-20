@@ -1,0 +1,14 @@
+state,feature,legacy_simulator_value_exists,calculation_exists,unit_clarity,primary_source_revalidation,state_adapter_exposure,implementation_difficulty,lab_code_reduces_work,phase7c_status
+S0,age,yes,not_applicable,years_clear,no,yes,small,yes,feasible_not_implemented
+S0,sex,yes,not_applicable,encoding_needs_contract,no,yes,small,yes,feasible_not_implemented
+S0,height,yes,not_applicable,centimeters_clear,no,yes,small,yes,feasible_not_implemented
+S0,weight,yes,not_applicable,kilograms_clear,no,yes,small,yes,feasible_not_implemented
+S0,BIS_history,yes,history_buffer_exists,BIS_index_clear,"yes for observation/noise semantics",yes,medium,yes,requires_new_observation_quality_layer
+S0,propofol_rate_history,yes,history_buffer_exists,mg_per_min_clear,"yes for action provenance and bounds",yes,small,yes,controller_known_case_A
+S0,remifentanil_rate_history,yes,history_buffer_exists,micrograms_per_min_clear,"yes for schedule provenance",yes,small,yes,controller_known_case_A
+S1,propofol_recent_dose,yes,history/state calculation exists,mg_over_recent_window_clear,"yes for window and equation contract",yes,small,yes,feasible_not_implemented
+S1,remifentanil_recent_dose,yes,history/state calculation exists,micrograms_over_recent_window_clear,"yes for window and schedule contract",yes,small,yes,feasible_not_implemented
+S1,propofol_cumulative_dose,yes,compartment state accumulates,mg_clear,yes,yes,small,yes,provisional_until_revalidated
+S1,remifentanil_cumulative_dose,yes,compartment state accumulates,micrograms_clear,yes,yes,small,yes,provisional_until_revalidated
+S1,propofol_Cp_Ce,yes,Schnider candidate functions exist,mg_per_l_clear,yes,yes,medium,yes,provisional_until_revalidated
+S1,remifentanil_Cp_Ce,yes,Minto candidate functions exist,micrograms_per_l_clear,yes,yes,medium,yes,provisional_until_revalidated

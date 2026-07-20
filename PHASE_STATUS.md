@@ -20,7 +20,8 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 6D - Protocol v1.2 final preprocessing decision and cohort freeze | complete | 153 tests and the 23-source production first-N guard passed; selected `sqi_ge_50__bis20s__drug60s` with at least 120 usable endpoints; all 2,470 source cases yield 2,460 eligible and 10 excluded; eligible-ID checksum `f2c140ccf150648c2d4f46029849f325742e58eaf16ecb30efa05299384fb9bd`; source raw 9,880 checksums verified and raw tree unchanged; no raw/API split modeling array prediction Cp/Ce feature selection or PPO execution; remote Phase 6D commit verified at `3421e84` |
 | 7A - Subject linkage and patient-level split feasibility audit | complete | 167 tests and the 26-source production first-N guard passed; 2,460 cases map without ambiguity to 2,415 nonmissing subjects; subjectid missing 0 and case-to-subject ambiguity 0; cluster sizes are 1×2,378, 2×35, 3×1, and 9×1; 82 cases belong to repeated subjects; sex inconsistency warnings 0; linkage checksum `102ccc60d9f03a8bfe858e5862366ef0b49f80cef3dcc027dae94afface464f7`; count-only nearest case and subject targets are arithmetically feasible; no allocation selected and no split/test seal/outcome/raw/API/modeling/preprocessing fit; remote Phase 7A commit verified at `11cfa98` |
 | 7B - Protocol v1.3 control-focused 2×2 study design | complete | 189 tests and the 28-source production first-N guard passed; frozen cohort remains 2,460 cases and 2,415 subjects; P0 `sqi_not_required__bis30s__drug120s` and P1 `sqi_ge_50__bis20s__drug60s`; conceptual S0/S1 and four future policy IDs; planned 1,932/483 subject counts and seeds 42 plus 7/42/84; simulator observation-quality layer requires new implementation and missing encoding architecture budget reward action bounds and allocation method remain human decisions; no split seal modeling array raw outcome dose Cp/Ce prediction feature selection PPO control metric or statistics execution; remote Phase 7B commit verified at `3e8faa86919cda47cadf59844987ebaf81ff435b` |
-| Phase 7C patient-level split and later research | blocked by protocol | Separate human selection of the patient-level allocation method missing encoding simulator observation-quality implementation PPO constants and authorization required |
+| 7C - PPO/Simulator reuse audit and minimal implementation plan | validated; publication pending | 195 audit-scope tests passed (the three excluded scaffold tests were not run after scope correction); the audit utility passed its direct first-N scan; legacy PK/PD synthetic reset plus one 10-second step passed; environment and PPO imports explicitly failed on missing runtime dependencies; only reuse audit documents and a bounded read-only probe were produced; missing encoding remains pending human approval; drug-rate semantics classified retrospective-only; no split raw access real array committed simulator/PPO implementation checkpoint training or evaluation |
+| 7D and later research execution | blocked by protocol | Separate human approval is required for observation encoding and implementation, the P0/P1 drug-rate contrast, dependency lock, scientific constants, subject allocation, split/test seal, and any PPO execution |
 
 ## Publication constraint
 
@@ -128,6 +129,17 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `push_error`:
 
 ## Failure records
+
+### 2026-07-20 - Phase 7C scope correction and probe-output encoding
+
+- `failed_gate`: Apply the revised audit-only Phase 7C boundary and generate its read-only source snapshot
+- `failure_reason`: A full synthetic scaffold had started before the user's higher-priority scope correction arrived. Work stopped immediately. The first two read-only snapshot attempts then failed before artifact creation because Windows subprocess output decoding was implicit and Git rejected the legacy repository as dubious ownership under the sandbox account.
+- `commands`: `python -m unittest tests.test_phase7c_observation tests.test_phase7c_simulator tests.test_phase7c_ppo -v`; `python scripts/audit_phase7c_reuse.py --output data/manifests/phase7c_source_snapshot.json` (two failed attempts, followed by one successful bounded run)
+- `generated_files`: The out-of-scope scaffold files listed in `docs/phase7c_ppo_simulator_reuse_audit.md` remain uncommitted and excluded from Phase 7C staging. The failed snapshot attempts created no official artifact.
+- `remaining_work`: Commit and publish only the revised audit documents, audit utility, synthetic probe tests, source/checksum artifacts, compliance rows, and this audit status; preserve and report the excluded scaffold changes without staging them.
+- `local_commit_sha`: `54b5461edf7c18b010538047dca42f1d470c1e35` (unchanged verified Phase 7B publication tip when the correction arrived)
+- `push_error`: Not applicable; no push had been attempted.
+- `resolution`: The utility now fixes subprocess decoding and uses a command-local read-only `safe.directory` setting. Its bounded synthetic simulator step succeeded; environment/PPO import failures were preserved as audit evidence. No dependency was installed and no PPO update or checkpoint occurred.
 
 ### 2026-07-19 — Phase 2 independent commit gate
 

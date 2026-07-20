@@ -1,0 +1,71 @@
+{
+  "artifact_count": 13,
+  "artifacts": [
+    {
+      "bytes": 4753,
+      "path": "data/manifests/phase7c_component_reuse_audit.csv",
+      "sha256": "d1b50e135f1ea76d07b71f46f4741c62f4243a9d2fc1fde7d1e94f970232e2ba"
+    },
+    {
+      "bytes": 1178,
+      "path": "data/manifests/phase7c_missing_encoding_options.csv",
+      "sha256": "1863ad4d33a66d4e5ef7d7f909a6e5eaf49893cce0844c175d8011c0439d18ee"
+    },
+    {
+      "bytes": 3584,
+      "path": "data/manifests/phase7c_source_snapshot.json",
+      "sha256": "5292eca3737a57652881af2f44df7b8b42f2da8ac15289c53a6e4471edce1cea"
+    },
+    {
+      "bytes": 1827,
+      "path": "data/manifests/phase7c_state_feasibility.csv",
+      "sha256": "b89ff4265a31b74e62d8a4211e09019dd6886d5d0941f999ffcf9d6ce1b9ba30"
+    },
+    {
+      "bytes": 1453,
+      "path": "docs/phase7c_drug_rate_semantics_report.md",
+      "sha256": "1210f9c711ea5079633986c70df6703c1d16ef686ddf7751c2214764b8e22164"
+    },
+    {
+      "bytes": 1293,
+      "path": "docs/phase7c_excluded_scope_changes.md",
+      "sha256": "b586d2d4b46235ac6a26e18c1e31b117aafc6b44744c5f63f1207c74d6239d1b"
+    },
+    {
+      "bytes": 1593,
+      "path": "docs/phase7c_implementation_path_comparison.md",
+      "sha256": "e787d1009d9c1a2c275e973b14dd0e5e0ee96aa9a0f9565fc4c0693278cc9684"
+    },
+    {
+      "bytes": 2846,
+      "path": "docs/phase7c_lab_code_request_checklist.md",
+      "sha256": "0434445596aaba90580a42c839a94f922a72839cb5d0c932956650474a633fa9"
+    },
+    {
+      "bytes": 1656,
+      "path": "docs/phase7c_minimal_implementation_roadmap.md",
+      "sha256": "6148fe8103274516df9cc3d41e418304ac92f741d94e675004a2ab945cbbb53b"
+    },
+    {
+      "bytes": 3012,
+      "path": "docs/phase7c_observation_quality_minimum_plan.md",
+      "sha256": "ad73a4f29e469e70918d72aa545d1b28659ec783c95a316c2720e34de2e5f9c8"
+    },
+    {
+      "bytes": 5029,
+      "path": "docs/phase7c_ppo_simulator_reuse_audit.md",
+      "sha256": "4615bdebbda66cc8fc338b43de3cfcf59c8d2e3210fbcd24ae037cdc3a5fa900"
+    },
+    {
+      "bytes": 6689,
+      "path": "scripts/audit_phase7c_reuse.py",
+      "sha256": "91c45f037a78050b5c7fae29de241394151d6c61ce0d5f21cfd36b121058561b"
+    },
+    {
+      "bytes": 3933,
+      "path": "tests/test_phase7c_reuse_audit.py",
+      "sha256": "b9504ca1b147b88bada45918305252b3dbbd2e9e5b549b119d96689f692dc922"
+    }
+  ],
+  "phase": "7C_reuse_audit"
+}

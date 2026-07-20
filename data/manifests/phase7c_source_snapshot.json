@@ -1,0 +1,118 @@
+{
+  "checkpoint_created": false,
+  "dependency_available": {
+    "gymnasium": false,
+    "numpy": true,
+    "scipy": true,
+    "stable_baselines3": false,
+    "torch": true
+  },
+  "execution_scope": "read_only_imports_and_one_synthetic_simulator_step",
+  "inspected_sources": [
+    {
+      "bytes": 87,
+      "path": "requirements.txt",
+      "sha256": "7e6daf564fc12af35e88c58df72039b3747df9fe34c30a3cac65f210e68da60e"
+    },
+    {
+      "bytes": 1218,
+      "path": "scripts/run_ppo_smoke.py",
+      "sha256": "71292f957977ae60ab4491fe44446d643e0e7f11fa70c96b534851a29086d4d5"
+    },
+    {
+      "bytes": 10238,
+      "path": "src/pkpd/simulator.py",
+      "sha256": "cd3f8fd5b838db2c60dc7872194698c43ee598b1cbb59c3810261f67c6472bdc"
+    },
+    {
+      "bytes": 5348,
+      "path": "src/pkpd/parameters.py",
+      "sha256": "f4de1ff653cc401788a57447ff8d0b861dfe92d49de3780cd85dba6b4d499ce4"
+    },
+    {
+      "bytes": 7520,
+      "path": "src/pkpd/compartment.py",
+      "sha256": "77b4cb2c98cd7077e31b097cea1a00a5a0f9e58ff5addbab9d8fe84f7496a40c"
+    },
+    {
+      "bytes": 2362,
+      "path": "src/pkpd/bis_response.py",
+      "sha256": "798ad9108712ebe0904d9bb845f62e47003f212bd98c12e38b36075d8f9b5eb9"
+    },
+    {
+      "bytes": 15696,
+      "path": "src/rl_env/environment.py",
+      "sha256": "c94d8d3cd943466416b64bff40a201bc3000d36af1658bc3c1661e63275cf997"
+    },
+    {
+      "bytes": 3720,
+      "path": "src/rl_env/reward.py",
+      "sha256": "187be2b6b9ab609a92ce2a0fece65b725995f291729f0cae38be750ea8821130"
+    },
+    {
+      "bytes": 1399,
+      "path": "src/rl_env/action.py",
+      "sha256": "7fe05a33de966851d27fd0aac8003a4740364bb7f30b0d88346d6e5b0cfc46a0"
+    },
+    {
+      "bytes": 10222,
+      "path": "src/rl_env/state_adapters.py",
+      "sha256": "ed5b7414df6f8a434db908305415d727cfb35442fcd38dd7f30307cd1eb1bc8c"
+    },
+    {
+      "bytes": 6903,
+      "path": "src/rl_env/config.py",
+      "sha256": "4f9ca1778d8f30d86c339dc94c3629936275eabbc9dcbdef7bd5718b7085eae6"
+    },
+    {
+      "bytes": 2836,
+      "path": "src/rl_training/training.py",
+      "sha256": "54ef72f46944122c7591b76aa0e7c232dadef198c42789ed43c5f341e0753ec6"
+    },
+    {
+      "bytes": 5178,
+      "path": "src/rl_training/evaluation.py",
+      "sha256": "3157016993d657e77b30d0c577cc5b1711221f9ac0b6a35e9a57a45d8f438d2f"
+    },
+    {
+      "bytes": 16212,
+      "path": "src/rl_training/smoke.py",
+      "sha256": "f7adda403ccf1310d4fd18a1f7a70710c1f141a944c9b9666e9664a3b602e754"
+    },
+    {
+      "bytes": 4982,
+      "path": "src/rl_training/config.py",
+      "sha256": "661b292888481d22eeb13df11f38191a720ebad8564084d95e0c5dc78ccf6df5"
+    }
+  ],
+  "legacy_repository": {
+    "commit_sha": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "relative_path": "../VitalDB-Feature-Selection",
+    "status_porcelain": [
+      "?? debug.log"
+    ],
+    "tree_sha": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "phase": "7C_reuse_audit",
+  "ppo_training_run": false,
+  "probes": {
+    "environment_import": {
+      "returncode": 1,
+      "stderr_last_line": [
+        "ModuleNotFoundError: No module named 'gymnasium'"
+      ]
+    },
+    "ppo_import": {
+      "returncode": 1,
+      "stderr_last_line": [
+        "ModuleNotFoundError: No module named 'gymnasium'"
+      ]
+    },
+    "simulator_reset_and_one_step": {
+      "returncode": 0,
+      "stderr_last_line": [],
+      "stdout": "0.0 10.0 97.95596259515796"
+    }
+  },
+  "raw_vitaldb_accessed": false
+}
