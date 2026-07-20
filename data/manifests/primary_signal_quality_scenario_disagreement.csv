@@ -1,0 +1,10 @@
+scenario_left,scenario_right,disagreement_count,disagreement_fraction
+permissive,permissive,0,0.0
+permissive,moderate,131,0.05303643724696356
+permissive,strict,741,0.3
+moderate,permissive,131,0.05303643724696356
+moderate,moderate,0,0.0
+moderate,strict,610,0.24696356275303644
+strict,permissive,741,0.3
+strict,moderate,610,0.24696356275303644
+strict,strict,0,0.0

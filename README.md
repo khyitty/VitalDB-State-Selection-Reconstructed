@@ -19,7 +19,9 @@ The authorized work stops after:
 8. Phase 5D outcome-blind volatile-rule sensitivity audit; and
 9. Phase 6A Protocol v1.1 pre-quality cohort accounting and checksum-resumable
    acquisition of exactly `BIS/BIS`, `BIS/SQI`, `Orchestra/PPF20_RATE`, and
-   `Orchestra/RFTN20_RATE` after a fixed-seed 25-case preflight.
+   `Orchestra/RFTN20_RATE` after a fixed-seed 25-case preflight; and
+10. Phase 6B outcome-blind, bounded-memory characterization and unselected
+    quality-rule sensitivity comparisons for those 2,470 cases and four tracks.
 
 The following are deliberately not authorized: full signal download outside the seven
 Phase 5C volatile tracks and four Phase 6A exact tracks, final quality thresholds,
@@ -118,6 +120,20 @@ The 3,219-case manifest is explicitly pre-quality and unfrozen. Case 4476 retain
 its invalid anesthesia window and is excluded without repair. `BIS/SQI` remains
 QC-only and is prohibited as a prediction feature or PPO state. No acquired value
 creates a new exclusion, and no signal-quality threshold is selected.
+
+Phase 6B uses only the checksum-verified Phase 6A raw files and performs no API
+request or raw rewrite:
+
+```powershell
+python scripts/run_primary_signal_quality_characterization.py
+```
+
+It reports full-recording and anesthesia-window descriptors, original-order
+timestamp intervals, exact BIS/SQI timestamp overlap, drug-rate run sensitivity,
+marginal thresholds, and three unselected combined scenarios. Common observed
+span is explicitly not continuous coverage. No Protocol v1.2 rule, final eligible
+cohort, freeze, split, prediction, Cp/Ce, dose calculation, feature selection, or
+PPO step is performed.
 
 See [Research Reset Protocol v1](docs/research_reset_protocol_v1.md),
 [Repository Migration Plan](docs/repository_migration_plan.md), and

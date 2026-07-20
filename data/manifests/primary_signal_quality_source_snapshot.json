@@ -1,0 +1,95 @@
+{
+  "allowed_exact_tracks": [
+    "BIS/BIS",
+    "BIS/SQI",
+    "Orchestra/PPF20_RATE",
+    "Orchestra/RFTN20_RATE"
+  ],
+  "anesthesia_window_lineage": {
+    "fields_read": [
+      "caseid",
+      "anesthesia_start",
+      "anesthesia_end"
+    ],
+    "path": "data/manifests/volatile_signal_case_manifest.csv",
+    "rationale": "Protocol v1.1 inherits the checksum-verified 3,219-case Phase 5C/5D universe; Phase 6A pre-quality manifest contains IDs and exclusion flags but not window columns",
+    "sha256": "66c65af9fa72467c29544e6d9c84550449370e61781b703461f83508964f30a8",
+    "volatile_raw_signal_read": false
+  },
+  "api_request_count": 0,
+  "bis_sqi_role": "qc_only_not_prediction_feature_not_ppo_state",
+  "bounded_memory_method": "one case-track file per worker; aggregate rows only; never loads the 2.66 GB corpus together",
+  "final_cohort_frozen": false,
+  "input_artifact_sha256": {
+    "pre_quality_acquisition_cohort.csv": "7168c9ea75ff5d45824a27b2c5cafec4b7f186bc56a1779f575e13e31dd81790",
+    "primary_signal_checksum_manifest.csv": "50504d55796a22b8806770a11bacaa0d02b97e594e13f5820e4d471edfada3c0",
+    "primary_signal_download_manifest.csv": "f70560188c6a26666645d35132d3233ec0386044aa4689aaf26ded9133dfda5b",
+    "primary_signal_source_snapshot.json": "db3f1aa1d33804db26eacf66043d88106427767e43687438f71313b92d050bb5"
+  },
+  "legacy_artifact_accessed": false,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_unchanged": true,
+  "new_raw_file_count": 0,
+  "phase": "6B_outcome_blind_primary_signal_quality_characterization",
+  "phase6a_phase_commit": "15d35dad656f931826255c8e1e0cf6deea69be83",
+  "phase6a_verified_remote_main": "71ecaac71be63b34d90bf91f0acffabf64d50895",
+  "prohibited_execution": {
+    "api_requests": 0,
+    "attention_gru": false,
+    "cpce": false,
+    "dose_calculation": false,
+    "elastic_net": false,
+    "feature_selection": false,
+    "gru": false,
+    "interpolation": false,
+    "new_raw_files": 0,
+    "normalization": false,
+    "persistence": false,
+    "ppo": false,
+    "prediction": false,
+    "prediction_windows": false,
+    "raw_modification": false,
+    "resampling": false,
+    "split": false
+  },
+  "raw_checksum_after": {
+    "manifest_order_fingerprint_sha256": "974490155c5ba764e2802b20512c5cd12dced9cec74b68124d80098fcf6fb72a",
+    "verified_file_count": 9880,
+    "verified_total_bytes": 2658264378
+  },
+  "raw_checksum_before": {
+    "manifest_order_fingerprint_sha256": "974490155c5ba764e2802b20512c5cd12dced9cec74b68124d80098fcf6fb72a",
+    "verified_file_count": 9880,
+    "verified_total_bytes": 2658264378
+  },
+  "raw_tree_after": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_before": {
+    "file_count": 19761,
+    "partial_file_count": 0,
+    "relative_path_and_size_fingerprint_sha256": "e53f6d1bb23954204c2278a2a12e4c86f26dede1187cfeae5f4a88f08fa41378",
+    "total_bytes": 2673762558
+  },
+  "raw_tree_unchanged": true,
+  "recorded_at": "2026-07-20T02:53:27.321857+00:00",
+  "schema_version": 1,
+  "selected_quality_threshold": null,
+  "workers": 8
+}

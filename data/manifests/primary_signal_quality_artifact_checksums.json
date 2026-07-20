@@ -1,0 +1,11 @@
+{
+  "data/manifests/primary_signal_quality_boundary_review.csv": "3e071bcabad585899af6104d7422c22414fa7bccd561c51cd6e2d95f599552bc",
+  "data/manifests/primary_signal_quality_case_manifest.csv": "911e4b44e626cc9f7d4944c825011c8e6b7b5b2be486dd8d7a29af9586913d5d",
+  "data/manifests/primary_signal_quality_marginal_sensitivity.csv": "bf32b57cb5bfac283a8f807509fdc290a4983408f015d6059e3a9ba81151d6fa",
+  "data/manifests/primary_signal_quality_scenario_disagreement.csv": "4047065eb4adad0fef8c57bddd206514e56b3ba56da78b3c7d6b0c2f95a22e21",
+  "data/manifests/primary_signal_quality_scenario_sensitivity.csv": "358e16bfe4fdc634aece0cd36f80d6ebadb14149b894aea481447b69a7486225",
+  "data/manifests/primary_signal_quality_source_snapshot.json": "60e1d18943e46dbf24a40fbb5e46497cdd52115efabb5e0f96eef6c9cb5e6f32",
+  "data/manifests/primary_signal_quality_summary.json": "d3308a06266ef6ed714d07e6f4b48d1cf52332d0bd0d60fa02256ea66832fff3",
+  "data/manifests/primary_signal_quality_track_manifest.csv": "99725ed3cbb406d0dce3807ba7b29df4c45ed7f940e3487ccdda795e6656c0d2",
+  "docs/primary_signal_quality_characterization_report.md": "6a5da45014c1683de5313b3e22dcc5e2d7e203eeef43ff24b5f5faca949ac49b"
+}
