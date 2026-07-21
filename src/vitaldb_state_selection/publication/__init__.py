@@ -1,0 +1,1 @@
+"""Publication-safe rendering utilities."""

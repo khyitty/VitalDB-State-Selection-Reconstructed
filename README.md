@@ -6,35 +6,27 @@ claim an exact reproduction of unpublished source code.
 
 ## Current scope
 
-The authorized work stops after:
+The repository has completed its governed cohort, subject-level split,
+paper-grounded PK/PD and environment reconstruction, train-only preprocessing,
+final PPO training infrastructure, and sealed-test evaluation-readiness phases.
+Phase 8D training uses the fixed 2 × 2 conditions `P0S0`, `P1S0`, `P0S1`, and
+`P1S1`, seed 42, and 1,000,000 environment timesteps per condition. Phase 8E has
+prepared the private 490-case sealed-test inputs and frozen evaluation/statistics
+contract; actual final policy evaluation has not started.
 
-1. repository governance and provenance;
-2. read-only legacy migration inventory;
-3. full-case eligibility/download audit infrastructure;
-4. synthetic and fixed-seed random 25-case engineering dry runs;
-5. Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit;
-6. Phase 5B outcome-blind eligibility decision-support audit;
-7. Phase 5C outcome-blind characterization of seven exact volatile tracks in the
-   unfrozen 3,219-case decision-support universe;
-8. Phase 5D outcome-blind volatile-rule sensitivity audit; and
-9. Phase 6A Protocol v1.1 pre-quality cohort accounting and checksum-resumable
-   acquisition of exactly `BIS/BIS`, `BIS/SQI`, `Orchestra/PPF20_RATE`, and
-   `Orchestra/RFTN20_RATE` after a fixed-seed 25-case preflight; and
-10. Phase 6B outcome-blind, bounded-memory characterization and unselected
-    quality-rule sensitivity comparisons for those 2,470 cases and four tracks; and
-11. Phase 6C outcome-blind causal 10-second grid and future-window feasibility
-    comparisons across all 60 unselected SQI, BIS-staleness, and drug-hold candidates; and
-12. Phase 6D human-approved Protocol v1.2 preprocessing decision and deterministic
-    freeze of one 2,460-case final eligible cohort from the 2,470 Phase 6A cases; and
-13. Phase 7A metadata-only subject linkage and count-only patient-level split
-    feasibility audit, without any split membership or test seal; and
-14. Phase 7B Protocol v1.3 control-focused 2×2 study-design freeze, with two
-    preprocessing bundles and two conceptual PPO states but no implementation or run.
+Phase 8F prepares an English manuscript shell, a strict aggregate-results schema
+and deterministic table renderer, and a finalization runbook. It uses synthetic
+fixtures only. It does not access Shard B, load a PPO model, run a test episode,
+compare conditions, or create an actual result. The current Phase 8E runner
+produces private case-level evaluation rows; a publication aggregate still
+requires a separately reviewed and authorized aggregation step before the Phase
+8F renderer may be used on real results.
 
-The following remain deliberately unauthorized: full signal download outside the seven
-Phase 5C volatile tracks and four Phase 6A exact tracks, train/validation/test splitting,
-Cp/Ce reconstruction, dose calculation, prediction or feature selection, model training,
-PPO training, actual Phase 7B patient-level allocation, and Phase 7C or later work.
+The following remain outside Phase 8F authorization: actual final evaluation,
+condition ranking or selection, new seeds or training budgets, changes to Phase
+8E metrics or contrasts, public case/event rows, private-store regeneration,
+raw/API access, and Git publication of models, checkpoints, raw signals, or
+private arrays.
 
 ## Non-negotiable safeguards
 

@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/vitaldb/phase8f_aggregate_results.schema.json",
+  "title": "Phase 8E frozen aggregate evaluation results for Phase 8F publication",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "data_origin",
+    "training_implementation_sha",
+    "evaluation_seed",
+    "test_case_count",
+    "test_subject_count",
+    "condition_order",
+    "case_accounting",
+    "conditions",
+    "contrasts",
+    "results_interpreted",
+    "best_condition_selected"
+  ],
+  "properties": {
+    "schema_version": {"const": "phase8e-final-evaluation-aggregate-v1"},
+    "data_origin": {"enum": ["synthetic_fixture", "sealed_test_evaluation"]},
+    "training_implementation_sha": {"const": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0"},
+    "evaluation_seed": {"const": 42},
+    "test_case_count": {"const": 490},
+    "test_subject_count": {"const": 483},
+    "condition_order": {
+      "type": "array",
+      "prefixItems": [
+        {"const": "P0S0"},
+        {"const": "P1S0"},
+        {"const": "P0S1"},
+        {"const": "P1S1"}
+      ],
+      "items": false,
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "case_accounting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "attempted_per_condition",
+        "completed_per_condition",
+        "failed_per_condition",
+        "silent_exclusion_count",
+        "failed_case_handling",
+        "public_case_level_row_count",
+        "public_event_level_row_count"
+      ],
+      "properties": {
+        "attempted_per_condition": {"const": 490},
+        "completed_per_condition": {"const": 490},
+        "failed_per_condition": {"const": 0},
+        "silent_exclusion_count": {"const": 0},
+        "failed_case_handling": {"const": "explicit_private_failure_rows_retained"},
+        "public_case_level_row_count": {"const": 0},
+        "public_event_level_row_count": {"const": 0}
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {"$ref": "#/$defs/condition"}
+    },
+    "contrasts": {
+      "type": "array",
+      "minItems": 55,
+      "maxItems": 55,
+      "items": {"$ref": "#/$defs/contrast"}
+    },
+    "results_interpreted": {"const": false},
+    "best_condition_selected": {"const": false}
+  },
+  "$defs": {
+    "metric_name": {
+      "enum": [
+        "mean_absolute_bis_deviation",
+        "root_mean_squared_bis_deviation",
+        "time_in_bis_40_60_seconds",
+        "time_below_bis_40_seconds",
+        "time_above_bis_60_seconds",
+        "integrated_absolute_bis_error_bis_seconds",
+        "maximum_absolute_bis_deviation",
+        "cumulative_propofol_amount_mg",
+        "mean_propofol_infusion_rate_mg_per_min",
+        "action_change_magnitude_mg_per_min",
+        "cumulative_episode_reward"
+      ]
+    },
+    "metric": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_name", "unit", "subject_count", "mean", "sd", "median", "q1", "q3", "minimum", "maximum"],
+      "properties": {
+        "metric_name": {"$ref": "#/$defs/metric_name"},
+        "unit": {"type": "string", "minLength": 1},
+        "subject_count": {"const": 483},
+        "mean": {"type": "number"},
+        "sd": {"type": "number", "minimum": 0},
+        "median": {"type": "number"},
+        "q1": {"type": "number"},
+        "q3": {"type": "number"},
+        "minimum": {"type": "number"},
+        "maximum": {"type": "number"}
+      }
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["condition_id", "seed", "final_timestep", "final_model_sha256", "case_count", "subject_count", "failed_case_count", "metrics"],
+      "properties": {
+        "condition_id": {"enum": ["P0S0", "P1S0", "P0S1", "P1S1"]},
+        "seed": {"const": 42},
+        "final_timestep": {"const": 1000000},
+        "final_model_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "case_count": {"const": 490},
+        "subject_count": {"const": 483},
+        "failed_case_count": {"const": 0},
+        "metrics": {"type": "array", "minItems": 11, "maxItems": 11, "items": {"$ref": "#/$defs/metric"}}
+      }
+    },
+    "contrast": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "metric_name",
+        "unit",
+        "contrast_id",
+        "subject_count",
+        "mean_difference",
+        "median_difference",
+        "bootstrap_ci_95",
+        "paired_sign_flip_permutation_p",
+        "holm_adjusted_p",
+        "cohens_dz"
+      ],
+      "properties": {
+        "metric_name": {"$ref": "#/$defs/metric_name"},
+        "unit": {"type": "string", "minLength": 1},
+        "contrast_id": {"enum": ["P1S0_minus_P0S0", "P1S1_minus_P0S1", "P0S1_minus_P0S0", "P1S1_minus_P1S0", "interaction"]},
+        "subject_count": {"const": 483},
+        "mean_difference": {"type": "number"},
+        "median_difference": {"type": "number"},
+        "bootstrap_ci_95": {
+          "type": "array",
+          "prefixItems": [{"type": "number"}, {"type": "number"}],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "paired_sign_flip_permutation_p": {"type": "number", "minimum": 0, "maximum": 1},
+        "holm_adjusted_p": {"type": "number", "minimum": 0, "maximum": 1},
+        "cohens_dz": {"type": "number"}
+      }
+    }
+  }
+}

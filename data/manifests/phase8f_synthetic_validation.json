@@ -1,0 +1,41 @@
+{
+  "schema_version": "phase8f-synthetic-validation-v1",
+  "fixture_only": true,
+  "fixture_persisted": false,
+  "actual_phase8e_aggregate_used": false,
+  "actual_model_load_count": 0,
+  "actual_test_episode_count": 0,
+  "actual_condition_comparison": false,
+  "shard_b_access_count": 0,
+  "renderer_output_file_count": 7,
+  "renderer_formats": [
+    "markdown",
+    "csv",
+    "latex_tabular",
+    "json"
+  ],
+  "validated_rejections": [
+    "duplicate_json_key",
+    "missing_condition",
+    "wrong_seed",
+    "wrong_final_timestep",
+    "wrong_test_case_count",
+    "missing_metric",
+    "invalid_contrast",
+    "duplicate_contrast",
+    "nonfinite_value",
+    "event_case_or_private_path_leakage",
+    "implicit_overwrite"
+  ],
+  "validated_properties": [
+    "fixed_condition_order",
+    "exact_frozen_metric_order",
+    "exact_frozen_contrast_order",
+    "deterministic_markdown_csv_latex_json",
+    "verify_only_no_write"
+  ],
+  "public_case_level_row_count": 0,
+  "public_event_level_row_count": 0,
+  "interpretation_performed": false,
+  "condition_ranking_performed": false
+}

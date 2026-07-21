@@ -1,0 +1,68 @@
+{
+  "phase": "Phase 8F",
+  "starting_commit_sha": "2346b964c6c8a0bc1f66953b80c65aae8d4ca800",
+  "local_head_at_start": "2346b964c6c8a0bc1f66953b80c65aae8d4ca800",
+  "remote_tracking_main_at_start": "2346b964c6c8a0bc1f66953b80c65aae8d4ca800",
+  "actual_remote_main_at_start": "2346b964c6c8a0bc1f66953b80c65aae8d4ca800",
+  "worktree_and_index_clean_at_start": true,
+  "expected_training_implementation_sha": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0",
+  "source_files": [
+    {
+      "relative_path": "data/manifests/phase7g_s0_state_schema.json",
+      "bytes": 1264,
+      "sha256": "c4c6546e987f210bde6aa31e52466251765bfe310988dc5b64922f9161e4e08b"
+    },
+    {
+      "relative_path": "data/manifests/phase7g_s1_state_schema.json",
+      "bytes": 1567,
+      "sha256": "032949e27edae509cf94ad03afe2ac54a2a6ca740e794875a82d8fa35329b8ee"
+    },
+    {
+      "relative_path": "data/manifests/phase8d_final_ppo_config.json",
+      "bytes": 1388,
+      "sha256": "b5d79a2fb8be3b5337c7cb807936247c630b86f108f2a92cc6f645023f789b3e"
+    },
+    {
+      "relative_path": "data/manifests/phase8e_evaluation_config.json",
+      "bytes": 677,
+      "sha256": "fc9f86fe71c6201842ec11f40ecfec7ed1c2d32740c288207ddaadc2b00fd8db"
+    },
+    {
+      "relative_path": "data/manifests/phase8e_metric_manifest.json",
+      "bytes": 898,
+      "sha256": "b7f6e695dc61f7c44e00740183d9d75eb67f46082db5e7ac9ad2268a6b08899c"
+    },
+    {
+      "relative_path": "data/manifests/phase8e_statistics_plan.json",
+      "bytes": 1073,
+      "sha256": "59cd6a61ce2a59e84441ebfc0269ab944a44851021356ad1bb40515dc2073873"
+    },
+    {
+      "relative_path": "data/manifests/protocol_v1_3_2_source_registry.json",
+      "bytes": 3319,
+      "sha256": "e7b5adb9426d17b74694065bb8042ebc9493f7195eb98f269600c18653c5c8f1"
+    },
+    {
+      "relative_path": "scripts/run_phase8d_final_training.py",
+      "bytes": 3726,
+      "sha256": "b08ee9036ff1289ee2c7f6280e66ea2e3771bca45bba276dc315384b9b158bd7"
+    },
+    {
+      "relative_path": "scripts/run_phase8e_final_evaluation.py",
+      "bytes": 2336,
+      "sha256": "cd63e9905c26fe55516bd1ea8820c47e1ae07270d814635f137db662db6b1661"
+    }
+  ],
+  "execution_boundaries": {
+    "actual_model_load_count": 0,
+    "actual_test_episode_count": 0,
+    "actual_condition_comparison": false,
+    "shard_b_access_count": 0,
+    "vitaldb_api_call_count": 0,
+    "private_store_regeneration_count": 0,
+    "raw_data_extraction_count": 0,
+    "full_test_suite_run": false
+  },
+  "result_state": "results_pending",
+  "legacy_repository_accessed": false
+}
