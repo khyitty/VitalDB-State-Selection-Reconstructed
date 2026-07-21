@@ -398,3 +398,14 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `00937a28681c8d1949f3bae3dcd74a5fbddd9b39` (unchanged Phase 8C publication tip; Phase 8D remains uncommitted)
 - `push_error`: Not applicable; publication had not been attempted.
 - `resolution`: The scan now skips only the exact manifest filename while continuing to reject malformed checkpoint paths, and the Git variable was renamed without changing its equality gate. The repeated Phase 8D targeted suite passed 15/15, the related isolated Phase 8C/7H/8D suite passed 39/39, all first-N and artifact gates passed, and the complete base suite finished 388 tests with 372 passed plus 16 optional-RL skips. All 16 skipped tests passed in the isolated runtime; waived tests and expected failures are zero.
+
+### 2026-07-21 - Phase 8D post-publication runner gate
+
+- `failed_gate`: First shard A runner verify-only invocation at the independently verified initial infrastructure commit
+- `failure_reason`: The gate compared the sealed ordered train-ID checksum to the CSV file-byte checksum. Those are intentionally different checksum representations, so the runner failed closed before creating an output directory, opening a runtime case, or starting training.
+- `commands`: Isolated `scripts/run_phase8d_final_training.py --shard A --expected-git-sha <INITIAL_INFRASTRUCTURE_SHA> --total-timesteps 1000000 --seed 42 --resume --verify-only`
+- `generated_files`: None; Phase 8A membership/seal and Phase 8B/8C private stores were unchanged, and Phase 8D private training output remained absent.
+- `remaining_work`: Validate the sealed `sha256_sorted_train_case_ids` field directly, add a regression test, publish the corrected final implementation SHA, independently verify it, and only then create the launch-status follow-up.
+- `local_commit_sha`: `c866ab25c8c5c88d6bb6c96d3a8bfd5aa131da0b`
+- `push_error`: Not applicable; the initial infrastructure commit had already pushed successfully, while training had not started.
+- `resolution`: The gate now compares like-for-like against the unchanged Phase 8A test-seal field. The runtime store still constructs its fail-closed SplitGuard from the complete sealed manifests, and no file checksum, split membership, seed, PPO configuration, private root, or training budget changed.

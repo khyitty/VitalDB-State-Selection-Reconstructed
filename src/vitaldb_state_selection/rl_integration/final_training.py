@@ -643,8 +643,8 @@ def verify_repository_gate(repository_root: Path, *, expected_git_sha: str, outp
     seal = json.loads((root / "data/manifests/phase8a_test_seal.json").read_text(encoding="utf-8"))
     if seal.get("seal_payload_sha256") != PHASE8A_SEAL_PAYLOAD_SHA256:
         raise FinalTrainingError("Phase 8A seal mismatch")
-    if sha256_path(root / "data/manifests/phase8a_train_case_ids.csv") != PHASE8A_TRAIN_CASE_IDS_SHA256:
-        raise FinalTrainingError("Phase 8A train-case manifest mismatch")
+    if seal.get("sha256_sorted_train_case_ids") != PHASE8A_TRAIN_CASE_IDS_SHA256:
+        raise FinalTrainingError("Phase 8A sealed train-case membership checksum mismatch")
     config_path = root / FINAL_CONFIG_RELATIVE
     if not config_path.is_file() or sha256_path(config_path) != sha256_bytes(canonical_json_bytes(resolved_final_configuration())):
         raise FinalTrainingError("resolved Phase 8D PPO config checksum mismatch")

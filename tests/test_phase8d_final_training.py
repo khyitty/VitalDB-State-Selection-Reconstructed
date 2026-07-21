@@ -21,6 +21,7 @@ try:
         CHECKPOINT_INTERVAL,
         FINAL_TOTAL_TIMESTEPS,
         PHASE8C_EXPECTED_ROOT_SHA256,
+        PHASE8A_TRAIN_CASE_IDS_SHA256,
         CheckpointManager,
         DeterministicTrainCaseSequence,
         FinalTrainingCallback,
@@ -55,6 +56,13 @@ class Phase8DFinalTrainingTests(unittest.TestCase):
         test_case = next(caseid for caseid, split in self.store.split_guard.case_split.items() if split == "test")
         with self.assertRaises(Exception):
             self.store.load_case(test_case)
+
+    def test_train_membership_gate_uses_the_sealed_ordered_id_checksum(self) -> None:
+        seal = json.loads((ROOT / "data/manifests/phase8a_test_seal.json").read_text(encoding="utf-8"))
+        self.assertEqual(seal["sha256_sorted_train_case_ids"], PHASE8A_TRAIN_CASE_IDS_SHA256)
+        source = (ROOT / "src/vitaldb_state_selection/rl_integration/final_training.py").read_text(encoding="utf-8")
+        self.assertIn('seal.get("sha256_sorted_train_case_ids")', source)
+        self.assertNotIn('sha256_path(root / "data/manifests/phase8a_train_case_ids.csv")', source)
 
     def test_four_conditions_have_only_the_frozen_input_dimension_difference(self) -> None:
         for condition in ("P0S0", "P1S0", "P0S1", "P1S1"):
