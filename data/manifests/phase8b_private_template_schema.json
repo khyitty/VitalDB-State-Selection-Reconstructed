@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "arrays_must_never_be_committed": true,
+  "event_level_publication_forbidden": true,
+  "files": {
+    "COMPLETE.json": "written last; hashes the five payload files",
+    "bis_available.npy": {
+      "dtype": "boolean",
+      "shape": "one-dimensional"
+    },
+    "bis_timestamp_seconds.npy": {
+      "dtype": "little-endian float64",
+      "shape": "one-dimensional"
+    },
+    "metadata.json": "canonical UTF-8 JSON; contains no raw BIS values",
+    "sqi_timestamp_seconds.npy": {
+      "dtype": "little-endian float64",
+      "shape": "one-dimensional"
+    },
+    "sqi_value.npy": {
+      "dtype": "little-endian float64",
+      "privacy": "private only",
+      "shape": "one-dimensional"
+    }
+  },
+  "future_use_requires_split_guard": true,
+  "pickle_forbidden": true,
+  "private_store_relative_root": "data/processed/phase8b_train_observation_templates_v1",
+  "raw_bis_values_forbidden": true,
+  "raw_sqi_values_private_only": true,
+  "relative_timing": "exact source timestamp minus anesthesia_start; negative zero normalized only",
+  "same_template_for_p0_p1": true,
+  "schema_version": "phase8b-private-template-schema-v1",
+  "template_format_version": "phase8b-train-template-v1",
+  "test_templates_absent": true
+}

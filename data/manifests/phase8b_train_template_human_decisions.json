@@ -1,0 +1,52 @@
+{
+  "authorized_case_count": 1970,
+  "authorized_split": "train",
+  "authorized_tracks": [
+    "BIS/BIS",
+    "BIS/SQI"
+  ],
+  "current_reconstruction_protocol_version": "1.3.2",
+  "drug_track_access_authorized": false,
+  "duplicate_rule": "last_finite_in_original_row_order",
+  "interpolation": false,
+  "nearest_sqi_matching": false,
+  "normalization_fit": false,
+  "online_observation_contract_version": "1.3.1",
+  "operational_timing_source": {
+    "relative_path": "data/manifests/primary_signal_quality_case_manifest.csv",
+    "sha256": "911e4b44e626cc9f7d4944c825011c8e6b7b5b2be486dd8d7a29af9586913d5d"
+  },
+  "output_root": "data/processed/phase8b_train_observation_templates_v1",
+  "p0_sqi_rule": "not_required",
+  "p0_staleness_seconds": 30,
+  "p1_sqi_rule": "exact_timestamp_gte_50",
+  "p1_staleness_seconds": 20,
+  "phase": "Phase 8B",
+  "phase8a_artifact_inventory_updated_for_script_fix": true,
+  "phase8a_generation_gate_remains_strict": true,
+  "phase8a_membership_unchanged": true,
+  "phase8a_scientific_artifacts_unchanged": true,
+  "phase8a_seal_payload_sha256": "6083be99567d5d7d4989ef3c9e35fc51255f614098697f289daac756d643f9af",
+  "phase8a_split_manifest_version": "phase8a-v1",
+  "phase8a_test_seal_unchanged": true,
+  "phase8a_verify_only_descendant_fix_applied": true,
+  "ppo_training": false,
+  "private_store_publication": "prohibited",
+  "public_artifacts": "code_schema_aggregate_qc_fingerprint_only",
+  "public_event_level_data_authorized": false,
+  "raw_bis_persistence_authorized": false,
+  "raw_bis_transient_read_authorized": true,
+  "raw_sqi_private_persistence_authorized": true,
+  "same_template_for_p0_p1": true,
+  "source_cohort_protocol_version": "1.2",
+  "source_remote_commit": "f45a0ee6f1208f1f8202bc185a7a005701dfa3e0",
+  "template_format_version": "phase8b-train-template-v1",
+  "test_raw_access_authorized": false,
+  "test_seal_modified": false,
+  "test_template_authorized": false,
+  "timing_lineage_train_case_exact_string_and_numeric_match": true,
+  "upstream_authoritative_timing_lineage": {
+    "relative_path": "data/manifests/volatile_signal_case_manifest.csv",
+    "sha256": "66c65af9fa72467c29544e6d9c84550449370e61781b703461f83508964f30a8"
+  }
+}

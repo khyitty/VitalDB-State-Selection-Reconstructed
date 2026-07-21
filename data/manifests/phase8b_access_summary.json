@@ -1,0 +1,20 @@
+{
+  "api_request_count": 0,
+  "completed": true,
+  "drug_logical_file_access_count": 0,
+  "network_request_count": 0,
+  "phase": "Phase 8B",
+  "public_event_level_value_count": 0,
+  "raw_bis_values_persisted": false,
+  "raw_source_write_count": 0,
+  "raw_sqi_values_persisted_private": true,
+  "source_checksum_match_count": 3940,
+  "source_checksum_mismatch_count": 0,
+  "split_guard_enforced": true,
+  "test_case_count": 490,
+  "test_logical_file_access_count": 0,
+  "train_bis_logical_file_access_count": 1970,
+  "train_case_count": 1970,
+  "train_sqi_logical_file_access_count": 1970,
+  "train_total_logical_file_access_count": 3940
+}

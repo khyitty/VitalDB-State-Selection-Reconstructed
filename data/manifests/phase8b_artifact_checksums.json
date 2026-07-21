@@ -1,0 +1,95 @@
+{
+  "artifacts": [
+    {
+      "bytes": 639,
+      "relative_path": "data/manifests/phase8b_access_summary.json",
+      "sha256": "f6f0e8d4fbaffe93f3b0a635eb63854e7fb764a705b1d7def2d31055bf2ac011"
+    },
+    {
+      "bytes": 1289,
+      "relative_path": "data/manifests/phase8b_private_template_schema.json",
+      "sha256": "6fb9809db6e72c9a0059b6b30fc320893006080cf3fcab13394b62128ecf2e74"
+    },
+    {
+      "bytes": 1213,
+      "relative_path": "data/manifests/phase8b_private_tree_summary.json",
+      "sha256": "3124f0515992237b7f9ec7d3af0c305b6165fcdf5167f296e71f73616b4c3bfe"
+    },
+    {
+      "bytes": 3028,
+      "relative_path": "data/manifests/phase8b_source_snapshot.json",
+      "sha256": "2a495119054f2374b56533989cecac872981160b517ef40fa07b65671e7afb23"
+    },
+    {
+      "bytes": 4134,
+      "relative_path": "data/manifests/phase8b_template_qc_summary.json",
+      "sha256": "2fd1ecc79cbfb7bc0a64488aba1e93672e6b408fd2cbe251261a620b9c0f5490"
+    },
+    {
+      "bytes": 2201,
+      "relative_path": "data/manifests/phase8b_train_template_human_decisions.json",
+      "sha256": "a61aeca3a909bba423f6e9229696145468709f26568657c6c6f0d68096cef8b9"
+    },
+    {
+      "bytes": 1107,
+      "relative_path": "docs/phase8b_train_template_decision_record.md",
+      "sha256": "98e44a9af0cfc1a4dd40efa076d2a70fbb3c5ec37b4a9cb00905e5db097c5d2e"
+    },
+    {
+      "bytes": 1157,
+      "relative_path": "docs/phase8b_train_template_report.md",
+      "sha256": "8e243ff26440139d6dc831792006286db47e215ea2b1a639678bbab105ee753b"
+    },
+    {
+      "bytes": 3269,
+      "relative_path": "scripts/build_phase8b_artifact_checksums.py",
+      "sha256": "eb0b9a0f1078de1481e41928dec63b0ed8f43529a8973ea30a40ad4ce8e11341"
+    },
+    {
+      "bytes": 31856,
+      "relative_path": "scripts/run_phase8b_train_template_extraction.py",
+      "sha256": "b234224a0218b9b648b6365a78542ebae7e26c5dd5a3d8d4c8cf46de570047de"
+    },
+    {
+      "bytes": 1683,
+      "relative_path": "scripts/verify_phase8b_no_first_n_limit.py",
+      "sha256": "843818ec74878cd8c656da49f16beeed80c041bdd7e2a1c10cdb04ced95cfecc"
+    },
+    {
+      "bytes": 9469,
+      "relative_path": "src/vitaldb_state_selection/anesthesia/recorded_observation.py",
+      "sha256": "7ed2d12b112c4de3258ee46f7049e472ddcdd3c3c56eb8ab45c8bbd10c059d33"
+    },
+    {
+      "bytes": 15685,
+      "relative_path": "src/vitaldb_state_selection/cohort/train_observation_templates.py",
+      "sha256": "2341b27e0be85061020256db7b2c77013169f0f01098483bb80562ee41596ec5"
+    },
+    {
+      "bytes": 7915,
+      "relative_path": "src/vitaldb_state_selection/cohort/train_raw_access.py",
+      "sha256": "0e775f3f3eb86be7305ecd35be9e04fffd911ee8356cefb309bdb1701f0844d3"
+    },
+    {
+      "bytes": 7725,
+      "relative_path": "tests/test_phase8b_artifacts.py",
+      "sha256": "b2e7aa58d825fed45ba38dcb34df5ccd5a018fc2df6de423d09dafb5ec9902a3"
+    },
+    {
+      "bytes": 5754,
+      "relative_path": "tests/test_phase8b_train_observation_templates.py",
+      "sha256": "ee161df575575dc594bef214b7315e907db3b4f00a45b1dd7e8367039f0b2c9d"
+    },
+    {
+      "bytes": 3757,
+      "relative_path": "tests/test_phase8b_train_raw_access.py",
+      "sha256": "6425f8eea8c177aab6a319c8a9fe201570887446f9c9746bf603af96dd070a53"
+    },
+    {
+      "bytes": 6547,
+      "relative_path": "tests/test_recorded_observation_template.py",
+      "sha256": "69d3cacead78ee2c34e855382b04b7894aa1bdc08d62cb565d97895e93594218"
+    }
+  ],
+  "self_excluded": true
+}

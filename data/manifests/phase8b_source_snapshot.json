@@ -1,0 +1,83 @@
+{
+  "api_requests": 0,
+  "dependency_change": false,
+  "expected_source_sha": "f45a0ee6f1208f1f8202bc185a7a005701dfa3e0",
+  "expected_train_raw_file_count": 3940,
+  "forbidden_raw_tracks": [
+    "Orchestra/PPF20_RATE",
+    "Orchestra/RFTN20_RATE",
+    "all_other_tracks"
+  ],
+  "frozen_cohort_count": 2460,
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status_short": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_unchanged": true,
+  "model_or_checkpoint_created": false,
+  "network_requests": 0,
+  "normalization_fitted": false,
+  "observation_template_public_value_count": 0,
+  "operational_timing_source": {
+    "relative_path": "data/manifests/primary_signal_quality_case_manifest.csv",
+    "sha256": "911e4b44e626cc9f7d4944c825011c8e6b7b5b2be486dd8d7a29af9586913d5d"
+  },
+  "permitted_raw_tracks": [
+    "BIS/BIS",
+    "BIS/SQI"
+  ],
+  "phase": "Phase 8B",
+  "phase8a_artifact_checksum_verification": true,
+  "phase8a_artifact_inventory_updated_for_script_fix": true,
+  "phase8a_generation_gate_remains_strict": true,
+  "phase8a_manifest_hashes": {
+    "case_split": "8686aad17f079b9d0105f2090f6aa47d97d828865df2547e0952b4cd8cf974ce",
+    "subject_split": "c1cf8b60681757efdfa1fe0b5a2084f52d238f5fcbaba83cbff963962bb025e2"
+  },
+  "phase8a_membership_unchanged": true,
+  "phase8a_scientific_artifacts_unchanged": true,
+  "phase8a_seal_payload_sha256": "6083be99567d5d7d4989ef3c9e35fc51255f614098697f289daac756d643f9af",
+  "phase8a_test_seal_unchanged": true,
+  "phase8a_test_seal_changed": false,
+  "phase8a_verify_only_descendant_fix_applied": true,
+  "ppo_evaluation": false,
+  "ppo_training": false,
+  "previous_artifacts_changed": false,
+  "prior_inventory_entry_counts": {
+    "phase7f_artifact_checksums.json": 26,
+    "phase7g_artifact_checksums.json": 24,
+    "phase7h_artifact_checksums.json": 25,
+    "phase8a_artifact_checksums.json": 22
+  },
+  "private_store_ignored": true,
+  "private_store_tracked_count": 0,
+  "raw_access_scope": "checksum_verified_train_BIS_and_SQI_only",
+  "raw_test_access_count": 0,
+  "real_subject_simulator_run": false,
+  "source_index_clean": true,
+  "source_sha_verified": true,
+  "source_worktree_clean": true,
+  "starting_local_head": "f45a0ee6f1208f1f8202bc185a7a005701dfa3e0",
+  "starting_remote_tracking_sha": "f45a0ee6f1208f1f8202bc185a7a005701dfa3e0",
+  "test_case_count": 490,
+  "test_subject_count": 483,
+  "test_template_count": 0,
+  "timing_lineage_mismatch_count": 0,
+  "timing_lineage_verified_train_case_count": 1970,
+  "train_case_count": 1970,
+  "train_subject_count": 1932,
+  "upstream_authoritative_timing_lineage": {
+    "relative_path": "data/manifests/volatile_signal_case_manifest.csv",
+    "sha256": "66c65af9fa72467c29544e6d9c84550449370e61781b703461f83508964f30a8"
+  }
+}

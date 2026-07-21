@@ -204,11 +204,22 @@ def legacy_state() -> dict[str, object]:
     return state
 
 
-def verify_source_gate() -> dict[str, object]:
-    if git_output(ROOT, "rev-parse", "HEAD") != STARTING_COMMIT:
-        raise RuntimeError("Phase 8A starting HEAD mismatch")
-    if git_output(ROOT, "rev-parse", "refs/remotes/origin/main") != STARTING_COMMIT:
-        raise RuntimeError("Phase 8A starting remote-tracking ref mismatch")
+def verify_source_gate(*, require_exact_starting_refs: bool = True) -> dict[str, object]:
+    if require_exact_starting_refs:
+        if git_output(ROOT, "rev-parse", "HEAD") != STARTING_COMMIT:
+            raise RuntimeError("Phase 8A starting HEAD mismatch")
+        if git_output(ROOT, "rev-parse", "refs/remotes/origin/main") != STARTING_COMMIT:
+            raise RuntimeError("Phase 8A starting remote-tracking ref mismatch")
+    else:
+        for descendant in ("HEAD", "refs/remotes/origin/main"):
+            result = subprocess.run(
+                ["git", "-C", str(ROOT), "merge-base", "--is-ancestor", STARTING_COMMIT, descendant],
+                check=False,
+            )
+            if result.returncode != 0:
+                raise RuntimeError(
+                    f"Phase 8A starting commit is not an ancestor of {descendant}"
+                )
 
     freeze = json.loads((MANIFESTS / "protocol_v1_2_cohort_freeze.json").read_text(encoding="utf-8"))
     linkage = json.loads((MANIFESTS / "subject_linkage_summary.json").read_text(encoding="utf-8"))
@@ -345,8 +356,12 @@ created. Phase 8B and later work did not begin.
 """
 
 
-def build_outputs(created_timestamp: str) -> tuple[dict[Path, bytes], dict[str, object]]:
-    gate = verify_source_gate()
+def build_outputs(
+    created_timestamp: str,
+    *,
+    require_exact_starting_refs: bool = True,
+) -> tuple[dict[Path, bytes], dict[str, object]]:
+    gate = verify_source_gate(require_exact_starting_refs=require_exact_starting_refs)
     case_source_rows = read_source_case_rows()
     subject_source_rows = build_subject_rows(case_source_rows)
     subject_rows, stratum_rows = allocate_subjects(subject_source_rows)
@@ -486,7 +501,10 @@ def verify_existing() -> dict[str, object]:
     if not seal_path.is_file():
         raise RuntimeError("official Phase 8A seal does not exist")
     seal = json.loads(seal_path.read_text(encoding="utf-8"))
-    expected, result = build_outputs(str(seal["creation_timestamp_utc"]))
+    expected, result = build_outputs(
+        str(seal["creation_timestamp_utc"]),
+        require_exact_starting_refs=False,
+    )
     for path, payload in expected.items():
         if not path.is_file() or path.read_bytes() != payload:
             raise RuntimeError(f"Phase 8A artifact is not byte-identical: {path.relative_to(ROOT)}")

@@ -1,0 +1,145 @@
+{
+  "aggregate_warning_counts": {
+    "templates_with_finite_bis_out_of_range": 0,
+    "templates_with_finite_sqi_outside_0_100": 2,
+    "templates_with_source_duplicate_timestamps": 5,
+    "templates_with_source_nonmonotonic_intervals": 0
+  },
+  "distributions": {
+    "bis_available_event_count": {
+      "count": 1970,
+      "maximum": 37770.0,
+      "mean": 10574.701522842639,
+      "median": 8969.0,
+      "minimum": 2031.0,
+      "q1": 5795.25,
+      "q3": 14167.25,
+      "sample_sd": 6024.655453628802
+    },
+    "bis_finite_event_count": {
+      "count": 1970,
+      "maximum": 37770.0,
+      "mean": 10574.701522842639,
+      "median": 8969.0,
+      "minimum": 2031.0,
+      "q1": 5795.25,
+      "q3": 14167.25,
+      "sample_sd": 6024.655453628802
+    },
+    "bis_finite_out_of_range_count": {
+      "count": 1970,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "median": 0.0,
+      "minimum": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "sample_sd": 0.0
+    },
+    "episode_horizon_seconds": {
+      "count": 1970,
+      "maximum": 111600.0,
+      "mean": 11662.416243652286,
+      "median": 10050.0,
+      "minimum": 2160.0,
+      "q1": 6720.0,
+      "q3": 15120.0,
+      "sample_sd": 6616.9672057438065
+    },
+    "exact_sqi_match_count": {
+      "count": 1970,
+      "maximum": 37770.0,
+      "mean": 10574.701522842639,
+      "median": 8969.0,
+      "minimum": 2031.0,
+      "q1": 5795.25,
+      "q3": 14167.25,
+      "sample_sd": 6024.655453628802
+    },
+    "fraction_bis_events_accepted_by_p1": {
+      "count": 1970,
+      "maximum": 1.0,
+      "mean": 0.8862064507526066,
+      "median": 0.9017531871666048,
+      "minimum": 0.39618856569709127,
+      "q1": 0.8514663568210386,
+      "q3": 0.9384160395670934,
+      "sample_sd": 0.0743416857530435
+    },
+    "fraction_bis_events_with_exact_sqi_match": {
+      "count": 1970,
+      "maximum": 1.0,
+      "mean": 1.0,
+      "median": 1.0,
+      "minimum": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "sample_sd": 0.0
+    },
+    "p1_accepted_event_count": {
+      "count": 1970,
+      "maximum": 34114.0,
+      "mean": 9565.7461928934,
+      "median": 7950.5,
+      "minimum": 1470.0,
+      "q1": 5040.75,
+      "q3": 12916.75,
+      "sample_sd": 5811.1900272934245
+    }
+  },
+  "membership_changed_by_qc": false,
+  "phase": "Phase 8B",
+  "structural_hard_gates": {
+    "drug_raw_open_count": 0,
+    "duplicate_canonical_event_timestamp_count": 0,
+    "duplicate_train_case_count": 0,
+    "missing_train_case_count": 0,
+    "non_train_parent_subject_count": 0,
+    "nonfinite_relative_timestamp_count": 0,
+    "nonmonotone_array_count": 0,
+    "out_of_horizon_timestamp_count": 0,
+    "private_hash_mismatch_count": 0,
+    "raw_bis_value_persisted_count": 0,
+    "source_checksum_mismatch_count": 0,
+    "sqi_timestamp_not_in_bis_count": 0,
+    "test_raw_open_count": 0
+  },
+  "test_template_count": 0,
+  "train_template_count": 1970,
+  "visibility_audit": {
+    "grid_anchor": "anesthesia_start",
+    "grid_interval_seconds": 10,
+    "p0_minus_p1_visible_grid_points": 163551,
+    "p0_minus_p1_visible_proportion": 0.07112626258672741,
+    "p0_per_template_visibility_proportion": {
+      "count": 1970,
+      "maximum": 1.0,
+      "mean": 0.8994841224952155,
+      "median": 0.9289887271032964,
+      "minimum": 0.12928198180762532,
+      "q1": 0.8643246517262265,
+      "q3": 0.9650502055537721,
+      "sample_sd": 0.09966569025398163
+    },
+    "p0_visible_grid_points": 2086908,
+    "p0_visible_proportion": 0.9075699103175286,
+    "p1_per_template_visibility_proportion": {
+      "count": 1970,
+      "maximum": 1.0,
+      "mean": 0.8144717592767706,
+      "median": 0.8425110205444606,
+      "minimum": 0.1095413199148442,
+      "q1": 0.7573833453292964,
+      "q3": 0.898879387194196,
+      "sample_sd": 0.11635084131535055
+    },
+    "p1_visible_grid_points": 1923357,
+    "p1_visible_proportion": 0.8364436477308013,
+    "scientific_result": false,
+    "synthetic_latent_bis_value": 50.0,
+    "templates_with_zero_p0_visibility": 0,
+    "templates_with_zero_p1_visibility": 0,
+    "total_grid_points": 2299446
+  },
+  "warning_cutoff_invented": false
+}
