@@ -1,0 +1,54 @@
+{
+  "execution_flags": {
+    "checkpoint_persisted": false,
+    "final_ppo_training": false,
+    "model_persisted": false,
+    "performance_comparison": false,
+    "propofol_raw_access": false,
+    "test_evaluation": false,
+    "test_metadata_rows_parsed": 0,
+    "test_raw_access_count": 0,
+    "test_template_access_count": 0
+  },
+  "input_artifact_sha256": {
+    "data/manifests/phase7f_pkpd_unit_contract.json": "e175d4f8a0c79d5b2766c3b0fe63cb36591219eb6022e0a1e52bf03362e238a1",
+    "data/manifests/phase7g_remifentanil_schedule_contract.json": "459466c6cf96f0e82856d67aea9af5b11f4d284eb72155f39963fcf901024381",
+    "data/manifests/phase8a_case_split_manifest.csv": "8686aad17f079b9d0105f2090f6aa47d97d828865df2547e0952b4cd8cf974ce",
+    "data/manifests/phase8a_subject_split_manifest.csv": "c1cf8b60681757efdfa1fe0b5a2084f52d238f5fcbaba83cbff963962bb025e2",
+    "data/manifests/phase8a_test_seal.json": "218c1864aaa43ebd028ee8ca26c918c7d16ada43de7b8f221b2ca41ccfb26479",
+    "data/manifests/phase8b_private_tree_summary.json": "3124f0515992237b7f9ec7d3af0c305b6165fcdf5167f296e71f73616b4c3bfe",
+    "data/manifests/primary_signal_checksum_manifest.csv": "50504d55796a22b8806770a11bacaa0d02b97e594e13f5820e4d471edfada3c0",
+    "data/manifests/primary_signal_download_manifest.csv": "f70560188c6a26666645d35132d3233ec0386044aa4689aaf26ded9133dfda5b",
+    "data/manifests/subject_linkage_case_manifest.csv": "cd42aa0caa9dd5151585e779af07110f4025688fbae00a81a29db527cf1ba2ad"
+  },
+  "legacy_state_after": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_state_before": {
+    "head": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "status": [
+      "?? debug.log"
+    ],
+    "tree": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "phase": "Phase 8C",
+  "phase8a_membership_changed": false,
+  "phase8a_seal_changed": false,
+  "phase8a_seal_payload_sha256": "6083be99567d5d7d4989ef3c9e35fc51255f614098697f289daac756d643f9af",
+  "phase8b_private_root_after": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8b_private_root_before": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8b_verify_only_descendant_fix_applied": true,
+  "phase8b_generation_gate_remains_strict": true,
+  "phase8b_artifact_inventory_updated_for_script_fix": true,
+  "remifentanil_exact_track": "Orchestra/RFTN20_RATE",
+  "remifentanil_runtime_unit": "microgram/min",
+  "remifentanil_source_concentration": "20 mcg/mL",
+  "remifentanil_source_unit": "mL/hr",
+  "source_remote_main_at_start": "a7821b43b608180f52e471c4bd8247d60336d8ef",
+  "train_case_count": 1970,
+  "train_remifentanil_logical_access_count": 1970
+}

@@ -1,0 +1,786 @@
+{
+  "binary_and_mask_fields_unchanged": true,
+  "epsilon_policy": "sample_sd_le_1e-12_uses_scale_1",
+  "fit_case_count": 1970,
+  "fit_split": "train_only",
+  "p0_p1_share_same_scaler_for_each_state": true,
+  "preprocessing_condition_used_for_fit": false,
+  "scalers": {
+    "S0": {
+      "dimension": 34,
+      "fields": [
+        {
+          "binary_unchanged": false,
+          "center": 58.01065989847723,
+          "field_name": "age_years",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 13.977758872184936,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "sex_binary",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 162.29324873096422,
+          "field_name": "height_cm",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 8.520309444857084,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 61.64603045685275,
+          "field_name": "weight_kg",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 11.394978649592485,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-50",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-40",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-30",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-20",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-10",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t+0",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S0",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        }
+      ],
+      "schema_sha256": "ac1a45309051b1b9270b78274584c46cb9ece61128665eb73a6e067b2a834cf6",
+      "state_id": "S0"
+    },
+    "S1": {
+      "dimension": 42,
+      "fields": [
+        {
+          "binary_unchanged": false,
+          "center": 58.01065989847723,
+          "field_name": "age_years",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 13.977758872184936,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "sex_binary",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 162.29324873096422,
+          "field_name": "height_cm",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 8.520309444857084,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 61.64603045685275,
+          "field_name": "weight_kg",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 11.394978649592485,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-50",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-40",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-30",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-20",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t-10",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "bis_value_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": true,
+          "center": 0.0,
+          "field_name": "bis_mask_t+0",
+          "fitted_or_fixed": "fixed",
+          "normalization_method": "identity_binary",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "not_applicable"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 30.0,
+          "field_name": "bis_age_seconds_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_dose_mg_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-50",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-40",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-30",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-20",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t-10",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 9.583725747528963,
+          "field_name": "remifentanil_rate_microgram_per_min_t+0",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 137.78091200106576,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_recent_dose_60s_mg",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0811689498206972,
+          "field_name": "remifentanil_recent_dose_60s_microgram",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 0.8858783745388669,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_cumulative_dose_mg",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 688.8749200145676,
+          "field_name": "remifentanil_cumulative_dose_microgram",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1021.2013972198176,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_cp_mg_per_l",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 0.0,
+          "field_name": "propofol_ce_mg_per_l",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.0,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 1.5508534976428554,
+          "field_name": "remifentanil_cp_microgram_per_l",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.6938085232351368,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        },
+        {
+          "binary_unchanged": false,
+          "center": 1.5506509347190343,
+          "field_name": "remifentanil_ce_microgram_per_l",
+          "fitted_or_fixed": "fitted_train_only",
+          "normalization_method": "train_standard_score",
+          "scale": 1.6936226348469787,
+          "state_profile": "S1",
+          "zero_variance_handling": "scale_set_to_1_when_sample_sd_le_1e-12"
+        }
+      ],
+      "schema_sha256": "b8fe97f79f039e2c15d874f93eb7887122792028940d29cf38eb6bce99e4b271",
+      "state_id": "S1"
+    }
+  },
+  "source": "preprocessing_neutral_zero_propofol_train_patient_and_case_average_zoh_remifentanil_reference",
+  "test_case_count_used": 0
+}

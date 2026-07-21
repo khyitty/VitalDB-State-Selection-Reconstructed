@@ -46,9 +46,9 @@
       "sha256": "eb0b9a0f1078de1481e41928dec63b0ed8f43529a8973ea30a40ad4ce8e11341"
     },
     {
-      "bytes": 31856,
+      "bytes": 32428,
       "relative_path": "scripts/run_phase8b_train_template_extraction.py",
-      "sha256": "b234224a0218b9b648b6365a78542ebae7e26c5dd5a3d8d4c8cf46de570047de"
+      "sha256": "a7856142797a077756a244b5bb1386523774d5b4b3a347b4427f570957063c8e"
     },
     {
       "bytes": 1683,

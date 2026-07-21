@@ -1,0 +1,17 @@
+{
+  "approved_scope": "train-only real-patient runtime inputs and bounded four-condition PPO smoke",
+  "canonical_ppo_seed": 42,
+  "final_training_started": false,
+  "multi_seed_plan_status": "superseded_by_single_seed_42",
+  "no_new_track_alias": true,
+  "patient_profile_fallback_used": false,
+  "phase": "Phase 8C",
+  "ppo_smoke_timestep_budget_per_condition": 128,
+  "rate_outliers_removed_or_clipped": false,
+  "remifentanil_conversion": "mL/hr * 20 microgram/mL / 60 min/hr",
+  "remifentanil_source_track": "Orchestra/RFTN20_RATE",
+  "scaler_fit_source": "all sealed train cases; preprocessing-neutral zero-propofol patient and case-average-ZOH remifentanil reference",
+  "seed_sweep_allowed": false,
+  "test_evaluation_started": false,
+  "zero_variance_scaler_rule": "sample standard deviation <= 1e-12 uses scale 1"
+}

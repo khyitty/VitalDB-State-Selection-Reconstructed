@@ -1,0 +1,122 @@
+{
+  "condition_order": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "correctness_only": true,
+  "final_performance_claimed": false,
+  "model_or_checkpoint_created": false,
+  "performance_ranking_computed": false,
+  "results": [
+    {
+      "action_bounds_unchanged": true,
+      "checkpoint_created": false,
+      "condition_id": "P0S0",
+      "device": "cpu",
+      "env_checker_passed": true,
+      "final_performance_claimed": false,
+      "finite_logged_loss_count": 4,
+      "gradients_finite_where_present": true,
+      "initial_observation_sha256": "c9c83aa7e1773098adb19f7a3a833da74ef1935ed6107d09730a368f148ba1d0",
+      "learn_completed": true,
+      "logged_losses_finite": true,
+      "model_parameter_sha256_in_memory_only": "dcb016b888187534fa780296ac1edbd6e95dc114a50f60599d256fa5c6172792",
+      "model_persisted": false,
+      "observation_shape": [
+        34
+      ],
+      "parameters_finite": true,
+      "performance_ranking_computed": false,
+      "runtime_seconds": 0.8275999999605119,
+      "seed": 42,
+      "status": "passed",
+      "test_access_count": 0,
+      "total_timesteps": 128,
+      "vec_env_created": true
+    },
+    {
+      "action_bounds_unchanged": true,
+      "checkpoint_created": false,
+      "condition_id": "P1S0",
+      "device": "cpu",
+      "env_checker_passed": true,
+      "final_performance_claimed": false,
+      "finite_logged_loss_count": 4,
+      "gradients_finite_where_present": true,
+      "initial_observation_sha256": "c9c83aa7e1773098adb19f7a3a833da74ef1935ed6107d09730a368f148ba1d0",
+      "learn_completed": true,
+      "logged_losses_finite": true,
+      "model_parameter_sha256_in_memory_only": "cf2798167e50882d71f3f5293399e1cb7febfbfb5a824d2c13e6b71fc2a9f9d1",
+      "model_persisted": false,
+      "observation_shape": [
+        34
+      ],
+      "parameters_finite": true,
+      "performance_ranking_computed": false,
+      "runtime_seconds": 0.6706685000099242,
+      "seed": 42,
+      "status": "passed",
+      "test_access_count": 0,
+      "total_timesteps": 128,
+      "vec_env_created": true
+    },
+    {
+      "action_bounds_unchanged": true,
+      "checkpoint_created": false,
+      "condition_id": "P0S1",
+      "device": "cpu",
+      "env_checker_passed": true,
+      "final_performance_claimed": false,
+      "finite_logged_loss_count": 4,
+      "gradients_finite_where_present": true,
+      "initial_observation_sha256": "835e4ed88492470bc6389d08b77e98e30215c1c29ebf62afb1c0d83dcb80f445",
+      "learn_completed": true,
+      "logged_losses_finite": true,
+      "model_parameter_sha256_in_memory_only": "3d1f29ae57cbd2111084f73bd839c1c28db9b1312f87f218d2ff6754ee2ec6fb",
+      "model_persisted": false,
+      "observation_shape": [
+        42
+      ],
+      "parameters_finite": true,
+      "performance_ranking_computed": false,
+      "runtime_seconds": 0.7684219999937341,
+      "seed": 42,
+      "status": "passed",
+      "test_access_count": 0,
+      "total_timesteps": 128,
+      "vec_env_created": true
+    },
+    {
+      "action_bounds_unchanged": true,
+      "checkpoint_created": false,
+      "condition_id": "P1S1",
+      "device": "cpu",
+      "env_checker_passed": true,
+      "final_performance_claimed": false,
+      "finite_logged_loss_count": 4,
+      "gradients_finite_where_present": true,
+      "initial_observation_sha256": "835e4ed88492470bc6389d08b77e98e30215c1c29ebf62afb1c0d83dcb80f445",
+      "learn_completed": true,
+      "logged_losses_finite": true,
+      "model_parameter_sha256_in_memory_only": "15bede6c486f5cbda9e0c998dfc6ecd618468b7deb51397a7e07c57d23e0ad34",
+      "model_persisted": false,
+      "observation_shape": [
+        42
+      ],
+      "parameters_finite": true,
+      "performance_ranking_computed": false,
+      "runtime_seconds": 0.743695699959062,
+      "seed": 42,
+      "status": "passed",
+      "test_access_count": 0,
+      "total_timesteps": 128,
+      "vec_env_created": true
+    }
+  ],
+  "seed": 42,
+  "single_seed_only": true,
+  "test_access_count": 0,
+  "timestep_budget_per_condition": 128
+}

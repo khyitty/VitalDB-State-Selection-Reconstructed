@@ -1,0 +1,11 @@
+# Phase 8C Train Runtime Input Design
+
+Phase 8C is limited to sealed-train runtime construction and correctness-only PPO smoke execution. All four conditions use the single canonical PPO seed `42`. The earlier Phase 7B plan listing seeds 7, 42, and 84 remains in the historical artifact but is superseded; seed sweeps, alternate-seed searches, and condition-specific seeds are prohibited by the current decision. The Phase 8A split seed remains unchanged and has a separate purpose.
+
+Each private runtime bundle joins one sealed train case to its validated age, sex, height, and weight profile, the unchanged Phase 8B observation template, and exact `Orchestra/RFTN20_RATE` source provenance. Sex is encoded female=0 and male=1 in state construction. No demographic fallback was necessary. The source rate is documented as mL/hr for remifentanil 20 mcg/mL and is converted to microgram/min by multiplying by 20 and dividing by 60.
+
+The remifentanil schedule is right-continuous zero-order hold. The last finite source row at a duplicate timestamp is authoritative, consecutive equal rates are compressed without changing ZOH semantics, and the rate before the first in-window observation is zero. Values after anesthesia end and future knots are unavailable to the current step. Unusually large finite nonnegative source values are retained and summarized without an unapproved clipping threshold.
+
+S0 and S1 use one train-only scaler each. P0S0 and P1S0 share the S0 scaler; P0S1 and P1S1 share the S1 scaler. Binary sex and BIS-mask fields remain unchanged. Continuous fields use train standard scores, with scale set to one when sample standard deviation is at most `1e-12`. The P-neutral fit source uses all train profiles, exact remifentanil schedule summaries, zero pre-policy propofol, and one case-average exact-ZOH remifentanil reference per case. The actual runtime environment continues to use every exact schedule knot.
+
+P0 and P1 load the same Phase 8B event template. Their only difference is online BIS visibility: P0 has no SQI gate and 30-second staleness; P1 requires exact-timestamp SQI at least 50 and uses 20-second staleness. Propofol is supplied only by the environment action, while recorded remifentanil is an exogenous disturbance. Reward, action bounds, and the 10-second control interval are unchanged.

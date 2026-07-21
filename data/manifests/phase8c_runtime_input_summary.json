@@ -1,0 +1,115 @@
+{
+  "approved_fallback_used": false,
+  "case_subject_mapping_error_count": 0,
+  "completed": true,
+  "demographic_summary": {
+    "age_years": {
+      "count": 1970,
+      "maximum": 92.0,
+      "mean": 58.01065989847716,
+      "median": 59.0,
+      "minimum": 18.0,
+      "q1": 49.0,
+      "q3": 68.0
+    },
+    "height_cm": {
+      "count": 1970,
+      "maximum": 188.6,
+      "mean": 162.29324873096448,
+      "median": 161.9,
+      "minimum": 138.0,
+      "q1": 156.0,
+      "q3": 168.5
+    },
+    "weight_kg": {
+      "count": 1970,
+      "maximum": 139.7,
+      "mean": 61.6460304568528,
+      "median": 60.6,
+      "minimum": 24.4,
+      "q1": 53.4,
+      "q3": 68.5
+    }
+  },
+  "female_profile_count": 997,
+  "invalid_profile_count": 0,
+  "male_profile_count": 973,
+  "missing_required_profile_count": 0,
+  "partial_directory_count": 0,
+  "phase": "Phase 8C",
+  "phase8b_private_root_after": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8b_private_root_before": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8b_template_changed": false,
+  "preflight": {
+    "case_count": 3,
+    "condition_case_checks": 12,
+    "conditions": {
+      "P0S0": {
+        "passed": true,
+        "shape": 34
+      },
+      "P0S1": {
+        "passed": true,
+        "shape": 42
+      },
+      "P1S0": {
+        "passed": true,
+        "shape": 34
+      },
+      "P1S1": {
+        "passed": true,
+        "shape": 42
+      }
+    },
+    "deterministic_reset": true,
+    "finite_observation_and_reward": true,
+    "no_future_remifentanil_access": true,
+    "test_access_count": 0
+  },
+  "private_runtime_root_sha256": "25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606",
+  "remifentanil_duration_seconds": {
+    "count": 1970,
+    "maximum": 111600.0,
+    "mean": 11662.416243652284,
+    "median": 10050.0,
+    "minimum": 2160.0,
+    "q1": 6720.0,
+    "q3": 15120.0
+  },
+  "remifentanil_schedule_count": 1970,
+  "remifentanil_schedule_knot_count": {
+    "count": 1970,
+    "maximum": 3493.0,
+    "mean": 868.5548223350254,
+    "median": 716.0,
+    "minimum": 70.0,
+    "q1": 421.5,
+    "q3": 1183.0
+  },
+  "remifentanil_schedule_rate_microgram_per_min": {
+    "count": 1711053,
+    "maximum": 179658.75,
+    "mean": 9.58372574752874,
+    "median": 8.172666549682617,
+    "minimum": 0.0,
+    "q1": 6.096666971842448,
+    "q3": 10.68933359781901
+  },
+  "remifentanil_total_dose_microgram": {
+    "count": 1970,
+    "maximum": 10538.049489779722,
+    "mean": 1377.7498400291347,
+    "median": 1052.268662952844,
+    "minimum": 103.37596450973261,
+    "q1": 637.8194595462687,
+    "q3": 1778.9457902691315
+  },
+  "remifentanil_track": "Orchestra/RFTN20_RATE",
+  "runtime_format_version": "phase8c-train-runtime-v1",
+  "runtime_seconds": 91.69595310004661,
+  "test_metadata_rows_parsed": 0,
+  "test_raw_access_count": 0,
+  "test_runtime_bundle_count": 0,
+  "train_patient_profile_count": 1970,
+  "train_remifentanil_logical_access_count": 1970
+}

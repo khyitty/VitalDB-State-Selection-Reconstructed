@@ -107,11 +107,21 @@ def legacy_state() -> dict[str, object]:
     return state
 
 
-def source_gate() -> dict[str, object]:
-    if git("rev-parse", "HEAD") != SOURCE_COMMIT:
-        raise TrainTemplateError("Phase 8B source HEAD mismatch")
-    if git("rev-parse", "refs/remotes/origin/main") != SOURCE_COMMIT:
-        raise TrainTemplateError("Phase 8B source remote-tracking SHA mismatch")
+def source_gate(*, require_exact_source_refs: bool = True) -> dict[str, object]:
+    if require_exact_source_refs:
+        if git("rev-parse", "HEAD") != SOURCE_COMMIT:
+            raise TrainTemplateError("Phase 8B source HEAD mismatch")
+        if git("rev-parse", "refs/remotes/origin/main") != SOURCE_COMMIT:
+            raise TrainTemplateError("Phase 8B source remote-tracking SHA mismatch")
+    else:
+        for ref, label in (("HEAD", "HEAD"), ("refs/remotes/origin/main", "remote-tracking SHA")):
+            result = subprocess.run(
+                ["git", "merge-base", "--is-ancestor", SOURCE_COMMIT, ref],
+                cwd=ROOT,
+                check=False,
+            )
+            if result.returncode != 0:
+                raise TrainTemplateError(f"Phase 8B source commit is not an ancestor of {label}")
     seal = json.loads((MANIFESTS / "phase8a_test_seal.json").read_text(encoding="utf-8"))
     if seal.get("seal_payload_sha256") != PHASE8A_SEAL_PAYLOAD_SHA256:
         raise TrainTemplateError("Phase 8A seal payload mismatch")
@@ -590,7 +600,7 @@ def run_verify_only(gate: dict[str, object]) -> None:
 
 def main() -> int:
     args = parse_args()
-    gate = source_gate()
+    gate = source_gate(require_exact_source_refs=args.stage != "verify-only")
     if args.stage == "preflight":
         run_preflight(gate)
     elif args.stage == "full":

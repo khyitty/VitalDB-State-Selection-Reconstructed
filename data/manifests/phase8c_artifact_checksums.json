@@ -1,0 +1,85 @@
+{
+  "artifacts": [
+    {
+      "bytes": 826,
+      "relative_path": "data/manifests/phase8c_human_decisions.json",
+      "sha256": "7166eb557cfae911bb561b9215507bb30c9a9f4646b82083383e1de618e78f3f"
+    },
+    {
+      "bytes": 3002,
+      "relative_path": "data/manifests/phase8c_runtime_input_summary.json",
+      "sha256": "4b1a82d1c3a51a1c5c27eed29b66706abf3b0992a809f86507b7bd6affcdbbaf"
+    },
+    {
+      "bytes": 29262,
+      "relative_path": "data/manifests/phase8c_scaler_registry.json",
+      "sha256": "0311e6ca6542592893e81f7a6949eb2f50997e6d5d53aef9dd1e64bfe7794503"
+    },
+    {
+      "bytes": 4043,
+      "relative_path": "data/manifests/phase8c_smoke_summary.json",
+      "sha256": "aad015a8ff9d3c7272fdebd57b621a6d34498d4fef10da48ce2f85cb24836f1e"
+    },
+    {
+      "bytes": 2770,
+      "relative_path": "data/manifests/phase8c_source_snapshot.json",
+      "sha256": "d1a1d396870bc90106629328d5f50ec5bc808d035fe42491b8fe391996a3a339"
+    },
+    {
+      "bytes": 75919,
+      "relative_path": "docs/compliance_matrix.csv",
+      "sha256": "06d3b54e5b4f28e0f39cc3aca3393850244119b8bff8d89c4b827669fba6c7cc"
+    },
+    {
+      "bytes": 2331,
+      "relative_path": "docs/phase8c_train_runtime_input_design.md",
+      "sha256": "24ef9b538bb28e01db30bec68a9f208e84e1ac6a85954b1c58711b671a41b0c2"
+    },
+    {
+      "bytes": 1595,
+      "relative_path": "docs/phase8c_train_runtime_input_report.md",
+      "sha256": "5522514e0518e6ee9a58be82722f96ecf35e2d60a0a994aae3bfc08d205c4fea"
+    },
+    {
+      "bytes": 3052,
+      "relative_path": "scripts/build_phase8c_artifact_checksums.py",
+      "sha256": "2f69426299a1e553bdce448273d264e6a9b8c8bf529594d3cf7fa3f5e1f4e0d9"
+    },
+    {
+      "bytes": 22238,
+      "relative_path": "scripts/run_phase8c_train_runtime_inputs.py",
+      "sha256": "e4ec694740dfb86ca64cefbb1b8f995641742cb1211215796ccbee2fa9a7b3fa"
+    },
+    {
+      "bytes": 1415,
+      "relative_path": "scripts/verify_phase8c_no_first_n_limit.py",
+      "sha256": "d6d29749ab1942e75384e4c7e585984d4c6879edb5b5aa0166c8a0b5df971f43"
+    },
+    {
+      "bytes": 29870,
+      "relative_path": "src/vitaldb_state_selection/cohort/train_runtime_inputs.py",
+      "sha256": "a60db121b94c9b0864aaff33d08c5263d42612925946b554cb5dda5af2bcd272"
+    },
+    {
+      "bytes": 8102,
+      "relative_path": "src/vitaldb_state_selection/rl_integration/train_runtime.py",
+      "sha256": "7dd92168dbabdfbe9f5974b9f33bdd72b0574d180ae2aa8d907af6aa3229bc74"
+    },
+    {
+      "bytes": 7650,
+      "relative_path": "tests/test_phase8c_artifacts.py",
+      "sha256": "3dc996b81dd423ae126443f50c567b0118636bdd12332431f7c6fdfc0b9cf499"
+    },
+    {
+      "bytes": 3270,
+      "relative_path": "tests/test_phase8c_rl_integration.py",
+      "sha256": "1c248a57d20496955d7bbc57f4082cf435879c97576cbe95884fc44c262da541"
+    },
+    {
+      "bytes": 7747,
+      "relative_path": "tests/test_phase8c_train_runtime_inputs.py",
+      "sha256": "e8329cbdb12bb65c77549f11cf6d6f0e0b614835e3905a4a6c9b66c9376793da"
+    }
+  ],
+  "self_excluded": true
+}
