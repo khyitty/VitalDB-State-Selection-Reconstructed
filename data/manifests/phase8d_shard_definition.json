@@ -1,0 +1,24 @@
+{
+  "all_conditions_covered_exactly_once": true,
+  "assignments": {
+    "A": {
+      "conditions": [
+        "P0S0",
+        "P1S0"
+      ],
+      "execution_site": "Laptop A"
+    },
+    "B": {
+      "conditions": [
+        "P0S1",
+        "P1S1"
+      ],
+      "execution_site": "Laptop B"
+    }
+  },
+  "condition_overlap_count": 0,
+  "phase": "Phase 8D",
+  "seed": 42,
+  "sequential_within_shard": true,
+  "total_timesteps_per_condition": 1000000
+}

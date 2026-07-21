@@ -1,0 +1,90 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1388,
+      "relative_path": "data/manifests/phase8d_final_ppo_config.json",
+      "sha256": "b5d79a2fb8be3b5337c7cb807936247c630b86f108f2a92cc6f645023f789b3e"
+    },
+    {
+      "bytes": 2807,
+      "relative_path": "data/manifests/phase8d_preflight_summary.json",
+      "sha256": "0ce22700a609e0b1eabcd993d5baaa8331d8529fc2b9e3de860082403f85bbf0"
+    },
+    {
+      "bytes": 494,
+      "relative_path": "data/manifests/phase8d_sampling_summary.json",
+      "sha256": "4e9cfd18850629f97afe7d56965871d707c2509eece4fa06929a60e7c8c6a4c9"
+    },
+    {
+      "bytes": 451,
+      "relative_path": "data/manifests/phase8d_shard_definition.json",
+      "sha256": "f3ab3006ce4ba83a337049b09e486f3a3675d09863a756810fe43da42801d706"
+    },
+    {
+      "bytes": 1905,
+      "relative_path": "data/manifests/phase8d_source_snapshot.json",
+      "sha256": "1fb0dc0a2eae5b0252594b5973c7064794b01add42e2e63588536ce500ac1996"
+    },
+    {
+      "bytes": 1127,
+      "relative_path": "data/manifests/phase8d_training_protocol.json",
+      "sha256": "6194262b35762d8d5a35b5bf2bfc6ebf27e3230cbd928d867d03b5aba2c2e8db"
+    },
+    {
+      "bytes": 78287,
+      "relative_path": "docs/compliance_matrix.csv",
+      "sha256": "37b2eaa8e26af9a79a6b1a1576b85a37c50f81d570b55470ce75570d990ff8fd"
+    },
+    {
+      "bytes": 2512,
+      "relative_path": "docs/phase8d_final_training_protocol.md",
+      "sha256": "fa48ed3802549af94d2ca1052075d8ae91cd96ab3c217d87315d13f6ec5c46f7"
+    },
+    {
+      "bytes": 1864,
+      "relative_path": "docs/phase8d_parallel_training_runbook.md",
+      "sha256": "683e533a398a5cd210722697f434700051c2841808c85b490e186ef64d9f7238"
+    },
+    {
+      "bytes": 1020,
+      "relative_path": "docs/phase8d_training_infrastructure_report.md",
+      "sha256": "782b40bd0f4c4f3a2d2c1d481551bacf81bf6ad86fa5b18a0e34ba7d0f533176"
+    },
+    {
+      "bytes": 3109,
+      "relative_path": "scripts/build_phase8d_artifact_checksums.py",
+      "sha256": "32b24a56f573729a6375a617cf70fffb0d871fce37bd8198f5b7f9624c567b86"
+    },
+    {
+      "bytes": 9095,
+      "relative_path": "scripts/prepare_phase8d_final_training.py",
+      "sha256": "5e0d471be2a494619b8dd32ef04cf9e1a2af61d28eb8505715d3886dd9f382e8"
+    },
+    {
+      "bytes": 3726,
+      "relative_path": "scripts/run_phase8d_final_training.py",
+      "sha256": "b08ee9036ff1289ee2c7f6280e66ea2e3771bca45bba276dc315384b9b158bd7"
+    },
+    {
+      "bytes": 1462,
+      "relative_path": "scripts/verify_phase8d_no_first_n_limit.py",
+      "sha256": "80c9c6bfa076b6ca2787c92b0a069203d19f8b7ca4c9f9e6393cf8ae83231375"
+    },
+    {
+      "bytes": 39208,
+      "relative_path": "src/vitaldb_state_selection/rl_integration/final_training.py",
+      "sha256": "f4d640b1259b102c9a304a335e6dcd744bdbf65d59d0b567a22bc040d6e74d53"
+    },
+    {
+      "bytes": 6312,
+      "relative_path": "tests/test_phase8d_final_training.py",
+      "sha256": "55a4f1530b6c6928105e7a61f91a989309d7aa71ba558a7b47bad1a269da402b"
+    },
+    {
+      "bytes": 7756,
+      "relative_path": "tests/test_phase8d_training_protocol.py",
+      "sha256": "1dc64d7c55d81c155d360f951c7bcd097fdfee693a82e8a60455bb44a9693e5b"
+    }
+  ],
+  "self_excluded": true
+}

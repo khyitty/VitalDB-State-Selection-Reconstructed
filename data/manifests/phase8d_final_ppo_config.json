@@ -1,0 +1,53 @@
+{
+  "action_distribution": "DiagGaussianDistribution_for_continuous_Box_action",
+  "activation": "Tanh",
+  "actor_hidden_layers": [
+    128
+  ],
+  "batch_size": 64,
+  "best_checkpoint_selection_available": false,
+  "checkpoint_interval_timesteps": 100000,
+  "clip_range": 0.2,
+  "clip_range_vf": null,
+  "configuration_id": "phase8d_final_ppo_v1",
+  "critic_hidden_layers": [
+    128
+  ],
+  "device": "cpu",
+  "early_stopping_available": false,
+  "ent_coef": 0.0,
+  "final_checkpoint_timestep": 1000000,
+  "gae_lambda": 0.95,
+  "gamma": 0.99,
+  "hyperparameter_search_performed": false,
+  "learning_rate": 0.001,
+  "max_grad_norm": 0.5,
+  "n_envs": 1,
+  "n_epochs": 10,
+  "n_steps": 2048,
+  "normalize_advantage": true,
+  "optimizer": "Adam",
+  "optimizer_resolved": {
+    "amsgrad": false,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "class": "torch.optim.Adam",
+    "eps": 1e-08,
+    "weight_decay": 0.001
+  },
+  "optimizer_weight_decay": 0.001,
+  "paper_alignment": {
+    "exact_optimizer_update_equivalence_claimed": false,
+    "primary_paper_report": "training epoch count of 10^6",
+    "reconstruction_budget": "1,000,000 environment timesteps per condition"
+  },
+  "policy": "MlpPolicy",
+  "purpose": "prespecified_final_training_equal_compute_no_test_evaluation",
+  "seed": 42,
+  "single_seed_only": true,
+  "total_timesteps": 1000000,
+  "use_sde": false,
+  "vf_coef": 0.1
+}

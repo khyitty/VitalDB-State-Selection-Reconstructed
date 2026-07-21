@@ -1,0 +1,40 @@
+{
+  "best_checkpoint_selection": false,
+  "checkpoint_timesteps": [
+    100000,
+    200000,
+    300000,
+    400000,
+    500000,
+    600000,
+    700000,
+    800000,
+    900000,
+    1000000
+  ],
+  "condition_comparison_performed": false,
+  "conditions": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "early_stopping": false,
+  "exact_epoch_or_optimizer_update_equivalence_claimed": false,
+  "hyperparameter_search": false,
+  "paper_training_epoch_report": "10^6",
+  "phase": "Phase 8D",
+  "reconstructed_equal_compute_budget": "1,000,000 SB3 environment timesteps per condition",
+  "resume_equivalence_scope": "model optimizer RNG and next-episode sequence; partial rollout buffer is not restored",
+  "same_hyperparameters_all_conditions": true,
+  "same_patient_remifentanil_universe_all_conditions": true,
+  "same_train_case_sequence_all_conditions": true,
+  "seed": 42,
+  "state_dimension_difference_only": {
+    "S0": 34,
+    "S1": 42
+  },
+  "status": "training_infrastructure_only_until_all_four_final_checkpoints_exist",
+  "test_evaluation_started": false,
+  "total_environment_timesteps_per_condition": 1000000
+}

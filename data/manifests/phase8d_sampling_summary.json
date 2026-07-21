@@ -1,0 +1,12 @@
+{
+  "algorithm": "numpy_PCG64_uniform_integer_index_v1",
+  "case_sequence_published": false,
+  "master_seed": 42,
+  "ordered_episode_sequence_checksum_count": 1000000,
+  "ordered_episode_sequence_sha256": "9b5e80748a46c1b4448dc6fbad91ffa9bd70e1c8311bf3a83270f6074452a8fc",
+  "phase": "Phase 8D",
+  "same_sequence_all_conditions": true,
+  "test_case_count_used": 0,
+  "train_case_count": 1970,
+  "train_case_universe_sha256": "b29464c8318ed1a82181a85c47aeb8d1bf1d6581564f4fdcdb7dd9288003b6a8"
+}
