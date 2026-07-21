@@ -1,0 +1,47 @@
+{
+  "actual_model_episode_count": 0,
+  "approved_fallback_used": false,
+  "case_order_sha256": "294a22a3662bfd9e23855e6c29784d255a4c8ec5b7378fbecd47d58d1cf9cef0",
+  "condition_comparison_performed": false,
+  "invalid_profile_count": 0,
+  "missing_required_profile_count": 0,
+  "partial_directory_count": 0,
+  "phase8b_train_root_after": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8b_train_root_before": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8c_train_root_after": "25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606",
+  "phase8c_train_root_before": "25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606",
+  "private_test_runtime_root_sha256": "beec96ac880397bcfdf8f4987af2641791a841e398b5ef2c61aa7ba48eeb5dfe",
+  "private_test_template_root_sha256": "c2375f7a762a0e2a4d5492edad95214e9bb582b7a81b8db9ade4e336bceb55e1",
+  "public_event_level_value_count": 0,
+  "runtime_seconds": 1494.2005702999886,
+  "shard_a_read_only_verification": {
+    "episode_execution_count": 0,
+    "models_loaded": false,
+    "partial_directory_count": 0,
+    "records": [
+      {
+        "condition_id": "P0S0",
+        "final_model_sha256": "f783ba214b9dc7e511ff4af7d38a641bd3924861cf562fad670b4b840ff77f3f",
+        "output_root_sha256": "119be0cf659db5c9a8bd2cf50314e640f719109886e402640117e2ae40c30fce",
+        "timestep": 1000000
+      },
+      {
+        "condition_id": "P1S0",
+        "final_model_sha256": "c73bd394af2e5bf801c890bf9d98e1bf5876660b775c3c611ab7c8cdf0a93b83",
+        "output_root_sha256": "392ae3c12178ab9c1448b1048c249ea9f544c820d099afe5d9c608523c5cfe7a",
+        "timestep": 1000000
+      }
+    ],
+    "test_access_count": 0
+  },
+  "test_bis_logical_access_count": 490,
+  "test_case_count": 490,
+  "test_remifentanil_logical_access_count": 490,
+  "test_runtime_bundle_count": 490,
+  "test_scaler_application_count": 1960,
+  "test_sqi_logical_access_count": 490,
+  "test_template_count": 490,
+  "train_case_access_count_during_test_extraction": 0,
+  "train_scaler_fit_count_during_test_phase": 0,
+  "train_scaler_registry_sha256": "0311e6ca6542592893e81f7a6949eb2f50997e6d5d53aef9dd1e64bfe7794503"
+}

@@ -1,0 +1,31 @@
+{
+  "actual_model_episode_count": 0,
+  "actual_test_case_count": 0,
+  "four_model_metadata_gate_passed": true,
+  "holm_multiplicity_pipeline_passed": true,
+  "metric_names_exercised": [
+    "action_change_magnitude_mg_per_min",
+    "cumulative_episode_reward",
+    "cumulative_propofol_amount_mg",
+    "episode_completed",
+    "episode_failure_reason",
+    "integrated_absolute_bis_error_bis_seconds",
+    "maximum_absolute_bis_deviation",
+    "mean_absolute_bis_deviation",
+    "mean_propofol_infusion_rate_mg_per_min",
+    "root_mean_squared_bis_deviation",
+    "time_above_bis_60_seconds",
+    "time_below_bis_40_seconds",
+    "time_in_bis_40_60_seconds"
+  ],
+  "paired_contrast_formulas_passed": [
+    "P1S0_minus_P0S0",
+    "P1S1_minus_P0S1",
+    "P0S1_minus_P0S0",
+    "P1S1_minus_P1S0",
+    "interaction"
+  ],
+  "private_or_patient_data_used": false,
+  "subject_level_aggregation_passed": true,
+  "synthetic_only": true
+}

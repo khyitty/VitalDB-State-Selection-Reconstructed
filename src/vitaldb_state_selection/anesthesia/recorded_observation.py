@@ -36,7 +36,7 @@ class RecordedObservationTemplate:
     source_type: str = "vitaldb_train"
 
     def __post_init__(self) -> None:
-        if self.source_type != "vitaldb_train" or not self.template_id:
+        if self.source_type not in {"vitaldb_train", "vitaldb_test"} or not self.template_id:
             raise RecordedObservationError("recorded template identity or source type is invalid")
         horizon = float(self.episode_horizon_seconds)
         if not math.isfinite(horizon) or horizon <= 0:

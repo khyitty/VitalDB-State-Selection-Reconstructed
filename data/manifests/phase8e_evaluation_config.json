@@ -1,0 +1,21 @@
+{
+  "actual_evaluation_started": false,
+  "case_count": 490,
+  "case_order_sha256": "294a22a3662bfd9e23855e6c29784d255a4c8ec5b7378fbecd47d58d1cf9cef0",
+  "checkpoint_selection_allowed": false,
+  "condition_order": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "deterministic_inference": true,
+  "episode_timing": "identical_test_bundle_horizon_and_10_second_control_interval",
+  "evaluation_seed": 42,
+  "exploration_noise": false,
+  "final_timestep_required": 1000000,
+  "model_parameter_update_allowed": false,
+  "optimizer_step_allowed": false,
+  "scaler_fit_or_update_allowed": false,
+  "training_implementation_sha": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0"
+}

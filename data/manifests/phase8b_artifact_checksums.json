@@ -56,9 +56,9 @@
       "sha256": "843818ec74878cd8c656da49f16beeed80c041bdd7e2a1c10cdb04ced95cfecc"
     },
     {
-      "bytes": 9469,
+      "bytes": 9491,
       "relative_path": "src/vitaldb_state_selection/anesthesia/recorded_observation.py",
-      "sha256": "7ed2d12b112c4de3258ee46f7049e472ddcdd3c3c56eb8ab45c8bbd10c059d33"
+      "sha256": "37ec1cd6f02b2ec9d75a7fcf6ca54978f2587786530a77919c23dfea8ac81395"
     },
     {
       "bytes": 15685,

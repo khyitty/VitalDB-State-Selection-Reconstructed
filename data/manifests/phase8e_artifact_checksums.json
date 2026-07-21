@@ -1,0 +1,125 @@
+{
+  "artifacts": [
+    {
+      "bytes": 677,
+      "relative_path": "data/manifests/phase8e_evaluation_config.json",
+      "sha256": "fc9f86fe71c6201842ec11f40ecfec7ed1c2d32740c288207ddaadc2b00fd8db"
+    },
+    {
+      "bytes": 898,
+      "relative_path": "data/manifests/phase8e_metric_manifest.json",
+      "sha256": "b7f6e695dc61f7c44e00740183d9d75eb67f46082db5e7ac9ad2268a6b08899c"
+    },
+    {
+      "bytes": 1448,
+      "relative_path": "data/manifests/phase8e_source_snapshot.json",
+      "sha256": "6823c80fc56cda3c22c24323f0477d3f1211ce9fa853d93253e50b2809538b6a"
+    },
+    {
+      "bytes": 1073,
+      "relative_path": "data/manifests/phase8e_statistics_plan.json",
+      "sha256": "59cd6a61ce2a59e84441ebfc0269ab944a44851021356ad1bb40515dc2073873"
+    },
+    {
+      "bytes": 929,
+      "relative_path": "data/manifests/phase8e_synthetic_validation.json",
+      "sha256": "a07eef49cf88028595d28730f871d137fad29fb323399a66ab36fbfcb8fc1f8c"
+    },
+    {
+      "bytes": 2198,
+      "relative_path": "data/manifests/phase8e_test_input_summary.json",
+      "sha256": "aac34b9c268914eb792ea484b8b16562c5a6776a9e072cbdb77f2e05bc9c70f1"
+    },
+    {
+      "bytes": 81655,
+      "relative_path": "docs/compliance_matrix.csv",
+      "sha256": "ccc5b2f7c2f849785cc98405d545a5545fb2443aa9b369f4b02fd9c87d8c5e33"
+    },
+    {
+      "bytes": 986,
+      "relative_path": "docs/phase8e_evaluation_runbook.md",
+      "sha256": "a4218860ebf53ee5c40e7e05a805dc1d0560c10a11ed01955dbbaca24bf7e543"
+    },
+    {
+      "bytes": 1333,
+      "relative_path": "docs/phase8e_final_evaluation_protocol.md",
+      "sha256": "9da4a748eb1c4f30b108dc6141a34048a8b3fdf1779940e62e11a1b29d00712f"
+    },
+    {
+      "bytes": 1488,
+      "relative_path": "docs/phase8e_sealed_test_input_report.md",
+      "sha256": "5e9b6c6b6fa88da05330d62bdaf50c3b433b73b62d9b6fb60b74d3c81031f0c4"
+    },
+    {
+      "bytes": 825,
+      "relative_path": "docs/phase8e_statistics_plan.md",
+      "sha256": "19d871c5ca9e122f6c48a9c4ed0fe5f5e3bc639f7190c4c801296b4305f95e06"
+    },
+    {
+      "bytes": 3449,
+      "relative_path": "scripts/build_phase8e_artifact_checksums.py",
+      "sha256": "e4cc6145a181c17e27f26fbd60f8dd26340edff3a252139c42fa024b39573a28"
+    },
+    {
+      "bytes": 6134,
+      "relative_path": "scripts/prepare_phase8e_evaluation.py",
+      "sha256": "8f042a3b04e45f9b6587156995cb614f27ca2c9f8311a5105b18b95752abf370"
+    },
+    {
+      "bytes": 2336,
+      "relative_path": "scripts/run_phase8e_final_evaluation.py",
+      "sha256": "cd63e9905c26fe55516bd1ea8820c47e1ae07270d814635f137db662db6b1661"
+    },
+    {
+      "bytes": 15899,
+      "relative_path": "scripts/run_phase8e_test_inputs.py",
+      "sha256": "8cc5f3f3f14512cbfb4eb24668308ceed1b0accfc5e56bacff6e237e0a421f77"
+    },
+    {
+      "bytes": 1720,
+      "relative_path": "scripts/verify_phase8e_no_first_n_limit.py",
+      "sha256": "a8a594a32d948e2e8b369cedf268255f2a7332fdbc9579afd6e533b05f201477"
+    },
+    {
+      "bytes": 9491,
+      "relative_path": "src/vitaldb_state_selection/anesthesia/recorded_observation.py",
+      "sha256": "37ec1cd6f02b2ec9d75a7fcf6ca54978f2587786530a77919c23dfea8ac81395"
+    },
+    {
+      "bytes": 20948,
+      "relative_path": "src/vitaldb_state_selection/cohort/test_observation_templates.py",
+      "sha256": "8dd067dc7a2b097d263aa864f5a0ce48f351d0e41e020da6d23865ef0abd4c14"
+    },
+    {
+      "bytes": 20741,
+      "relative_path": "src/vitaldb_state_selection/cohort/test_runtime_inputs.py",
+      "sha256": "9f0f1d9b909b1e005f0f98af691246b3ac9981f516d526a1afde45ead8b04211"
+    },
+    {
+      "bytes": 12111,
+      "relative_path": "src/vitaldb_state_selection/rl_integration/final_evaluation.py",
+      "sha256": "c90248cdb1e5301d5be499c2e8e6483283a6a13fba68dfc7acc676740c139923"
+    },
+    {
+      "bytes": 6543,
+      "relative_path": "src/vitaldb_state_selection/statistics/paired_evaluation.py",
+      "sha256": "2d81124acaa1291df7bfcd9904abefe7b148f5aff31986324cb59c3fa742e517"
+    },
+    {
+      "bytes": 6186,
+      "relative_path": "tests/test_phase8e_artifacts.py",
+      "sha256": "b6d5206d596f7269c00557c72a5f29fa491c09f121a94e563caa3391a33cb4ef"
+    },
+    {
+      "bytes": 6411,
+      "relative_path": "tests/test_phase8e_evaluation.py",
+      "sha256": "8beb00392db908a4eaec945e8afac6422d8e88b70557a3fa28fa06ca4490f14c"
+    },
+    {
+      "bytes": 4903,
+      "relative_path": "tests/test_phase8e_test_inputs.py",
+      "sha256": "ec4b37450b8f683be3d071cffbe38fce75bd526d4046b3d7bdb3a0feb8ba376f"
+    }
+  ],
+  "self_excluded": true
+}

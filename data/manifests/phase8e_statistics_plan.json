@@ -1,0 +1,46 @@
+{
+  "actual_test_statistics_computed": false,
+  "bootstrap_confidence_interval_percent": 95,
+  "bootstrap_unit": "subjectid_after_case_level_metrics",
+  "contrasts": {
+    "P0S1_minus_P0S0": {
+      "P0S0": -1.0,
+      "P0S1": 1.0,
+      "P1S0": 0.0,
+      "P1S1": 0.0
+    },
+    "P1S0_minus_P0S0": {
+      "P0S0": -1.0,
+      "P0S1": 0.0,
+      "P1S0": 1.0,
+      "P1S1": 0.0
+    },
+    "P1S1_minus_P0S1": {
+      "P0S0": 0.0,
+      "P0S1": -1.0,
+      "P1S0": 0.0,
+      "P1S1": 1.0
+    },
+    "P1S1_minus_P1S0": {
+      "P0S0": 0.0,
+      "P0S1": 0.0,
+      "P1S0": -1.0,
+      "P1S1": 1.0
+    },
+    "interaction": {
+      "P0S0": 1.0,
+      "P0S1": -1.0,
+      "P1S0": -1.0,
+      "P1S1": 1.0
+    }
+  },
+  "effect_size": "paired_standardized_mean_difference_cohens_dz",
+  "paired_structure": "same_case_under_all_four_conditions",
+  "permutation_test": "paired_sign_flip_two_sided",
+  "primary_summary": [
+    "mean_difference",
+    "median_difference"
+  ],
+  "secondary_outcome_multiplicity": "Holm",
+  "source_plan": "protocol_v1_3_statistical_analysis_plan.json"
+}

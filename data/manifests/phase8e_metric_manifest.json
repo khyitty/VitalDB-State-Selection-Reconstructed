@@ -1,0 +1,26 @@
+{
+  "action_change_definition": "mean_absolute_difference_between_consecutive_propofol_rates",
+  "action_interval_seconds": 10.0,
+  "bis_source_for_control_metrics": "simulator_latent_true_bis",
+  "bis_target": 50.0,
+  "episode_failure_is_never_silently_excluded": true,
+  "metric_names": [
+    "mean_absolute_bis_deviation",
+    "root_mean_squared_bis_deviation",
+    "time_in_bis_40_60_seconds",
+    "time_below_bis_40_seconds",
+    "time_above_bis_60_seconds",
+    "integrated_absolute_bis_error_bis_seconds",
+    "maximum_absolute_bis_deviation",
+    "cumulative_propofol_amount_mg",
+    "mean_propofol_infusion_rate_mg_per_min",
+    "action_change_magnitude_mg_per_min",
+    "cumulative_episode_reward"
+  ],
+  "metric_version": "phase8e-control-metrics-v1",
+  "observation_visibility_is_not_an_outcome": true,
+  "target_range": {
+    "inclusive_lower": 40.0,
+    "inclusive_upper": 60.0
+  }
+}

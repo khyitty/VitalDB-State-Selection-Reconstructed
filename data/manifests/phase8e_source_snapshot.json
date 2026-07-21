@@ -1,0 +1,33 @@
+{
+  "actual_condition_comparison_performed": false,
+  "actual_model_episode_count": 0,
+  "legacy_repository_after": {
+    "commit_sha": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "pre_existing_untracked_entries": [
+      "debug.log"
+    ],
+    "tree_sha": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "legacy_repository_before": {
+    "commit_sha": "9501b16a5c4db27f06fa0d0b252a3a75f633967f",
+    "pre_existing_untracked_entries": [
+      "debug.log"
+    ],
+    "tree_sha": "60917f0b61ec1e6a195b9a648faa6466406aeda1"
+  },
+  "phase": "Phase 8E",
+  "phase8a_test_seal_sha256": "218c1864aaa43ebd028ee8ca26c918c7d16ada43de7b8f221b2ca41ccfb26479",
+  "phase8b_train_root_sha256": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8c_train_root_sha256": "25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606",
+  "phase8d_training_implementation_sha": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0",
+  "shard_a_output_roots": {
+    "P0S0": "119be0cf659db5c9a8bd2cf50314e640f719109886e402640117e2ae40c30fce",
+    "P1S0": "392ae3c12178ab9c1448b1048c249ea9f544c820d099afe5d9c608523c5cfe7a"
+  },
+  "shard_a_policy_models_loaded": false,
+  "shard_a_test_episode_count": 0,
+  "shard_b_accessed": false,
+  "shard_b_state": "pending_external_completion",
+  "starting_sha": "eb11dedfb644f41ac587d29156a2ec0dea007001",
+  "train_scaler_registry_sha256": "0311e6ca6542592893e81f7a6949eb2f50997e6d5d53aef9dd1e64bfe7794503"
+}

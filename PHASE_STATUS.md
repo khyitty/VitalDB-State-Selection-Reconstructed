@@ -30,6 +30,7 @@ no legacy 98-case artifact is used, and no model/feature-selection/PPO run occur
 | 8B - Train-only VitalDB observation-template extraction and private template integrity store | complete | Source `f45a0ee6f1208f1f8202bc185a7a005701dfa3e0`; 1,970 train templates and 0 test templates; 3,940 checksum-matched logical raw accesses (1,970 BIS and 1,970 SQI), with 0 test and 0 drug access; raw BIS persisted false and SQI private only; public event-level values 0; same template used for P0/P1; private-store root `96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2`; P0 visibility 2,086,908/2,299,446 and P1 visibility 1,923,357/2,299,446 with zero-visibility templates 0; 354 base tests discovered with 345 passed and 9 existing optional-RL skips, 29/3/4-source first-N guards passed, and 9 isolated RL tests passed; private store ignored and untracked; no normalization, outcome, model, checkpoint, final PPO training, or evaluation; remote implementation commit independently verified at `45ba77801a37dff81ca5f3702f844e44c8e0a427` |
 | 8C - Train-only patient runtime inputs and bounded PPO smoke | complete | Source `a7821b43b608180f52e471c4bd8247d60336d8ef`; 1,970 sealed-train profiles and exact RFTN20 schedules with 1,970 train and 0 test logical raw accesses; missing/invalid profiles 0 and approved fallback false; private runtime root `25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606`; Phase 8B root unchanged; S0/S1 train-only scalers contain 34/42 fields and are shared across P pairs; all four actual-train reset/step checks and four seed-42 CPU 128-timestep PPO smoke updates passed without persistence or ranking; 373 base tests passed with 11 optional-RL skips, all 11 isolated RL tests passed, and the 29/3/4/3-source first-N guards passed; no test metadata/template/raw access, final training, evaluation, model, or checkpoint; remote implementation commit independently verified at `7cf84d11c054d8b9c6180d0cf0b20749b4ecba39` |
 | 8D - Final PPO training infrastructure and launch | training infrastructure complete; final training launched/in progress | Source `00937a28681c8d1949f3bae3dcd74a5fbddd9b39`; final implementation `b782b5e4a9d418f6b907a87d046c4e9789a3e5f0` independently verified on remote `main`; final config freezes seed 42, 1,000,000 environment timesteps per condition, common PPO/optimizer settings, exact 100,000-step private checkpoints, and one common PCG64 train-case sequence; shard A is P0S0/P1S0 and shard B is P0S1/P1S1; all four 1,024-step real-train preflights passed with finite diagnostics, test access 0, and persistence 0; 388 base tests completed with 372 passed and 16 optional-RL skips, all 16 skipped RL tests passed in the isolated environment, and the corrected runner verify-only passed at the final implementation SHA; 29/3/4/3/3-source first-N guards pass; test evaluation and condition comparison are not started or performed |
+| 8E - Sealed-test inputs and final evaluation readiness | sealed inputs and evaluation infrastructure complete; publication pending | All 490 sealed-test templates and runtime bundles are private and checksum-rooted; BIS/SQI/RFTN20 logical accesses are 490 each with train and propofol access 0; train-only S0/S1 scalers were applied without fitting; Shard A final models are checksum-valid and Shard B remains pending external completion; synthetic-only latent-BIS metrics, subject-level paired statistics, and Holm adjustment passed; 405 base tests completed with 383 passed and 22 established optional-RL skips, all 22 skipped tests passed in the isolated RL environment, and the 29/3/4/3/3/7-source first-N guards passed; actual model episodes 0, final evaluation not started, condition comparison not performed, and best model not selected |
 
 ## Publication constraint
 
@@ -418,3 +419,25 @@ Fill this section for any failed phase gate or push. Do not delete a failed reco
 - `local_commit_sha`: `c866ab25c8c5c88d6bb6c96d3a8bfd5aa131da0b`
 - `push_error`: Not applicable; the initial infrastructure commit had already pushed successfully, while training had not started.
 - `resolution`: The gate now compares like-for-like against the unchanged Phase 8A test-seal field. The runtime store still constructs its fail-closed SplitGuard from the complete sealed manifests, and no file checksum, split membership, seed, PPO configuration, private root, or training budget changed.
+
+### 2026-07-21 - Phase 8E initial targeted regression
+
+- `failed_gate`: First Phase 8E targeted unit-test invocation before private extraction
+- `failure_reason`: The synthetic template access fixture lacked the production resume-ledger method, and the base environment correctly lacked optional Gymnasium/SB3 dependencies required by evaluation integration imports.
+- `commands`: Base and isolated targeted Phase 8E unittests
+- `generated_files`: No production test template or runtime bundle existed when the tests failed.
+- `remaining_work`: Resolved; the fixture now implements verified resume bookkeeping and RL-dependent tests use the repository's established optional-skip/base plus isolated-pass pattern.
+- `local_commit_sha`: `eb11dedfb644f41ac587d29156a2ec0dea007001`
+- `push_error`: Not applicable; publication had not been attempted.
+- `resolution`: Four non-RL tests passed in base, five RL-dependent tests were declared optional there and all five passed in `.venv-phase7h`. No test was waived or converted to an expected failure.
+
+### 2026-07-21 - Phase 8E historical inventory regression
+
+- `failed_gate`: First combined relevant Phase 8A/8B/8C/7H/8D/8E regression run
+- `failure_reason`: Two historical Phase 8C/8D inventory assertions still contained the pre-Phase-8E byte count and SHA-256 for `docs/compliance_matrix.csv`. All 90 other targeted tests passed or produced only the six established optional-RL skips; no membership, seal, private root, model, or scientific artifact mismatch occurred.
+- `commands`: Targeted base `unittest` command for the relevant Phase 8A through Phase 8E modules, followed by the two exact failing inventory tests and the Phase 8C/8D/8E inventory verifiers.
+- `generated_files`: None from the failed tests. The only resolution changes were the `docs/compliance_matrix.csv` entries in the Phase 8C and Phase 8D public checksum inventories.
+- `remaining_work`: Resolved; run the complete base and isolated-RL suites and publication gates.
+- `local_commit_sha`: `eb11dedfb644f41ac587d29156a2ec0dea007001`
+- `push_error`: Not applicable; publication had not been attempted.
+- `resolution`: Both historical inventories now checksum the current compliance matrix. The two exact tests pass, and all three Phase 8C/8D/8E inventory verify-only commands pass without changing any scientific artifact.
