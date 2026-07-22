@@ -1,15 +1,17 @@
 # Prespecified figures and tables plan
 
-No interpretive result graphic is generated in Phase 8F. The tables below were
-populated only from checksum-frozen aggregate results, without highlighting or
-selecting a condition.
+Publication figures are rendered with the versioned Python/Matplotlib script at
+`analysis/plot_phase8f_results.py` from checksum-frozen aggregate results only,
+without highlighting or selecting a condition. PNG and vector PDF outputs, with
+captions, are under `paper/generated/figures`; manuscript numbering and final
+ICTC insertion remain editorial steps.
 
 ## Figures
 
 1. **Study workflow.** Outcome-blind cohort audit → subject-level split and test seal → train-only templates/scalers → four equal-compute policies → four-model gate → paired sealed-test evaluation → aggregate freeze → publication renderer.
 2. **2 × 2 experimental design.** Rows P0/P1 and columns S0/S1, with causal BIS visibility rules and 34/42 dimensions. No cell is highlighted.
 3. **Observation and state flow.** Recorded BIS/SQI enters only the causal visibility processor; policy-applied propofol and exogenous remifentanil update the simulator and state; latent BIS supplies reward and evaluation outcomes.
-4. **Final metric comparison.** Available as the checksum-frozen condition and contrast tables under `paper/generated/tables`; the fixed condition order is P0S0, P1S0, P0S1, P1S1.
+4. **Final metric comparison.** Main interaction and prespecified paired-contrast forest figures are `paper/generated/figures/figure_main_interaction.{png,pdf}` and `paper/generated/figures/figure_main_contrast_forest.{png,pdf}`. A standalone MAE interaction and grouped supplementary interaction/forest figures are stored beside them. All use the fixed condition order P0S0, P1S0, P0S1, P1S1 and the checksum-frozen tables under `paper/generated/tables`.
 
 ## Tables
 
