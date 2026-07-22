@@ -1,2 +1,5 @@
 # Manifest checksums describe exact committed bytes; never rewrite line endings.
 data/manifests/** -text whitespace=cr-at-eol
+# Frozen publication outputs are byte-checksummed and must remain LF-exact on Windows.
+paper/manuscript.md -text whitespace=cr-at-eol
+paper/generated/** -text whitespace=cr-at-eol

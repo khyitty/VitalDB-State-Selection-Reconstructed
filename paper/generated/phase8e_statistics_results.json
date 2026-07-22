@@ -1,0 +1,870 @@
+{
+  "best_condition_selected": false,
+  "bootstrap_replicates": 2000,
+  "bootstrap_unit": "subjectid_after_case_level_metrics",
+  "case_count": 490,
+  "case_level_rows_consumed": 1960,
+  "condition_metric_row_count": 44,
+  "condition_order": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "contrast_order": [
+    "P1S0_minus_P0S0",
+    "P1S1_minus_P0S1",
+    "P0S1_minus_P0S0",
+    "P1S1_minus_P1S0",
+    "interaction"
+  ],
+  "contrast_row_count": 55,
+  "contrasts": [
+    {
+      "bootstrap_ci_95": [
+        -7.608295026080298,
+        -7.110353792800617
+      ],
+      "cohens_dz": -2.6054693671335687,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -7.35998583268416,
+      "median_difference": -7.46520218989629,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.8257322134993975,
+        -0.6186952146764095
+      ],
+      "cohens_dz": -0.5985338591213959,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.719238561364255,
+      "median_difference": -0.8034115062554217,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -5.468752757656728,
+        -4.732915754588057
+      ],
+      "cohens_dz": -1.2593925967639195,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -5.1077925198997685,
+      "median_difference": -5.88041317920986,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        1.3692268155693126,
+        1.6928481882035176
+      ],
+      "cohens_dz": 0.8158708582804185,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 1.5329547514201356,
+      "median_difference": 1.7685895799287512,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        6.288964027728242,
+        6.978569957230954
+      ],
+      "cohens_dz": 1.7304904601104352,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 6.640747271319905,
+      "median_difference": 6.663391248204728,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.761597021317972,
+        -3.3462094178370263
+      ],
+      "cohens_dz": -1.480472995777363,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3.5539631192274026,
+      "median_difference": -3.2967750245732574,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.9125287734385299,
+        -0.7223900445368721
+      ],
+      "cohens_dz": -0.7543548355437797,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.8181307111311705,
+      "median_difference": -0.8715200915989509,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.2362365539810374,
+        -2.7974061830660095
+      ],
+      "cohens_dz": -1.269989847350352,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3.0164566668694186,
+      "median_difference": -3.035474158701124,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.4784483222059874,
+        -0.08822632652525467
+      ],
+      "cohens_dz": -0.12856164349642407,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.004497751124437781,
+      "mean_difference": -0.2806242587731867,
+      "median_difference": 0.1805905122480631,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.004497751124437781,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        2.4453280625133216,
+        3.020973269130418
+      ],
+      "cohens_dz": 0.8222834046194748,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 2.7358324080962326,
+      "median_difference": 2.3536273649680926,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        3192.867753623188,
+        3678.4236542443064
+      ],
+      "cohens_dz": 1.2680270698408265,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3429.6376811594205,
+      "median_difference": 2820.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.9197722567287779,
+        201.79710144927532
+      ],
+      "cohens_dz": 0.08616968489936111,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.06746626686656672,
+      "mean_difference": 94.27536231884058,
+      "median_difference": -20.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.06746626686656672,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        2899.329968944099,
+        3484.724637681159
+      ],
+      "cohens_dz": 0.9772232347238018,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3191.7391304347825,
+      "median_difference": 2800.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -214.09394409937886,
+        -71.57298136645963
+      ],
+      "cohens_dz": -0.18357712158441924,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -143.6231884057971,
+      "median_difference": -50.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3621.392080745342,
+        -3054.4914596273293
+      ],
+      "cohens_dz": -1.0488098064870912,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3335.3623188405795,
+      "median_difference": -2860.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.5196687370600412,
+        1.9047619047619047
+      ],
+      "cohens_dz": -0.010668124477687902,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 1.0,
+      "mean_difference": -0.33126293995859213,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 1.0,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -343.2525879917184,
+        -147.40734989648047
+      ],
+      "cohens_dz": -0.23123116655543652,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -237.5776397515528,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        206.79089026915113,
+        461.20134575569335
+      ],
+      "cohens_dz": 0.23339903533317066,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 325.23809523809524,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        46.35351966873706,
+        136.03571428571422
+      ],
+      "cohens_dz": 0.17323857511839286,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 87.99171842650104,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -341.73706004140786,
+        -147.46997929606638
+      ],
+      "cohens_dz": -0.23156009130487376,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -237.2463768115942,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3677.362577639751,
+        -3192.0256211180126
+      ],
+      "cohens_dz": -1.2674568195282034,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3429.3064182194616,
+      "median_difference": -2820.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        119.12784679089027,
+        168.52277432712214
+      ],
+      "cohens_dz": 0.5141166536168886,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 143.3022774327122,
+      "median_difference": 20.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3762.486801242236,
+        -3281.467391304348
+      ],
+      "cohens_dz": -1.2884434044702595,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3516.977225672878,
+      "median_difference": -2880.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -12.896221532091097,
+        115.62836438923391
+      ],
+      "cohens_dz": 0.07827399632583652,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.08345827086456771,
+      "mean_difference": 55.631469979296064,
+      "median_difference": 40.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.08345827086456771,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        3327.1358695652175,
+        3832.9399585921324
+      ],
+      "cohens_dz": 1.2692374469265897,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3572.608695652174,
+      "median_difference": 2930.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -81787.62533202585,
+        -73865.85475759133
+      ],
+      "cohens_dz": -1.7481396342721518,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -77846.43290876184,
+      "median_difference": -67756.74826461604,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -13018.750768338477,
+        -9404.587220444186
+      ],
+      "cohens_dz": -0.5431238190583771,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -11168.45115246503,
+      "median_difference": -6387.16143938461,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -52344.19988257025,
+        -42813.709373793885
+      ],
+      "cohens_dz": -0.8765049771909782,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -47655.608259346096,
+      "median_difference": -45966.26811528337,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        16650.127526137025,
+        21532.353634535364
+      ],
+      "cohens_dz": 0.7200946004204873,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 19022.37349695072,
+      "median_difference": 15865.313515112011,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        62392.22806030438,
+        71196.76265825017
+      ],
+      "cohens_dz": 1.328350284839398,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 66677.98175629681,
+      "median_difference": 56112.33636439218,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.00046593048070061064,
+        0.0035054430119952377
+      ],
+      "cohens_dz": 0.11857471607882976,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.009495252373813094,
+      "mean_difference": 0.002004304640511092,
+      "median_difference": 0.0033542566912103666,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.009495252373813094,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.0064826431249334696,
+        -0.006278427598065034
+      ],
+      "cohens_dz": -5.631350452755454,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.006384917497522187,
+      "median_difference": -0.006260792074400001,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.0180728680233255,
+        0.01883852423375254
+      ],
+      "cohens_dz": 4.284722445199008,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.018477366464350838,
+      "median_difference": 0.01798127072051159,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.008329487608672574,
+        0.011812526926422125
+      ],
+      "cohens_dz": 0.5222008369901249,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.010088144326317558,
+      "median_difference": 0.008422865512798694,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.009793998333953084,
+        -0.006924118727920473
+      ],
+      "cohens_dz": -0.5210500564978567,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.00838922213803328,
+      "median_difference": -0.010017556194014787,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        272.37772762857173,
+        298.3681277531679
+      ],
+      "cohens_dz": 1.9639619774290946,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 285.4412402314892,
+      "median_difference": 260.77950424700975,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        -107.70262252889114,
+        -94.10786241065792
+      ],
+      "cohens_dz": -1.2835006296944853,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -100.93597007501971,
+      "median_difference": -80.17088250815868,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        410.6826666595783,
+        447.47872364931175
+      ],
+      "cohens_dz": 2.0211975692117186,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 428.7664199888043,
+      "median_difference": 378.5122907087207,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        31.27091627716131,
+        54.37350354144681
+      ],
+      "cohens_dz": 0.3274240838121588,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 42.38920968229541,
+      "median_difference": 20.68688778579235,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        -404.50120682238503,
+        -368.33518029828434
+      ],
+      "cohens_dz": -1.9088480879099006,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -386.37721030650886,
+      "median_difference": -335.64465096592903,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        1.6040155436089027,
+        1.7177286415080852
+      ],
+      "cohens_dz": 2.5934475576219707,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 1.6625852398801044,
+      "median_difference": 1.6503960375487803,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.4848143334887279,
+        -0.45357301731245236
+      ],
+      "cohens_dz": -2.653903381622311,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.46954753236590646,
+      "median_difference": -0.49803302090834123,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        2.266347080629575,
+        2.3012524154683316
+      ],
+      "cohens_dz": 11.831966155288592,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 2.28281914058783,
+      "median_difference": 2.2445879872630603,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.10360729218718973,
+        0.20106102570909695
+      ],
+      "cohens_dz": 0.26908205737481844,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.15068636834181987,
+      "median_difference": 0.15181374930714275,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -2.1871904123540857,
+        -2.075584432977775
+      ],
+      "cohens_dz": -3.3864075751642826,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -2.132132772246011,
+      "median_difference": -2.1027063363364773,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.2263353577267511,
+        0.24791013259545422
+      ],
+      "cohens_dz": 2.0032706782799363,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.23643390907594386,
+      "median_difference": 0.21182624124861382,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.00359620830212127,
+        0.0045061345837171946
+      ],
+      "cohens_dz": 0.8269802261949473,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.004032758308726415,
+      "median_difference": 0.002990055420932629,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.004053987916689431,
+        0.004540969927006088
+      ],
+      "cohens_dz": 1.575937179488237,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.00429629593345099,
+      "median_difference": 0.0036258484579668776,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.239112611046151,
+        -0.21813405351729148
+      ],
+      "cohens_dz": -1.9989416772896091,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.22810485483376647,
+      "median_difference": -0.2023514633349951,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.2433928238594151,
+        -0.22242877161827895
+      ],
+      "cohens_dz": -2.027364096018721,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.23240115076721746,
+      "median_difference": -0.20696246468089943,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        450.37103060019206,
+        510.21161089156095
+      ],
+      "cohens_dz": 1.4287867843309008,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 480.2799911487395,
+      "median_difference": 386.81875971549255,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        48.9812030695702,
+        77.17863245190378
+      ],
+      "cohens_dz": 0.393494528619073,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 62.802147869399704,
+      "median_difference": 40.2299489820212,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        103.36110671150712,
+        143.4898868632893
+      ],
+      "cohens_dz": 0.5490684816687006,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 123.88399936130654,
+      "median_difference": 116.28233851937588,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        -317.33976490185603,
+        -270.81439910197207
+      ],
+      "cohens_dz": -1.122404718249837,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -293.5938439180333,
+      "median_difference": -222.75031595181724,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        -444.05782656320315,
+        -391.29818525807474
+      ],
+      "cohens_dz": -1.4001198788236033,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -417.4778432793398,
+      "median_difference": -339.5168785212691,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    }
+  ],
+  "holm_scope": "five_frozen_contrasts_within_each_metric",
+  "metric_order": [
+    "mean_absolute_bis_deviation",
+    "root_mean_squared_bis_deviation",
+    "time_in_bis_40_60_seconds",
+    "time_below_bis_40_seconds",
+    "time_above_bis_60_seconds",
+    "integrated_absolute_bis_error_bis_seconds",
+    "maximum_absolute_bis_deviation",
+    "cumulative_propofol_amount_mg",
+    "mean_propofol_infusion_rate_mg_per_min",
+    "action_change_magnitude_mg_per_min",
+    "cumulative_episode_reward"
+  ],
+  "permutation_replicates": 2000,
+  "permutation_test": "paired_sign_flip_two_sided",
+  "random_seed": 42,
+  "results_interpreted": false,
+  "schema_version": "phase8e-final-statistics-v1",
+  "subject_aggregation": "mean_of_case_level_metric_within_subject_before_inference",
+  "subject_count": 483
+}

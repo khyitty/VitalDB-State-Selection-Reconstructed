@@ -8,9 +8,9 @@
 
 **Methods:** We reconstructed a patient-specific propofol-remifentanil PK/PD simulator from published sources and derived frozen train and sealed-test cohorts from VitalDB. Four equal-compute conditions crossed two causal BIS preprocessing rules (P0 and P1) with two state representations (S0 and S1). Each policy used seed 42 and 1,000,000 environment timesteps. Final deterministic evaluation was prespecified on the same 490 sealed-test cases, with latent-BIS outcomes, case pairing, subject-level aggregation, paired bootstrap confidence intervals, paired sign-flip permutation tests, Cohen's dz, and Holm adjustment.
 
-**Results:** [RESULTS_PENDING]
+**Results:** All 490 sealed-test cases completed under each condition with no failed episode or silent exclusion. Subject-level mean absolute BIS deviation was 12.781, 5.421, 7.673, and 6.954 BIS points for P0S0, P1S0, P0S1, and P1S1, respectively; all 11 frozen outcomes and five paired contrasts are reported without condition selection.
 
-**Conclusion:** [CONCLUSION_PENDING]
+**Conclusion:** The four prespecified policies were evaluated in the reconstructed simulator without selecting a best condition; the estimates apply to one fixed training seed and require external validation before clinical interpretation.
 
 ## Introduction
 
@@ -68,39 +68,39 @@ No final four-condition evaluation result had been generated when this manuscrip
 
 ### Cohort integrity
 
-The frozen cohort contained 2,460 cases from 2,415 subjects. The subject-level split assigned 1,970 cases from 1,932 subjects to training and 490 cases from 483 subjects to sealed testing, with zero subject and case overlap. Final evaluation accounting was `{{FINAL_COMPLETED_CASES_PER_CONDITION}}` completed and `{{FINAL_FAILED_CASES_PER_CONDITION}}` explicitly retained failures per condition.
+The frozen cohort contained 2,460 cases from 2,415 subjects. The subject-level split assigned 1,970 cases from 1,932 subjects to training and 490 cases from 483 subjects to sealed testing, with zero subject and case overlap. Final evaluation accounting was `490` completed and `0` explicitly retained failures per condition.
 
 ### Training completeness
 
-Final-model checksum verification was `{{FOUR_MODEL_COMPLETENESS_STATUS}}`. The four eligible final-model checksums are recorded in the frozen aggregate and supplement; no intermediate checkpoint was selected. Training completion details appear in Table 3.
+Final-model checksum verification was `verified for all four final models`. The four eligible final-model checksums are recorded in the frozen aggregate and supplement; no intermediate checkpoint was selected. Training completion details appear in Table 3.
 
 ### Primary 2 × 2 comparison
 
-Mean absolute BIS deviation was `{{P0S0_MEAN_ABSOLUTE_BIS_DEVIATION}}`, `{{P1S0_MEAN_ABSOLUTE_BIS_DEVIATION}}`, `{{P0S1_MEAN_ABSOLUTE_BIS_DEVIATION}}`, and `{{P1S1_MEAN_ABSOLUTE_BIS_DEVIATION}}` BIS points for P0S0, P1S0, P0S1, and P1S1, respectively. Full descriptive statistics for all 11 frozen metrics are shown in Table 4.
+Mean absolute BIS deviation was `12.781`, `5.421`, `7.673`, and `6.954` BIS points for P0S0, P1S0, P0S1, and P1S1, respectively. Full descriptive statistics for all 11 frozen metrics are shown in Table 4.
 
 ### Preprocessing main-effect contrasts
 
-Within S0, the P1−P0 paired difference in mean absolute BIS deviation was `{{P1S0_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION}}` with 95% CI `{{P1S0_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION_CI95}}`, Holm-adjusted p `{{P1S0_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION_HOLM_P}}`, and Cohen's dz `{{P1S0_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION_DZ}}`. The corresponding within-S1 quantities were `{{P1S1_MINUS_P0S1_MEAN_ABSOLUTE_BIS_DEVIATION}}`, `{{P1S1_MINUS_P0S1_MEAN_ABSOLUTE_BIS_DEVIATION_CI95}}`, `{{P1S1_MINUS_P0S1_MEAN_ABSOLUTE_BIS_DEVIATION_HOLM_P}}`, and `{{P1S1_MINUS_P0S1_MEAN_ABSOLUTE_BIS_DEVIATION_DZ}}`.
+Within S0, the P1−P0 paired difference in mean absolute BIS deviation was `-7.360` with 95% CI `-7.608 to -7.110`, Holm-adjusted p `0.002499`, and Cohen's dz `-2.6055`. The corresponding within-S1 quantities were `-0.719`, `-0.826 to -0.619`, `0.002499`, and `-0.5985`.
 
 ### State main-effect contrasts
 
-Within P0, the S1−S0 paired difference in mean absolute BIS deviation was `{{P0S1_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION}}` with 95% CI `{{P0S1_MINUS_P0S0_MEAN_ABSOLUTE_BIS_DEVIATION_CI95}}`. Within P1, it was `{{P1S1_MINUS_P1S0_MEAN_ABSOLUTE_BIS_DEVIATION}}` with 95% CI `{{P1S1_MINUS_P1S0_MEAN_ABSOLUTE_BIS_DEVIATION_CI95}}`. Adjusted tests and effect sizes are reported in Table 5.
+Within P0, the S1−S0 paired difference in mean absolute BIS deviation was `-5.108` with 95% CI `-5.469 to -4.733`. Within P1, it was `1.533` with 95% CI `1.369 to 1.693`. Adjusted tests and effect sizes are reported in Table 5.
 
 ### Interaction
 
-The prespecified interaction for mean absolute BIS deviation was `{{INTERACTION_MEAN_ABSOLUTE_BIS_DEVIATION}}`, 95% CI `{{INTERACTION_MEAN_ABSOLUTE_BIS_DEVIATION_CI95}}`, Holm-adjusted p `{{INTERACTION_MEAN_ABSOLUTE_BIS_DEVIATION_HOLM_P}}`, and Cohen's dz `{{INTERACTION_MEAN_ABSOLUTE_BIS_DEVIATION_DZ}}`. This contrast was interpreted together with its direction, interval, and component cell estimates.
+The prespecified interaction for mean absolute BIS deviation was `6.641`, 95% CI `6.289 to 6.979`, Holm-adjusted p `0.002499`, and Cohen's dz `1.7305`. Its direction, interval, and component cell estimates are reported without selecting a condition.
 
 ### Safety-range outcomes
 
-Time within BIS 40–60 was `{{P0S0_TIME_IN_BIS_40_60_SECONDS}}`, `{{P1S0_TIME_IN_BIS_40_60_SECONDS}}`, `{{P0S1_TIME_IN_BIS_40_60_SECONDS}}`, and `{{P1S1_TIME_IN_BIS_40_60_SECONDS}}` seconds. Below-range, above-range, integrated-error, and maximum-deviation summaries are provided in Table 4 and their paired contrasts in Table 5.
+Time within BIS 40–60 was `6888.8`, `10318.4`, `10080.5`, and `10174.8` seconds. Below-range, above-range, integrated-error, and maximum-deviation summaries are provided in Table 4 and their paired contrasts in Table 5.
 
 ### Propofol utilization and action smoothness
 
-Cumulative propofol amount and mean infusion rate are reported for each condition in Table 4. The prespecified action-change metric was `{{P0S0_ACTION_CHANGE_MAGNITUDE}}`, `{{P1S0_ACTION_CHANGE_MAGNITUDE}}`, `{{P0S1_ACTION_CHANGE_MAGNITUDE}}`, and `{{P1S1_ACTION_CHANGE_MAGNITUDE}}` mg/min. These measures were interpreted jointly with BIS-control outcomes rather than as stand-alone optimization targets.
+Cumulative propofol amount and mean infusion rate are reported for each condition in Table 4. The prespecified action-change metric was `0.0044`, `0.2409`, `0.0087`, and `0.0128` mg/min. These measures are presented alongside BIS-control outcomes without forming a composite optimization target.
 
 ### Robustness and completeness
 
-Silent exclusions numbered `{{SILENT_EXCLUSION_COUNT}}`. The final aggregate contained `{{AGGREGATE_CONDITION_METRIC_ROW_COUNT}}` condition-metric rows and `{{AGGREGATE_CONTRAST_ROW_COUNT}}` contrast rows. Sensitivity to the single fixed training seed was not evaluated and is retained as a limitation.
+Silent exclusions numbered `0`. The final aggregate contained `44` condition-metric rows and `55` contrast rows. Sensitivity to the single fixed training seed was not evaluated and is retained as a limitation.
 
 ## Discussion
 
@@ -116,11 +116,11 @@ First, training used one seed, so the experiment does not quantify between-seed 
 
 ## Conclusion
 
-[CONCLUSION_PENDING]
+The four prespecified policies were evaluated in the reconstructed simulator without selecting a best condition; the estimates apply to one fixed training seed and require external validation before clinical interpretation.
 
 ## Data, code, and reproducibility statement
 
-Public repository content is limited to code, protocols, aggregate-safe manifests, schemas, tests, reports, and deterministic table-rendering tools. Raw physiological signals, private templates, runtime inputs, case-level and event-level evaluation outputs, models, checkpoints, and local paths are excluded. Final public result tables may be released only after their aggregate source checksum, fixed condition order, complete accounting, and privacy gates pass.
+Public repository content is limited to code, protocols, aggregate-safe manifests, schemas, tests, reports, and deterministic table-rendering tools. Raw physiological signals, private templates, runtime inputs, case-level and event-level evaluation outputs, models, checkpoints, and local paths are excluded. The public result tables passed their aggregate source-checksum, fixed-condition-order, complete-accounting, and privacy gates before release.
 
 ## References
 

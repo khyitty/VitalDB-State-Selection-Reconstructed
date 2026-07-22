@@ -1,0 +1,23 @@
+{
+  "aggregate_sha256": "2939f9580a992ef8f43d9f57bc2c7c5a1159b147d3739a6a8809932ac81fcae1",
+  "best_condition_selected": false,
+  "bootstrap_replicates": 2000,
+  "case_condition_rows": 1960,
+  "completed_per_condition": 490,
+  "failed_per_condition": 0,
+  "model_sha256": {
+    "P0S0": "f783ba214b9dc7e511ff4af7d38a641bd3924861cf562fad670b4b840ff77f3f",
+    "P0S1": "644371f5d74164fbe04b5f85f2301c4e2b0babf193e1667e623d3a209ce67947",
+    "P1S0": "c73bd394af2e5bf801c890bf9d98e1bf5876660b775c3c611ab7c8cdf0a93b83",
+    "P1S1": "f79172fa014f23507ab2b33eb2a4cd9f2f1615e321165ce8a448ea5d3e0ab662"
+  },
+  "permutation_replicates": 2000,
+  "private_case_results_published": false,
+  "private_case_results_sha256": "8fda4cb70251c319255251601c39d58205ccf62ac88a6a6a96b9d2b0cf8d1167",
+  "public_case_level_row_count": 0,
+  "public_event_level_row_count": 0,
+  "results_interpreted": false,
+  "schema_version": "phase8e-final-results-integrity-v1",
+  "silent_exclusion_count": 0,
+  "statistics_sha256": "681926cb34830cf11391994dbc7d7c14352e94527c2f36549a6fe86547def6ff"
+}

@@ -16,6 +16,11 @@ CONTRAST_WEIGHTS = {
     "interaction": {"P0S0": 1.0, "P1S0": -1.0, "P0S1": -1.0, "P1S1": 1.0},
 }
 
+# This explicit accumulation order reproduces the checksum-frozen Phase 8E
+# aggregate while removing Python hash-seed dependence from set iteration.
+# It changes no contrast coefficient or analysis unit.
+FROZEN_CONTRAST_ACCUMULATION_ORDER = ("P0S0", "P0S1", "P1S1", "P1S0")
+
 
 class PairedEvaluationError(RuntimeError):
     pass
@@ -33,11 +38,16 @@ def paired_differences(rows: Sequence[Mapping[str, object]], metric: str, contra
         if condition in by_case.setdefault(caseid, {}):
             raise PairedEvaluationError("duplicate case/condition row")
         by_case[caseid][condition] = value
-    required = set(CONTRAST_WEIGHTS[contrast])
+    required = set(FROZEN_CONTRAST_ACCUMULATION_ORDER)
+    if required != set(CONTRAST_WEIGHTS[contrast]):
+        raise PairedEvaluationError("contrast condition keys differ from the frozen order")
     if not by_case or any(set(values) != required for values in by_case.values()):
         raise PairedEvaluationError("paired case accounting is incomplete")
     return np.asarray([
-        sum(CONTRAST_WEIGHTS[contrast][condition] * values[condition] for condition in required)
+        sum(
+            CONTRAST_WEIGHTS[contrast][condition] * values[condition]
+            for condition in FROZEN_CONTRAST_ACCUMULATION_ORDER
+        )
         for _, values in sorted(by_case.items(), key=lambda item: (int(item[0]), item[0]))
     ], dtype=np.float64)
 

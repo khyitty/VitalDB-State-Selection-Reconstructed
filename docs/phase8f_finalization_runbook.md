@@ -96,7 +96,10 @@ Do not change seed, budget, thresholds, metrics, contrasts, failure handling, or
 
 ## 6. Freeze a publication aggregate
 
-The current Phase 8E execution runner writes private case-level evaluation rows. It does **not** expose a command that creates the Phase 8F aggregate JSON. Do not invent or imply an existing aggregate-freeze CLI. A separately reviewed and authorized aggregation step must:
+The Phase 8E execution runner writes private case-level evaluation rows and still
+does not aggregate them itself. After that interface was frozen, the separately
+reviewed and authorized `scripts\freeze_phase8e_final_results.py` interface was
+added to perform the publication boundary. That command must:
 
 1. consume the complete private Phase 8E rows without silent exclusion;
 2. preserve within-case four-condition pairing;
@@ -107,7 +110,10 @@ The current Phase 8E execution runner writes private case-level evaluation rows.
 7. serialize the strict schema `schemas/phase8f_aggregate_results.schema.json`;
 8. record the SHA-256 of the exact aggregate bytes and freeze those bytes before interpretation.
 
-Until that aggregation implementation has its own review and authorization, stop after private evaluation verification. Phase 8F does not bridge this gap by fabricating an interface or a result.
+The authorized implementation completed these checks against the checksum-verified
+private output and wrote only the disclosure-reviewed aggregate, statistics, and
+integrity artifacts. Its `--verify-only` mode must reproduce those bytes without
+writes. This later interface does not change the historical Phase 8E runner.
 
 ## 7. Validate and render the frozen aggregate
 
@@ -164,19 +170,19 @@ Stage public files by explicit path only. Never use `git add .` or `git add -A`.
 
 ## 11. Final manuscript checklist
 
-- [ ] Four final models pass the exact SHA/seed/timestep/configuration gate.
-- [ ] Laptop B reported hashes equal Laptop A observed hashes.
-- [ ] Phase 8E verify-only passes before execution.
-- [ ] The authorized evaluation finishes with explicit 490-case accounting per condition.
-- [ ] Silent exclusions, optimizer updates, scaler fits, and normalization updates are zero.
-- [ ] Private source rows remain ignored and untracked.
-- [ ] The separately authorized aggregate step preserves pairing and subject aggregation.
-- [ ] Aggregate bytes and primary rendered tables are checksum-frozen before interpretation.
-- [ ] Renderer verify-only passes and generated files are deterministic.
-- [ ] All manuscript tokens map to frozen fields with units and precision.
-- [ ] Abstract and conclusion contain no pending token at submission time.
+- [x] Four final models pass the exact SHA/seed/timestep/configuration gate.
+- [x] Laptop B reported hashes equal Laptop A observed hashes.
+- [x] Phase 8E verify-only passes before execution.
+- [x] The authorized evaluation finishes with explicit 490-case accounting per condition.
+- [x] Silent exclusions, optimizer updates, scaler fits, and normalization updates are zero.
+- [x] Private source rows remain ignored and untracked.
+- [x] The separately authorized aggregate step preserves pairing and subject aggregation.
+- [x] Aggregate bytes and primary rendered tables are checksum-frozen before interpretation.
+- [x] Renderer verify-only passes and generated files are deterministic.
+- [x] All manuscript tokens map to frozen fields with units and precision.
+- [x] Abstract and conclusion contain no pending token at submission time.
 - [ ] Discussion matches the complete estimates and does not select a favorable narrative.
 - [ ] One-seed, reconstructed-simulator, timestep/epoch, single-center, latent-outcome, frozen-threshold, external-validation, and clinical-significance limitations remain.
-- [ ] Public staged data contain zero case-level or event-level rows and zero private/local paths.
-- [ ] `data/processed`, raw signals, models, checkpoints, and legacy artifacts have zero staged/tracked files.
+- [x] Public staged data contain zero case-level or event-level rows and zero private/local paths.
+- [x] `data/processed`, raw signals, models, checkpoints, and legacy artifacts have zero staged/tracked files.
 - [ ] Repository status, artifact hashes, and remote commit are recorded after publication.

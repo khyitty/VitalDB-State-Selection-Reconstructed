@@ -64,19 +64,15 @@ class GovernanceTests(unittest.TestCase):
         text = (ROOT / "README.md").read_text(encoding="utf-8")
         normalized = " ".join(text.split())
         for required in (
-            "repository governance and provenance",
-            "fixed-seed random 25-case engineering dry runs",
-            "Phase 5A full 1–6388 `/cases` metadata and `/trks` inventory audit",
-            "Phase 5B outcome-blind eligibility decision-support audit",
-            "Phase 5C outcome-blind characterization of seven exact volatile tracks",
-            "Phase 6D human-approved Protocol v1.2 preprocessing decision",
-            "Phase 7A metadata-only subject linkage",
-            "Phase 7B Protocol v1.3 control-focused 2×2 study-design freeze",
-            "Phase 7B patient-level allocation",
-            "full signal download",
-            "train/validation/test splitting",
-            "PPO training",
-            "Dry-run output is engineering evidence only. It is not a scientific result",
+            "completed deterministic evaluation",
+            "490 sealed test cases",
+            "zero failed episodes",
+            "zero silent exclusions",
+            "Private case-level evaluation rows remain Git-ignored and unpublished",
+            "all 11 metrics and five prespecified contrasts",
+            "without ranking or selecting a condition",
+            "condition ranking or selection",
+            "Git publication of models, checkpoints, raw signals, or private arrays",
         ):
             self.assertIn(required, normalized)
 
@@ -126,6 +122,7 @@ class GovernanceTests(unittest.TestCase):
                 "download_manifest.schema.json",
                 "engineering_dry_run.schema.json",
                 "eligibility_manifest.schema.json",
+                "phase8f_aggregate_results.schema.json",
                 "signal_quality_manifest.schema.json",
             },
         )

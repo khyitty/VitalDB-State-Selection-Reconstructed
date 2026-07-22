@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    {"relative_path": "data/manifests/phase8e_final_results_integrity.json", "bytes": 1062, "sha256": "ac4143d0e934d19800e8806047b63e25ec3f0f7748dee377fafa6b30817a6d40"},
+    {"relative_path": "data/manifests/phase8f_final_results_source_snapshot.json", "bytes": 2081, "sha256": "a6355af6960888297e22d60e8d6cab9627ee2123c8f8dfc365f9863a7f814034"},
+    {"relative_path": "paper/manuscript.md", "bytes": 17101, "sha256": "61b787be5feea59c8bab5863bab59b196453e2cd837aec5027e4347f3d49f37c"},
+    {"relative_path": "paper/generated/manuscript_token_map.json", "bytes": 338, "sha256": "3606115b34beaac4faeb129a3dbc000b70aa4f97bc27112d685f7a37656cd5b2"},
+    {"relative_path": "paper/generated/phase8e_aggregate_results.json", "bytes": 46179, "sha256": "2939f9580a992ef8f43d9f57bc2c7c5a1159b147d3739a6a8809932ac81fcae1"},
+    {"relative_path": "paper/generated/phase8e_statistics_results.json", "bytes": 28320, "sha256": "681926cb34830cf11391994dbc7d7c14352e94527c2f36549a6fe86547def6ff"},
+    {"relative_path": "paper/generated/tables/condition_metrics.csv", "bytes": 4452, "sha256": "9e452bd0ab58228b23aba1cc4052d491564f89944aa64c0caf17fd2dea6675ca"},
+    {"relative_path": "paper/generated/tables/condition_metrics.md", "bytes": 5600, "sha256": "93e44523a205017e03bf43cf772a953c1c82c1bc367564d266f1e029018f2e02"},
+    {"relative_path": "paper/generated/tables/condition_metrics.tex", "bytes": 5730, "sha256": "dc108c520e4f1aaa362fce6ac196178db4c5f2cf4862737991fe4f50edd91457"},
+    {"relative_path": "paper/generated/tables/paired_contrasts.csv", "bytes": 6442, "sha256": "67bedc0a92017adaa07393e5ba31446698ffc3dfc4e3e43592f4085343b585fe"},
+    {"relative_path": "paper/generated/tables/paired_contrasts.md", "bytes": 7854, "sha256": "791a449d94635aaa777c269be252d64ebc9d55d7c4add1e1d34a47f018b757c5"},
+    {"relative_path": "paper/generated/tables/paired_contrasts.tex", "bytes": 8115, "sha256": "0b30345049dd4bf0f138a0eedb4fac7f231ffbf51a5618b388495c64e07b88ef"},
+    {"relative_path": "paper/generated/tables/publication_summary.json", "bytes": 36882, "sha256": "2754f00f939b3c71e39542d1f8803010337c06af8b89ed1631de08de16dd86d8"}
+  ],
+  "schema_version": "phase8f-final-artifact-checksums-v1",
+  "self_excluded": true
+}

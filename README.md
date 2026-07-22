@@ -8,22 +8,20 @@ claim an exact reproduction of unpublished source code.
 
 The repository has completed its governed cohort, subject-level split,
 paper-grounded PK/PD and environment reconstruction, train-only preprocessing,
-final PPO training infrastructure, and sealed-test evaluation-readiness phases.
+final PPO training, and sealed-test evaluation phases.
 Phase 8D training uses the fixed 2 × 2 conditions `P0S0`, `P1S0`, `P0S1`, and
-`P1S1`, seed 42, and 1,000,000 environment timesteps per condition. Phase 8E has
-prepared the private 490-case sealed-test inputs and frozen evaluation/statistics
-contract; actual final policy evaluation has not started.
+`P1S1`, seed 42, and 1,000,000 environment timesteps per condition. Phase 8E
+completed deterministic evaluation of all four policies on each of the 490 sealed
+test cases, with zero failed episodes and zero silent exclusions.
 
-Phase 8F prepares an English manuscript shell, a strict aggregate-results schema
-and deterministic table renderer, and a finalization runbook. It uses synthetic
-fixtures only. It does not access Shard B, load a PPO model, run a test episode,
-compare conditions, or create an actual result. The current Phase 8E runner
-produces private case-level evaluation rows; a publication aggregate still
-requires a separately reviewed and authorized aggregation step before the Phase
-8F renderer may be used on real results.
+Phase 8F freezes publication-safe condition and subject-level aggregate results,
+renders deterministic Markdown, CSV, LaTeX, and JSON tables, and populates the
+manuscript through an exact token map. Private case-level evaluation rows remain
+Git-ignored and unpublished. The frozen output reports all 11 metrics and five
+prespecified contrasts without ranking or selecting a condition.
 
-The following remain outside Phase 8F authorization: actual final evaluation,
-condition ranking or selection, new seeds or training budgets, changes to Phase
+The following remain outside Phase 8F authorization: condition ranking or
+selection, new seeds or training budgets, changes to Phase
 8E metrics or contrasts, public case/event rows, private-store regeneration,
 raw/API access, and Git publication of models, checkpoints, raw signals, or
 private arrays.

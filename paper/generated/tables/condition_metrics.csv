@@ -1,0 +1,45 @@
+metric_name,unit,condition_id,subject_count,mean,sd,median,q1,q3,minimum,maximum
+mean_absolute_bis_deviation,BIS points,P0S0,483,12.781,4.225,12.605,9.931,15.385,3.959,25.649
+mean_absolute_bis_deviation,BIS points,P1S0,483,5.421,3.520,4.451,2.879,6.758,0.942,19.221
+mean_absolute_bis_deviation,BIS points,P0S1,483,7.673,2.904,7.417,5.483,9.273,1.825,17.161
+mean_absolute_bis_deviation,BIS points,P1S1,483,6.954,2.584,6.479,5.141,8.467,1.990,16.259
+root_mean_squared_bis_deviation,BIS points,P0S0,483,16.077,4.134,15.607,13.173,18.602,6.460,27.940
+root_mean_squared_bis_deviation,BIS points,P1S0,483,12.523,4.805,11.853,8.792,15.300,3.713,29.401
+root_mean_squared_bis_deviation,BIS points,P0S1,483,13.060,3.928,12.814,10.097,15.278,4.423,24.589
+root_mean_squared_bis_deviation,BIS points,P1S1,483,12.242,3.340,12.031,9.828,14.303,5.120,21.784
+time_in_bis_40_60_seconds,seconds,P0S0,483,6888.8,6316.3,4890.0,1950.0,9890.0,0.0,35020.0
+time_in_bis_40_60_seconds,seconds,P1S0,483,10318.4,6186.1,8560.0,5575.0,13385.0,2480.0,37270.0
+time_in_bis_40_60_seconds,seconds,P0S1,483,10080.5,6017.2,8450.0,5595.0,12820.0,1430.0,37190.0
+time_in_bis_40_60_seconds,seconds,P1S1,483,10174.8,6165.1,8520.0,5565.0,13195.0,1460.0,37120.0
+time_below_bis_40_seconds,seconds,P0S0,483,2.1,44.2,0.0,0.0,0.0,0.0,970.0
+time_below_bis_40_seconds,seconds,P1S0,483,1.7,21.0,0.0,0.0,0.0,0.0,350.0
+time_below_bis_40_seconds,seconds,P0S1,483,327.3,1400.3,0.0,0.0,0.0,0.0,13050.0
+time_below_bis_40_seconds,seconds,P1S1,483,89.7,511.0,0.0,0.0,0.0,0.0,5780.0
+time_above_bis_60_seconds,seconds,P0S0,483,4675.0,2785.5,4050.0,2845.0,5710.0,710.0,21630.0
+time_above_bis_60_seconds,seconds,P1S0,483,1245.7,990.3,1010.0,650.0,1545.0,150.0,7660.0
+time_above_bis_60_seconds,seconds,P0S1,483,1158.0,690.8,1030.0,655.0,1500.0,190.0,6020.0
+time_above_bis_60_seconds,seconds,P1S1,483,1301.3,761.2,1180.0,750.0,1660.0,180.0,6540.0
+integrated_absolute_bis_error_bis_seconds,BIS-point seconds,P0S0,483,131111.2,53036.4,123456.2,93765.2,154214.5,30046.6,353361.1
+integrated_absolute_bis_error_bis_seconds,BIS-point seconds,P1S0,483,53264.7,32202.6,45447.3,31565.1,68201.3,9585.2,252292.7
+integrated_absolute_bis_error_bis_seconds,BIS-point seconds,P0S1,483,83455.5,47772.0,72796.8,49203.9,101643.8,14712.6,316353.2
+integrated_absolute_bis_error_bis_seconds,BIS-point seconds,P1S1,483,72287.1,33327.9,65661.7,49478.1,87048.9,18702.5,234117.9
+maximum_absolute_bis_deviation,BIS points,P0S0,483,47.953,0.033,47.956,47.953,47.959,47.284,47.968
+maximum_absolute_bis_deviation,BIS points,P1S0,483,47.955,0.039,47.959,47.942,47.972,47.279,48.000
+maximum_absolute_bis_deviation,BIS points,P0S1,483,47.972,0.033,47.974,47.974,47.975,47.300,47.976
+maximum_absolute_bis_deviation,BIS points,P1S1,483,47.965,0.033,47.968,47.967,47.969,47.294,47.972
+cumulative_propofol_amount_mg,mg,P0S0,483,496.047,279.485,425.535,280.753,632.282,123.533,1715.719
+cumulative_propofol_amount_mg,mg,P1S0,483,781.488,388.920,693.120,491.901,980.308,199.214,2394.340
+cumulative_propofol_amount_mg,mg,P0S1,483,924.813,490.232,805.676,536.640,1180.926,269.128,2903.565
+cumulative_propofol_amount_mg,mg,P1S1,483,823.877,413.839,735.019,514.423,1040.784,231.367,2561.677
+mean_propofol_infusion_rate_mg_per_min,mg/min,P0S0,483,2.5568,0.1691,2.6056,2.5047,2.6626,1.5988,2.7762
+mean_propofol_infusion_rate_mg_per_min,mg/min,P1S0,483,4.2194,0.7078,4.2173,3.8178,4.6719,1.3173,6.3333
+mean_propofol_infusion_rate_mg_per_min,mg/min,P0S1,483,4.8396,0.2934,4.8460,4.6806,5.0188,3.9070,5.7671
+mean_propofol_infusion_rate_mg_per_min,mg/min,P1S1,483,4.3701,0.2728,4.3187,4.1663,4.5697,3.5976,5.1998
+action_change_magnitude_mg_per_min,mg/min,P0S0,483,0.0044,0.0025,0.0039,0.0026,0.0055,0.0009,0.0204
+action_change_magnitude_mg_per_min,mg/min,P1S0,483,0.2409,0.1184,0.2163,0.1553,0.3014,0.0378,0.7204
+action_change_magnitude_mg_per_min,mg/min,P0S1,483,0.0087,0.0044,0.0077,0.0052,0.0112,0.0022,0.0299
+action_change_magnitude_mg_per_min,mg/min,P1S1,483,0.0128,0.0065,0.0119,0.0080,0.0162,0.0025,0.0541
+cumulative_episode_reward,arbitrary reward units,P0S0,483,167.863,182.793,99.226,55.160,200.836,19.352,1236.221
+cumulative_episode_reward,arbitrary reward units,P1S0,483,648.143,440.103,531.668,319.037,843.130,99.754,3042.977
+cumulative_episode_reward,arbitrary reward units,P0S1,483,291.747,189.532,245.497,166.370,356.013,50.454,1389.267
+cumulative_episode_reward,arbitrary reward units,P1S1,483,354.549,253.923,278.918,179.506,456.456,50.375,1765.730

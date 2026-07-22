@@ -31,9 +31,9 @@
       "sha256": "aac34b9c268914eb792ea484b8b16562c5a6776a9e072cbdb77f2e05bc9c70f1"
     },
     {
-      "bytes": 83936,
+      "bytes": 85401,
       "relative_path": "docs/compliance_matrix.csv",
-      "sha256": "6dc351bec31bad93f1ab8610249b7f7f78b58ca6270f82ac92eef804453057e1"
+      "sha256": "115140c4f8f4a0454e53da80cbdd1ef6eaf69efcd21aa170fd11c656aea87795"
     },
     {
       "bytes": 986,
@@ -101,9 +101,9 @@
       "sha256": "c90248cdb1e5301d5be499c2e8e6483283a6a13fba68dfc7acc676740c139923"
     },
     {
-      "bytes": 6543,
+      "bytes": 7031,
       "relative_path": "src/vitaldb_state_selection/statistics/paired_evaluation.py",
-      "sha256": "2d81124acaa1291df7bfcd9904abefe7b148f5aff31986324cb59c3fa742e517"
+      "sha256": "58d2f68fcdc25948474154acf2d8ef77f83304622ede463c959765f498bb9f4d"
     },
     {
       "bytes": 6186,

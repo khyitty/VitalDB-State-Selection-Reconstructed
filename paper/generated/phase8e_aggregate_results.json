@@ -1,0 +1,1426 @@
+{
+  "best_condition_selected": false,
+  "case_accounting": {
+    "attempted_per_condition": 490,
+    "completed_per_condition": 490,
+    "failed_case_handling": "explicit_private_failure_rows_retained",
+    "failed_per_condition": 0,
+    "public_case_level_row_count": 0,
+    "public_event_level_row_count": 0,
+    "silent_exclusion_count": 0
+  },
+  "condition_order": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "conditions": [
+    {
+      "case_count": 490,
+      "condition_id": "P0S0",
+      "failed_case_count": 0,
+      "final_model_sha256": "f783ba214b9dc7e511ff4af7d38a641bd3924861cf562fad670b4b840ff77f3f",
+      "final_timestep": 1000000,
+      "metrics": [
+        {
+          "maximum": 25.649368170912943,
+          "mean": 12.781151655923699,
+          "median": 12.60505671509436,
+          "metric_name": "mean_absolute_bis_deviation",
+          "minimum": 3.9586525080607244,
+          "q1": 9.93068130995019,
+          "q3": 15.385190377569023,
+          "sd": 4.224781815367709,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 27.939926385037978,
+          "mean": 16.076604140950987,
+          "median": 15.6065459195789,
+          "metric_name": "root_mean_squared_bis_deviation",
+          "minimum": 6.46032841362019,
+          "q1": 13.173288527681741,
+          "q3": 18.6022003051754,
+          "sd": 4.134024394145802,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 35020.0,
+          "mean": 6888.778467908903,
+          "median": 4890.0,
+          "metric_name": "time_in_bis_40_60_seconds",
+          "minimum": 0.0,
+          "q1": 1950.0,
+          "q3": 9890.0,
+          "sd": 6316.292709157103,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 970.0,
+          "mean": 2.070393374741201,
+          "median": 0.0,
+          "metric_name": "time_below_bis_40_seconds",
+          "minimum": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "sd": 44.15480140114318,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 21630.0,
+          "mean": 4674.989648033126,
+          "median": 4050.0,
+          "metric_name": "time_above_bis_60_seconds",
+          "minimum": 710.0,
+          "q1": 2845.0,
+          "q3": 5710.0,
+          "sd": 2785.54654490542,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 353361.0773447766,
+          "mean": 131111.15363403613,
+          "median": 123456.17659549235,
+          "metric_name": "integrated_absolute_bis_error_bis_seconds",
+          "minimum": 30046.56680990945,
+          "q1": 93765.16079697097,
+          "q3": 154214.48410737398,
+          "sd": 53036.361093440355,
+          "subject_count": 483,
+          "unit": "BIS-point seconds"
+        },
+        {
+          "maximum": 47.96752281071906,
+          "mean": 47.95326892881818,
+          "median": 47.95608966442603,
+          "metric_name": "maximum_absolute_bis_deviation",
+          "minimum": 47.28430278780769,
+          "q1": 47.95262626299635,
+          "q3": 47.95876875140848,
+          "sd": 0.032772641283402175,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 1715.7194043770432,
+          "mean": 496.04654939503524,
+          "median": 425.53477473556995,
+          "metric_name": "cumulative_propofol_amount_mg",
+          "minimum": 123.53305439651012,
+          "q1": 280.75267224386334,
+          "q3": 632.282284412533,
+          "sd": 279.48465869487177,
+          "subject_count": 483,
+          "unit": "mg"
+        },
+        {
+          "maximum": 2.7761739210631604,
+          "mean": 2.5568054175606694,
+          "median": 2.605627825749772,
+          "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+          "minimum": 1.5987885454297066,
+          "q1": 2.5047004003808713,
+          "q3": 2.662554831516748,
+          "sd": 0.1691116708861949,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 0.020368369130477362,
+          "mean": 0.004422599171615995,
+          "median": 0.0038515764629245934,
+          "metric_name": "action_change_magnitude_mg_per_min",
+          "minimum": 0.0009120173403753979,
+          "q1": 0.0026174067999161325,
+          "q3": 0.005539363395988227,
+          "sd": 0.002518321356246506,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 1236.221243840836,
+          "mean": 167.86275303133658,
+          "median": 99.22614021005795,
+          "metric_name": "cumulative_episode_reward",
+          "minimum": 19.351620301373377,
+          "q1": 55.16027108205492,
+          "q3": 200.835906811418,
+          "sd": 182.79252622843757,
+          "subject_count": 483,
+          "unit": "arbitrary reward units"
+        }
+      ],
+      "seed": 42,
+      "subject_count": 483
+    },
+    {
+      "case_count": 490,
+      "condition_id": "P1S0",
+      "failed_case_count": 0,
+      "final_model_sha256": "c73bd394af2e5bf801c890bf9d98e1bf5876660b775c3c611ab7c8cdf0a93b83",
+      "final_timestep": 1000000,
+      "metrics": [
+        {
+          "maximum": 19.22144234657893,
+          "mean": 5.421165823239539,
+          "median": 4.450716869466532,
+          "metric_name": "mean_absolute_bis_deviation",
+          "minimum": 0.9416067726415588,
+          "q1": 2.8787432694967654,
+          "q3": 6.757749600507022,
+          "sd": 3.519590712463642,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 29.400946459986553,
+          "mean": 12.522641021723583,
+          "median": 11.853032993366476,
+          "metric_name": "root_mean_squared_bis_deviation",
+          "minimum": 3.7127443144428467,
+          "q1": 8.791881232587116,
+          "q3": 15.300148264206747,
+          "sd": 4.805072360025443,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 37270.0,
+          "mean": 10318.416149068324,
+          "median": 8560.0,
+          "metric_name": "time_in_bis_40_60_seconds",
+          "minimum": 2480.0,
+          "q1": 5575.0,
+          "q3": 13385.0,
+          "sd": 6186.118446852909,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 350.0,
+          "mean": 1.7391304347826086,
+          "median": 0.0,
+          "metric_name": "time_below_bis_40_seconds",
+          "minimum": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "sd": 20.9692093196489,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 7660.0,
+          "mean": 1245.6832298136646,
+          "median": 1010.0,
+          "metric_name": "time_above_bis_60_seconds",
+          "minimum": 150.0,
+          "q1": 650.0,
+          "q3": 1545.0,
+          "sd": 990.2819546250132,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 252292.7172985599,
+          "mean": 53264.720725274296,
+          "median": 45447.32799446284,
+          "metric_name": "integrated_absolute_bis_error_bis_seconds",
+          "minimum": 9585.165822414816,
+          "q1": 31565.082729211987,
+          "q3": 68201.30639525804,
+          "sd": 32202.589710174605,
+          "subject_count": 483,
+          "unit": "BIS-point seconds"
+        },
+        {
+          "maximum": 48.0,
+          "mean": 47.9552732334587,
+          "median": 47.95932267943195,
+          "metric_name": "maximum_absolute_bis_deviation",
+          "minimum": 47.279417341770056,
+          "q1": 47.94211246257658,
+          "q3": 47.972462287918155,
+          "sd": 0.038627747817754,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 2394.340334638953,
+          "mean": 781.4877896265244,
+          "median": 693.1199783459306,
+          "metric_name": "cumulative_propofol_amount_mg",
+          "minimum": 199.21370063722134,
+          "q1": 491.901412691921,
+          "q3": 980.3075418248773,
+          "sd": 388.9201201223261,
+          "subject_count": 483,
+          "unit": "mg"
+        },
+        {
+          "maximum": 6.333257547555825,
+          "mean": 4.219390657440774,
+          "median": 4.217317730116729,
+          "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+          "minimum": 1.317263327274896,
+          "q1": 3.8178044473595856,
+          "q3": 4.67191363858495,
+          "sd": 0.7078065041983257,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 0.7204311109464103,
+          "mean": 0.24085650824755986,
+          "median": 0.2162600747497407,
+          "metric_name": "action_change_magnitude_mg_per_min",
+          "minimum": 0.037838550985221965,
+          "q1": 0.1552581233570179,
+          "q3": 0.30136174722881226,
+          "sd": 0.1183512972153756,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 3042.9770204625147,
+          "mean": 648.1427441800761,
+          "median": 531.6675231498139,
+          "metric_name": "cumulative_episode_reward",
+          "minimum": 99.75439359892377,
+          "q1": 319.0372068310914,
+          "q3": 843.1297268208293,
+          "sd": 440.10253194896825,
+          "subject_count": 483,
+          "unit": "arbitrary reward units"
+        }
+      ],
+      "seed": 42,
+      "subject_count": 483
+    },
+    {
+      "case_count": 490,
+      "condition_id": "P0S1",
+      "failed_case_count": 0,
+      "final_model_sha256": "644371f5d74164fbe04b5f85f2301c4e2b0babf193e1667e623d3a209ce67947",
+      "final_timestep": 1000000,
+      "metrics": [
+        {
+          "maximum": 17.161176664215855,
+          "mean": 7.67335913602393,
+          "median": 7.416988059793231,
+          "metric_name": "mean_absolute_bis_deviation",
+          "minimum": 1.824513434173172,
+          "q1": 5.483091638913008,
+          "q3": 9.272579920921736,
+          "sd": 2.904160202594648,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 24.58888781400349,
+          "mean": 13.060147474081568,
+          "median": 12.814350930594683,
+          "metric_name": "root_mean_squared_bis_deviation",
+          "minimum": 4.423387927341118,
+          "q1": 10.097017637452236,
+          "q3": 15.278063937610092,
+          "sd": 3.9281621491902934,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 37190.0,
+          "mean": 10080.517598343686,
+          "median": 8450.0,
+          "metric_name": "time_in_bis_40_60_seconds",
+          "minimum": 1430.0,
+          "q1": 5595.0,
+          "q3": 12820.0,
+          "sd": 6017.173834584017,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 13050.0,
+          "mean": 327.3084886128364,
+          "median": 0.0,
+          "metric_name": "time_below_bis_40_seconds",
+          "minimum": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "sd": 1400.2823522590454,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 6020.0,
+          "mean": 1158.0124223602484,
+          "median": 1030.0,
+          "metric_name": "time_above_bis_60_seconds",
+          "minimum": 190.0,
+          "q1": 655.0,
+          "q3": 1500.0,
+          "sd": 690.7686228411047,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 316353.2494838573,
+          "mean": 83455.54537469005,
+          "median": 72796.82668166258,
+          "metric_name": "integrated_absolute_bis_error_bis_seconds",
+          "minimum": 14712.583462472427,
+          "q1": 49203.92057106031,
+          "q3": 101643.76701635413,
+          "sd": 47772.00004060482,
+          "subject_count": 483,
+          "unit": "BIS-point seconds"
+        },
+        {
+          "maximum": 47.97575692733804,
+          "mean": 47.97174629528254,
+          "median": 47.97419869717896,
+          "metric_name": "maximum_absolute_bis_deviation",
+          "minimum": 47.30024535749723,
+          "q1": 47.97358264156408,
+          "q3": 47.97460988716654,
+          "sd": 0.03258072115913938,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 2903.5647156760097,
+          "mean": 924.8129693838396,
+          "median": 805.6762873977423,
+          "metric_name": "cumulative_propofol_amount_mg",
+          "minimum": 269.12841645628214,
+          "q1": 536.6397091522813,
+          "q3": 1180.9263109788299,
+          "sd": 490.23236483484175,
+          "subject_count": 483,
+          "unit": "mg"
+        },
+        {
+          "maximum": 5.767106768030387,
+          "mean": 4.8396245581485005,
+          "median": 4.845958511900119,
+          "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+          "minimum": 3.907023004760655,
+          "q1": 4.680572286967951,
+          "q3": 5.018806488293816,
+          "sd": 0.29340129800764736,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 0.029872593665462372,
+          "mean": 0.008718895105066985,
+          "median": 0.007726287884052044,
+          "metric_name": "action_change_magnitude_mg_per_min",
+          "minimum": 0.0021945688576006897,
+          "q1": 0.005201035187476673,
+          "q3": 0.01124355904036695,
+          "sd": 0.004409430149198033,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 1389.2673300947124,
+          "mean": 291.7467523926431,
+          "median": 245.49699868331695,
+          "metric_name": "cumulative_episode_reward",
+          "minimum": 50.45416853385299,
+          "q1": 166.36982906886794,
+          "q3": 356.01315738776526,
+          "sd": 189.53198512977374,
+          "subject_count": 483,
+          "unit": "arbitrary reward units"
+        }
+      ],
+      "seed": 42,
+      "subject_count": 483
+    },
+    {
+      "case_count": 490,
+      "condition_id": "P1S1",
+      "failed_case_count": 0,
+      "final_model_sha256": "f79172fa014f23507ab2b33eb2a4cd9f2f1615e321165ce8a448ea5d3e0ab662",
+      "final_timestep": 1000000,
+      "metrics": [
+        {
+          "maximum": 16.258905915707267,
+          "mean": 6.954120574659676,
+          "median": 6.4785385983599975,
+          "metric_name": "mean_absolute_bis_deviation",
+          "minimum": 1.9903238401318348,
+          "q1": 5.140723159228889,
+          "q3": 8.466832141192434,
+          "sd": 2.5840020515918036,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 21.78391540710108,
+          "mean": 12.242016762950398,
+          "median": 12.030624330837277,
+          "metric_name": "root_mean_squared_bis_deviation",
+          "minimum": 5.120211521102027,
+          "q1": 9.82842200781825,
+          "q3": 14.303164539409817,
+          "sd": 3.340394368001627,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 37120.0,
+          "mean": 10174.792960662526,
+          "median": 8520.0,
+          "metric_name": "time_in_bis_40_60_seconds",
+          "minimum": 1460.0,
+          "q1": 5565.0,
+          "q3": 13195.0,
+          "sd": 6165.126563012202,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 5780.0,
+          "mean": 89.73084886128365,
+          "median": 0.0,
+          "metric_name": "time_below_bis_40_seconds",
+          "minimum": 0.0,
+          "q1": 0.0,
+          "q3": 0.0,
+          "sd": 510.9828317843209,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 6540.0,
+          "mean": 1301.3146997929607,
+          "median": 1180.0,
+          "metric_name": "time_above_bis_60_seconds",
+          "minimum": 180.0,
+          "q1": 750.0,
+          "q3": 1660.0,
+          "sd": 761.1576547912845,
+          "subject_count": 483,
+          "unit": "seconds"
+        },
+        {
+          "maximum": 234117.87992693586,
+          "mean": 72287.09422222502,
+          "median": 65661.66651300924,
+          "metric_name": "integrated_absolute_bis_error_bis_seconds",
+          "minimum": 18702.54529799083,
+          "q1": 49478.08497980256,
+          "q3": 87048.8557589103,
+          "sd": 33327.89257549933,
+          "subject_count": 483,
+          "unit": "BIS-point seconds"
+        },
+        {
+          "maximum": 47.97208935020879,
+          "mean": 47.96536137778501,
+          "median": 47.967852386027985,
+          "metric_name": "maximum_absolute_bis_deviation",
+          "minimum": 47.294161152561685,
+          "q1": 47.966597419492366,
+          "q3": 47.96886790145821,
+          "sd": 0.03259057777265987,
+          "subject_count": 483,
+          "unit": "BIS points"
+        },
+        {
+          "maximum": 2561.6768048778176,
+          "mean": 823.8769993088199,
+          "median": 735.0186822116375,
+          "metric_name": "cumulative_propofol_amount_mg",
+          "minimum": 231.36692887544632,
+          "q1": 514.4229119718075,
+          "q3": 1040.7840665839612,
+          "sd": 413.8385554634576,
+          "subject_count": 483,
+          "unit": "mg"
+        },
+        {
+          "maximum": 5.199842868859951,
+          "mean": 4.370077025782594,
+          "median": 4.318711617030203,
+          "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+          "minimum": 3.5976104915519302,
+          "q1": 4.166287269115448,
+          "q3": 4.5697141674114015,
+          "sd": 0.2728036631939054,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 0.05414112275893535,
+          "mean": 0.012751653413793399,
+          "median": 0.011926080448081694,
+          "metric_name": "action_change_magnitude_mg_per_min",
+          "minimum": 0.0024919988058347046,
+          "q1": 0.008037128982303268,
+          "q3": 0.01622324465193114,
+          "sd": 0.006525270431493323,
+          "subject_count": 483,
+          "unit": "mg/min"
+        },
+        {
+          "maximum": 1765.7298996896548,
+          "mean": 354.5489002620428,
+          "median": 278.91834596855995,
+          "metric_name": "cumulative_episode_reward",
+          "minimum": 50.37542125215086,
+          "q1": 179.5055021263792,
+          "q3": 456.45571256912353,
+          "sd": 253.92269633436453,
+          "subject_count": 483,
+          "unit": "arbitrary reward units"
+        }
+      ],
+      "seed": 42,
+      "subject_count": 483
+    }
+  ],
+  "contrasts": [
+    {
+      "bootstrap_ci_95": [
+        -7.608295026080298,
+        -7.110353792800617
+      ],
+      "cohens_dz": -2.6054693671335687,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -7.35998583268416,
+      "median_difference": -7.46520218989629,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.8257322134993975,
+        -0.6186952146764095
+      ],
+      "cohens_dz": -0.5985338591213959,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.719238561364255,
+      "median_difference": -0.8034115062554217,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -5.468752757656728,
+        -4.732915754588057
+      ],
+      "cohens_dz": -1.2593925967639195,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -5.1077925198997685,
+      "median_difference": -5.88041317920986,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        1.3692268155693126,
+        1.6928481882035176
+      ],
+      "cohens_dz": 0.8158708582804185,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 1.5329547514201356,
+      "median_difference": 1.7685895799287512,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        6.288964027728242,
+        6.978569957230954
+      ],
+      "cohens_dz": 1.7304904601104352,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 6.640747271319905,
+      "median_difference": 6.663391248204728,
+      "metric_name": "mean_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.761597021317972,
+        -3.3462094178370263
+      ],
+      "cohens_dz": -1.480472995777363,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3.5539631192274026,
+      "median_difference": -3.2967750245732574,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.9125287734385299,
+        -0.7223900445368721
+      ],
+      "cohens_dz": -0.7543548355437797,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.8181307111311705,
+      "median_difference": -0.8715200915989509,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.2362365539810374,
+        -2.7974061830660095
+      ],
+      "cohens_dz": -1.269989847350352,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3.0164566668694186,
+      "median_difference": -3.035474158701124,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.4784483222059874,
+        -0.08822632652525467
+      ],
+      "cohens_dz": -0.12856164349642407,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.004497751124437781,
+      "mean_difference": -0.2806242587731867,
+      "median_difference": 0.1805905122480631,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.004497751124437781,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        2.4453280625133216,
+        3.020973269130418
+      ],
+      "cohens_dz": 0.8222834046194748,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 2.7358324080962326,
+      "median_difference": 2.3536273649680926,
+      "metric_name": "root_mean_squared_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        3192.867753623188,
+        3678.4236542443064
+      ],
+      "cohens_dz": 1.2680270698408265,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3429.6376811594205,
+      "median_difference": 2820.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.9197722567287779,
+        201.79710144927532
+      ],
+      "cohens_dz": 0.08616968489936111,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.06746626686656672,
+      "mean_difference": 94.27536231884058,
+      "median_difference": -20.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.06746626686656672,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        2899.329968944099,
+        3484.724637681159
+      ],
+      "cohens_dz": 0.9772232347238018,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3191.7391304347825,
+      "median_difference": 2800.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -214.09394409937886,
+        -71.57298136645963
+      ],
+      "cohens_dz": -0.18357712158441924,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -143.6231884057971,
+      "median_difference": -50.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3621.392080745342,
+        -3054.4914596273293
+      ],
+      "cohens_dz": -1.0488098064870912,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3335.3623188405795,
+      "median_difference": -2860.0,
+      "metric_name": "time_in_bis_40_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3.5196687370600412,
+        1.9047619047619047
+      ],
+      "cohens_dz": -0.010668124477687902,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 1.0,
+      "mean_difference": -0.33126293995859213,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 1.0,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -343.2525879917184,
+        -147.40734989648047
+      ],
+      "cohens_dz": -0.23123116655543652,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -237.5776397515528,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        206.79089026915113,
+        461.20134575569335
+      ],
+      "cohens_dz": 0.23339903533317066,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 325.23809523809524,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        46.35351966873706,
+        136.03571428571422
+      ],
+      "cohens_dz": 0.17323857511839286,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 87.99171842650104,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -341.73706004140786,
+        -147.46997929606638
+      ],
+      "cohens_dz": -0.23156009130487376,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -237.2463768115942,
+      "median_difference": 0.0,
+      "metric_name": "time_below_bis_40_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3677.362577639751,
+        -3192.0256211180126
+      ],
+      "cohens_dz": -1.2674568195282034,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3429.3064182194616,
+      "median_difference": -2820.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        119.12784679089027,
+        168.52277432712214
+      ],
+      "cohens_dz": 0.5141166536168886,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 143.3022774327122,
+      "median_difference": 20.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -3762.486801242236,
+        -3281.467391304348
+      ],
+      "cohens_dz": -1.2884434044702595,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -3516.977225672878,
+      "median_difference": -2880.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -12.896221532091097,
+        115.62836438923391
+      ],
+      "cohens_dz": 0.07827399632583652,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.08345827086456771,
+      "mean_difference": 55.631469979296064,
+      "median_difference": 40.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.08345827086456771,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        3327.1358695652175,
+        3832.9399585921324
+      ],
+      "cohens_dz": 1.2692374469265897,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 3572.608695652174,
+      "median_difference": 2930.0,
+      "metric_name": "time_above_bis_60_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -81787.62533202585,
+        -73865.85475759133
+      ],
+      "cohens_dz": -1.7481396342721518,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -77846.43290876184,
+      "median_difference": -67756.74826461604,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -13018.750768338477,
+        -9404.587220444186
+      ],
+      "cohens_dz": -0.5431238190583771,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -11168.45115246503,
+      "median_difference": -6387.16143938461,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        -52344.19988257025,
+        -42813.709373793885
+      ],
+      "cohens_dz": -0.8765049771909782,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -47655.608259346096,
+      "median_difference": -45966.26811528337,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        16650.127526137025,
+        21532.353634535364
+      ],
+      "cohens_dz": 0.7200946004204873,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 19022.37349695072,
+      "median_difference": 15865.313515112011,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        62392.22806030438,
+        71196.76265825017
+      ],
+      "cohens_dz": 1.328350284839398,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 66677.98175629681,
+      "median_difference": 56112.33636439218,
+      "metric_name": "integrated_absolute_bis_error_bis_seconds",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS-point seconds"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.00046593048070061064,
+        0.0035054430119952377
+      ],
+      "cohens_dz": 0.11857471607882976,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.009495252373813094,
+      "mean_difference": 0.002004304640511092,
+      "median_difference": 0.0033542566912103666,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.009495252373813094,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.0064826431249334696,
+        -0.006278427598065034
+      ],
+      "cohens_dz": -5.631350452755454,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.006384917497522187,
+      "median_difference": -0.006260792074400001,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.0180728680233255,
+        0.01883852423375254
+      ],
+      "cohens_dz": 4.284722445199008,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.018477366464350838,
+      "median_difference": 0.01798127072051159,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.008329487608672574,
+        0.011812526926422125
+      ],
+      "cohens_dz": 0.5222008369901249,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.010088144326317558,
+      "median_difference": 0.008422865512798694,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.009793998333953084,
+        -0.006924118727920473
+      ],
+      "cohens_dz": -0.5210500564978567,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.00838922213803328,
+      "median_difference": -0.010017556194014787,
+      "metric_name": "maximum_absolute_bis_deviation",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "BIS points"
+    },
+    {
+      "bootstrap_ci_95": [
+        272.37772762857173,
+        298.3681277531679
+      ],
+      "cohens_dz": 1.9639619774290946,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 285.4412402314892,
+      "median_difference": 260.77950424700975,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        -107.70262252889114,
+        -94.10786241065792
+      ],
+      "cohens_dz": -1.2835006296944853,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -100.93597007501971,
+      "median_difference": -80.17088250815868,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        410.6826666595783,
+        447.47872364931175
+      ],
+      "cohens_dz": 2.0211975692117186,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 428.7664199888043,
+      "median_difference": 378.5122907087207,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        31.27091627716131,
+        54.37350354144681
+      ],
+      "cohens_dz": 0.3274240838121588,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 42.38920968229541,
+      "median_difference": 20.68688778579235,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        -404.50120682238503,
+        -368.33518029828434
+      ],
+      "cohens_dz": -1.9088480879099006,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -386.37721030650886,
+      "median_difference": -335.64465096592903,
+      "metric_name": "cumulative_propofol_amount_mg",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg"
+    },
+    {
+      "bootstrap_ci_95": [
+        1.6040155436089027,
+        1.7177286415080852
+      ],
+      "cohens_dz": 2.5934475576219707,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 1.6625852398801044,
+      "median_difference": 1.6503960375487803,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.4848143334887279,
+        -0.45357301731245236
+      ],
+      "cohens_dz": -2.653903381622311,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.46954753236590646,
+      "median_difference": -0.49803302090834123,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        2.266347080629575,
+        2.3012524154683316
+      ],
+      "cohens_dz": 11.831966155288592,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 2.28281914058783,
+      "median_difference": 2.2445879872630603,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.10360729218718973,
+        0.20106102570909695
+      ],
+      "cohens_dz": 0.26908205737481844,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.15068636834181987,
+      "median_difference": 0.15181374930714275,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -2.1871904123540857,
+        -2.075584432977775
+      ],
+      "cohens_dz": -3.3864075751642826,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -2.132132772246011,
+      "median_difference": -2.1027063363364773,
+      "metric_name": "mean_propofol_infusion_rate_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.2263353577267511,
+        0.24791013259545422
+      ],
+      "cohens_dz": 2.0032706782799363,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.23643390907594386,
+      "median_difference": 0.21182624124861382,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.00359620830212127,
+        0.0045061345837171946
+      ],
+      "cohens_dz": 0.8269802261949473,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.004032758308726415,
+      "median_difference": 0.002990055420932629,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        0.004053987916689431,
+        0.004540969927006088
+      ],
+      "cohens_dz": 1.575937179488237,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 0.00429629593345099,
+      "median_difference": 0.0036258484579668776,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.239112611046151,
+        -0.21813405351729148
+      ],
+      "cohens_dz": -1.9989416772896091,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.22810485483376647,
+      "median_difference": -0.2023514633349951,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        -0.2433928238594151,
+        -0.22242877161827895
+      ],
+      "cohens_dz": -2.027364096018721,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -0.23240115076721746,
+      "median_difference": -0.20696246468089943,
+      "metric_name": "action_change_magnitude_mg_per_min",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "mg/min"
+    },
+    {
+      "bootstrap_ci_95": [
+        450.37103060019206,
+        510.21161089156095
+      ],
+      "cohens_dz": 1.4287867843309008,
+      "contrast_id": "P1S0_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 480.2799911487395,
+      "median_difference": 386.81875971549255,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        48.9812030695702,
+        77.17863245190378
+      ],
+      "cohens_dz": 0.393494528619073,
+      "contrast_id": "P1S1_minus_P0S1",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 62.802147869399704,
+      "median_difference": 40.2299489820212,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        103.36110671150712,
+        143.4898868632893
+      ],
+      "cohens_dz": 0.5490684816687006,
+      "contrast_id": "P0S1_minus_P0S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": 123.88399936130654,
+      "median_difference": 116.28233851937588,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        -317.33976490185603,
+        -270.81439910197207
+      ],
+      "cohens_dz": -1.122404718249837,
+      "contrast_id": "P1S1_minus_P1S0",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -293.5938439180333,
+      "median_difference": -222.75031595181724,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    },
+    {
+      "bootstrap_ci_95": [
+        -444.05782656320315,
+        -391.29818525807474
+      ],
+      "cohens_dz": -1.4001198788236033,
+      "contrast_id": "interaction",
+      "holm_adjusted_p": 0.002498750624687656,
+      "mean_difference": -417.4778432793398,
+      "median_difference": -339.5168785212691,
+      "metric_name": "cumulative_episode_reward",
+      "paired_sign_flip_permutation_p": 0.0004997501249375312,
+      "subject_count": 483,
+      "unit": "arbitrary reward units"
+    }
+  ],
+  "data_origin": "sealed_test_evaluation",
+  "evaluation_seed": 42,
+  "results_interpreted": false,
+  "schema_version": "phase8e-final-evaluation-aggregate-v1",
+  "test_case_count": 490,
+  "test_subject_count": 483,
+  "training_implementation_sha": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0"
+}

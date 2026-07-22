@@ -201,27 +201,57 @@ class Phase8FArtifactTests(unittest.TestCase):
         self.assertEqual(boundaries["shard_b_access_count"], 0)
         self.assertFalse(boundaries["full_test_suite_run"])
 
-    def test_manuscript_is_result_pending_and_has_required_sections(self) -> None:
+    def test_manuscript_contains_only_frozen_results_and_required_sections(self) -> None:
         manuscript = (ROOT / "paper/manuscript.md").read_text(encoding="utf-8")
         for heading in ("## Abstract", "## Introduction", "## Methods", "## Results", "## Discussion", "### Limitations", "## Conclusion"):
             self.assertIn(heading, manuscript)
-        self.assertIn("[RESULTS_PENDING]", manuscript)
-        self.assertGreaterEqual(manuscript.count("[CONCLUSION_PENDING]"), 2)
-        self.assertRegex(manuscript, r"\{\{P0S0_[A-Z0-9_]+\}\}")
+        self.assertNotIn("[RESULTS_PENDING]", manuscript)
+        self.assertNotIn("[CONCLUSION_PENDING]", manuscript)
+        self.assertNotRegex(manuscript, r"\{\{[A-Z0-9_]+\}\}")
         self.assertNotIn("significantly improved", manuscript.lower())
         self.assertNotIn("superior condition", manuscript.lower())
         self.assertTrue((ROOT / "paper/discussion_scenarios.md").is_file())
         self.assertTrue((ROOT / "paper/figures_tables_plan.md").is_file())
         self.assertTrue((ROOT / "paper/references.bib").is_file())
 
-    def test_finalization_runbook_uses_existing_interfaces_and_declares_aggregate_gap(self) -> None:
+    def test_finalization_runbook_records_authorized_aggregate_interface(self) -> None:
         runbook = (ROOT / "docs/phase8f_finalization_runbook.md").read_text(encoding="utf-8")
         self.assertIn("scripts\\run_phase8d_final_training.py --shard B", runbook)
         self.assertIn("scripts\\run_phase8e_final_evaluation.py", runbook)
         self.assertIn("--verify-only", runbook)
         self.assertIn("--execute --output-root data/processed/phase8e_evaluation_outputs_v1", runbook)
-        self.assertIn("does **not** expose a command that creates the Phase 8F aggregate JSON", runbook)
-        self.assertIn("Do not invent or imply an existing aggregate-freeze CLI", runbook)
+        self.assertIn("scripts\\freeze_phase8e_final_results.py", runbook)
+        self.assertIn("--verify-only", runbook)
+
+    def test_actual_aggregate_and_rendered_outputs_are_frozen_and_public_safe(self) -> None:
+        aggregate_path = ROOT / "paper/generated/phase8e_aggregate_results.json"
+        aggregate = load_aggregate(aggregate_path)
+        validate_aggregate(aggregate, SCHEMA)
+        self.assertEqual(aggregate["data_origin"], "sealed_test_evaluation")
+        self.assertEqual(aggregate["case_accounting"]["completed_per_condition"], 490)
+        self.assertEqual(aggregate["case_accounting"]["failed_per_condition"], 0)
+        self.assertFalse(aggregate["results_interpreted"])
+        self.assertFalse(aggregate["best_condition_selected"])
+        expected = render_payloads(
+            aggregate,
+            source_sha256=hashlib.sha256(aggregate_path.read_bytes()).hexdigest(),
+        )
+        output_root = ROOT / "paper/generated/tables"
+        self.assertEqual(set(expected), {path.name for path in output_root.iterdir() if path.is_file()})
+        for name, payload in expected.items():
+            self.assertEqual((output_root / name).read_bytes(), payload)
+
+    def test_final_artifact_checksum_manifest_matches_every_public_result(self) -> None:
+        manifest_path = ROOT / "data/manifests/phase8f_final_artifact_checksums.json"
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        self.assertTrue(manifest["self_excluded"])
+        paths = [row["relative_path"] for row in manifest["artifacts"]]
+        self.assertNotIn("data/manifests/phase8f_final_artifact_checksums.json", paths)
+        self.assertEqual(len(paths), len(set(paths)))
+        for row in manifest["artifacts"]:
+            path = ROOT / row["relative_path"]
+            self.assertEqual(path.stat().st_size, row["bytes"])
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row["sha256"])
 
     def test_synthetic_validation_is_public_aggregate_only(self) -> None:
         validation = json.loads((ROOT / "data/manifests/phase8f_synthetic_validation.json").read_text(encoding="utf-8"))
