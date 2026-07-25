@@ -1,0 +1,25 @@
+{
+  "allowed_seeds": [
+    43,
+    44
+  ],
+  "architecture_and_hyperparameters_identical_to_phase8d": true,
+  "best_checkpoint_selection": false,
+  "checkpoint_interval_timesteps": 100000,
+  "condition_selection": false,
+  "early_stopping": false,
+  "hyperparameter_search": false,
+  "phase": "Phase 8G",
+  "phase8d_final_ppo_config_sha256": "b5d79a2fb8be3b5337c7cb807936247c630b86f108f2a92cc6f645023f789b3e",
+  "seed_specific_config_sha256": {
+    "43": "1329282fb84e31e9667c1fcf2d3b3e3e488340c5a527831477c9b031c2f32ff8",
+    "44": "f673781ee526e0290ef8e9b2e9ac7d2a777627577486979422691de96fe9272e"
+  },
+  "sealed_test_evaluation_authorized": false,
+  "total_timesteps_per_condition": 1000000,
+  "train_case_sequence_sha256": {
+    "43": "381c245ca87238bce6f088b4e807389490f07e091e9c760d9ac546e001ed7cb6",
+    "44": "6564cc7d654195c9eba1389b62124d35d2e0d3a51f7de428caf44be89f675119"
+  },
+  "train_case_universe_sha256": "b29464c8318ed1a82181a85c47aeb8d1bf1d6581564f4fdcdb7dd9288003b6a8"
+}

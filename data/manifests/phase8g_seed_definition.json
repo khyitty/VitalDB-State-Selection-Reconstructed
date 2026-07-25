@@ -1,0 +1,12 @@
+{
+  "all_seed_results_included": true,
+  "bit_generator": "PCG64",
+  "extension_seeds": [
+    43,
+    44
+  ],
+  "original_confirmatory_seed": 42,
+  "outcome_blind_prespecification": true,
+  "prespecified_date": "2026-07-25",
+  "seed_selection_or_exclusion_allowed": false
+}

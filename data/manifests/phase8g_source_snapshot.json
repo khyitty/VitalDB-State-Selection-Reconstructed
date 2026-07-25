@@ -1,0 +1,43 @@
+{
+  "figure_package_baseline_sha": "edede7b8f1a7b7726b505a5784399ddc96133aa9",
+  "phase8b_private_root_sha256": "96e9f4d329b0131634a756fc4b4a03acbce5e97a10d65a2a416948130f9d9fb2",
+  "phase8c_private_root_sha256": "25ad8a860f6c9b0b45febec7ff7d0d0edf88c0f1953229c8d95e207508d3a606",
+  "phase8d_final_ppo_config_sha256": "b5d79a2fb8be3b5337c7cb807936247c630b86f108f2a92cc6f645023f789b3e",
+  "phase8d_runner_sha256": "b08ee9036ff1289ee2c7f6280e66ea2e3771bca45bba276dc315384b9b158bd7",
+  "phase8d_training_implementation_sha": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0",
+  "phase8d_training_source_sha256": "e8130183a9011782971369119ca21a198c345d1f37f7c0376d9866c159db5af8",
+  "prespecified_date": "2026-07-25",
+  "seed42_output_baseline": {
+    "P0S0": {
+      "directory_fingerprint_sha256": "05cce5855b08309f951e7ddfa8ba30d0e36cb4d6e42a3f4acf92b99e82bae35f",
+      "file_count": 47,
+      "manifest_mismatch_count": 0,
+      "output_root_sha256": "119be0cf659db5c9a8bd2cf50314e640f719109886e402640117e2ae40c30fce"
+    },
+    "P0S1": {
+      "directory_fingerprint_sha256": "3d6ede83b85c16093c0a35ea515810406e14fba5737e55bf7ddd6177fa7f1cbe",
+      "file_count": 47,
+      "manifest_mismatch_count": 0,
+      "output_root_sha256": "8128bf46c55bb31a922bfa46973166df5e4563b47d9779b0bac05d58fa5a031f"
+    },
+    "P1S0": {
+      "directory_fingerprint_sha256": "940c73ff0ce8f4dae6bc4a4a3c3b6477f389304ea3329e070daf6265c215c815",
+      "file_count": 47,
+      "manifest_mismatch_count": 0,
+      "output_root_sha256": "392ae3c12178ab9c1448b1048c249ea9f544c820d099afe5d9c608523c5cfe7a"
+    },
+    "P1S1": {
+      "directory_fingerprint_sha256": "ae7a403f82f3d119645f00ea4a6a7ea11dd3ed6cde67233f5a455876282a1333",
+      "file_count": 47,
+      "manifest_mismatch_count": 0,
+      "output_root_sha256": "2948157a923454307595e804163bfd9a0c3cb90f340d4ca99f3848f4332732b9"
+    }
+  },
+  "source_preparation_flags": {
+    "additional_seed_result_inspected": false,
+    "phase8g_training_started": false,
+    "sealed_test_evaluation_started": false
+  },
+  "train_case_count": 1970,
+  "train_case_universe_sha256": "b29464c8318ed1a82181a85c47aeb8d1bf1d6581564f4fdcdb7dd9288003b6a8"
+}

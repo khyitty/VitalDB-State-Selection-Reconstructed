@@ -20,8 +20,15 @@ manuscript through an exact token map. Private case-level evaluation rows remain
 Git-ignored and unpublished. The frozen output reports all 11 metrics and five
 prespecified contrasts without ranking or selecting a condition.
 
-The following remain outside Phase 8F authorization: condition ranking or
-selection, new seeds or training budgets, changes to Phase
+Phase 8G is an outcome-blind, prespecified robustness extension for training
+stochasticity. It adds exactly seeds 43 and 44 at the unchanged 1,000,000
+timesteps per condition, checkpoint schedule, architecture, hyperparameters,
+train universe, and A/B shard assignment. Seed 42 and the Phase 8D/8E/8F
+artifacts remain immutable. Additional-seed sealed-test evaluation is not
+authorized in the training phase.
+
+The following remain outside Phase 8G authorization: condition ranking or
+selection, unprespecified seeds or training budgets, changes to Phase
 8E metrics or contrasts, public case/event rows, private-store regeneration,
 raw/API access, and Git publication of models, checkpoints, raw signals, or
 private arrays.
