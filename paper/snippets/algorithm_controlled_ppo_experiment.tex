@@ -1,0 +1,33 @@
+% Requires: \usepackage[ruled,vlined]{algorithm2e}
+\begin{algorithm}[t]
+\caption{Controlled Evaluation of Preprocessing and State Representations}
+\label{alg:controlled-ppo}
+\KwIn{VitalDB-derived training cases $\mathcal{D}_{\mathrm{tr}}$; fixed test
+cases $\mathcal{D}_{\mathrm{te}}$; preprocessing profiles
+$\mathcal{P}=\{P0,P1\}$; state profiles $\mathcal{S}=\{S0,S1\}$; fixed PPO
+configuration $\mathcal{H}$; fixed PK--PD simulator $\mathcal{E}$; common
+reward $\mathcal{R}$ and training budget $B$}
+\KwOut{Configuration summaries and prespecified subject-paired contrasts}
+Fit state-scaling statistics on $\mathcal{D}_{\mathrm{tr}}$ only and freeze them\;
+\ForEach{$(p,s)\in\mathcal{P}\times\mathcal{S}$}{
+  Select preprocessing profile $p$ and state constructor $s$\;
+  Initialize PPO with the common architecture, hyperparameters, and seed\;
+  \While{the fixed training budget is not exhausted}{
+    Collect the causal observation history\;
+    Apply preprocessing profile $p$\;
+    Construct and scale the state using profile $s$\;
+    Generate a continuous propofol action from the PPO policy\;
+    Step the fixed PK--PD simulator\;
+    Collect the next state and common reward\;
+    Update the PPO policy and value networks on the fixed schedule\;
+  }
+  Freeze the final policy and retain the frozen scaling statistics\;
+  \ForEach{$c\in\mathcal{D}_{\mathrm{te}}$}{
+    Run deterministic frozen-policy control\;
+    Prohibit optimizer, policy, and scaler updates\;
+    Store the prespecified case-level control metrics privately\;
+  }
+}
+Compare all four configurations on the same fixed test cases\;
+Aggregate metrics and compute only the prespecified paired contrasts\;
+\end{algorithm}

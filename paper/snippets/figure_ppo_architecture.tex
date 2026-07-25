@@ -1,0 +1,14 @@
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figures/ppo_actor_critic_architecture.pdf}
+    \caption{Exact feed-forward architecture of the PPO controller used in all
+    four configurations. The controller receives an already constructed S0
+    (34-dimensional) or S1 (42-dimensional) state vector. A parameter-free
+    flattening extractor feeds separate one-hidden-layer actor and critic
+    networks, each with 128 Tanh units. The actor parameterizes a
+    one-dimensional diagonal-Gaussian propofol policy with a learned,
+    state-independent log standard deviation; the critic returns a scalar
+    state-value estimate. The architecture was confirmed from both the
+    implementation and the four serialized final models.}
+    \label{fig:ppo-architecture}
+\end{figure*}
