@@ -1,5 +1,15 @@
 # Phase 8G — Prespecified Multi-Seed Robustness Extension
 
+> **Scope notice (current, authoritative):** This artifact belongs to a
+> replication extension outside the confirmatory ICTC 2026 manuscript. The
+> manuscript reports seed 42 only, on the four conditions `P0S0`, `P1S0`,
+> `P0S1`, `P1S1`. The "all three seeds will be reported" language below is the
+> **historical decision record from 2026-07-25** and is preserved unedited for
+> auditability; it was **later superseded** for the ICTC 2026 manuscript, whose
+> seed-42-only scope (see the repository [README](../README.md#ictc-2026-paper-scope))
+> is the current authoritative decision. No cross-seed robustness claim is made
+> in the manuscript.
+
 ## Amendment status
 
 The original confirmatory training and sealed-test result used seed 42. On

@@ -1,5 +1,10 @@
 # Phase 8G Training Infrastructure Report
 
+> This artifact belongs to a replication extension outside the confirmatory
+> ICTC 2026 manuscript. The manuscript reports seed 42 only; see
+> [Phase 8G protocol](phase8g_multiseed_robustness_protocol.md) and the
+> repository [README](../README.md#ictc-2026-paper-scope).
+
 Phase 8G extends the completed seed-42 experiment with prespecified seeds 43 and
 44. It reuses the exact Phase 8D PPO architecture and hyperparameters, the
 sealed 1,970-case train universe, Phase 8B templates, Phase 8C patient and

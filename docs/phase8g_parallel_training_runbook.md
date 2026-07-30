@@ -1,5 +1,10 @@
 # Phase 8G Parallel Training Runbook
 
+> This artifact belongs to a replication extension outside the confirmatory
+> ICTC 2026 manuscript. The manuscript reports seed 42 only; see
+> [Phase 8G protocol](phase8g_multiseed_robustness_protocol.md) and the
+> repository [README](../README.md#ictc-2026-paper-scope).
+
 Both laptops must checkout the exact `PHASE8G_IMPLEMENTATION_SHA` published by
 Laptop A. Laptop B is execution-only and must not modify, commit, or push source.
 Conditions run sequentially within each shard.

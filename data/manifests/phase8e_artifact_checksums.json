@@ -66,9 +66,9 @@
       "sha256": "8f042a3b04e45f9b6587156995cb614f27ca2c9f8311a5105b18b95752abf370"
     },
     {
-      "bytes": 2336,
+      "bytes": 2500,
       "relative_path": "scripts/run_phase8e_final_evaluation.py",
-      "sha256": "cd63e9905c26fe55516bd1ea8820c47e1ae07270d814635f137db662db6b1661"
+      "sha256": "52806f41e469a15c1db583a4e48ea4538a1e828fceabbfc1decb1053abd36aaa"
     },
     {
       "bytes": 15899,
@@ -96,9 +96,9 @@
       "sha256": "9f0f1d9b909b1e005f0f98af691246b3ac9981f516d526a1afde45ead8b04211"
     },
     {
-      "bytes": 12111,
+      "bytes": 25502,
       "relative_path": "src/vitaldb_state_selection/rl_integration/final_evaluation.py",
-      "sha256": "c90248cdb1e5301d5be499c2e8e6483283a6a13fba68dfc7acc676740c139923"
+      "sha256": "d74adef14cd34eb6a694fd61ca060b749cae75f17979554fed6205d6f2e040ff"
     },
     {
       "bytes": 7031,
@@ -111,9 +111,9 @@
       "sha256": "b6d5206d596f7269c00557c72a5f29fa491c09f121a94e563caa3391a33cb4ef"
     },
     {
-      "bytes": 6411,
+      "bytes": 11231,
       "relative_path": "tests/test_phase8e_evaluation.py",
-      "sha256": "8beb00392db908a4eaec945e8afac6422d8e88b70557a3fa28fa06ca4490f14c"
+      "sha256": "cf816ed90554fa571d60431ccac71fddaa175bcbb996c098245455b3d51ee13f"
     },
     {
       "bytes": 4903,

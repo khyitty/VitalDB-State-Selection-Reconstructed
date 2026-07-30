@@ -1,0 +1,31 @@
+{
+  "allowed_model_seeds": [
+    42,
+    43,
+    44
+  ],
+  "checkpoint_selection_allowed": false,
+  "condition_order": [
+    "P0S0",
+    "P1S0",
+    "P0S1",
+    "P1S1"
+  ],
+  "evaluation_seed": 42,
+  "final_timestep_required": 1000000,
+  "legacy_seed42_result_reexecution_allowed": false,
+  "metric_version": "phase8e-control-metrics-v1",
+  "new_evaluation_model_seeds": [
+    43,
+    44
+  ],
+  "sealed_test_case_count": 490,
+  "seed42_phase8e_config_sha256": "fc9f86fe71c6201842ec11f40ecfec7ed1c2d32740c288207ddaadc2b00fd8db",
+  "simulator_and_environment_seed_fixed_to_phase8e": 42,
+  "test_based_tuning_allowed": false,
+  "training_implementation_sha_by_seed": {
+    "42": "b782b5e4a9d418f6b907a87d046c4e9789a3e5f0",
+    "43": "bffcafe7d6c01cc0190b6f3abfe3e2b13a7f8bd6",
+    "44": "bffcafe7d6c01cc0190b6f3abfe3e2b13a7f8bd6"
+  }
+}

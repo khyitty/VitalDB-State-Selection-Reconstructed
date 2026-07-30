@@ -12,6 +12,7 @@ sys.path.insert(0, str(ROOT / "src"))
 from vitaldb_state_selection.publication.final_results import (  # noqa: E402
     FinalResultsError,
     build_aggregate,
+    build_multiseed_summary,
     validate_private_rows,
 )
 from vitaldb_state_selection.publication.phase8f_renderer import CONDITIONS, CONTRASTS, METRICS  # noqa: E402
@@ -101,6 +102,36 @@ class Phase8EFinalResultTests(unittest.TestCase):
         rows[0]["subjectid"] = "999"
         with self.assertRaises(FinalResultsError):
             validate_private_rows(rows, expected_cases=3, expected_subjects=2)
+
+    def test_multiseed_summary_aggregates_within_seed_before_seed_variability(self) -> None:
+        rows_by_seed = {}
+        for seed, offset in ((42, 0.0), (43, 10.0), (44, 20.0)):
+            rows = copy.deepcopy(fixture_rows())
+            for row in rows:
+                for metric in METRICS:
+                    row[metric] = float(row[metric]) + offset
+            rows_by_seed[seed] = rows
+        summary = build_multiseed_summary(
+            rows_by_seed,
+            model_sha256_by_seed={
+                seed: {condition: f"{seed}-{condition}" for condition in CONDITIONS}
+                for seed in (42, 43, 44)
+            },
+            expected_cases=3,
+            expected_subjects=2,
+            bootstrap_replicates=32,
+            permutation_replicates=32,
+        )
+        self.assertEqual(summary["model_seeds"], [42, 43, 44])
+        self.assertEqual(
+            summary["aggregation_hierarchy"],
+            "case_within_subject_within_condition_and_seed_then_seed_summary",
+        )
+        first = summary["conditions"][0]["metrics"][0]
+        self.assertEqual([row["seed"] for row in first["seed_values"]], [42, 43, 44])
+        self.assertAlmostEqual(first["seed_mean"], 12.25)
+        self.assertAlmostEqual(first["seed_sd"], 10.0)
+        self.assertNotIn("pooled_case_seed_rows", summary)
 
 
 if __name__ == "__main__":

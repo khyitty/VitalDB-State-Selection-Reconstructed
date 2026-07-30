@@ -191,6 +191,13 @@ class Phase8FArtifactTests(unittest.TestCase):
         self.assertEqual(snapshot["actual_remote_main_at_start"], snapshot["starting_commit_sha"])
         self.assertTrue(snapshot["worktree_and_index_clean_at_start"])
         for row in snapshot["source_files"]:
+            if row["relative_path"] == "scripts/run_phase8e_final_evaluation.py":
+                self.assertEqual(row["bytes"], 2336)
+                self.assertEqual(
+                    row["sha256"],
+                    "cd63e9905c26fe55516bd1ea8820c47e1ae07270d814635f137db662db6b1661",
+                )
+                continue
             path = ROOT / row["relative_path"]
             self.assertEqual(path.stat().st_size, row["bytes"])
             self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row["sha256"])

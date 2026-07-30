@@ -1,0 +1,52 @@
+{
+  "all_prespecified_seeds_included": true,
+  "case_condition_seed_rows": 5880,
+  "evaluation_seed": 42,
+  "model_seeds": [
+    42,
+    43,
+    44
+  ],
+  "output_root_sha256_by_seed": {
+    "42": {
+      "P0S0": "119be0cf659db5c9a8bd2cf50314e640f719109886e402640117e2ae40c30fce",
+      "P0S1": "8128bf46c55bb31a922bfa46973166df5e4563b47d9779b0bac05d58fa5a031f",
+      "P1S0": "392ae3c12178ab9c1448b1048c249ea9f544c820d099afe5d9c608523c5cfe7a",
+      "P1S1": "2948157a923454307595e804163bfd9a0c3cb90f340d4ca99f3848f4332732b9"
+    },
+    "43": {
+      "P0S0": "c458ae5b7541f0602edf1782ae9bd75560cff3e4cc76687b68a7971e6deccdca",
+      "P0S1": "853f6b05083d19eee2a1e4ea12ca80a4ae737722c5f6a6875bd0d85fcfe6d0bb",
+      "P1S0": "58805fb7d67ab07b26b3c4007152e44adb5b893b355c92ca583e76e093c95067",
+      "P1S1": "89a7b84968dac9a37f1b24e13e838ccb79b9c4d8270dab84c7e37b4fde67de51"
+    },
+    "44": {
+      "P0S0": "0efb8155a84b675652b405d531114b121a89583c5fa9c0df6fcf78ed4a0548fd",
+      "P0S1": "0a7f7e86a116a15b422c8101788d986a461b9ebe41eab3c868a7ebcabaadbc88",
+      "P1S0": "3aa14f9ef62da655feba7da5a046916e1164eab7d4243559e2b9cca34d3704f6",
+      "P1S1": "4c0c7c1c31891fbde4bf7bd529c815c84f2fce0e3e7271f6f4f8b307b89e7bdd"
+    }
+  },
+  "private_case_results_published": false,
+  "private_result_sha256_by_seed": {
+    "42": [
+      "8fda4cb70251c319255251601c39d58205ccf62ac88a6a6a96b9d2b0cf8d1167"
+    ],
+    "43": [
+      "8a0073659463c07ddb3f0b73b7baf61de739617b3315acf3ec893b5b98adc52f",
+      "8c4b2a2cffe8ea9d0b55cb09c2375fe45f57374570a2f3c4876dc7202ebc8e00",
+      "eb842f17c0f5398d77ebf2bfc9263463275549ce8c48c6a9069e9bc8d7c42d73",
+      "178d7dc603f8ade67844c2d7d4c4f1d761c0becb660954004b9ae4ab0939b0ac"
+    ],
+    "44": [
+      "9c6378ccd70b0ff5f9e602d6a9ba2b18e3bfbb5ac111b046e77f25f69e5848d8",
+      "2c2c1ac1060195c63b122574da227d3722e7c9192a77bc3d8a3575d46c31e360",
+      "04005bb53a6567acaa001c2b7783880ee94371ef518caf8c9ffe2df83c2f43f4",
+      "8367e5b1505b9f2fe8a2cf56ca21ecf016c577205c344e30c70249d445ad598c"
+    ]
+  },
+  "public_case_level_row_count": 0,
+  "public_event_level_row_count": 0,
+  "schema_version": "phase8g-multiseed-results-integrity-v1",
+  "summary_sha256": "82c597eb239d7d2d4208cd73c587a654ce96fe7a4d4c88d066bb71869fe49fd2"
+}

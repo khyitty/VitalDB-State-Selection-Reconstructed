@@ -279,3 +279,125 @@ def build_aggregate(
         "contrasts": contrasts,
     }
     return aggregate, statistics
+
+
+def build_multiseed_summary(
+    rows_by_seed: Mapping[int, Sequence[Mapping[str, object]]],
+    *,
+    model_sha256_by_seed: Mapping[int, Mapping[str, str]],
+    expected_cases: int = EXPECTED_CASES,
+    expected_subjects: int = EXPECTED_SUBJECTS,
+    bootstrap_replicates: int = BOOTSTRAP_REPLICATES,
+    permutation_replicates: int = PERMUTATION_REPLICATES,
+) -> dict[str, object]:
+    """Apply the frozen paired pipeline within seed, then summarize across seeds."""
+
+    seeds = (42, 43, 44)
+    if tuple(sorted(rows_by_seed)) != seeds or tuple(
+        sorted(model_sha256_by_seed)
+    ) != seeds:
+        raise FinalResultsError("multi-seed summary requires exactly seeds 42, 43, and 44")
+    seed_results: dict[int, tuple[dict[str, object], dict[str, object]]] = {}
+    for seed in seeds:
+        if set(model_sha256_by_seed[seed]) != set(CONDITIONS):
+            raise FinalResultsError("multi-seed model checksum accounting mismatch")
+        aggregate, statistics = build_aggregate(
+            rows_by_seed[seed],
+            expected_cases=expected_cases,
+            expected_subjects=expected_subjects,
+            bootstrap_replicates=bootstrap_replicates,
+            permutation_replicates=permutation_replicates,
+        )
+        aggregate["model_seed"] = seed
+        for condition_row in aggregate["conditions"]:
+            condition = str(condition_row["condition_id"])
+            condition_row["seed"] = seed
+            condition_row["final_model_sha256"] = model_sha256_by_seed[seed][
+                condition
+            ]
+        statistics["model_seed"] = seed
+        seed_results[seed] = aggregate, statistics
+
+    condition_summaries: list[dict[str, object]] = []
+    for condition in CONDITIONS:
+        metric_summaries: list[dict[str, object]] = []
+        for metric in METRICS:
+            seed_values = []
+            for seed in seeds:
+                aggregate = seed_results[seed][0]
+                condition_row = next(
+                    row
+                    for row in aggregate["conditions"]
+                    if row["condition_id"] == condition
+                )
+                metric_row = next(
+                    row for row in condition_row["metrics"] if row["metric_name"] == metric
+                )
+                seed_values.append({"seed": seed, "mean": float(metric_row["mean"])})
+            values = np.asarray([row["mean"] for row in seed_values], dtype=np.float64)
+            metric_summaries.append(
+                {
+                    "metric_name": metric,
+                    "seed_values": seed_values,
+                    "seed_mean": float(values.mean()),
+                    "seed_sd": float(values.std(ddof=1)),
+                }
+            )
+        condition_summaries.append(
+            {"condition_id": condition, "metrics": metric_summaries}
+        )
+
+    contrast_summaries: list[dict[str, object]] = []
+    for metric in METRICS:
+        for contrast in CONTRASTS:
+            seed_values = []
+            for seed in seeds:
+                aggregate = seed_results[seed][0]
+                row = next(
+                    item
+                    for item in aggregate["contrasts"]
+                    if item["metric_name"] == metric
+                    and item["contrast_id"] == contrast
+                )
+                seed_values.append(
+                    {
+                        "seed": seed,
+                        "mean_difference": float(row["mean_difference"]),
+                    }
+                )
+            values = np.asarray(
+                [row["mean_difference"] for row in seed_values], dtype=np.float64
+            )
+            contrast_summaries.append(
+                {
+                    "contrast_id": contrast,
+                    "metric_name": metric,
+                    "seed_values": seed_values,
+                    "seed_mean_difference": float(values.mean()),
+                    "seed_sd_difference": float(values.std(ddof=1)),
+                }
+            )
+    return {
+        "schema_version": "phase8g-multiseed-evaluation-summary-v1",
+        "aggregation_hierarchy": (
+            "case_within_subject_within_condition_and_seed_then_seed_summary"
+        ),
+        "evaluation_seed": SEED,
+        "model_seeds": list(seeds),
+        "condition_order": list(CONDITIONS),
+        "metric_order": list(METRICS),
+        "contrast_order": list(CONTRASTS),
+        "case_count_per_seed_condition": expected_cases,
+        "subject_count_per_seed_condition": expected_subjects,
+        "conditions": condition_summaries,
+        "contrasts": contrast_summaries,
+        "seed_aggregates": {
+            str(seed): seed_results[seed][0] for seed in seeds
+        },
+        "seed_statistics": {
+            str(seed): seed_results[seed][1] for seed in seeds
+        },
+        "all_prespecified_seeds_included": True,
+        "best_condition_selected": False,
+        "results_interpreted": False,
+    }

@@ -11,11 +11,12 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from vitaldb_state_selection.rl_integration.final_evaluation import (  # noqa: E402
+    ALLOWED_EVALUATION_SEEDS,
+    CONDITIONS,
     SEED,
-    TRAINING_IMPLEMENTATION_SHA,
     execute_evaluation,
     verify_evaluation_inputs,
-    verify_four_models,
+    verify_models,
 )
 
 
@@ -23,19 +24,24 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--models-root", type=Path, required=True)
     parser.add_argument("--test-runtime-root", type=Path, required=True)
-    parser.add_argument("--expected-training-sha", default=TRAINING_IMPLEMENTATION_SHA)
-    parser.add_argument("--seed", type=int, default=SEED)
+    parser.add_argument("--expected-training-sha")
+    parser.add_argument("--seed", type=int, choices=ALLOWED_EVALUATION_SEEDS, default=SEED)
+    parser.add_argument("--condition", choices=CONDITIONS)
     parser.add_argument("--verify-only", action="store_true", help="Explicit alias for the safe default")
     parser.add_argument("--execute", action="store_true", help="Explicitly authorize deterministic policy episodes")
     parser.add_argument("--output-root", type=Path)
     args = parser.parse_args()
     if args.verify_only and args.execute:
         parser.error("--verify-only and --execute are mutually exclusive")
-    if args.seed != SEED:
-        parser.error("Phase 8E evaluation seed must be 42")
-    inputs = verify_evaluation_inputs(ROOT, args.test_runtime_root)
+    conditions = (args.condition,) if args.condition else CONDITIONS
     if not args.execute:
-        models = verify_four_models(args.models_root, expected_training_sha=args.expected_training_sha)
+        inputs = verify_evaluation_inputs(ROOT, args.test_runtime_root)
+        models = verify_models(
+            args.models_root,
+            conditions,
+            seed=args.seed,
+            expected_training_sha=args.expected_training_sha,
+        )
         print(json.dumps({
             **inputs,
             "actual_model_episode_count": 0,
@@ -53,6 +59,7 @@ def main() -> int:
         output_root=args.output_root,
         expected_training_sha=args.expected_training_sha,
         seed=args.seed,
+        conditions=conditions,
     )
     print(json.dumps(result, indent=2, sort_keys=True))
     return 0

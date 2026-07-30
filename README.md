@@ -4,6 +4,47 @@ This repository builds the governance and audit foundation for a new confirmator
 VitalDB cohort. It does **not** continue the legacy 98-case analysis and does not
 claim an exact reproduction of unpublished source code.
 
+## ICTC 2026 paper scope
+
+The ICTC 2026 manuscript reports the prespecified **seed-42 experiment only**.
+
+- The four paper conditions are `P0S0`, `P1S0`, `P0S1`, and `P1S1`.
+- Training: exactly 1,000,000 environment timesteps per condition, seed 42 only.
+- Evaluation: the final seed-42 checkpoint of each condition, on the sealed test
+  set of 490 cases from 483 subjects, with subject-level paired inference.
+- Seed-43/44 artifacts, retained in this repository under the `phase8g_` prefix
+  (`docs/`, `data/manifests/`, `scripts/`), are a separate, prespecified
+  replication extension. They are **not** included in the manuscript statistics,
+  figures, or claims.
+- **No cross-seed robustness claim is made.** The manuscript's results, tables,
+  and figures come exclusively from the frozen Phase 8E/8F seed-42 pipeline
+  described below.
+
+### Reproducing the confirmatory (seed-42) result
+
+```powershell
+python scripts/run_phase8d_final_training.py --help      # Phase 8D: seed-42 training (4 conditions x 1e6 timesteps)
+python scripts/run_phase8e_final_evaluation.py --help     # Phase 8E: frozen seed-42 sealed-test evaluation
+python scripts/render_phase8f_paper_tables.py --help      # Phase 8F: render frozen tables/figures from Phase 8E output
+python scripts/populate_phase8f_manuscript.py --help      # Phase 8F: populate paper/manuscript.md token map
+python -m unittest discover -s tests -v
+```
+
+Frozen seed-42 results live in `paper/generated/phase8e_aggregate_results.json`
+and `paper/generated/phase8e_statistics_results.json`, integrity-pinned by
+`data/manifests/phase8e_final_results_integrity.json`. The manuscript itself is
+`paper/manuscript.md`, populated through `paper/generated/manuscript_token_map.json`.
+
+### Seed-43/44 extension (out of manuscript scope)
+
+Seeds 43 and 44 are a prespecified, outcome-blind robustness extension for
+training stochasticity (see
+[Phase 8G protocol](docs/phase8g_multiseed_robustness_protocol.md)). Extension
+training, evaluation, and summary artifacts are retained transparently — they
+are not hidden or deleted — but are excluded from the confirmatory manuscript
+pipeline above. See the protocol document's amendment-status header for the
+current authoritative scope decision.
+
 ## Current scope
 
 The repository has completed its governed cohort, subject-level split,
@@ -24,8 +65,10 @@ Phase 8G is an outcome-blind, prespecified robustness extension for training
 stochasticity. It adds exactly seeds 43 and 44 at the unchanged 1,000,000
 timesteps per condition, checkpoint schedule, architecture, hyperparameters,
 train universe, and A/B shard assignment. Seed 42 and the Phase 8D/8E/8F
-artifacts remain immutable. Additional-seed sealed-test evaluation is not
-authorized in the training phase.
+artifacts remain immutable. Sealed-test evaluation of the extension seeds was
+subsequently authorized and completed separately from Phase 8E; its results
+are retained as a distinct extension artifact and are **not** part of the
+ICTC 2026 manuscript (see "ICTC 2026 paper scope" above).
 
 The following remain outside Phase 8G authorization: condition ranking or
 selection, unprespecified seeds or training budgets, changes to Phase

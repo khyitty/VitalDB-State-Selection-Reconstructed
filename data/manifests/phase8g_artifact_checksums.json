@@ -1,9 +1,14 @@
 {
   "artifacts": [
     {
-      "bytes": 9342,
+      "bytes": 11758,
       "relative_path": "README.md",
-      "sha256": "420882694e0fc07bce591798cec2284824b2bb6890fc2fb4b93c732199b898fd"
+      "sha256": "2968836d60b08176dff3a6ff1e9fa5b3101ddec1894eb3aaee5b3e2687b811b1"
+    },
+    {
+      "bytes": 833,
+      "relative_path": "data/manifests/phase8g_multiseed_evaluation_config.json",
+      "sha256": "c42a38c0fc262374e3d1424ae4b87b90b4e0044bb882fda3d5bfa6fc242b14b5"
     },
     {
       "bytes": 990,
@@ -26,19 +31,19 @@
       "sha256": "285d773823aad887394700ab2a584ff667733e3ed1305c481666d1a2fa945acf"
     },
     {
-      "bytes": 2257,
+      "bytes": 2905,
       "relative_path": "docs/phase8g_multiseed_robustness_protocol.md",
-      "sha256": "f6f699dced4745690aa80b6d186bb92cbed83b166d012b059574153c654d6f3f"
+      "sha256": "1cdb0c79309b4f9bf3997ac3980c433318547a865d115c2284a4d46a9ff6a9bb"
     },
     {
-      "bytes": 2554,
+      "bytes": 2827,
       "relative_path": "docs/phase8g_parallel_training_runbook.md",
-      "sha256": "8142b095f0ef82d375f07326300bc7894612d8a4576358c8fbd5d93dfbf4d71b"
+      "sha256": "2a66116602064b4a2662b936a23be468a47cc5d21b43e9d7b92d0506929b1cb3"
     },
     {
-      "bytes": 1254,
+      "bytes": 1527,
       "relative_path": "docs/phase8g_training_infrastructure_report.md",
-      "sha256": "a320b0a52696c09ef2bd1cb9758c5a18200d57cff75aa556b13ba9440815fbd3"
+      "sha256": "14960c003935160310b5909693514106552d07d3f8a7423c1145e70219a3386b"
     },
     {
       "bytes": 87512,
@@ -56,9 +61,19 @@
       "sha256": "8dc88f74622613e88d756ae51a87fed2ff00ed681fff8448b96cdb4b36df4c18"
     },
     {
-      "bytes": 2475,
+      "bytes": 2891,
       "relative_path": "scripts/build_phase8g_artifact_checksums.py",
-      "sha256": "ef63973b8b77e2f94d9593ea65ae783405ff6e99e7ff28dd5eea71902904b9e6"
+      "sha256": "4ce7f385ed217077a555d0665cb749ad4d4821932ee1e5307d7e0c9c9c54e70a"
+    },
+    {
+      "bytes": 5114,
+      "relative_path": "scripts/freeze_phase8g_multiseed_results.py",
+      "sha256": "d2c69f164852d81a3a35509d535bde1457be50eeef9843bd157595258a3cfacc"
+    },
+    {
+      "bytes": 2500,
+      "relative_path": "scripts/run_phase8e_final_evaluation.py",
+      "sha256": "52806f41e469a15c1db583a4e48ea4538a1e828fceabbfc1decb1053abd36aaa"
     },
     {
       "bytes": 4468,
@@ -66,9 +81,34 @@
       "sha256": "1a82e65c442cd46e3e2b8310cf04297c0db431d3355b593eb5852bfba3289e88"
     },
     {
+      "bytes": 17477,
+      "relative_path": "src/vitaldb_state_selection/publication/final_results.py",
+      "sha256": "57ed608fc385ae823576e48ca85a1787f384cf67f8b4223835d64be1e66daf74"
+    },
+    {
+      "bytes": 25502,
+      "relative_path": "src/vitaldb_state_selection/rl_integration/final_evaluation.py",
+      "sha256": "d74adef14cd34eb6a694fd61ca060b749cae75f17979554fed6205d6f2e040ff"
+    },
+    {
       "bytes": 27648,
       "relative_path": "src/vitaldb_state_selection/rl_integration/multiseed_training.py",
       "sha256": "0329e0b17469cc26489cd35b956cb6d5b86f113f17ce65a4e277dc51954abd08"
+    },
+    {
+      "bytes": 11231,
+      "relative_path": "tests/test_phase8e_evaluation.py",
+      "sha256": "cf816ed90554fa571d60431ccac71fddaa175bcbb996c098245455b3d51ee13f"
+    },
+    {
+      "bytes": 5530,
+      "relative_path": "tests/test_phase8e_final_results.py",
+      "sha256": "b5a5c4411b929c293e018b7a687b3011f8c102a5d11acd27d674aa889ea03f76"
+    },
+    {
+      "bytes": 13699,
+      "relative_path": "tests/test_phase8f_renderer.py",
+      "sha256": "9d56d4eb020d8aa71be9c947de98f4353db568bad5390e359c42fc8b83830028"
     },
     {
       "bytes": 8944,

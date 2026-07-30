@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data/manifests/phase8g_artifact_checksums.json"
 ARTIFACTS = (
     "README.md",
+    "data/manifests/phase8g_multiseed_evaluation_config.json",
     "data/manifests/phase8g_multiseed_config.json",
     "data/manifests/phase8g_seed_definition.json",
     "data/manifests/phase8g_shard_definition.json",
@@ -23,8 +24,15 @@ ARTIFACTS = (
     "docs/superpowers/plans/2026-07-25-phase8g-multiseed.md",
     "docs/superpowers/specs/2026-07-25-phase8g-multiseed-design.md",
     "scripts/build_phase8g_artifact_checksums.py",
+    "scripts/freeze_phase8g_multiseed_results.py",
+    "scripts/run_phase8e_final_evaluation.py",
     "scripts/run_phase8g_multiseed_training.py",
+    "src/vitaldb_state_selection/publication/final_results.py",
+    "src/vitaldb_state_selection/rl_integration/final_evaluation.py",
     "src/vitaldb_state_selection/rl_integration/multiseed_training.py",
+    "tests/test_phase8e_evaluation.py",
+    "tests/test_phase8e_final_results.py",
+    "tests/test_phase8f_renderer.py",
     "tests/test_phase8g_multiseed_training.py",
     "tests/test_phase8g_protocol.py",
 )
